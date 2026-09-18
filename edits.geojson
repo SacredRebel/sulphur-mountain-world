@@ -10,7 +10,7 @@
     "op": "remove",
     "layer": "trees",
     "buffer_m": 12,
-    "what": "every 2018 tree top within 12 m of the county's house footprint \u2014 the large oaks over the house and the smaller ones round it",
+    "what": "every 2018 tree top within 12 m of the county's house footprint — the large oaks over the house and the smaller ones round it",
     "reason": "the owner confirms the trees around the main house are gone",
     "reported": "2026-09-18",
     "by": "owner",
@@ -20,60 +20,98 @@
     "type": "Polygon",
     "coordinates": [
      [
-      [
-       -119.155266,
-       34.433171
-      ],
-      [
-       -119.155268,
-       34.43312
-      ],
-      [
-       -119.155269,
-       34.43307
-      ],
-      [
-       -119.155291,
-       34.43307
-      ],
-      [
-       -119.155292,
-       34.433026
-      ],
-      [
-       -119.155353,
-       34.433027
-      ],
-      [
-       -119.155351,
-       34.433108
-      ],
-      [
-       -119.155379,
-       34.433109
-      ],
-      [
-       -119.155378,
-       34.433142
-      ],
-      [
-       -119.15535,
-       34.433142
-      ],
-      [
-       -119.155349,
-       34.433172
-      ],
-      [
-       -119.155289,
-       34.433171
-      ],
-      [
-       -119.155266,
-       34.433171
-      ]
+      [-119.155266, 34.433171],
+      [-119.155268, 34.43312],
+      [-119.155269, 34.43307],
+      [-119.155291, 34.43307],
+      [-119.155292, 34.433026],
+      [-119.155353, 34.433027],
+      [-119.155351, 34.433108],
+      [-119.155379, 34.433109],
+      [-119.155378, 34.433142],
+      [-119.15535, 34.433142],
+      [-119.155349, 34.433172],
+      [-119.155289, 34.433171],
+      [-119.155266, 34.433171]
      ]
     ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "oak-leaf-court",
+    "op": "add",
+    "layer": "terrain",
+    "terrain_op": "flatten",
+    "to_m": 422.4,
+    "edge_m": 3,
+    "what": "the parking court of the Oak Leaf proposal: the bank below the knoll dug down to the level of the drive, so the three lower suites open onto it",
+    "reason": "proposal — the Oak Leaf massing (registry sulphur-oak-house); comes out with it if the siting changes",
+    "reported": "2026-09-18",
+    "by": "owner",
+    "authority": "owner",
+    "proposal": "sulphur-oak-house"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [-119.155534, 34.43299],
+      [-119.155316, 34.43299],
+      [-119.155316, 34.432915],
+      [-119.155534, 34.432915],
+      [-119.155534, 34.43299]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sacred-gardens",
+    "op": "add",
+    "layer": "zones",
+    "kind": "garden",
+    "name": "Sacred gardens",
+    "what": "the owner's purple mark on the aerial: native planting, meditation paths and ceremony spaces along the bank south-west of the house",
+    "reason": "the owner's site plan, 2026-09-18",
+    "reported": "2026-09-18",
+    "by": "owner",
+    "authority": "owner",
+    "proposal": "sulphur-oak-house"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [-119.156122, 34.433028],
+      [-119.155578, 34.433028],
+      [-119.155556, 34.432973],
+      [-119.155621, 34.432928],
+      [-119.156122, 34.432937],
+      [-119.156122, 34.433028]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "oak-lounge",
+    "op": "add",
+    "layer": "notes",
+    "name": "Oak lounge",
+    "kind": "note",
+    "what": "the owner's green mark: the outdoor lounge under the big oaks west of the house, a fire in the middle",
+    "reported": "2026-09-18",
+    "by": "owner",
+    "authority": "owner",
+    "proposal": "sulphur-oak-house"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [-119.155643, 34.433109]
    }
   }
  ]
