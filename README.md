@@ -37,10 +37,20 @@ footprint at all, and the trees that stood over the house are gone.
 
 The record is never rewritten. When the owner says the land differs from
 the record, the difference goes in `edits.geojson` as its own dated,
-attributed feature and the world applies it on top: an `op` of `remove`
-on a `layer`, over a Point with `radius_m` or a Polygon with `buffer_m`.
+attributed feature and the world applies it on top. Each feature has an
+`op` and a `layer`:
+
+    remove · trees   a Point with radius_m, or a Polygon with buffer_m
+    add    · trees   a Point with height_m (and crown_m): a tree that is there now
+    move   · vision  target = a project's id, and the Point it really goes at
+    remove · vision  target = a project's id that is off the table
+    add    · notes   a Point with a name: a marker (the gate, the well, a photo)
+    add    · lines   a LineString with a kind (fence, path, road) and a name
+
 `trees.csv` still holds all 3,663 tops the lidar saw in 2018; the edit is
-what takes fourteen of them down.
+what takes fourteen of them down. The walkable world writes this file
+through the atlas (`POST /api/pack/edits`, PIN-guarded, validated against
+the grammar above): press **B** there, make the correction, save.
 
 ## The frame
 
