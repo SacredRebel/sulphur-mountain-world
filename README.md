@@ -46,6 +46,10 @@ attributed feature and the world applies it on top. Each feature has an
     remove · vision  target = a project's id that is off the table
     add    · notes   a Point with a name: a marker (the gate, the well, a photo)
     add    · lines   a LineString with a kind (fence, path, road) and a name
+    add    · zones   a Polygon with a name and a kind: a territory on the ground
+    add    · terrain a Polygon with terrain_op (flatten, raise, lower),
+                     height_m or to_m, and edge_m: the ground shaped, with
+                     a bank that eases back into the hill
 
 `trees.csv` still holds all 3,663 tops the lidar saw in 2018; the edit is
 what takes fourteen of them down. The walkable world writes this file
