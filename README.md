@@ -50,6 +50,16 @@ attributed feature and the world applies it on top. Each feature has an
     add    · terrain a Polygon with terrain_op (flatten, raise, lower),
                      height_m or to_m, and edge_m: the ground shaped, with
                      a bank that eases back into the hill
+    add    · build   a part of a building, by kind — a wall (a LineString
+                     along its centre: height_m, thick_m, material, smooth,
+                     base_m, openings[] of doors and windows, structure),
+                     a floor (a Polygon: level_m, thick_m, material) or a
+                     roof (a Polygon: form flat/shed/gable/hip/vault,
+                     eaves_m, pitch_deg, overhang_m, ridge_deg, material)
+    remove · build   target = the id of a part taken down
+
+A later feature with the same id replaces the earlier one — that is how a
+wall is changed: it is added again, taller, or moved, under its own id.
 
 `trees.csv` still holds all 3,663 tops the lidar saw in 2018; the edit is
 what takes fourteen of them down. The walkable world writes this file
