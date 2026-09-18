@@ -90,6 +90,11 @@
    "file": "edits.geojson",
    "authority": "owner",
    "note": "applied by the world on top of the record: op remove on layer trees, a Point with radius_m or a Polygon with buffer_m"
+  },
+  "materials": {
+   "file": "materials.json",
+   "authority": "derived",
+   "note": "close-up ground, road and bark materials: CC0 tiles recoloured to the owner's photographs of the land"
   }
  },
  "sources": [

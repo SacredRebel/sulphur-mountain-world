@@ -19,6 +19,7 @@ one engine and one pack per property; nothing here is code.
 | `trees.csv` | derived | 2018 | 3,663 tree tops with height, crown radius and ground elevation; 367 inside the line, 96 per hectare |
 | `vision.geojson` | proposal | — | the 18 proposed project zones, 14 with drawn territories — placeholders until each has a model |
 | `edits.geojson` | **owner** | 2026-09-18 | what the owner has said differs from the record, applied by the world on top of the layers: the trees within 12 m of the house are gone |
+| `materials.json` + `textures/` | derived | 2026-09-18 | close-up ground, road and bark tiles: CC0 materials from ambientCG, recoloured to the owner's photographs of this land |
 
 Imagery (the county's 2025 aerial, ~12 cm/px) and terrain (USGS 3DEP 1 m,
 baked by the atlas) are streamed from their publishers by URL and are not
