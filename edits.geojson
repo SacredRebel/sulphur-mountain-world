@@ -1,0 +1,80 @@
+{
+ "type": "FeatureCollection",
+ "name": "edits",
+ "note": "What the owner has said differs from the record. Each feature is one edit the world applies on top of the layers; the layers themselves are never rewritten, so the 2018 record stays the 2018 record and every change is dated and attributed.",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trees-around-the-house",
+    "op": "remove",
+    "layer": "trees",
+    "buffer_m": 12,
+    "what": "every 2018 tree top within 12 m of the county's house footprint \u2014 the large oaks over the house and the smaller ones round it",
+    "reason": "the owner confirms the trees around the main house are gone",
+    "reported": "2026-09-18",
+    "by": "owner",
+    "authority": "owner"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -119.155266,
+       34.433171
+      ],
+      [
+       -119.155268,
+       34.43312
+      ],
+      [
+       -119.155269,
+       34.43307
+      ],
+      [
+       -119.155291,
+       34.43307
+      ],
+      [
+       -119.155292,
+       34.433026
+      ],
+      [
+       -119.155353,
+       34.433027
+      ],
+      [
+       -119.155351,
+       34.433108
+      ],
+      [
+       -119.155379,
+       34.433109
+      ],
+      [
+       -119.155378,
+       34.433142
+      ],
+      [
+       -119.15535,
+       34.433142
+      ],
+      [
+       -119.155349,
+       34.433172
+      ],
+      [
+       -119.155289,
+       34.433171
+      ],
+      [
+       -119.155266,
+       34.433171
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

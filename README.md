@@ -18,6 +18,7 @@ one engine and one pack per property; nothing here is code.
 | `roofs.geojson` | derived | 2018 | roof planes recovered from the lidar under the tree canopy: the house, a shed, and a 157 m² building the county does not map |
 | `trees.csv` | derived | 2018 | 3,663 tree tops with height, crown radius and ground elevation; 367 inside the line, 96 per hectare |
 | `vision.geojson` | proposal | — | the 18 proposed project zones, 14 with drawn territories — placeholders until each has a model |
+| `edits.geojson` | **owner** | 2026-09-18 | what the owner has said differs from the record, applied by the world on top of the layers: the trees within 12 m of the house are gone |
 
 Imagery (the county's 2025 aerial, ~12 cm/px) and terrain (USGS 3DEP 1 m,
 baked by the atlas) are streamed from their publishers by URL and are not
@@ -29,9 +30,16 @@ Survey beats county beats derived. The county ring disagrees with the
 surveyed line by up to 29 ft on the west side; it is kept so the drift is
 visible, and it is never used to site anything. The lidar is from 2018: it
 knows the ground, the roofs and every tree as of that flight, and the
-`reconciliation` list in `pack.json` records what has changed since — a
-large tree beside the house is reported gone, one county "footprint" is a
-concrete pad, one real building has no county footprint at all.
+`reconciliation` list in `pack.json` records what has changed since — one
+county "footprint" is a concrete pad, one real building has no county
+footprint at all, and the trees that stood over the house are gone.
+
+The record is never rewritten. When the owner says the land differs from
+the record, the difference goes in `edits.geojson` as its own dated,
+attributed feature and the world applies it on top: an `op` of `remove`
+on a `layer`, over a Point with `radius_m` or a Polygon with `buffer_m`.
+`trees.csv` still holds all 3,663 tops the lidar saw in 2018; the edit is
+what takes fourteen of them down.
 
 ## The frame
 
