@@ -68,23 +68,24 @@
    "authority": "proposal",
    "what": "the 18 proposed project zones from the atlas as points at their placed positions; each is a placeholder until it has a model. Properties: id, name, type, mode (today | vision | both), summary, and a 2018 lidar note where a structure stands today",
    "source": "the atlas: properties/sulphur-mountain.js for the zones, data/zone-positions.json for the placed positions",
-   "territories": "none carried \u2014 the atlas's zone polygons are 0.001-degree grid cells that do not contain their own icons; real territories come from a drawing on the aerial"
+   "territories": "none carried — the atlas's zone polygons are 0.001-degree grid cells that do not contain their own icons; real territories come from a drawing on the aerial"
   },
   "imagery": {
    "kind": "xyz",
    "template": "https://maps.ventura.org/arcgis/rest/services/SDs/2025UrbanAerial/MapServer/tile/{z}/{y}/{x}",
    "maxzoom": 20,
-   "attribution": "Ventura County GIS \u2014 2025 Urban Aerial",
+   "attribution": "Ventura County GIS — 2025 Urban Aerial",
    "captured": "2025",
    "cors": "open",
    "note": "streamed live, never committed; about 12 cm per pixel at z20"
   },
   "terrain": {
    "kind": "terrarium",
-   "index": "https://eco-village-map.vercel.app/terrain/index.json",
-   "template": "https://eco-village-map.vercel.app/terrain/{z}/{x}/{y}.png",
+   "index": "terrain/index.json",
+   "template": "terrain/{z}/{x}/{y}.png",
    "maxzoom": 17,
-   "source": "USGS 3DEP 1 m (CA_SoCal_Wildfires_B3_2018), baked by the atlas"
+   "source": "USGS 3DEP 1 m (CA_SoCal_Wildfires_B3_2018), baked by the atlas 2026-09-17; the 13 tiles are kept here so the ground loads with the pack",
+   "mirror": "https://eco-village-map.vercel.app/terrain/index.json"
   },
   "edits": {
    "file": "edits.geojson",
@@ -100,7 +101,7 @@
  "sources": [
   {
    "id": "survey",
-   "name": "Henry Land Surveying Inc. \u2014 topographic survey, Jeremy Henry PLS 8135",
+   "name": "Henry Land Surveying Inc. — topographic survey, Jeremy Henry PLS 8135",
    "date": "2024-11-14",
    "record_map": "14-PM-15 (Parcel Maps Book 14, Page 15, Ventura County Recorder)",
    "url": "https://maps.ventura.org/recordmaps/pm/014/014pm015.pdf"
@@ -169,7 +170,7 @@
   {
    "id": "county-footprint-1",
    "status": "not a building",
-   "what": "county footprint #1 (38 m2, classed FIELD AND SEED CROPS) has no lidar returns above 0.5 m \u2014 it is the survey's concrete pad; the world does not raise it"
+   "what": "county footprint #1 (38 m2, classed FIELD AND SEED CROPS) has no lidar returns above 0.5 m — it is the survey's concrete pad; the world does not raise it"
   },
   {
    "id": "mcqueens-garage",
@@ -189,7 +190,7 @@
   {
    "id": "the-barn",
    "status": "small in lidar",
-   "what": "at The Barn's anchor the 2018 lidar shows a low roof of about 2.2 m and roughly 28 m2 under canopy \u2014 smaller than the word suggests; to confirm on the fence walk"
+   "what": "at The Barn's anchor the 2018 lidar shows a low roof of about 2.2 m and roughly 28 m2 under canopy — smaller than the word suggests; to confirm on the fence walk"
   },
   {
    "id": "zone-territories",

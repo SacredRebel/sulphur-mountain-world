@@ -1,0 +1,22 @@
+{
+ "schema": 1,
+ "note": "USGS 3DEP 1 m elevation for this property, terrarium-encoded, copied from the atlas's bake so the world's ground does not depend on the atlas answering.",
+ "source": "USGS 3DEP ImageServer (exportImage, F32 GeoTIFF)",
+ "encoding": "terrarium",
+ "tileSize": 256,
+ "generated": "2026-09-17",
+ "minzoom": 13,
+ "maxzoom": 17,
+ "areas": [
+  {
+   "pid": "sulphur-mountain",
+   "bbox": [
+    -119.158603,
+    34.431343,
+    -119.154087,
+    34.434007
+   ],
+   "tiles": 13
+  }
+ ]
+}

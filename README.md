@@ -20,10 +20,12 @@ one engine and one pack per property; nothing here is code.
 | `vision.geojson` | proposal | — | the 18 proposed project zones, 14 with drawn territories — placeholders until each has a model |
 | `edits.geojson` | **owner** | 2026-09-18 | what the owner has said differs from the record, applied by the world on top of the layers: the trees within 12 m of the house are gone |
 | `materials.json` + `textures/` | derived | 2026-09-18 | close-up ground, road and bark tiles: CC0 materials from ambientCG, recoloured to the owner's photographs of this land |
+| `terrain/` | USGS 3DEP | 2018 lidar, baked 2026-09-17 | the 1 m ground as 13 terrarium tiles with their index — the pyramid the world walks on |
 
-Imagery (the county's 2025 aerial, ~12 cm/px) and terrain (USGS 3DEP 1 m,
-baked by the atlas) are streamed from their publishers by URL and are not
-copied here.
+Imagery (the county's 2025 aerial, ~12 cm/px) is streamed from its publisher
+by URL and is not copied here. The ground (USGS 3DEP 1 m, baked to terrarium
+tiles by the atlas) is kept in `terrain/` — 13 tiles, z13–17, about 700 KB —
+so the world can stand on this property with nothing but this repository.
 
 ## How the layers rank
 
