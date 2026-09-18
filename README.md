@@ -18,7 +18,7 @@ one engine and one pack per property; nothing here is code.
 | `roofs.geojson` | derived | 2018 | roof planes recovered from the lidar under the tree canopy: the house, a shed, and a 157 m² building the county does not map |
 | `trees.csv` | derived | 2018 | 3,663 tree tops with height, crown radius and ground elevation; 367 inside the line, 96 per hectare |
 | `vision.geojson` | proposal | — | the 18 proposed project zones, 14 with drawn territories — placeholders until each has a model |
-| `edits.geojson` | **owner** | 2026-09-18 | what the owner has said differs from the record, applied by the world on top of the layers: the trees within 12 m of the house are gone |
+| `edits.geojson` | **owner** | 2026-09-18 | what the owner has said differs from the record, applied by the world on top of the layers: the trees within 12 m of the house are gone; and what the Oak Leaf proposal asks of the land — its parking court cut into the south bank, the sacred gardens, the oak lounge |
 | `materials.json` + `textures/` | derived | 2026-09-18 | close-up ground, road and bark tiles: CC0 materials from ambientCG, recoloured to the owner's photographs of this land |
 | `terrain/` | USGS 3DEP | 2018 lidar, baked 2026-09-17 | the 1 m ground as 13 terrarium tiles with their index — the pyramid the world walks on |
 
@@ -63,6 +63,15 @@ attributed feature and the world applies it on top. Each feature has an
 A later feature with the same id replaces the earlier one — that is how a
 wall is changed: it is added again, taller, or moved, under its own id.
 
+A feature may carry `proposal`: the id of a designed structure in the atlas's
+registry (`sulphur-oak-house`, the Oak Leaf massing). It belongs to that
+proposal — the ground shaped for it, the gardens laid out round it — and it
+goes when the proposal goes or moves. The house itself is not here: it is a
+`.glb` the engine builds from its own script and serves, placed by the
+atlas's registry, and the world draws it over this pack, taking down what it
+clears (the standing house, whose river-stone chimney is the model's origin)
+and the recorded trees under its outline.
+
 `trees.csv` still holds all 3,663 tops the lidar saw in 2018; the edit is
 what takes fourteen of them down. The walkable world writes this file
 through the atlas (`POST /api/pack/edits`, PIN-guarded, validated against
@@ -83,8 +92,10 @@ Every GeoJSON file is plain EPSG:4326.
 The survey sheet draws five sheds, wood fences, power poles and dirt roads
 that exist here only as a registered raster in the atlas. Those come from
 a walk along the fence line with a phone, one photograph at each corner and
-gate. The new house arrives as a model in the engine, sited from
-`survey.geojson`, never from the county ring.
+gate. The new house is a massing so far — the Oak Leaf, three leaves round
+the existing chimney, at real size on the real knoll, made by
+`scripts/massing/oak-leaf.py` in the engine — and wants a settled design
+before it is more than that.
 
 ## Sources
 
