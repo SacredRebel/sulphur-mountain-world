@@ -1,207 +1,215 @@
 {
- "schema": 1,
- "id": "sulphur-mountain",
- "name": "Sulphur Mountain",
- "apn": "037-0-012-125",
- "situs": "11962 Sulphur Mountain Rd, Ojai, CA 93023",
- "generated": "2026-09-18",
- "crs": "EPSG:4326 for every GeoJSON; trees.csv is in the local frame below",
- "frame": {
-  "origin_lng": -119.1594805,
-  "origin_lat": 34.4304373,
-  "metres_per_deg_lng": 91818.211,
-  "metres_per_deg_lat": 110540,
-  "axes": "x east, y north, metres (equirectangular at origin_lat): lng = origin_lng + x/metres_per_deg_lng, lat = origin_lat + y/metres_per_deg_lat"
- },
- "aoi": {
-  "bbox": [
-   -119.15948,
-   34.43044,
-   -119.15321,
-   34.43491
-  ],
-  "note": "the surveyed parcel padded 150 m; the lidar-derived layers cover this box (clipped at its west edge to the lidar tile)"
- },
- "spawn": {
-  "lng": -119.156345,
-  "lat": 34.432675,
-  "heading": 200
- },
- "layers": {
-  "survey": {
-   "file": "survey.geojson",
-   "authority": "survey",
-   "date": "2024-11-14",
-   "what": "boundary (11 corners), the 11 calls with bearing and distance, the 16 ft access easement (2 parts), 4 found monuments"
+  "schema": 1,
+  "id": "sulphur-mountain",
+  "name": "Sulphur Mountain",
+  "apn": "037-0-012-125",
+  "situs": "11962 Sulphur Mountain Rd, Ojai, CA 93023",
+  "generated": "2026-09-18",
+  "crs": "EPSG:4326 for every GeoJSON; trees.csv is in the local frame below",
+  "frame": {
+    "origin_lng": -119.1594805,
+    "origin_lat": 34.4304373,
+    "metres_per_deg_lng": 91818.211,
+    "metres_per_deg_lat": 110540,
+    "axes": "x east, y north, metres (equirectangular at origin_lat): lng = origin_lng + x/metres_per_deg_lng, lat = origin_lat + y/metres_per_deg_lat"
   },
-  "county": {
-   "file": "county.geojson",
-   "authority": "county",
-   "read": "2026-09-18",
-   "what": "assessor parcel ring (kept for the drift, never for siting), 3 building footprints with their 2018 lidar heights, road centrelines"
+  "aoi": {
+    "bbox": [
+      -119.15948,
+      34.43044,
+      -119.15321,
+      34.43491
+    ],
+    "note": "the surveyed parcel padded 150 m; the lidar-derived layers cover this box (clipped at its west edge to the lidar tile)"
   },
-  "roofs": {
-   "file": "roofs.geojson",
-   "authority": "derived",
-   "captured": "2018",
-   "what": "roof planes recovered from the lidar under-canopy surface: the house, a shed, and McQueen's Garage (the 3,200 sq ft warehouse the county does not map)"
+  "spawn": {
+    "lng": -119.156345,
+    "lat": 34.432675,
+    "heading": 200
   },
-  "trees": {
-   "file": "trees.csv",
-   "authority": "derived",
-   "captured": "2018",
-   "columns": [
-    "x_east_dm",
-    "y_north_dm",
-    "height_dm",
-    "crown_radius_dm",
-    "ground_dm"
-   ],
-   "units": "decimetres, integers, in the pack frame",
-   "count": 3663,
-   "in_parcel": 367,
-   "per_hectare_in_parcel": 96,
-   "method": "0.5 m canopy height model (highest return minus the 1 m ground), roofs masked, variable-window local maxima (window 1.2 m + 0.28 x height), watershed crowns; tops under 2.5 m are not listed"
-  },
-  "vision": {
-   "file": "vision.geojson",
-   "authority": "proposal",
-   "what": "the 18 proposed project zones from the atlas as points at their placed positions; each is a placeholder until it has a model. Properties: id, name, type, mode (today | vision | both), summary, and a 2018 lidar note where a structure stands today",
-   "source": "the atlas: properties/sulphur-mountain.js for the zones, data/zone-positions.json for the placed positions",
-   "territories": "none carried — the atlas's zone polygons are 0.001-degree grid cells that do not contain their own icons; real territories come from a drawing on the aerial"
-  },
-  "imagery": {
-   "kind": "xyz",
-   "template": "https://maps.ventura.org/arcgis/rest/services/SDs/2025UrbanAerial/MapServer/tile/{z}/{y}/{x}",
-   "maxzoom": 20,
-   "attribution": "Ventura County GIS — 2025 Urban Aerial",
-   "captured": "2025",
-   "cors": "open",
-   "note": "streamed live, never committed; about 12 cm per pixel at z20"
-  },
-  "terrain": {
-   "kind": "terrarium",
-   "index": "terrain/index.json",
-   "template": "terrain/{z}/{x}/{y}.png",
-   "maxzoom": 17,
-   "source": "USGS 3DEP 1 m (CA_SoCal_Wildfires_B3_2018), baked by the atlas 2026-09-17; the 13 tiles are kept here so the ground loads with the pack",
-   "mirror": "https://eco-village-map.vercel.app/terrain/index.json"
-  },
-  "edits": {
-   "file": "edits.geojson",
-   "authority": "owner",
-   "note": "applied by the world on top of the record: op remove on layer trees, a Point with radius_m or a Polygon with buffer_m"
-  },
-  "materials": {
-   "file": "materials.json",
-   "authority": "derived",
-   "note": "close-up ground, road and bark materials: CC0 tiles recoloured to the owner's photographs of the land"
-  }
- },
- "sources": [
-  {
-   "id": "survey",
-   "name": "Henry Land Surveying Inc. — topographic survey, Jeremy Henry PLS 8135",
-   "date": "2024-11-14",
-   "record_map": "14-PM-15 (Parcel Maps Book 14, Page 15, Ventura County Recorder)",
-   "url": "https://maps.ventura.org/recordmaps/pm/014/014pm015.pdf"
-  },
-  {
-   "id": "lidar",
-   "name": "USGS 3DEP Lidar Point Cloud, CA_SoCAL_Wildfires_2018_D18 / CA_SoCal_Wildfires_B3_2018, tile w2091n1519",
-   "date": "2018",
-   "url": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/CA_SoCAL_Wildfires_2018_D18/CA_SoCal_Wildfires_B3_2018/LAZ/USGS_LPC_CA_SoCAL_Wildfires_2018_D18_w2091n1519.laz",
-   "density": "6-7.5 points per m2 at the house; classes ground and unclassified only",
-   "licence": "public domain"
-  },
-  {
-   "id": "county-gis",
-   "name": "Ventura County GIS (maps.ventura.org ArcGIS REST): SDs/Parcels/0, DataDownloads/CommonData/0 footprints, DataDownloads/Transportation/15 road centrelines, SDs/2025UrbanAerial",
-   "date": "read 2026-09-18",
-   "url": "https://maps.ventura.org/arcgis/rest/services/"
-  },
-  {
-   "id": "atlas",
-   "name": "EcoVillage-map (the atlas): survey transcription, footprints bake, Vision zones, baked 1 m terrain",
-   "url": "https://eco-village-map.vercel.app"
-  }
- ],
- "reconciliation": [
-  {
-   "id": "tree-by-house",
-   "status": "confirmed removed",
-   "reported": "2026-09-17",
-   "by": "owner",
-   "what": "a large tree beside the house",
-   "candidates_2018": [
-    {
-     "lng": -119.155302,
-     "lat": 34.433135,
-     "height_m": 12.8,
-     "crown_m": 3.9,
-     "m_from_house": 3.6
+  "layers": {
+    "survey": {
+      "file": "survey.geojson",
+      "authority": "survey",
+      "date": "2024-11-14",
+      "what": "boundary (11 corners), the 11 calls with bearing and distance, the 16 ft access easement (2 parts), 4 found monuments"
     },
-    {
-     "lng": -119.155261,
-     "lat": 34.433055,
-     "height_m": 13.4,
-     "crown_m": 4.9,
-     "m_from_house": 7.5
+    "county": {
+      "file": "county.geojson",
+      "authority": "county",
+      "read": "2026-09-18",
+      "what": "assessor parcel ring (kept for the drift, never for siting), 3 building footprints with their 2018 lidar heights, road centrelines"
     },
-    {
-     "lng": -119.155402,
-     "lat": 34.433184,
-     "height_m": 13.7,
-     "crown_m": 6.2,
-     "m_from_house": 11.7
+    "roofs": {
+      "file": "roofs.geojson",
+      "authority": "derived",
+      "captured": "2018",
+      "what": "roof planes recovered from the lidar under-canopy surface: the house, a shed, and McQueen's Garage (the 3,200 sq ft warehouse the county does not map)"
     },
-    {
-     "lng": -119.155234,
-     "lat": 34.43319,
-     "height_m": 14.7,
-     "crown_m": 7.6,
-     "m_from_house": 12.1
+    "trees": {
+      "file": "trees.csv",
+      "authority": "derived",
+      "captured": "2018",
+      "columns": [
+        "x_east_dm",
+        "y_north_dm",
+        "height_dm",
+        "crown_radius_dm",
+        "ground_dm"
+      ],
+      "units": "decimetres, integers, in the pack frame",
+      "count": 3663,
+      "in_parcel": 367,
+      "per_hectare_in_parcel": 96,
+      "method": "0.5 m canopy height model (highest return minus the 1 m ground), roofs masked, variable-window local maxima (window 1.2 m + 0.28 x height), watershed crowns; tops under 2.5 m are not listed"
+    },
+    "vision": {
+      "file": "vision.geojson",
+      "authority": "proposal",
+      "what": "the 18 proposed project zones from the atlas as points at their placed positions; each is a placeholder until it has a model. Properties: id, name, type, mode (today | vision | both), summary, and a 2018 lidar note where a structure stands today",
+      "source": "the atlas: properties/sulphur-mountain.js for the zones, data/zone-positions.json for the placed positions",
+      "territories": "none carried \u2014 the atlas's zone polygons are 0.001-degree grid cells that do not contain their own icons; real territories come from a drawing on the aerial"
+    },
+    "imagery": {
+      "kind": "xyz",
+      "template": "https://maps.ventura.org/arcgis/rest/services/SDs/2025UrbanAerial/MapServer/tile/{z}/{y}/{x}",
+      "maxzoom": 20,
+      "attribution": "Ventura County GIS \u2014 2025 Urban Aerial",
+      "captured": "2025",
+      "cors": "open",
+      "note": "streamed live, never committed; about 12 cm per pixel at z20"
+    },
+    "terrain": {
+      "kind": "terrarium",
+      "index": "terrain/index.json",
+      "template": "terrain/{z}/{x}/{y}.png",
+      "maxzoom": 17,
+      "source": "USGS 3DEP 1 m (CA_SoCal_Wildfires_B3_2018), baked by the atlas 2026-09-17; the 13 tiles are kept here so the ground loads with the pack",
+      "mirror": "https://eco-village-map.vercel.app/terrain/index.json"
+    },
+    "edits": {
+      "file": "edits.geojson",
+      "authority": "owner",
+      "note": "applied by the world on top of the record: op remove on layer trees, a Point with radius_m or a Polygon with buffer_m"
+    },
+    "materials": {
+      "file": "materials.json",
+      "authority": "derived",
+      "note": "close-up ground, road and bark materials: CC0 tiles recoloured to the owner's photographs of the land"
+    },
+    "models": {
+      "dir": "models",
+      "authority": "proposal",
+      "what": "the proposed structures as walkable GLB models, each built by its script in scripts/ and committed here; extras.walk carries the floors and solids the engine walks",
+      "files": [
+        "oak-leaf-massing.glb"
+      ]
     }
-   ],
-   "note": "the lidar is 2018 and shows the house under 12 m of canopy; the owner's photographs of 2026-09-17 show no large tree at the house. Which of these four (or all) came down is to be confirmed on site; until then the world draws them",
-   "confirmed": "2026-09-18",
-   "resolution": "edits.geojson#trees-around-the-house removes every 2018 tree top within 12 m of the house footprint (14 trees, 6.9-14.7 m); the record in trees.csv is untouched"
   },
-  {
-   "id": "county-footprint-1",
-   "status": "not a building",
-   "what": "county footprint #1 (38 m2, classed FIELD AND SEED CROPS) has no lidar returns above 0.5 m — it is the survey's concrete pad; the world does not raise it"
-  },
-  {
-   "id": "mcqueens-garage",
-   "status": "in lidar, not in county footprints",
-   "what": "McQueen's Garage, the 3,200 sq ft warehouse: a 157 m2 planar roof at 4.0 m (roofs.geojson #0) 2 m from the zone anchor; the county's footprint layer has no structure here"
-  },
-  {
-   "id": "survey-structures",
-   "status": "not yet vectorised",
-   "what": "the sheet's five sheds, wood fences, power poles and dirt roads exist only on the registered raster in the atlas (images/sulphur-mountain/survey/topo-survey-overlay.png, ~0.3 m/px); the fence walk supplies these"
-  },
-  {
-   "id": "county-drift",
-   "status": "known",
-   "what": "county ring vs surveyed line: 8.7 m Hausdorff, up to 29 ft west on the west side, 9.498 vs 9.466 acres"
-  },
-  {
-   "id": "the-barn",
-   "status": "small in lidar",
-   "what": "at The Barn's anchor the 2018 lidar shows a low roof of about 2.2 m and roughly 28 m2 under canopy — smaller than the word suggests; to confirm on the fence walk"
-  },
-  {
-   "id": "zone-territories",
-   "status": "dropped",
-   "what": "the atlas's 14 zone polygons are 0.001-degree grid cells that do not contain their own icons; only the placed points are carried. Real territories come from a drawing on the aerial"
-  }
- ],
- "rules": [
-  "survey beats county beats derived; a later date beats an earlier one only with a source",
-  "the county ring is kept to show the drift and is never used for siting",
-  "imagery and terrain are streamed by URL from their publishers and are never bulk-copied into this repository",
-  "nothing here names a person: no owner names, no residents, no purchased data"
- ]
+  "sources": [
+    {
+      "id": "survey",
+      "name": "Henry Land Surveying Inc. \u2014 topographic survey, Jeremy Henry PLS 8135",
+      "date": "2024-11-14",
+      "record_map": "14-PM-15 (Parcel Maps Book 14, Page 15, Ventura County Recorder)",
+      "url": "https://maps.ventura.org/recordmaps/pm/014/014pm015.pdf"
+    },
+    {
+      "id": "lidar",
+      "name": "USGS 3DEP Lidar Point Cloud, CA_SoCAL_Wildfires_2018_D18 / CA_SoCal_Wildfires_B3_2018, tile w2091n1519",
+      "date": "2018",
+      "url": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/CA_SoCAL_Wildfires_2018_D18/CA_SoCal_Wildfires_B3_2018/LAZ/USGS_LPC_CA_SoCAL_Wildfires_2018_D18_w2091n1519.laz",
+      "density": "6-7.5 points per m2 at the house; classes ground and unclassified only",
+      "licence": "public domain"
+    },
+    {
+      "id": "county-gis",
+      "name": "Ventura County GIS (maps.ventura.org ArcGIS REST): SDs/Parcels/0, DataDownloads/CommonData/0 footprints, DataDownloads/Transportation/15 road centrelines, SDs/2025UrbanAerial",
+      "date": "read 2026-09-18",
+      "url": "https://maps.ventura.org/arcgis/rest/services/"
+    },
+    {
+      "id": "atlas",
+      "name": "EcoVillage-map (the atlas): survey transcription, footprints bake, Vision zones, baked 1 m terrain",
+      "url": "https://eco-village-map.vercel.app"
+    }
+  ],
+  "reconciliation": [
+    {
+      "id": "tree-by-house",
+      "status": "confirmed removed",
+      "reported": "2026-09-17",
+      "by": "owner",
+      "what": "a large tree beside the house",
+      "candidates_2018": [
+        {
+          "lng": -119.155302,
+          "lat": 34.433135,
+          "height_m": 12.8,
+          "crown_m": 3.9,
+          "m_from_house": 3.6
+        },
+        {
+          "lng": -119.155261,
+          "lat": 34.433055,
+          "height_m": 13.4,
+          "crown_m": 4.9,
+          "m_from_house": 7.5
+        },
+        {
+          "lng": -119.155402,
+          "lat": 34.433184,
+          "height_m": 13.7,
+          "crown_m": 6.2,
+          "m_from_house": 11.7
+        },
+        {
+          "lng": -119.155234,
+          "lat": 34.43319,
+          "height_m": 14.7,
+          "crown_m": 7.6,
+          "m_from_house": 12.1
+        }
+      ],
+      "note": "the lidar is 2018 and shows the house under 12 m of canopy; the owner's photographs of 2026-09-17 show no large tree at the house. Which of these four (or all) came down is to be confirmed on site; until then the world draws them",
+      "confirmed": "2026-09-18",
+      "resolution": "edits.geojson#trees-around-the-house removes every 2018 tree top within 12 m of the house footprint (14 trees, 6.9-14.7 m); the record in trees.csv is untouched"
+    },
+    {
+      "id": "county-footprint-1",
+      "status": "not a building",
+      "what": "county footprint #1 (38 m2, classed FIELD AND SEED CROPS) has no lidar returns above 0.5 m \u2014 it is the survey's concrete pad; the world does not raise it"
+    },
+    {
+      "id": "mcqueens-garage",
+      "status": "in lidar, not in county footprints",
+      "what": "McQueen's Garage, the 3,200 sq ft warehouse: a 157 m2 planar roof at 4.0 m (roofs.geojson #0) 2 m from the zone anchor; the county's footprint layer has no structure here"
+    },
+    {
+      "id": "survey-structures",
+      "status": "not yet vectorised",
+      "what": "the sheet's five sheds, wood fences, power poles and dirt roads exist only on the registered raster in the atlas (images/sulphur-mountain/survey/topo-survey-overlay.png, ~0.3 m/px); the fence walk supplies these"
+    },
+    {
+      "id": "county-drift",
+      "status": "known",
+      "what": "county ring vs surveyed line: 8.7 m Hausdorff, up to 29 ft west on the west side, 9.498 vs 9.466 acres"
+    },
+    {
+      "id": "the-barn",
+      "status": "small in lidar",
+      "what": "at The Barn's anchor the 2018 lidar shows a low roof of about 2.2 m and roughly 28 m2 under canopy \u2014 smaller than the word suggests; to confirm on the fence walk"
+    },
+    {
+      "id": "zone-territories",
+      "status": "dropped",
+      "what": "the atlas's 14 zone polygons are 0.001-degree grid cells that do not contain their own icons; only the placed points are carried. Real territories come from a drawing on the aerial"
+    }
+  ],
+  "rules": [
+    "survey beats county beats derived; a later date beats an earlier one only with a source",
+    "the county ring is kept to show the drift and is never used for siting",
+    "imagery and terrain are streamed by URL from their publishers and are never bulk-copied into this repository",
+    "nothing here names a person: no owner names, no residents, no purchased data"
+  ]
 }

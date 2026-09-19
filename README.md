@@ -6,7 +6,9 @@ This repository is one property's ground truth for the walkable world
 ([spatial-map](https://github.com/SacredRebel/spatial-map)): the surveyed
 boundary, what stands on the land, what grows on it, and what is proposed
 for it. The engine loads `pack.json` by URL and renders the rest. There is
-one engine and one pack per property; nothing here is code.
+one engine and one pack per property. No application code lives here — the only code is
+`scripts/`, the generators that build this property's own derived data, kept beside what they
+produce so every model has its provenance.
 
 ## What is in it
 
@@ -19,6 +21,8 @@ one engine and one pack per property; nothing here is code.
 | `trees.csv` | derived | 2018 | 3,663 tree tops with height, crown radius and ground elevation; 367 inside the line, 96 per hectare |
 | `vision.geojson` | proposal | — | the 18 proposed project zones, 14 with drawn territories — placeholders until each has a model |
 | `edits.geojson` | **owner** | 2026-09-18 | what the owner has said differs from the record, applied by the world on top of the layers: the trees within 12 m of the house are gone; and what the Oak Leaf proposal asks of the land — its parking court cut into the south bank, the sacred gardens, the oak lounge |
+| `models/` | proposal | — | the proposed structures as walkable GLB, `extras.walk` carrying floors and solids; built by `scripts/` and committed |
+| `scripts/` | — | — | the generators: a model IS its script. `node scripts/build-models.mjs` rebuilds `models/` |
 | `materials.json` + `textures/` | derived | 2026-09-18 | close-up ground, road and bark tiles: CC0 materials from ambientCG, recoloured to the owner's photographs of this land |
 | `terrain/` | USGS 3DEP | 2018 lidar, baked 2026-09-17 | the 1 m ground as 13 terrarium tiles with their index — the pyramid the world walks on |
 
