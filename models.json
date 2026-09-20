@@ -1,9 +1,29 @@
 {
   "schema": 1,
-  "note": "Manifest for the architect — Agent C never writes the registry. Built ground only in footprint (suppresses recorded vegetation). Authority is proposed unless noted.",
+  "note": "Manifest for the architect — Agent C never writes the registry. Built ground only in footprint (suppresses recorded vegetation). Authority is proposed unless noted. Each row carries a display `name` so the registry need not invent one from the id.",
   "models": [
     {
+      "id": "oak-leaf-massing",
+      "name": "The Oak Leaf",
+      "zone": "main-residence",
+      "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/oak-leaf-massing.glb",
+      "origin": [-119.155333, 34.433118],
+      "rotationDeg": 0,
+      "altitudeM": 0.0,
+      "footprint": [
+        [-119.1556053, 34.43289],
+        [-119.1550014, 34.43289],
+        [-119.1550014, 34.4333414],
+        [-119.1556053, 34.4333414]
+      ],
+      "bytes": 280972,
+      "triangles": 4830,
+      "authority": "proposal",
+      "note": "Five-leaf house massing; chimney origin. Parametric script scripts/oak-leaf.py — design PARAMS unchanged, mesh density sparse (C4)."
+    },
+    {
       "id": "retreat-village",
+      "name": "Retreat Village",
       "zone": "retreat-village",
       "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/retreat-village.glb",
       "origin": [-119.155628, 34.432173],
@@ -23,6 +43,7 @@
     },
     {
       "id": "glamping-creek",
+      "name": "Creek-Side Glamping",
       "zone": "glamping-creek-village",
       "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/glamping-creek.glb",
       "origin": [-119.15654, 34.432479],
@@ -42,6 +63,7 @@
     },
     {
       "id": "the-barn",
+      "name": "The Barn",
       "zone": "gatelodge-operations-hub",
       "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/the-barn.glb",
       "origin": [-119.156728, 34.433082],
@@ -60,6 +82,7 @@
     },
     {
       "id": "agricultural-hub",
+      "name": "Agricultural Hub",
       "zone": "agricultural-hub",
       "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/agricultural-hub.glb",
       "origin": [-119.155982, 34.433478],
@@ -78,6 +101,7 @@
     },
     {
       "id": "tropical-dome",
+      "name": "Tropical Dome Greenhouse",
       "zone": "tropical-dome-greenhouse",
       "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/tropical-dome.glb",
       "origin": [-119.156763, 34.432888],
@@ -101,6 +125,7 @@
     },
     {
       "id": "site-grounds",
+      "name": "Site Grounds",
       "zone": null,
       "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/site-grounds.glb",
       "origin": [-119.156345, 34.432675],
@@ -112,8 +137,8 @@
         [-119.1552, 34.4333],
         [-119.1578, 34.4333]
       ],
-      "bytes": 331596,
-      "triangles": 4784,
+      "bytes": 412028,
+      "triangles": 5952,
       "authority": "proposed",
       "seed": 5,
       "drive": {
@@ -121,7 +146,79 @@
         "abs_grade": 0.20,
         "min_radius_m": 7.5
       },
-      "note": "Drive along the 16 ft easement, gate + oak court parking, paths to all six structures. Origin = pack spawn. check-paths.py enforces walk slope/step and drive grade/radius."
+      "stair": {
+        "riser_m": 0.17,
+        "max_riser_m": 0.18,
+        "tread_m": 0.29,
+        "ramp_grade": 0.08
+      },
+      "note": "Drive, parking, paths. Ramps ≤8% on long climbs; human stairs (170 mm) on the short oak climb. check-paths asserts building riser 180 mm and engine backstop 0.55 m."
+    },
+    {
+      "id": "community-hub",
+      "name": "Community Hub",
+      "zone": "community-hub",
+      "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/community-hub.glb",
+      "origin": [-119.155387, 34.432771],
+      "rotationDeg": 0,
+      "altitudeM": 0.0,
+      "footprint": [
+        [-119.1554567, 34.4327493],
+        [-119.1553173, 34.4327493],
+        [-119.1553173, 34.432847],
+        [-119.1554567, 34.432847]
+      ],
+      "bytes": 14336,
+      "triangles": 156,
+      "authority": "proposed",
+      "capacity_standing": 30,
+      "clear_floor_m2": 96.0,
+      "door_w_m": 3.0,
+      "note": "Gathering hall 12×8 m clear; 3.0 m crowd door. ~3.2 m²/person standing."
+    },
+    {
+      "id": "events-gatherings-hub",
+      "name": "Events & Gatherings Hub",
+      "zone": "events-gatherings-hub",
+      "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/events-gatherings-hub.glb",
+      "origin": [-119.155065, 34.433394],
+      "rotationDeg": 0,
+      "altitudeM": 0.0,
+      "footprint": [
+        [-119.1551456, 34.4333678],
+        [-119.1549844, 34.4333678],
+        [-119.1549844, 34.4334881],
+        [-119.1551456, 34.4334881]
+      ],
+      "bytes": 14332,
+      "triangles": 156,
+      "authority": "proposed",
+      "capacity_standing": 30,
+      "clear_floor_m2": 140.0,
+      "door_w_m": 3.6,
+      "note": "Event hall 14×10 m clear; 3.6 m crowd door. ~4.7 m²/person standing."
+    },
+    {
+      "id": "wellness-facilities",
+      "name": "Wellness Facilities",
+      "zone": "wellness-facilities",
+      "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/wellness-facilities.glb",
+      "origin": [-119.155062, 34.43293],
+      "rotationDeg": 0,
+      "altitudeM": 0.0,
+      "footprint": [
+        [-119.1551208, 34.4329101],
+        [-119.1550032, 34.4329101],
+        [-119.1550032, 34.4329969],
+        [-119.1551208, 34.4329969]
+      ],
+      "bytes": 14312,
+      "triangles": 156,
+      "authority": "proposed",
+      "capacity_standing": 30,
+      "clear_floor_m2": 70.0,
+      "door_w_m": 2.8,
+      "note": "Class hall 10×7 m clear; 2.8 m crowd door. ~2.3 m²/person standing."
     }
   ]
 }

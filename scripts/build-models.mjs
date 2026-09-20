@@ -18,6 +18,9 @@ const MODELS = [
   { script: 'scripts/agricultural-hub.py', out: 'models/agricultural-hub.glb' },
   { script: 'scripts/tropical-dome.py', out: 'models/tropical-dome.glb' },
   { script: 'scripts/site-grounds.py', out: 'models/site-grounds.glb', checkPaths: true },
+  { script: 'scripts/community-hub.py', out: 'models/community-hub.glb' },
+  { script: 'scripts/events-hub.py', out: 'models/events-gatherings-hub.glb' },
+  { script: 'scripts/wellness.py', out: 'models/wellness-facilities.glb' },
 ];
 const VENV = '.venv-models';
 

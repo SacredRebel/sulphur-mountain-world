@@ -109,7 +109,10 @@
         "the-barn.glb",
         "agricultural-hub.glb",
         "tropical-dome.glb",
-        "site-grounds.glb"
+        "site-grounds.glb",
+        "community-hub.glb",
+        "events-gatherings-hub.glb",
+        "wellness-facilities.glb"
       ]
     }
   },

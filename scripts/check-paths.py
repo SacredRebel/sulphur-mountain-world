@@ -4,14 +4,14 @@ Path movement-contract checker.
   Asserts, for every path centreline in a grounds GLB extras.paths and every adjacent
   floor-to-floor joint in extras.walk:
 
-    · walk segments: |Δy| / run ≤ 1.2  (~50°)
+    · building riser: adjacent floor Δtop ≤ max_riser_m (default 0.18)
+    · engine backstop: adjacent floor Δtop ≤ engine_step_m (default 0.55)
+    · ramp centreline: |Δy| / run ≤ ramp_grade (default 0.08)
+    · stair centreline: slope grade check skipped (human stairs)
     · drive segments: |Δy| / run ≤ drive abs grade (default 0.20)
     · drive corners: approximate radius ≥ min_radius_m (default 7.5)
-    · adjacent floors whose rings nearly touch: |Δtop| ≤ 0.55 m
-      (a larger jump is a WALL — needs steps, not scenery)
 
-  Failures print and exit non-zero. Paths are long and thin; one bad 4 m stretch is
-  invisible in a screenshot and fatal to anyone walking it.
+  Failures print and exit non-zero.
 
     python scripts/check-paths.py models/site-grounds.glb
 """
@@ -24,10 +24,12 @@ import sys
 from pathlib import Path
 
 MAX_WALK_SLOPE = 1.2
-MAX_STEP_M = 0.55
+DEFAULT_MAX_RISER = 0.18
+DEFAULT_ENGINE_STEP = 0.55
+DEFAULT_RAMP_GRADE = 0.08
 DEFAULT_DRIVE_ABS = 0.20
 DEFAULT_DRIVE_RADIUS = 7.5
-TOUCH_M = 0.55  # edge-to-edge — only true meetings, not near-miss parallels
+TOUCH_M = 0.55
 
 
 def read_glb(path: Path):
@@ -61,17 +63,11 @@ def extras_of(doc):
     raise ValueError('no extras.walk / extras.paths')
 
 
-def ring_centroid(ring):
-    return (sum(p[0] for p in ring) / len(ring), sum(p[1] for p in ring) / len(ring))
-
-
 def ring_touch(a, b, tol=TOUCH_M):
-    """True if any vertex of a is within tol of any edge of b (or vice versa) — cheap."""
     for x, z in a:
         for i in range(len(b)):
             x0, z0 = b[i]
             x1, z1 = b[(i + 1) % len(b)]
-            # point–segment distance
             dx, dz = x1 - x0, z1 - z0
             L2 = dx * dx + dz * dz
             if L2 < 1e-12:
@@ -103,14 +99,43 @@ def turn_radius(a, b, c):
 
 
 def parse_slab_name(name: str):
-    """'path to barn 12' → ('path to barn', 12); 'arrival' → ('arrival', None)."""
+    if ' step ' in name:
+        base, num = name.rsplit(' step ', 1)
+        if num.isdigit():
+            return base, ('step', int(num))
+    if ' landing ' in name:
+        base, num = name.rsplit(' landing ', 1)
+        if num.isdigit():
+            return base, ('landing', int(num))
     parts = name.rsplit(' ', 1)
     if len(parts) == 2 and parts[1].isdigit():
-        return parts[0], int(parts[1])
-    if name.startswith('path ') and ' step ' in name:
-        base = name.split(' step ')[0]
-        return base, None  # stairs handled as sequential by proximity
-    return name, None
+        return parts[0], ('slab', int(parts[1]))
+    return name, ('slab', None)
+
+
+def is_drive_base(base: str) -> bool:
+    return base == 'drive' or base == 'drive to court'
+
+
+def stair_pair_adjacent(a_tag, b_tag) -> bool | None:
+    """True if stair elements are consecutive; None if not a stair pair."""
+    if not isinstance(a_tag, tuple) or not isinstance(b_tag, tuple):
+        return None
+    ta, na = a_tag
+    tb, nb = b_tag
+    if ta not in ('step', 'landing') or tb not in ('step', 'landing'):
+        return None
+    if ta == 'step' and tb == 'step':
+        return nb == na + 1 or na == nb + 1
+    if ta == 'step' and tb == 'landing':
+        return na == nb
+    if ta == 'landing' and tb == 'step':
+        return nb == na + 1
+    if ta == 'landing' and tb == 'landing':
+        return False
+    if ta == 'step' and tb == 'landing':
+        return na == nb
+    return False
 
 
 def check(path: Path):
@@ -122,15 +147,21 @@ def check(path: Path):
     abs_grade = float(drive_spec.get('abs_grade', DEFAULT_DRIVE_ABS))
     min_r = float(drive_spec.get('min_radius_m', DEFAULT_DRIVE_RADIUS))
     params = ex.get('params') or {}
-    max_walk = float((params.get('walk') or {}).get('max_slope', MAX_WALK_SLOPE))
-    max_step = float((params.get('walk') or {}).get('max_step_m', MAX_STEP_M))
+    walk_p = params.get('walk') or {}
+    stair_p = params.get('stair') or {}
+    max_walk = float(walk_p.get('max_slope', MAX_WALK_SLOPE))
+    max_riser = float(stair_p.get('max_riser_m', DEFAULT_MAX_RISER))
+    engine_step = float(walk_p.get('engine_step_m', DEFAULT_ENGINE_STEP))
+    ramp_grade = float(walk_p.get('ramp_grade', DEFAULT_RAMP_GRADE))
 
     errors = []
     stats = {
         'path_length_m': 0.0,
         'steepest_walk': 0.0,
+        'steepest_ramp': 0.0,
         'steepest_drive': 0.0,
         'largest_step': 0.0,
+        'largest_riser': 0.0,
         'n_path_segments': 0,
         'n_floor_joints': 0,
     }
@@ -154,14 +185,24 @@ def check(path: Path):
                         f"drive '{p['name']}' seg {i}: grade {grade:.3f} > {abs_grade} "
                         f"(rise {abs(z1-z0):.2f} over {run:.1f}m)"
                     )
+            elif kind == 'ramp':
+                stats['steepest_ramp'] = max(stats['steepest_ramp'], grade)
+                stats['steepest_walk'] = max(stats['steepest_walk'], grade)
+                if grade > ramp_grade + 1e-9:
+                    errors.append(
+                        f"ramp '{p['name']}' seg {i}: grade {grade:.3f} > {ramp_grade} "
+                        f"(rise {abs(z1-z0):.2f} over {run:.1f}m)"
+                    )
+            elif kind == 'stair':
+                stats['steepest_walk'] = max(stats['steepest_walk'], grade)
             else:
                 stats['steepest_walk'] = max(stats['steepest_walk'], grade)
                 if grade > max_walk + 1e-9:
                     errors.append(
                         f"walk '{p['name']}' seg {i}: slope {grade:.3f} > {max_walk}"
                     )
+
         if kind == 'drive' and len(cl) >= 3:
-            # Evaluate turns on a thinned polyline so densify chords do not fake sharp corners
             thin = [cl[0]]
             for pt in cl[1:]:
                 if math.hypot(pt[0] - thin[-1][0], pt[1] - thin[-1][1]) >= min_r * 0.4:
@@ -189,33 +230,57 @@ def check(path: Path):
 
     floors = walk.get('floors') or []
     parsed = [(f, *parse_slab_name(f.get('name') or '')) for f in floors]
-    for i, (a, a_base, a_idx) in enumerate(parsed):
+    for i, (a, a_base, a_tag) in enumerate(parsed):
         for j in range(i + 1, len(parsed)):
-            b, b_base, b_idx = parsed[j]
-            # Same ribbon: only consecutive slab indices are walkable joints
-            if a_base == b_base and a_idx is not None and b_idx is not None:
-                if abs(a_idx - b_idx) != 1:
+            b, b_base, b_tag = parsed[j]
+            a_name = a.get('name') or ''
+            b_name = b.get('name') or ''
+
+            if a_base == b_base and isinstance(a_tag, tuple) and a_tag[0] == 'slab':
+                a_idx, b_idx = a_tag[1], b_tag[1]
+                if a_idx is not None and b_idx is not None and abs(a_idx - b_idx) != 1:
                     continue
-            elif a_base == b_base and a_idx is None and b_idx is None:
-                pass  # pads / stairs — use proximity
-            elif a_base == b_base:
-                continue
-            # Different ribbons / pads: proximity
+
+            stair_adj = None
+            if a_base == b_base:
+                stair_adj = stair_pair_adjacent(a_tag, b_tag)
+                if stair_adj is False:
+                    continue
+
             if not ring_touch(a['ring'], b['ring']):
                 continue
             step = abs(float(a['top']) - float(b['top']))
             stats['n_floor_joints'] += 1
             stats['largest_step'] = max(stats['largest_step'], step)
-            if step > max_step + 1e-9:
+            both_drive = is_drive_base(str(a_base)) and is_drive_base(str(b_base))
+            same_ribbon = a_base == b_base and isinstance(a_tag, tuple) and a_tag[0] == 'slab'
+            consecutive = (
+                same_ribbon and a_tag[1] is not None and b_tag[1] is not None
+                and abs(a_tag[1] - b_tag[1]) == 1
+            )
+            check_riser = (
+                not both_drive
+                and (consecutive or stair_adj is True)
+            )
+            if check_riser:
+                stats['largest_riser'] = max(stats['largest_riser'], step)
+            if step > max_riser + 1e-9 and check_riser:
                 errors.append(
-                    f"floor joint '{a.get('name','')}' ↔ '{b.get('name','')}': "
-                    f"Δtop {step:.2f}m > {max_step}m (WALL, not a step)"
+                    f"floor joint '{a_name}' ↔ '{b_name}': "
+                    f"Δtop {step:.2f}m > {max_riser}m (building riser)"
+                )
+            if step > engine_step + 1e-9:
+                errors.append(
+                    f"floor joint '{a_name}' ↔ '{b_name}': "
+                    f"Δtop {step:.2f}m > {engine_step}m (engine backstop)"
                 )
 
     stats['path_length_m'] = round(stats['path_length_m'], 1)
     stats['steepest_walk'] = round(stats['steepest_walk'], 4)
+    stats['steepest_ramp'] = round(stats['steepest_ramp'], 4)
     stats['steepest_drive'] = round(stats['steepest_drive'], 4)
     stats['largest_step'] = round(stats['largest_step'], 3)
+    stats['largest_riser'] = round(stats['largest_riser'], 3)
     return errors, stats
 
 

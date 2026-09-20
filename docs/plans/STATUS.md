@@ -1,8 +1,8 @@
 # STATUS — Agent C
 updated: 2026-09-20
-phase: C5
+phase: C6
 state: done
-commit: dd47eda
-checks: site-grounds 331596 B / 4784 tris; path 675.7 m; steepest walk 0.386; steepest drive 0.191; largest step 0.549 m; failed-before-fix 28; validate+check-paths pass
+commit: pending
+checks: C6.0 stairs 19×170mm oak flight + retreat ramp≤8%; site-grounds 412028 B; hubs 14336/14332/14312 B; check-paths building riser 0.18; models.json has name + oak-leaf
 blocked-by: none
-notes: Architect override — C5 is drive/parking/paths (not remaining zone massings). Drive 15%/20% grade, 7.5 m min radius. check-paths.py ships. Terrarium DEM via scripts/terrain.py.
+notes: Architect override — C6.0 human stairs/ramps then gathering halls (not manifest-only). Manifest name field + oak-leaf row shipped.
