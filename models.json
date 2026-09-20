@@ -754,6 +754,77 @@
       "authority": "proposed",
       "note": "WORK: sell produce at the road edge; customers stay outside. No enterable interior.",
       "enterable_interior": false
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infrastructure & Utilities",
+      "zone": "infrastructure",
+      "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/infrastructure.glb",
+      "origin": [
+        -119.155966,
+        34.432386
+      ],
+      "rotationDeg": 0,
+      "altitudeM": 0.0,
+      "bytes": 42568,
+      "triangles": 568,
+      "authority": "proposed",
+      "note": "MASSING not engineering. PLACEHOLDER sizes: tank 10,000 gal (Ø 3.7 × 3.5 m); solar 48 m² ≈ 8–10 kW rough; leach field 96 m². Panels/tank are solids with no enterable floor.",
+      "massing_not_engineering": true,
+      "footprint": [
+        [
+          -119.1560749,
+          34.432377
+        ],
+        [
+          -119.155819,
+          34.432377
+        ],
+        [
+          -119.155819,
+          34.4325986
+        ],
+        [
+          -119.1560749,
+          34.4325986
+        ]
+      ]
+    },
+    {
+      "id": "ceremonial-infrastructure",
+      "name": "Ceremonial Infrastructure",
+      "zone": "ceremonial-infrastructure",
+      "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/ceremonial-infrastructure.glb",
+      "origin": [
+        -119.155582,
+        34.432501
+      ],
+      "rotationDeg": 0,
+      "altitudeM": 0.0,
+      "bytes": 42172,
+      "triangles": 620,
+      "authority": "proposed",
+      "note": "MASSING. 13 m stone/earth kiva with sacred fire circle in front of McQueen's. Outdoor ceremonial ground — no enterable interior.",
+      "enterable_interior": false,
+      "massing_not_engineering": true,
+      "footprint": [
+        [
+          -119.1556528,
+          34.4324422
+        ],
+        [
+          -119.1555112,
+          34.4324422
+        ],
+        [
+          -119.1555112,
+          34.4325598
+        ],
+        [
+          -119.1556528,
+          34.4325598
+        ]
+      ]
     }
   ]
 }

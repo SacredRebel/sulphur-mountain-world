@@ -26,6 +26,8 @@ const MODELS = [
   { script: 'scripts/mushroom.py', out: 'models/mushroom-cultivation.glb' },
   { script: 'scripts/beekeeping.py', out: 'models/beekeeping-program.glb' },
   { script: 'scripts/produce-stand.py', out: 'models/farmstead-produce-stand.glb' },
+  { script: 'scripts/infrastructure.py', out: 'models/infrastructure.glb' },
+  { script: 'scripts/ceremonial.py', out: 'models/ceremonial-infrastructure.glb' },
 ];
 const VENV = '.venv-models';
 
