@@ -62,8 +62,8 @@ python scripts/validate-model.py models/<name>.glb
 `models/` is **committed**. When you change a script, rebuild and commit the GLB with it. The pack
 is served as static files (e.g. raw.githubusercontent); there is no deploy-time build for communities.
 
-Budget for new models: **under 500 KB** after write. (The Oak Leaf reference is larger — leave it;
-do not use it as the size target for C2–C5.)
+Budget for new models: **under 500 KB** and **~20,000 triangles** after write, uncompressed.
+Oak Leaf is now inside that budget (`scripts/oak-leaf.py` PARAMS['mesh'] — see `docs/plans/C4-done.md`).
 
 ## Register a new generator
 

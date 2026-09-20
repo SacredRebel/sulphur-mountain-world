@@ -1,8 +1,8 @@
 # STATUS — Agent C
 updated: 2026-09-20
-phase: C3
+phase: C4
 state: done
-commit: d55f211
-checks: the-barn 14208 B / 164 tris; agricultural-hub 20920 B / 260 tris; tropical-dome 26888 B / 364 tris (AZ=12 × BANDS=3); all validate pass
+commit: pending
+checks: oak-leaf-massing 280972 B / 4830 tris uncompressed; closed rings 0; validate pass; meshopt unused
 blocked-by: none
-notes: Working buildings massed sparse. Dome is a 12-meridian × 3-band shell with door as an omitted bay — 364 tris total, no sphere tessellation, no meshopt. models.json extended for the architect.
+notes: Oak Leaf rebuilt as parametric script (PARAMS design+mesh). Same design, sparse sampling — 51348→4830 tris, 2.15MB→281KB. Five first==last walk rings fixed via open_ring(). Gathering places deferred (architect override).
