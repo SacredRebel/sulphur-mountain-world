@@ -1,10 +1,14 @@
 """
-Gathering hall — shared massing for rooms meant for ~30 people, not cabins scaled up.
+Shared helpers for gathering buildings — NOT a parametric hall.
 
-  Clear floor ~1.5–2 m² per standing person. Crowd door = wide GAP in the south solid run.
-  Origin: centre of the south door threshold.
+  Occupancy factors (stated in C7-done.md):
+    standing / reception   0.5 m² / person
+    assembly, no tables    0.65 m² / person
+    seated at tables       1.4 m² / person
 
-  Used by community-hub, events-gatherings-hub, wellness-facilities.
+  Egress: total clear exit width 28 mm per person of design occupancy (matches a ~3.6 m
+  opening for ~128 seated), shared across exits, minimum 1.8 m per opening;
+  a second exit when design occupancy > 49.
 """
 from __future__ import annotations
 
@@ -18,6 +22,16 @@ STONE = surface('stone')
 METAL = surface('standing_seam_metal')
 GLASS = surface('glass')
 STUCCO = surface('stucco')
+RIVER = surface('river_stone')
+
+# m² per person
+STANDING = 0.5
+ASSEMBLY = 0.65
+SEATED = 1.4
+
+MM_PER_PERSON_TOTAL = 28.0  # total clear width across all exits
+MIN_DOOR_M = 1.8
+SECOND_EXIT_ABOVE = 49
 
 
 def P(e, n, y=0.0):
@@ -37,105 +51,42 @@ def open_ring(pts):
     return [tuple(p) for p in pts]
 
 
-def build_hall(
-    title: str,
-    *,
-    width_m: float,
-    depth_m: float,
-    wall_h: float = 3.6,
-    door_w: float = 3.0,
-    capacity: int = 30,
-    seated: bool = False,
-    cladding=None,
-    porch_m: float = 0.0,
-    ridge_rise: float = 1.8,
-):
-    """
-    Rectangular hall. Clear floor = width × depth (interior), walls outside that.
-    Door gap on south face, centred on origin. Floor ring meets walls (no 10 cm shortfall).
-    """
-    cladding = cladding or BOARD
-    # Interior clear: from wall inside faces
-    t = 0.25  # wall thickness
-    x0, x1 = -width_m / 2, width_m / 2
-    n0, n1 = 0.0, depth_m
-    clear_m2 = width_m * depth_m
-    # standing capacity at 2 m²/person; seated note if requested
-    standing_cap = int(clear_m2 / 2.0)
-    seated_cap = int(clear_m2 / 3.5) if seated else None
+def capacity(area_m2: float, factor: float) -> int:
+    return max(1, int(math.floor(area_m2 / factor)))
 
-    m = Model(title)
 
-    # Pad slightly larger than footprint
-    pad = [(x0 - 0.4, n0 - 0.4 - porch_m), (x1 + 0.4, n0 - 0.4 - porch_m),
-           (x1 + 0.4, n1 + 0.4), (x0 - 0.4, n1 + 0.4)]
-    m.extrude(STONE, ring_xz(pad), -0.15, 0.0)
+def door_width_m(design_occupancy: int, n_exits: int = 1) -> float:
+    """Share total egress width across n_exits; never below MIN_DOOR_M per opening."""
+    total = design_occupancy * MM_PER_PERSON_TOTAL / 1000.0
+    each = total / max(n_exits, 1)
+    return max(MIN_DOOR_M, round(each, 2))
 
-    # Main floor — exact clear rectangle, flush to inside of walls
-    floor = open_ring(ring_xz([(x0, n0), (x1, n0), (x1, n1), (x0, n1)]))
-    m.extrude(STONE, floor, -0.05, 0.0)
-    m.floor(floor, 0.0, 'hall floor')
 
-    if porch_m > 0.1:
-        porch = open_ring(ring_xz([(x0, n0 - porch_m), (x1, n0 - porch_m), (x1, n0), (x0, n0)]))
-        m.extrude(TIMBER, porch, -0.05, 0.0)
-        m.floor(porch, 0.0, 'porch')
+def needs_second_exit(design_occupancy: int) -> bool:
+    return design_occupancy > SECOND_EXIT_ABOVE
 
-    # South wall — crowd door gap (door_w), solids flush to floor ring
+
+def wall_gap(m, mat, name_w, name_e, x0, x1, n, t, h, door_w, y0=0.0):
+    """South-facing wall along north=n from x0..x1 with a centred door gap."""
     dw = door_w / 2
-    south_parts = [
-        ('door W', [(x0, n0), (-dw, n0), (-dw, n0 + t), (x0, n0 + t)]),
-        ('door E', [(dw, n0), (x1, n0), (x1, n0 + t), (dw, n0 + t)]),
-    ]
-    for label, ring in south_parts:
-        xz = ring_xz(ring)
-        m.extrude(cladding, xz, 0.0, wall_h)
-        m.solid(xz, 0.0, wall_h, label)
-
-    # East, west, north — continuous, flush to floor extents
+    cx = 0.5 * (x0 + x1)
     for label, ring in (
-        ('east wall', [(x1 - t, n0), (x1, n0), (x1, n1), (x1 - t, n1)]),
-        ('west wall', [(x0, n0), (x0 + t, n0), (x0 + t, n1), (x0, n1)]),
-        ('north wall', [(x0, n1 - t), (x1, n1 - t), (x1, n1), (x0, n1)]),
+        (name_w, [(x0, n), (cx - dw, n), (cx - dw, n + t), (x0, n + t)]),
+        (name_e, [(cx + dw, n), (x1, n), (x1, n + t), (cx + dw, n + t)]),
     ):
         xz = ring_xz(ring)
-        m.extrude(cladding, xz, 0.0, wall_h)
-        m.solid(xz, 0.0, wall_h, label)
+        m.extrude(mat, xz, y0, y0 + h)
+        m.solid(xz, y0, y0 + h, label)
 
-    # Glass bays on long sides (not solids — walls already solid behind)
-    bay = min(2.5, depth_m * 0.25)
-    for n_a in (depth_m * 0.25, depth_m * 0.55):
-        n_b = n_a + bay
-        if n_b > depth_m - 0.5:
-            continue
-        m.grid(GLASS, [
-            [P(x1, n_a, 0.9), P(x1, n_b, 0.9)],
-            [P(x1, n_a, wall_h - 0.4), P(x1, n_b, wall_h - 0.4)],
-        ], up=True)
-        m.grid(GLASS, [
-            [P(x0, n_b, 0.9), P(x0, n_a, 0.9)],
-            [P(x0, n_b, wall_h - 0.4), P(x0, n_a, wall_h - 0.4)],
-        ], up=True)
 
-    # Gable roof — ridge along depth at e=0
-    m.quad(METAL, P(x0 - 0.3, n0 - 0.3 - porch_m, wall_h), P(x0 - 0.3, n1 + 0.3, wall_h),
-           P(0.0, n1 + 0.3, wall_h + ridge_rise), P(0.0, n0 - 0.3 - porch_m, wall_h + ridge_rise))
-    m.quad(METAL, P(0.0, n0 - 0.3 - porch_m, wall_h + ridge_rise), P(0.0, n1 + 0.3, wall_h + ridge_rise),
-           P(x1 + 0.3, n1 + 0.3, wall_h), P(x1 + 0.3, n0 - 0.3 - porch_m, wall_h))
+def solid_wall(m, mat, name, ring, h, y0=0.0):
+    xz = ring_xz(ring)
+    m.extrude(mat, xz, y0, y0 + h)
+    m.solid(xz, y0, y0 + h, name)
 
-    # Threshold strip outside the door (standable approach)
-    thresh = open_ring(ring_xz([(-dw - 0.2, n0 - 1.2), (dw + 0.2, n0 - 1.2),
-                                (dw + 0.2, n0), (-dw - 0.2, n0)]))
-    m.extrude(STONE, thresh, -0.05, 0.0)
-    m.floor(thresh, 0.0, 'threshold')
 
-    meta = {
-        'capacity_standing': min(capacity, standing_cap),
-        'capacity_seated': seated_cap,
-        'clear_floor_m2': round(clear_m2, 1),
-        'door_w_m': door_w,
-        'width_m': width_m,
-        'depth_m': depth_m,
-        'm2_per_standing': round(clear_m2 / max(min(capacity, standing_cap), 1), 2),
-    }
-    return m, meta
+def floor_rect(m, mat, name, x0, n0, x1, n1, y=0.0, thick=0.05):
+    ring = open_ring(ring_xz([(x0, n0), (x1, n0), (x1, n1), (x0, n1)]))
+    m.extrude(mat, ring, y - thick, y)
+    m.floor(ring, y, name)
+    return (x1 - x0) * (n1 - n0)

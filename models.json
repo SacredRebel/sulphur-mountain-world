@@ -163,18 +163,19 @@
       "rotationDeg": 0,
       "altitudeM": 0.0,
       "footprint": [
-        [-119.1554567, 34.4327493],
-        [-119.1553173, 34.4327493],
-        [-119.1553173, 34.432847],
-        [-119.1554567, 34.432847]
+        [-119.1554785, 34.4327584],
+        [-119.1552803, 34.4327584],
+        [-119.1552803, 34.4328285],
+        [-119.1554785, 34.4328285]
       ],
-      "bytes": 14336,
-      "triangles": 156,
+      "bytes": 28516,
+      "triangles": 362,
       "authority": "proposed",
-      "capacity_standing": 30,
-      "clear_floor_m2": 96.0,
-      "door_w_m": 3.0,
-      "note": "Gathering hall 12×8 m clear; 3.0 m crowd door. ~3.2 m²/person standing."
+      "design_occupancy": 102,
+      "clear_floor_m2": 90.0,
+      "door_w_m": 1.8,
+      "second_door_w_m": 1.8,
+      "note": "Divisible: foyer standing 0.5 + two rooms seated 1.4. Design 102; two exits share 28 mm/person."
     },
     {
       "id": "events-gatherings-hub",
@@ -185,18 +186,19 @@
       "rotationDeg": 0,
       "altitudeM": 0.0,
       "footprint": [
-        [-119.1551456, 34.4333678],
-        [-119.1549844, 34.4333678],
-        [-119.1549844, 34.4334881],
-        [-119.1551456, 34.4334881]
+        [-119.1551576, 34.4333796],
+        [-119.1549724, 34.4333796],
+        [-119.1549724, 34.4335072],
+        [-119.1551576, 34.4335072]
       ],
-      "bytes": 14332,
-      "triangles": 156,
+      "bytes": 27032,
+      "triangles": 352,
       "authority": "proposed",
-      "capacity_standing": 30,
-      "clear_floor_m2": 140.0,
-      "door_w_m": 3.6,
-      "note": "Event hall 14×10 m clear; 3.6 m crowd door. ~4.7 m²/person standing."
+      "design_occupancy": 125,
+      "clear_floor_m2": 176.0,
+      "door_w_m": 1.8,
+      "second_door_w_m": 1.8,
+      "note": "Clear-span hall, seated at tables 1.4 m²/person → 125. Two exits (S+N); total clear 3.6 m = 28 mm×125."
     },
     {
       "id": "wellness-facilities",
@@ -207,18 +209,19 @@
       "rotationDeg": 0,
       "altitudeM": 0.0,
       "footprint": [
-        [-119.1551208, 34.4329101],
-        [-119.1550032, 34.4329101],
-        [-119.1550032, 34.4329969],
-        [-119.1551208, 34.4329969]
+        [-119.1551219, 34.4329192],
+        [-119.1550021, 34.4329192],
+        [-119.1550021, 34.4330486],
+        [-119.1551219, 34.4330486]
       ],
-      "bytes": 14312,
-      "triangles": 156,
+      "bytes": 36084,
+      "triangles": 474,
       "authority": "proposed",
-      "capacity_standing": 30,
-      "clear_floor_m2": 70.0,
-      "door_w_m": 2.8,
-      "note": "Class hall 10×7 m clear; 2.8 m crowd door. ~2.3 m²/person standing."
+      "design_occupancy": 96,
+      "clear_floor_m2": 88.4,
+      "door_w_m": 1.8,
+      "second_door_w_m": 1.8,
+      "note": "Quiet rooms off a corridor; rooms seated 1.4, corridor standing 0.5 → design 96. Two exits."
     }
   ]
 }

@@ -1,8 +1,8 @@
 # STATUS — Agent C
 updated: 2026-09-20
-phase: C6
+phase: C7
 state: done
-commit: 1b5d202
-checks: C6.0 stairs 19×170mm oak flight + retreat ramp≤8%; site-grounds 412028 B; hubs 14336/14332/14312 B; check-paths building riser 0.18; models.json has name + oak-leaf
+commit: pending
+checks: three distinct halls; occ derived (comm 102 / events 125 / wellness 96); doors from 28 mm/person + second exit; validate pass; C7-done.md arithmetic
 blocked-by: none
-notes: Architect override — C6.0 human stairs/ramps then gathering halls (not manifest-only). Manifest name field + oak-leaf row shipped.
+notes: Architect override — C7 is hall redesign (stations schema later). Not one parametric box.
