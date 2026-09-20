@@ -98,6 +98,30 @@
         "radius_m": 5.5
       },
       "note": "Low-segment dome: 12 meridians × 3 bands; door is an omitted bay. Whole model 364 tris — no sphere tessellation, no meshopt."
+    },
+    {
+      "id": "site-grounds",
+      "zone": null,
+      "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/site-grounds.glb",
+      "origin": [-119.156345, 34.432675],
+      "rotationDeg": 0,
+      "altitudeM": 0.0,
+      "footprint": [
+        [-119.1578, 34.4321],
+        [-119.1552, 34.4321],
+        [-119.1552, 34.4333],
+        [-119.1578, 34.4333]
+      ],
+      "bytes": 331596,
+      "triangles": 4784,
+      "authority": "proposed",
+      "seed": 5,
+      "drive": {
+        "max_grade": 0.15,
+        "abs_grade": 0.20,
+        "min_radius_m": 7.5
+      },
+      "note": "Drive along the 16 ft easement, gate + oak court parking, paths to all six structures. Origin = pack spawn. check-paths.py enforces walk slope/step and drive grade/radius."
     }
   ]
 }

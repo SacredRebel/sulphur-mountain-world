@@ -17,6 +17,7 @@ const MODELS = [
   { script: 'scripts/the-barn.py', out: 'models/the-barn.glb' },
   { script: 'scripts/agricultural-hub.py', out: 'models/agricultural-hub.glb' },
   { script: 'scripts/tropical-dome.py', out: 'models/tropical-dome.glb' },
+  { script: 'scripts/site-grounds.py', out: 'models/site-grounds.glb', checkPaths: true },
 ];
 const VENV = '.venv-models';
 
@@ -53,5 +54,13 @@ for (const m of MODELS) {
     console.warn(`[models] validate failed for ${m.out}\n` + (v.stdout || v.stderr || '').slice(-800));
   } else {
     console.log(`[models] validate ok ${m.out}`);
+  }
+  if (m.checkPaths) {
+    const c = run(python, ['scripts/check-paths.py', m.out]);
+    if (c.status !== 0) {
+      console.warn(`[models] check-paths failed for ${m.out}\n` + (c.stdout || c.stderr || '').slice(-800));
+    } else {
+      console.log(`[models] check-paths ok ${m.out}`);
+    }
   }
 }

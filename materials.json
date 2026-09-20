@@ -215,6 +215,24 @@
    "metalness": 0.0,
    "opacity": 1.0,
    "doubleSided": true
+  },
+  "dirt": {
+   "name": "dirt",
+   "baseColor": [0.80, 0.72, 0.59],
+   "roughness": 0.95,
+   "metalness": 0.0,
+   "opacity": 1.0,
+   "albedo_512": "textures/dirt_512.jpg",
+   "note": "dirt drive — matched to pack ground tile"
+  },
+  "gravel": {
+   "name": "gravel",
+   "baseColor": [0.78, 0.72, 0.62],
+   "roughness": 0.9,
+   "metalness": 0.0,
+   "opacity": 1.0,
+   "albedo_512": "textures/gravel_512.jpg",
+   "note": "paths and parking — matched to pack ground tile"
   }
  },
  "recolouring": {
