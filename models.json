@@ -16,10 +16,10 @@
         [-119.1550014, 34.4333414],
         [-119.1556053, 34.4333414]
       ],
-      "bytes": 280972,
-      "triangles": 4830,
+      "bytes": 331744,
+      "triangles": 5610,
       "authority": "proposal",
-      "note": "Five-leaf house massing; chimney origin. Parametric script scripts/oak-leaf.py — design PARAMS unchanged, mesh density sparse (C4)."
+      "note": "Five-leaf house; chimney origin. C8: pool/fire sit on north-bank DEM; water is visual, bed walkable, bed below terrain verified."
     },
     {
       "id": "retreat-village",
@@ -155,6 +155,25 @@
       "note": "Drive, parking, paths. Ramps ≤8% on long climbs; human stairs (170 mm) on the short oak climb. check-paths asserts building riser 180 mm and engine backstop 0.55 m."
     },
     {
+      "id": "creek",
+      "name": "Creek",
+      "zone": "glamping-creek-village",
+      "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/creek.glb",
+      "origin": [-119.156485, 34.432554],
+      "rotationDeg": 0,
+      "altitudeM": 0.0,
+      "footprint": [
+        [-119.1569919, 34.4323959],
+        [-119.1560879, 34.4323959],
+        [-119.1560879, 34.4326401],
+        [-119.1569919, 34.4326401]
+      ],
+      "bytes": 137016,
+      "triangles": 2088,
+      "authority": "proposed",
+      "note": "Wet-season creek: bed walkable, water visual only, banks solids. Origin at ford on path to glamping. Bed cut 0.75 m below local grade, verified per station."
+    },
+    {
       "id": "community-hub",
       "name": "Community Hub",
       "zone": "community-hub",
@@ -171,11 +190,12 @@
       "bytes": 28516,
       "triangles": 362,
       "authority": "proposed",
-      "design_occupancy": 102,
+      "egress_load": 102,
+      "design_capacity": 48,
       "clear_floor_m2": 90.0,
       "door_w_m": 1.8,
       "second_door_w_m": 1.8,
-      "note": "Divisible: foyer standing 0.5 + two rooms seated 1.4. Design 102; two exits share 28 mm/person."
+      "note": "Programme ~48 (foyer 20 standing + two rooms ×14 seated). Egress load 102 from area×factor; doors from egress (min 1.8 — over-provision vs 1.43 calc)."
     },
     {
       "id": "events-gatherings-hub",
@@ -194,11 +214,12 @@
       "bytes": 27032,
       "triangles": 352,
       "authority": "proposed",
-      "design_occupancy": 125,
+      "egress_load": 125,
+      "design_capacity": 125,
       "clear_floor_m2": 176.0,
       "door_w_m": 1.8,
       "second_door_w_m": 1.8,
-      "note": "Clear-span hall, seated at tables 1.4 m²/person → 125. Two exits (S+N); total clear 3.6 m = 28 mm×125."
+      "note": "Seated assembly: egress load and design capacity both 125 (176/1.4). Doors sized from egress: 125×28 mm = 3.5 m → 1.8+1.8."
     },
     {
       "id": "wellness-facilities",
@@ -217,11 +238,12 @@
       "bytes": 36084,
       "triangles": 474,
       "authority": "proposed",
-      "design_occupancy": 96,
+      "egress_load": 96,
+      "design_capacity": 14,
       "clear_floor_m2": 88.4,
       "door_w_m": 1.8,
       "second_door_w_m": 1.8,
-      "note": "Quiet rooms off a corridor; rooms seated 1.4, corridor standing 0.5 → design 96. Two exits."
+      "note": "Programme ~14 (4 rooms ×2 + corridor 6). Egress load 96 from area×factor; doors at min 1.8 (over-provision vs 1.34 calc)."
     }
   ]
 }

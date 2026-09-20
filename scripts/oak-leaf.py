@@ -6,6 +6,12 @@ The Oak Leaf — massing of the house proposed for Sulphur Mountain, at real siz
   What changed in C4 is *how* it is generated — parametric mesh density, open walk rings,
   under ~20k triangles uncompressed. The footprint, massing, roof line and siting are unchanged.
 
+  C8 water contract (pool + hot tub — same as the creek):
+    Water is visual only — never a walk floor.
+    The BED is the walkable floor (you wade / stand on the bottom).
+    No solid fills the water column. Bed sits below surrounding DEM — verified at build.
+    Fire terrace is lowered to sit on the north bank terrain (not floating at main-floor y).
+
   Design numbers (owner / prior massing — do not casually edit):
     see PARAMS['design']
 
@@ -24,6 +30,9 @@ from scipy.interpolate import PchipInterpolator
 
 sys.path.insert(0, str(Path(__file__).parent))
 from glb import Model, circle, rect, inside, surface  # noqa: E402
+from terrain import elevation_en, lnglat_to_en  # noqa: E402
+
+OAK_LL = (-119.155333, 34.433118)
 
 # ---- pack materials (never hardcode RGB) ----------------------------------------------------
 GREEN = surface('living_roof')
@@ -326,28 +335,103 @@ def build():
     terrace = ring_xz([(-7, 9.5), (7, 9.5), (7, 14), (-7, 14)])
     m.extrude(STONE_FLOOR, terrace, -0.25, 0.0)
     m.floor(terrace, 0.0, 'north terrace')
-    stair(m, STONE_FLOOR, -7.5, -13.5, -0.6, 0, 4.0, 0.3, 1, -0.3, 'pool step')
 
-    D = PARAMS['design']['pool_deck']
-    DX0, DX1, DN0, DN1 = D['DX0'], D['DX1'], D['DN0'], D['DN1']
-    deck = ring_xz([(DX0, DN0), (DX1, DN0), (DX1, DN1), (DX0, DN1)])
-    m.extrude(DECK, deck, -0.55, -0.3, lid=True)
-    m.floor(deck, -0.3, 'pool deck')
+    # --- C8: pool / fire sit on north-bank DEM; water is not a floor ---
+    oak_en = lnglat_to_en(*OAK_LL)
+    oak_z = elevation_en(*oak_en)
     pcx, pcn = PARAMS['design']['pool_centre']
     prx, pry = PARAMS['design']['pool_rx'], PARAMS['design']['pool_ry']
+    pool_terrain_dy = elevation_en(oak_en[0] + pcx, oak_en[1] + pcn) - oak_z
+    # deck slightly above local terrain; bed cut well below it
+    deck_y = pool_terrain_dy + 0.08
+    water_y = deck_y - 0.35
+    bed_y = water_y - 1.45
+    # verify bed below surrounding terrain at deck corners + centre
+    D = PARAMS['design']['pool_deck']
+    DX0, DX1, DN0, DN1 = D['DX0'], D['DX1'], D['DN0'], D['DN1']
+    bank_dys = [
+        elevation_en(oak_en[0] + e, oak_en[1] + n) - oak_z
+        for e, n in ((DX0, DN0), (DX1, DN0), (DX1, DN1), (DX0, DN1), (pcx, pcn))
+    ]
+    assert bed_y < min(bank_dys) - 0.2, (
+        f'pool bed not below terrain: bed_y={bed_y:.3f} min_bank_dy={min(bank_dys):.3f}'
+    )
+
+    # stairs from north terrace (y=0) down to pool deck
+    n_pool_steps = max(1, int(math.ceil(abs(deck_y) / 0.17)))
+    rise = abs(deck_y) / n_pool_steps
+    stair(m, STONE_FLOOR, -7.5, -13.5, 0.0, -0.35, 4.0, rise, n_pool_steps, deck_y, 'pool step')
+
+    # deck collar — four pads around the pool so the bed floor is not covered by a higher floor
     pool = [(pcx + prx * math.cos(a), pcn + pry * math.sin(a))
             for a in np.linspace(0, 2 * math.pi, mesh['pool_n'], endpoint=False)]
     pool_xz = ring_xz(pool)
-    m.extrude(POOL_FLOOR, pool_xz, -2.1, -0.25, lid=False)
-    m.cap(WATER, pool_xz, -0.5, up=True)
-    m.solid(pool_xz, -3.0, 0.2, 'pool')
-    tub = circle(-8.8, -15.0, 1.6, cn)
-    m.extrude(POOL_FLOOR, tub, -1.3, 0.15, lid=False)
-    m.cap(WATER, tub, 0.0)
-    m.solid(tub, -1.3, 0.15, 'hot tub')
+    pads = [
+        ('pool deck S', [(DX0, DN0), (DX1, DN0), (DX1, pcn - pry - 0.15), (DX0, pcn - pry - 0.15)]),
+        ('pool deck N', [(DX0, pcn + pry + 0.15), (DX1, pcn + pry + 0.15), (DX1, DN1), (DX0, DN1)]),
+        ('pool deck W', [(DX0, pcn - pry), (pcx - prx - 0.15, pcn - pry),
+                         (pcx - prx - 0.15, pcn + pry), (DX0, pcn + pry)]),
+        ('pool deck E', [(pcx + prx + 0.15, pcn - pry), (DX1, pcn - pry),
+                         (DX1, pcn + pry), (pcx + prx + 0.15, pcn + pry)]),
+    ]
+    for name, pts in pads:
+        ring = ring_xz(pts)
+        m.extrude(DECK, ring, deck_y - 0.25, deck_y, lid=True)
+        m.floor(ring, deck_y, name)
+
+    # bed walkable; water visual only; no solid filling the column
+    m.extrude(POOL_FLOOR, pool_xz, bed_y - 0.1, bed_y, lid=True)
+    m.floor(pool_xz, bed_y, 'pool bed')
+    m.cap(WATER, pool_xz, water_y, up=True)
+    # entry steps from south deck into the pool (reachability + wade)
+    drop = deck_y - bed_y
+    n_in = max(2, int(math.ceil(drop / 0.28)))
+    in_rise = drop / n_in
+    stair(m, STONE_FLOOR, pcx - 1.2, -(pcn - pry + 0.4), 0.0, 0.4, 2.4, in_rise, n_in, bed_y, 'pool entry')
+    # low rim curb (segments) — stops a fall at the lip without blocking the bed
+    for i in range(len(pool)):
+        a, b = pool[i], pool[(i + 1) % len(pool)]
+        # outward offset ~0.2 m
+        mx, my = 0.5 * (a[0] + b[0]), 0.5 * (a[1] + b[1])
+        vx, vy = mx - pcx, my - pcn
+        L = math.hypot(vx, vy) or 1.0
+        ox, oy = 0.22 * vx / L, 0.22 * vy / L
+        curb = ring_xz([(a[0], a[1]), (b[0], b[1]), (b[0] + ox, b[1] + oy), (a[0] + ox, a[1] + oy)])
+        m.extrude(STONE_FLOOR, curb, deck_y, deck_y + 0.12)
+        m.solid(curb, deck_y, deck_y + 0.12, f'pool rim {i}')
+    # hot tub — same contract, on local terrain
+    tub_e, tub_n = -8.8, 15.0
+    tub_dy = elevation_en(oak_en[0] + tub_e, oak_en[1] + tub_n) - oak_z
+    tub_rim = tub_dy + 0.12
+    tub_water = tub_rim - 0.15
+    tub_bed = tub_water - 0.85
+    assert tub_bed < tub_dy - 0.2
+    tub = circle(tub_e, -tub_n, 1.6, cn)
+    m.extrude(POOL_FLOOR, tub, tub_bed - 0.05, tub_bed, lid=True)
+    m.floor(tub, tub_bed, 'hot tub bed')
+    m.cap(WATER, tub, tub_water, up=True)
+    # rim ring as a low solid collar (approximate with outer circle solid band via seats-style)
+    tub_outer = circle(tub_e, -tub_n, 1.85, cn)
+    # solid only on the rim annulus is hard; use a low wall band at rim height covering outer lip
+    for i in range(0, len(tub_outer), 2):
+        a = tub_outer[i]
+        b = tub_outer[(i + 1) % len(tub_outer)]
+        c = tub[(i + 1) % len(tub)]
+        d = tub[i % len(tub)]
+        lip = [a, b, c, d]
+        m.extrude(STONE_FLOOR, lip, tub_bed, tub_rim)
+        m.solid(lip, tub_bed, tub_rim, f'hot tub rim {i}')
+
+    # fire terrace on north-bank terrain; oak lounge plan y unchanged (south)
+    fire_cx, fire_cn, _ = PARAMS['design']['fire']
+    fire_y = elevation_en(oak_en[0] + fire_cx, oak_en[1] + fire_cn) - oak_z + 0.05
+    # link north terrace down to fire
+    n_fire_steps = max(1, int(math.ceil(abs(fire_y) / 0.17)))
+    fire_rise = abs(fire_y) / n_fire_steps
+    stair(m, STONE_FLOOR, 2.0, -14.0, 0.15, -0.4, 2.2, fire_rise, n_fire_steps, fire_y, 'fire step')
 
     for (cx, cnorth, y, mat, name) in (
-        (*PARAMS['design']['fire'], STONE_FLOOR, 'fire terrace'),
+        (fire_cx, fire_cn, fire_y, STONE_FLOOR, 'fire terrace'),
         (*PARAMS['design']['oak_lounge'], DECK, 'oak lounge'),
     ):
         ring = circle(cx, -cnorth, 5.2, cn)
@@ -369,7 +453,6 @@ def build():
                     (sx - 0.25 * ux + 0.9 * vx, sz - 0.25 * uz + 0.9 * vz)]
             m.extrude(DARK_STONE, seat, y, y + 0.45)
             m.solid(seat, y, y + 0.45, name + ' seat')
-
     GX = PARAMS['design']['garden_x']
     for k, n in enumerate(np.linspace(-15, 15, mesh['garden_stones'])):
         e = GX + 1.8 * math.sin(n / 6.0) + (0.45 if k % 2 else -0.45)
@@ -389,23 +472,35 @@ def build():
 
     out = {'central': c_ring, 'pool': pool, 'lower': [(LX0, LN0), (LX1, LN0), (LX1, LN1), (LX0, LN1)]}
     out.update(wing_rings)
-    return m, out
+    water_info = {
+        'contract': 'bed walkable; water visual only; no solid in water column',
+        'pool': {
+            'deck_y': round(deck_y, 3),
+            'water_y': round(water_y, 3),
+            'bed_y': round(bed_y, 3),
+            'terrain_dy_at_centre': round(pool_terrain_dy, 3),
+            'bed_below_terrain_m': round(min(bank_dys) - bed_y, 3),
+        },
+        'fire_terrace_y': round(fire_y, 3),
+    }
+    return m, out, water_info
 
 
 if __name__ == '__main__':
     out = sys.argv[1] if len(sys.argv) > 1 else 'models/oak-leaf-massing.glb'
     Path(out).parent.mkdir(parents=True, exist_ok=True)
-    m, rings = build()
+    m, rings, water_info = build()
     info = m.write(out, extras={
         'levels_m': PARAMS['design']['levels_m'],
         'params': PARAMS,
         'authority': 'proposal',
         'origin_note': 'river-stone chimney of the standing house',
+        'water': water_info,
     })
     info['floors'] = len(m.walk['floors'])
     info['solids'] = len(m.walk['solids'])
     print(json.dumps({'bytes': info['bytes'], 'triangles': info['triangles'], 'meshes': info['meshes'],
-                      'floors': info['floors'], 'solids': info['solids']}))
+                      'floors': info['floors'], 'solids': info['solids'], 'water': water_info}))
     if len(sys.argv) > 2:
         json.dump({k: [[round(float(e), 2), round(float(n), 2)] for e, n in v]
                    for k, v in rings.items()}, open(sys.argv[2], 'w'))

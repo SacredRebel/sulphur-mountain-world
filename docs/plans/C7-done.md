@@ -72,3 +72,9 @@ Doors: 96 × 28 mm = 2.688 m total ÷ 2 exits → 1.34 m → **1.8 m** each (sou
 Solid names are no longer shared across buildings (different plans). No meshopt; same pack surfaces and `extras.walk` method.
 
 Scripts: `gathering.py` (factors + egress helpers only — not a hall builder), `community-hub.py`, `events-hub.py`, `wellness.py`. Manifest updated.
+
+---
+
+## Correction (recorded at C8)
+
+Egress load (area × factor) is not design capacity (programme). See `C8-done.md`. Manifest now reports both: community 102 / 48, events 125 / 125, wellness 96 / 14. Doors remain checked against egress load.
