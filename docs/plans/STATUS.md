@@ -1,8 +1,8 @@
 # STATUS — Agent C
 updated: 2026-09-20
-phase: C2
+phase: C3
 state: done
-commit: fff5f70b4c572d90b44b3dfbfc18b9d27fbf14de
-checks: retreat-village 85432 B / 1220 tris / 33 floors / 40 solids validate pass; glamping-creek 26732 B / 211 tris / 11 floors / 35 solids validate pass (budget under 20k tris/model)
+commit: pending
+checks: the-barn 14208 B / 164 tris; agricultural-hub 20920 B / 260 tris; tropical-dome 26888 B / 364 tris (AZ=12 × BANDS=3); all validate pass
 blocked-by: none
-notes: Parametric seeded dwelling (cabin/tipi) shared by both zones. Generated sparse quads to hit the 20k-tri budget without decimation — 1220 and 211 tris. Creek units sit altitudeM -1.4. models.json published for the architect. Grey boxes are not deliverables; pack surfaces only.
+notes: Working buildings massed sparse. Dome is a 12-meridian × 3-band shell with door as an omitted bay — 364 tris total, no sphere tessellation, no meshopt. models.json extended for the architect.

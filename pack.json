@@ -105,7 +105,10 @@
         "oak-leaf-massing.glb",
         "example-box.glb",
         "retreat-village.glb",
-        "glamping-creek.glb"
+        "glamping-creek.glb",
+        "the-barn.glb",
+        "agricultural-hub.glb",
+        "tropical-dome.glb"
       ]
     }
   },

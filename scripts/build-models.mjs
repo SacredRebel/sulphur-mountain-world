@@ -14,6 +14,9 @@ const MODELS = [
   { script: 'scripts/example-box.py', out: 'models/example-box.glb' },
   { script: 'scripts/retreat-village.py', out: 'models/retreat-village.glb' },
   { script: 'scripts/glamping-creek.py', out: 'models/glamping-creek.glb' },
+  { script: 'scripts/the-barn.py', out: 'models/the-barn.glb' },
+  { script: 'scripts/agricultural-hub.py', out: 'models/agricultural-hub.glb' },
+  { script: 'scripts/tropical-dome.py', out: 'models/tropical-dome.glb' },
 ];
 const VENV = '.venv-models';
 

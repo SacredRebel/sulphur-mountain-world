@@ -39,6 +39,65 @@
       "authority": "proposed",
       "seed": 7,
       "note": "Five seeded tipís along the creek path; sit 1.4 m below the ridge village. Trees between pads are outside the footprint."
+    },
+    {
+      "id": "the-barn",
+      "zone": "gatelodge-operations-hub",
+      "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/the-barn.glb",
+      "origin": [-119.156728, 34.433082],
+      "rotationDeg": 0,
+      "altitudeM": 0.0,
+      "footprint": [
+        [-119.1567955, 34.4330802],
+        [-119.1566605, 34.4330802],
+        [-119.1566605, 34.4332466],
+        [-119.1567955, 34.4332466]
+      ],
+      "bytes": 14208,
+      "triangles": 164,
+      "authority": "proposed",
+      "note": "Working barn at the gate; loft over the north third. Lidar roof here is smaller — programme-sized massing."
+    },
+    {
+      "id": "agricultural-hub",
+      "zone": "agricultural-hub",
+      "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/agricultural-hub.glb",
+      "origin": [-119.155982, 34.433478],
+      "rotationDeg": 0,
+      "altitudeM": 0.0,
+      "footprint": [
+        [-119.1560724, 34.4334753],
+        [-119.1558148, 34.4334753],
+        [-119.1558148, 34.4335517],
+        [-119.1560724, 34.4335517]
+      ],
+      "bytes": 20920,
+      "triangles": 260,
+      "authority": "proposed",
+      "note": "Open shed with posts plus enclosed potting wing; nursery yard outside footprint."
+    },
+    {
+      "id": "tropical-dome",
+      "zone": "tropical-dome-greenhouse",
+      "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/tropical-dome.glb",
+      "origin": [-119.156763, 34.432888],
+      "rotationDeg": 0,
+      "altitudeM": 0.0,
+      "footprint": [
+        [-119.1568251, 34.4328862],
+        [-119.1567009, 34.4328862],
+        [-119.1567009, 34.4329893],
+        [-119.1568251, 34.4329893]
+      ],
+      "bytes": 26888,
+      "triangles": 364,
+      "authority": "proposed",
+      "dome": {
+        "az_segments": 12,
+        "elevation_bands": 3,
+        "radius_m": 5.5
+      },
+      "note": "Low-segment dome: 12 meridians × 3 bands; door is an omitted bay. Whole model 364 tris — no sphere tessellation, no meshopt."
     }
   ]
 }
