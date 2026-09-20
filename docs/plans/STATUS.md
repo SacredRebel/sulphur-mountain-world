@@ -2,7 +2,7 @@
 updated: 2026-09-20
 phase: C11
 state: done
-commit: 60e9ef8
-checks: infra 42568 B / tank 10k gal placeholder / solar 48 m² ~8–10 kW placeholder / leach 96 m² placeholder; ceremonial kiva 13 m Ø no interior; both validate; massing not engineering
+commit: pending
+checks: C11 review fix — disposal ≥31.1 m well / ≥36.4 m creek; solar pitch 2.40 m yard 12×5.9; kiva wall 0.45 m steppable; hold further kiva
 blocked-by: none
-notes: Architect override — C11 infrastructure + ceremonial massing.
+notes: Architect review fixes on C11 massing.

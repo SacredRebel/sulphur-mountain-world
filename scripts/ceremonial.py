@@ -6,7 +6,10 @@ Ceremonial Infrastructure — stone/earth kiva with sacred fire circle.
   C0 sketch: stone/earth circle ~12–14 m Ø; fire ring centre; minimal built ground.
 
   This is outdoor ceremonial ground — a floor you stand on, not a room you enter.
-  Low ring wall; fire is a solid. Programme massing, not engineered construction.
+  Low ring wall at 0.45 m (steppable — clear of the engine's 0.55 m step-up limit).
+  HOLD further kiva work until the owner answers open-air vs enclosed.
+
+  Programme massing, not engineered construction.
 
     python scripts/ceremonial.py models/ceremonial-infrastructure.glb
 """
@@ -54,7 +57,7 @@ def build():
     m = Model('Ceremonial — kiva and fire circle')
     # 13 m diameter kiva (mid of C0 12–14 m). Origin at fire ring centre.
     R = 6.5
-    wall_t, wall_h = 0.45, 0.55
+    wall_t, wall_h = 0.45, 0.45  # steppable — not the engine's 0.55 m knife edge
     fire_r, fire_h = 1.1, 0.4
 
     # Earthen kiva floor — walkable, outdoor, not an enterable interior

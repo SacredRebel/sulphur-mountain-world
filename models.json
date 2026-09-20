@@ -766,10 +766,10 @@
       ],
       "rotationDeg": 0,
       "altitudeM": 0.0,
-      "bytes": 42568,
-      "triangles": 568,
+      "bytes": 46064,
+      "triangles": 616,
       "authority": "proposed",
-      "note": "MASSING not engineering. PLACEHOLDER sizes: tank 10,000 gal (Ø 3.7 × 3.5 m); solar 48 m² ≈ 8–10 kW rough; leach field 96 m². Panels/tank are solids with no enterable floor.",
+      "note": "MASSING not engineering. PLACEHOLDER: tank 10,000 gal; solar yard 12×5.9 m, 3 rows @ 2.40 m pitch (~67 m² panels ≈ 11–13 kW); leach 96 m². Disposal ≥100 ft from well and creek. Panels/tank solids, no enterable floor.",
       "massing_not_engineering": true,
       "footprint": [
         [
@@ -782,11 +782,43 @@
         ],
         [
           -119.155819,
-          34.4325986
+          34.4324584
+        ],
+        [
+          -119.155721,
+          34.4324584
+        ],
+        [
+          -119.155721,
+          34.4325443
+        ],
+        [
+          -119.1555903,
+          34.4325443
+        ],
+        [
+          -119.1555903,
+          34.4326529
+        ],
+        [
+          -119.1557318,
+          34.4326529
+        ],
+        [
+          -119.1557318,
+          34.4324946
+        ],
+        [
+          -119.155819,
+          34.4324946
+        ],
+        [
+          -119.155819,
+          34.432481
         ],
         [
           -119.1560749,
-          34.4325986
+          34.432481
         ]
       ]
     },
@@ -801,10 +833,10 @@
       ],
       "rotationDeg": 0,
       "altitudeM": 0.0,
-      "bytes": 42172,
+      "bytes": 42176,
       "triangles": 620,
       "authority": "proposed",
-      "note": "MASSING. 13 m stone/earth kiva with sacred fire circle in front of McQueen's. Outdoor ceremonial ground — no enterable interior.",
+      "note": "MASSING. 13 m kiva, ring wall 0.45 m (steppable). Hold further kiva work until owner answers open-air vs enclosed. No enterable interior.",
       "enterable_interior": false,
       "massing_not_engineering": true,
       "footprint": [
