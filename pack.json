@@ -103,7 +103,9 @@
       "what": "the proposed structures as walkable GLB models, each built by its script in scripts/ and committed here; extras.walk carries the floors and solids the engine walks",
       "files": [
         "oak-leaf-massing.glb",
-        "example-box.glb"
+        "example-box.glb",
+        "retreat-village.glb",
+        "glamping-creek.glb"
       ]
     }
   },

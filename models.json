@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "note": "Manifest for the architect — Agent C never writes the registry. Built ground only in footprint (suppresses recorded vegetation). Authority is proposed unless noted.",
+  "models": [
+    {
+      "id": "retreat-village",
+      "zone": "retreat-village",
+      "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/retreat-village.glb",
+      "origin": [-119.155628, 34.432173],
+      "rotationDeg": 0,
+      "altitudeM": 0.0,
+      "footprint": [
+        [-119.1558379, 34.43205],
+        [-119.1554316, 34.43205],
+        [-119.1554316, 34.4322997],
+        [-119.1558379, 34.4322997]
+      ],
+      "bytes": 85432,
+      "triangles": 1220,
+      "authority": "proposed",
+      "seed": 42,
+      "note": "Eight seeded cabins round a shared path; oriented to the south-west view, never a grid."
+    },
+    {
+      "id": "glamping-creek",
+      "zone": "glamping-creek-village",
+      "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/glamping-creek.glb",
+      "origin": [-119.15654, 34.432479],
+      "rotationDeg": 0,
+      "altitudeM": -1.4,
+      "footprint": [
+        [-119.1565941, 34.4324299],
+        [-119.1561044, 34.4324299],
+        [-119.1561044, 34.4325468],
+        [-119.1565941, 34.4325468]
+      ],
+      "bytes": 26732,
+      "triangles": 211,
+      "authority": "proposed",
+      "seed": 7,
+      "note": "Five seeded tipís along the creek path; sit 1.4 m below the ridge village. Trees between pads are outside the footprint."
+    }
+  ]
+}

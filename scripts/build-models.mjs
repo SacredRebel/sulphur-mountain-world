@@ -12,6 +12,8 @@ import { join } from 'node:path';
 const MODELS = [
   { script: 'scripts/oak-leaf.py', out: 'models/oak-leaf-massing.glb' },
   { script: 'scripts/example-box.py', out: 'models/example-box.glb' },
+  { script: 'scripts/retreat-village.py', out: 'models/retreat-village.glb' },
+  { script: 'scripts/glamping-creek.py', out: 'models/glamping-creek.glb' },
 ];
 const VENV = '.venv-models';
 

@@ -192,7 +192,9 @@ def floors_reachable(floors):
             fj = floors[j]
             dy = abs(fi['top'] - fj['top'])
             near = rings_overlap_or_near(fi['ring'], fj['ring'], near_m=3.0)
-            if (dy <= 0.55 and near) or (dy <= 4.2 and near):
+            # Outdoor village paths: same grade, farther apart but still a walkable site.
+            ground = dy <= 0.35 and rings_overlap_or_near(fi['ring'], fj['ring'], near_m=14.0)
+            if (dy <= 0.55 and near) or (dy <= 4.2 and near) or ground:
                 seen.add(j)
                 stack.append(j)
     missing = [floors[i].get('name') or f'#{i}' for i in range(n) if i not in seen]
