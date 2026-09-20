@@ -22,6 +22,10 @@ const MODELS = [
   { script: 'scripts/community-hub.py', out: 'models/community-hub.glb' },
   { script: 'scripts/events-hub.py', out: 'models/events-gatherings-hub.glb' },
   { script: 'scripts/wellness.py', out: 'models/wellness-facilities.glb' },
+  { script: 'scripts/livestock-dairy.py', out: 'models/livestock-dairy.glb' },
+  { script: 'scripts/mushroom.py', out: 'models/mushroom-cultivation.glb' },
+  { script: 'scripts/beekeeping.py', out: 'models/beekeeping-program.glb' },
+  { script: 'scripts/produce-stand.py', out: 'models/farmstead-produce-stand.glb' },
 ];
 const VENV = '.venv-models';
 

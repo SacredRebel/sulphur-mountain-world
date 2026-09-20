@@ -137,7 +137,11 @@
         "creek.glb",
         "community-hub.glb",
         "events-gatherings-hub.glb",
-        "wellness-facilities.glb"
+        "wellness-facilities.glb",
+        "livestock-dairy.glb",
+        "mushroom-cultivation.glb",
+        "beekeeping-program.glb",
+        "farmstead-produce-stand.glb"
       ]
     }
   },

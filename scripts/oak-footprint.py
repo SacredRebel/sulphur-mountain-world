@@ -1,9 +1,12 @@
 """
-Emit Oak Leaf models.json footprint — built ground only.
+Emit Oak Leaf models.json footprint from SOLIDS — built ground only.
 
-  Excludes oak lounge and garden stones so recorded oaks there survive.
-  Raster-unions built floors; exterior is the angle-sorted boundary-cell ring,
-  then RDP-simplified toward ~56 vertices.
+  Exception list (deliberately uncleared — oaks survive):
+    - oak lounge fire
+    - oak lounge seat
+    - standing stone
+
+  Every other solid must sit inside the footprint.
 
     python scripts/oak-footprint.py
 """
@@ -16,13 +19,21 @@ import sys
 from pathlib import Path
 
 import numpy as np
+from scipy.spatial import ConvexHull
 
 ROOT = Path(__file__).resolve().parents[1]
 PACK = json.loads((ROOT / 'pack.json').read_text(encoding='utf-8'))
 MX = float(PACK['frame']['metres_per_deg_lng'])
 MY = float(PACK['frame']['metres_per_deg_lat'])
 ORIGIN = [-119.155333, 34.433118]
-EXCLUDE_PREFIXES = ('oak lounge', 'garden stone')
+
+# Exactly these three — a decision, documented in C10-done.md.
+EXCLUDE_SOLID_NAMES = (
+    'oak lounge fire',
+    'oak lounge seat',
+    'standing stone',
+)
+PAD_M = 0.35
 
 
 def read_walk(path: Path):
@@ -58,6 +69,10 @@ def en_to_ll(e, n):
     return [round(ORIGIN[0] + e / MX, 7), round(ORIGIN[1] + n / MY, 7)]
 
 
+def excluded(name: str) -> bool:
+    return any(name == p or name.startswith(p + ' ') for p in EXCLUDE_SOLID_NAMES)
+
+
 def point_in_ring(e, n, ring):
     inside, j = False, len(ring) - 1
     for i in range(len(ring)):
@@ -69,138 +84,121 @@ def point_in_ring(e, n, ring):
     return inside
 
 
-def fill_rings(rings, cell=0.5):
-    xs = [e for r in rings for e, _ in r]
-    ns = [n for r in rings for _, n in r]
-    e0, e1 = min(xs) - cell, max(xs) + cell
-    n0, n1 = min(ns) - cell, max(ns) + cell
-    w = int(math.ceil((e1 - e0) / cell)) + 1
-    h = int(math.ceil((n1 - n0) / cell)) + 1
-    grid = np.zeros((h, w), dtype=np.uint8)
-    bbs = []
-    for ring in rings:
-        re = [p[0] for p in ring]
-        rn = [p[1] for p in ring]
-        bbs.append((min(re), max(re), min(rn), max(rn)))
-    for iy in range(h):
-        n = n0 + (iy + 0.5) * cell
-        for ix in range(w):
-            e = e0 + (ix + 0.5) * cell
-            for ring, (emin, emax, nmin, nmax) in zip(rings, bbs):
-                if e < emin or e > emax or n < nmin or n > nmax:
-                    continue
-                if point_in_ring(e, n, ring):
-                    grid[iy, ix] = 1
-                    break
-    return grid, e0, n0, cell
+def dist_to_ring(e, n, ring):
+    best = None
+    for i in range(len(ring)):
+        e0, n0 = ring[i]
+        e1, n1 = ring[(i + 1) % len(ring)]
+        vx, vy = e1 - e0, n1 - n0
+        wx, wy = e - e0, n - n0
+        c1 = vx * wx + vy * wy
+        if c1 <= 0:
+            d = math.hypot(e - e0, n - n0)
+        else:
+            c2 = vx * vx + vy * vy
+            if c2 <= c1:
+                d = math.hypot(e - e1, n - n1)
+            else:
+                t = c1 / c2
+                d = math.hypot(e - (e0 + t * vx), n - (n0 + t * vy))
+        if best is None or d < best:
+            best = d
+    return float(best or 0.0)
 
 
-def boundary_ring(grid, e0, n0, cell):
-    """Boundary cells ordered by angle around centroid — open ring."""
-    h, w = grid.shape
-
-    def empty(y, x):
-        return y < 0 or x < 0 or y >= h or x >= w or grid[y, x] == 0
-
-    pts = []
-    for iy in range(h):
-        for ix in range(w):
-            if grid[iy, ix] == 0:
-                continue
-            if empty(iy - 1, ix) or empty(iy + 1, ix) or empty(iy, ix - 1) or empty(iy, ix + 1):
-                pts.append((e0 + (ix + 0.5) * cell, n0 + (iy + 0.5) * cell))
-    if len(pts) < 8:
-        return pts
-    ce = sum(p[0] for p in pts) / len(pts)
-    cn = sum(p[1] for p in pts) / len(pts)
-    pts.sort(key=lambda p: math.atan2(p[1] - cn, p[0] - ce))
-    return pts
+def solid_clearance(ring_en, footprint):
+    """Metres outside: 0 if every vertex is inside or on the boundary."""
+    worst = 0.0
+    for e, n in ring_en:
+        if point_in_ring(e, n, footprint):
+            continue
+        d = dist_to_ring(e, n, footprint)
+        if d > worst:
+            worst = d
+    return worst
 
 
-def rdp(points, eps):
-    if len(points) < 3:
-        return points
-
-    def _rdp(pts):
-        if len(pts) < 3:
-            return pts
-        a = np.asarray(pts[0], float)
-        b = np.asarray(pts[-1], float)
-        ab = b - a
-        lab = float(np.linalg.norm(ab)) or 1.0
-        dmax, idx = 0.0, 0
-        for i in range(1, len(pts) - 1):
-            p = np.asarray(pts[i], float)
-            d = abs(ab[0] * (a[1] - p[1]) - ab[1] * (a[0] - p[0])) / lab
-            if d > dmax:
-                dmax, idx = float(d), i
-        if dmax > eps:
-            return _rdp(pts[: idx + 1])[:-1] + _rdp(pts[idx:])
-        return [pts[0], pts[-1]]
-
-    return _rdp(points)
+def densify(ring, target=56):
+    if len(ring) >= target:
+        return list(ring)
+    out = []
+    per = max(1, (target + len(ring) - 1) // len(ring))
+    for i in range(len(ring)):
+        a = np.asarray(ring[i], float)
+        b = np.asarray(ring[(i + 1) % len(ring)], float)
+        out.append(tuple(a))
+        for k in range(1, per):
+            t = k / per
+            out.append(tuple(a * (1 - t) + b * t))
+    return out[:target]
 
 
 def main():
     walk = read_walk(ROOT / 'models' / 'oak-leaf-massing.glb')
-    rings, skipped = [], []
-    for f in walk['floors']:
-        name = f.get('name') or ''
-        if any(name == p or name.startswith(p + ' ') or name.startswith(p + ' step') for p in EXCLUDE_PREFIXES):
-            skipped.append(name)
+    included, excluded_names = [], []
+    pts = []
+    for s in walk['solids']:
+        name = s.get('name') or ''
+        ring = xz_to_en(s['ring'])
+        if excluded(name):
+            excluded_names.append(name)
             continue
-        if ' step ' in name or name.startswith('pool rim') or name.startswith('hot tub rim'):
-            continue
-        rings.append(xz_to_en(f['ring']))
+        included.append((name, ring))
+        pts.extend(ring)
 
-    grid, e0, n0, cell = fill_rings(rings, cell=0.5)
-    outline = boundary_ring(grid, e0, n0, cell)
-    if len(outline) < 8:
-        raise SystemExit(f'outline too short: {len(outline)}')
+    arr = np.asarray(pts, float)
+    hull = ConvexHull(arr)
+    hull_ring = [tuple(arr[i]) for i in hull.vertices]
+    # True-ish buffer: circle samples around each hull vertex, then re-hull
+    buf = list(hull_ring)
+    for e, n in hull_ring:
+        for k in range(12):
+            a = 2 * math.pi * k / 12
+            buf.append((e + PAD_M * math.cos(a), n + PAD_M * math.sin(a)))
+    barr = np.asarray(buf, float)
+    bh = ConvexHull(barr)
+    padded = [tuple(barr[i]) for i in bh.vertices]
 
-    # angle-sorted boundary → ~56 pts (concave-ish). Prefer under-clearing to the old AABB.
-    stride = max(1, len(outline) // 56)
-    simplified = outline[::stride]
-    for eps in (0.3, 0.45, 0.6, 0.75, 0.9):
-        cand = rdp(outline + [outline[0]], eps)[:-1]
-        if len(cand) < 45:
-            break
-        simplified = cand
-        if 50 <= len(cand) <= 60:
-            break
-    raster_area = float(grid.sum()) * cell * cell
-    hull_ring = simplified  # report field
-
+    simplified = densify(padded, 56)
     area = ring_area(simplified)
-    old_ll = [
-        [-119.1556053, 34.43289], [-119.1550014, 34.43289],
-        [-119.1550014, 34.4333414], [-119.1556053, 34.4333414],
-    ]
-    old_en = [((ll[0] - ORIGIN[0]) * MX, (ll[1] - ORIGIN[1]) * MY) for ll in old_ll]
-    footprint_ll = [en_to_ll(e, n) for e, n in simplified]
 
+    outside = []
+    for name, ring in included:
+        d = solid_clearance(ring, simplified)
+        if d > 0.05:
+            outside.append((name, round(d, 2)))
+    outside.sort(key=lambda x: -x[1])
+
+    excl_out = []
+    for s in walk['solids']:
+        name = s.get('name') or ''
+        if not excluded(name):
+            continue
+        d = solid_clearance(xz_to_en(s['ring']), simplified)
+        excl_out.append((name, round(d, 2)))
+
+    footprint_ll = [en_to_ll(e, n) for e, n in simplified]
     report = {
         'n_points': len(footprint_ll),
         'area_m2': round(area, 1),
-        'raster_built_m2': round(raster_area, 1),
-        'old_aabb_area_m2': round(ring_area(old_en), 1),
-        'excluded_floor_names': sorted(set(skipped)),
-        'filled_cells': int(grid.sum()),
-        'boundary_cells': len(outline),
-        'hull_vertices': len(simplified),
+        'exception_list': list(EXCLUDE_SOLID_NAMES),
+        'excluded_solid_instances': sorted(set(excluded_names)),
+        'included_solids_outside': outside,
+        'n_included_outside': len(outside),
+        'excluded_min_distance_m': round(min((d for _, d in excl_out), default=0), 2),
     }
     print(json.dumps(report, indent=2))
-    if area < 500 or area > 2000:
-        raise SystemExit(f'area {area} out of expected range')
+    if outside:
+        raise SystemExit(f'{len(outside)} included solids still outside the footprint')
 
     man = json.loads((ROOT / 'models.json').read_text(encoding='utf-8'))
     for m in man['models']:
         if m['id'] == 'oak-leaf-massing':
             m['footprint'] = footprint_ll
             m['note'] = (
-                'Five-leaf house; chimney origin. Footprint is built ground only '
-                f'({len(footprint_ll)} pts, {area:.0f} m²) — oak lounge and garden stones outside '
-                'so recorded oaks survive. C8 water contract on pool/fire.'
+                'Five-leaf house; chimney origin. Footprint from solids '
+                f'({len(footprint_ll)} pts, {area:.0f} m²); exceptions: oak lounge fire/seat, '
+                'standing stone (C10).'
             )
             break
     (ROOT / 'models.json').write_text(json.dumps(man, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')

@@ -1,8 +1,8 @@
 # STATUS — Agent C
 updated: 2026-09-20
-phase: C9
+phase: C10
 state: done
-commit: 58fdfdb
-checks: oak footprint 57 pts / 772 m² (was AABB 2767); cultivated.csv 3114 B / 108 plants (84 olive@6m + 24 citrus@5m); 6 beds; cultivated-ground.geojson; no meshes
+commit: pending
+checks: oak footprint 56 pts / 1132 m² / 0 solids outside (3 exceptions); dairy 22064 / mush 14884 / bee 12900 / stand 15364 B; stand has no enterable interior
 blocked-by: none
-notes: Architect override — C9 is cultivated plants as data (LiteReality interiors later).
+notes: Architect override — C10 productive cluster + oak footprint re-pass from solids.
