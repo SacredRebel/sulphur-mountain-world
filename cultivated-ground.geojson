@@ -1,0 +1,307 @@
+{
+ "type": "FeatureCollection",
+ "name": "cultivated-ground",
+ "note": "Footprints that keep the wild vegetation rule out of orchard rows and garden beds. Plants themselves are in cultivated.csv.",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "garden-bed-1",
+    "kind": "garden_bed",
+    "authority": "proposed",
+    "suppresses": "wild_vegetation",
+    "area_m2": 9.6
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -119.1559602178287,
+       34.43335134901393
+      ],
+      [
+       -119.15587308914353,
+       34.43335134901393
+      ],
+      [
+       -119.15587308914353,
+       34.43334049321513
+      ],
+      [
+       -119.1559602178287,
+       34.43334049321513
+      ],
+      [
+       -119.1559602178287,
+       34.43335134901393
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "garden-bed-2",
+    "kind": "garden_bed",
+    "authority": "proposed",
+    "suppresses": "wild_vegetation",
+    "area_m2": 9.6
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -119.1559602178287,
+       34.43333325601592
+      ],
+      [
+       -119.15587308914353,
+       34.43333325601592
+      ],
+      [
+       -119.15587308914353,
+       34.433322400217115
+      ],
+      [
+       -119.1559602178287,
+       34.433322400217115
+      ],
+      [
+       -119.1559602178287,
+       34.43333325601592
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "garden-bed-3",
+    "kind": "garden_bed",
+    "authority": "proposed",
+    "suppresses": "wild_vegetation",
+    "area_m2": 9.6
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -119.1559602178287,
+       34.433315163017916
+      ],
+      [
+       -119.15587308914353,
+       34.433315163017916
+      ],
+      [
+       -119.15587308914353,
+       34.43330430721911
+      ],
+      [
+       -119.1559602178287,
+       34.43330430721911
+      ],
+      [
+       -119.1559602178287,
+       34.433315163017916
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "garden-bed-4",
+    "kind": "garden_bed",
+    "authority": "proposed",
+    "suppresses": "wild_vegetation",
+    "area_m2": 9.6
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -119.1559602178287,
+       34.433297070019904
+      ],
+      [
+       -119.15587308914353,
+       34.433297070019904
+      ],
+      [
+       -119.15587308914353,
+       34.4332862142211
+      ],
+      [
+       -119.1559602178287,
+       34.4332862142211
+      ],
+      [
+       -119.1559602178287,
+       34.433297070019904
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "garden-bed-5",
+    "kind": "garden_bed",
+    "authority": "proposed",
+    "suppresses": "wild_vegetation",
+    "area_m2": 9.6
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -119.1559602178287,
+       34.43327897702189
+      ],
+      [
+       -119.15587308914353,
+       34.43327897702189
+      ],
+      [
+       -119.15587308914353,
+       34.43326812122309
+      ],
+      [
+       -119.1559602178287,
+       34.43326812122309
+      ],
+      [
+       -119.1559602178287,
+       34.43327897702189
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "garden-bed-6",
+    "kind": "garden_bed",
+    "authority": "proposed",
+    "suppresses": "wild_vegetation",
+    "area_m2": 9.6
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -119.1559602178287,
+       34.43326088402388
+      ],
+      [
+       -119.15587308914353,
+       34.43326088402388
+      ],
+      [
+       -119.15587308914353,
+       34.433250028225075
+      ],
+      [
+       -119.1559602178287,
+       34.433250028225075
+      ],
+      [
+       -119.1559602178287,
+       34.43326088402388
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "olive-orchard",
+    "kind": "orchard",
+    "species": "olive",
+    "spacing_m": 6.0,
+    "authority": "proposed",
+    "suppresses": "wild_vegetation",
+    "n_plants": 84
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -119.15581863371528,
+       34.43305322087752
+      ],
+      [
+       -119.15502284873207,
+       34.43305322087752
+      ],
+      [
+       -119.15502284873207,
+       34.43352133698112
+      ],
+      [
+       -119.15581863371528,
+       34.43352133698112
+      ],
+      [
+       -119.15581863371528,
+       34.43305322087752
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "citrus-block",
+    "kind": "orchard",
+    "species": "citrus",
+    "spacing_m": 5.0,
+    "authority": "proposed",
+    "suppresses": "wild_vegetation",
+    "n_plants": 24
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -119.156074574228,
+       34.43306638429528
+      ],
+      [
+       -119.15574919291824,
+       34.43306638429528
+      ],
+      [
+       -119.15574919291824,
+       34.43326981828275
+      ],
+      [
+       -119.156074574228,
+       34.43326981828275
+      ],
+      [
+       -119.156074574228,
+       34.43306638429528
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

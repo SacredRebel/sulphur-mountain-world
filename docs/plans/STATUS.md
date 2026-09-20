@@ -1,8 +1,8 @@
 # STATUS — Agent C
 updated: 2026-09-20
-phase: C8
+phase: C9
 state: done
-commit: 0210fc7
-checks: creek 137016 B / 82.5 m / bed clearance 0.75 m; oak pool bed 1.22 m below terrain; water=visual bed=floor; wet-season stated; C7 dual occupancy in manifest
+commit: pending
+checks: oak footprint 57 pts / 772 m² (was AABB 2767); cultivated.csv 3114 B / 108 plants (84 olive@6m + 24 citrus@5m); 6 beds; cultivated-ground.geojson; no meshes
 blocked-by: none
-notes: Architect override — C8 is water (creek + oak pool/fire). Blueprint / authoring-a-world stays later.
+notes: Architect override — C9 is cultivated plants as data (LiteReality interiors later).
