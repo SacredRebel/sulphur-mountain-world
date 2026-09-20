@@ -38,21 +38,21 @@ import numpy as np
 from scipy.interpolate import PchipInterpolator
 
 sys.path.insert(0, str(Path(__file__).parent))
-from glb import Model, Material, circle, rect, inside  # noqa: E402
+from glb import Model, circle, rect, inside, surface  # noqa: E402
 
-# ---- materials -------------------------------------------------------------------------------
-GREEN = Material('living roof', (0.30, 0.42, 0.20), rough=0.95)
-TIMBER = Material('timber', (0.55, 0.38, 0.22), rough=0.7, double=True)
-RIB = Material('timber rib', (0.42, 0.27, 0.15), rough=0.7)
-GLASS = Material('glass', (0.72, 0.85, 0.92), alpha=0.32, rough=0.15, double=True)
-BRONZE = Material('bronze', (0.25, 0.20, 0.15), rough=0.5, metal=0.3)
-STONE_FLOOR = Material('travertine', (0.80, 0.74, 0.62), rough=0.8)
-RIVER_STONE = Material('river stone', (0.52, 0.48, 0.42), rough=0.95)
-CONCRETE = Material('concrete', (0.60, 0.58, 0.54), rough=0.9)
-WATER = Material('water', (0.25, 0.55, 0.75), alpha=0.7, rough=0.05)
-POOL_FLOOR = Material('pool floor', (0.55, 0.75, 0.85), rough=0.4, double=True)
-DECK = Material('timber deck', (0.62, 0.45, 0.28), rough=0.75)
-DARK_STONE = Material('dark stone', (0.30, 0.28, 0.26), rough=0.95)
+# ---- materials from materials.json surfaces (never hardcode RGB here) -----------------------
+GREEN = surface('living_roof')
+TIMBER = surface('timber')
+RIB = surface('timber_rib')
+GLASS = surface('glass')
+BRONZE = surface('bronze')
+STONE_FLOOR = surface('stone')
+RIVER_STONE = surface('river_stone')
+CONCRETE = surface('concrete')
+WATER = surface('water')
+POOL_FLOOR = surface('pool_floor')
+DECK = surface('timber', name='timber deck')
+DARK_STONE = surface('dark_stone')
 
 
 def P(e, n, y=0.0):

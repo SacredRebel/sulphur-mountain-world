@@ -1,5 +1,6 @@
 {
- "note": "What the ground looks like from a metre away. The aerial carries the colour of every square metre; these tiles carry the grain the aerial cannot. Each is a CC0 material from ambientCG, recoloured so its mean matches a sunlit patch in one of the owner's photographs, so the straw is this straw's colour and the drive is this drive's. The world chooses the tile from the aerial's own colour under your feet: straw where it is bright and gold, gravel where it is pale and grey, leaf litter where the aerial shows canopy, dirt otherwise.",
+ "schema": 1,
+ "note": "What the ground looks like from a metre away. The aerial carries the colour of every square metre; these tiles carry the grain the aerial cannot. Each is a CC0 material from ambientCG, recoloured so its mean matches a sunlit patch in one of the owner's photographs, so the straw is this straw's colour and the drive is this drive's. The world chooses the tile from the aerial's own colour under your feet: straw where it is bright and gold, gravel where it is pale and grey, leaf litter where the aerial shows canopy, dirt otherwise. Building massings use `surfaces` below — scripts call glb.surface(key) and never hardcode RGB.",
  "licence": "CC0 1.0 (ambientCG.com); the recolouring is derived data of this pack",
  "materials": {
   "straw": {
@@ -89,6 +90,131 @@
    },
    "matched_to": null,
    "note": "oak bark, for the trunks"
+  }
+ },
+ "surfaces": {
+  "schema": 1,
+  "note": "PBR surfaces for massing scripts (glb.surface). baseColor is linear sRGB 0–1. Textures, when present, are ≤512 px and shared across models via textures/. Opacity < 1 implies alphaMode BLEND.",
+  "stone": {
+   "name": "stone",
+   "baseColor": [0.80, 0.74, 0.62],
+   "roughness": 0.8,
+   "metalness": 0.0,
+   "opacity": 1.0,
+   "albedo_512": "textures/gravel_512.jpg",
+   "note": "floors, plinths, standing stones — grain from gravel tile until a dedicated stone tile exists"
+  },
+  "dark_stone": {
+   "name": "dark stone",
+   "baseColor": [0.30, 0.28, 0.26],
+   "roughness": 0.95,
+   "metalness": 0.0,
+   "opacity": 1.0,
+   "note": "hearths, fire rings, low seats"
+  },
+  "river_stone": {
+   "name": "river stone",
+   "baseColor": [0.52, 0.48, 0.42],
+   "roughness": 0.95,
+   "metalness": 0.0,
+   "opacity": 1.0,
+   "note": "chimney and retaining — matches the Oak Leaf heart"
+  },
+  "timber": {
+   "name": "timber",
+   "baseColor": [0.55, 0.38, 0.22],
+   "roughness": 0.7,
+   "metalness": 0.0,
+   "opacity": 1.0,
+   "doubleSided": true,
+   "albedo_512": "textures/bark_512.jpg",
+   "note": "structure, soffits, decks; bark_512 reused for grain"
+  },
+  "timber_rib": {
+   "name": "timber rib",
+   "baseColor": [0.42, 0.27, 0.15],
+   "roughness": 0.7,
+   "metalness": 0.0,
+   "opacity": 1.0,
+   "albedo_512": "textures/bark_512.jpg"
+  },
+  "board_and_batten": {
+   "name": "board and batten",
+   "baseColor": [0.62, 0.55, 0.42],
+   "roughness": 0.75,
+   "metalness": 0.0,
+   "opacity": 1.0,
+   "note": "cabin and barn cladding"
+  },
+  "glass": {
+   "name": "glass",
+   "baseColor": [0.72, 0.85, 0.92],
+   "roughness": 0.15,
+   "metalness": 0.0,
+   "opacity": 0.32,
+   "doubleSided": true
+  },
+  "stucco": {
+   "name": "stucco",
+   "baseColor": [0.86, 0.82, 0.74],
+   "roughness": 0.9,
+   "metalness": 0.0,
+   "opacity": 1.0
+  },
+  "concrete": {
+   "name": "concrete",
+   "baseColor": [0.60, 0.58, 0.54],
+   "roughness": 0.9,
+   "metalness": 0.0,
+   "opacity": 1.0,
+   "albedo_512": "textures/dirt_512.jpg"
+  },
+  "living_roof": {
+   "name": "living roof",
+   "baseColor": [0.30, 0.42, 0.20],
+   "roughness": 0.95,
+   "metalness": 0.0,
+   "opacity": 1.0,
+   "albedo_512": "textures/straw_512.jpg"
+  },
+  "standing_seam_metal": {
+   "name": "standing-seam metal",
+   "baseColor": [0.45, 0.48, 0.50],
+   "roughness": 0.35,
+   "metalness": 0.85,
+   "opacity": 1.0
+  },
+  "canvas": {
+   "name": "canvas",
+   "baseColor": [0.88, 0.82, 0.70],
+   "roughness": 0.85,
+   "metalness": 0.0,
+   "opacity": 1.0,
+   "doubleSided": true,
+   "note": "glamping / tipí skins"
+  },
+  "bronze": {
+   "name": "bronze",
+   "baseColor": [0.25, 0.20, 0.15],
+   "roughness": 0.5,
+   "metalness": 0.3,
+   "opacity": 1.0,
+   "note": "posts and rails — Oak Leaf reference"
+  },
+  "water": {
+   "name": "water",
+   "baseColor": [0.25, 0.55, 0.75],
+   "roughness": 0.05,
+   "metalness": 0.0,
+   "opacity": 0.7
+  },
+  "pool_floor": {
+   "name": "pool floor",
+   "baseColor": [0.55, 0.75, 0.85],
+   "roughness": 0.4,
+   "metalness": 0.0,
+   "opacity": 1.0,
+   "doubleSided": true
   }
  },
  "recolouring": {

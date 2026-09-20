@@ -8,12 +8,52 @@ A small glTF 2.0 binary writer — enough for a massing model.
   The root node carries `extras.walk`: the floors a body can stand on and the walls it cannot pass,
   as plan rings in model metres. The world reads that and nothing else about the interior — the
   modeller says what is walkable, the engine does not guess it from triangles.
+
+  Colours come from the pack's materials.json (`surfaces`) via `surface(key)` — never hardcode RGB
+  in a generator script.
 """
 import json
 import math
 import struct
+from pathlib import Path
 
 import numpy as np
+
+_PACK = Path(__file__).resolve().parent.parent
+_SURFACES = None
+
+
+def pack_root():
+    return _PACK
+
+
+def load_surfaces(path=None):
+    """Load materials.json `surfaces` (schema 1). Cached after the first call."""
+    global _SURFACES
+    if _SURFACES is not None and path is None:
+        return _SURFACES
+    p = Path(path) if path else _PACK / 'materials.json'
+    doc = json.loads(p.read_text(encoding='utf-8'))
+    surfaces = doc.get('surfaces') or {}
+    if path is None:
+        _SURFACES = surfaces
+    return surfaces
+
+
+def surface(key, *, name=None, double=None):
+    """A Material from materials.json surfaces. Key is the pack id (timber, glass, …)."""
+    s = load_surfaces().get(key)
+    if not s:
+        raise KeyError(f'unknown surface {key!r} — add it to materials.json surfaces')
+    rgb = tuple(float(c) for c in s['baseColor'][:3])
+    return Material(
+        name or s.get('name') or key.replace('_', ' '),
+        rgb,
+        alpha=float(s.get('opacity', 1.0)),
+        rough=float(s.get('roughness', 0.85)),
+        metal=float(s.get('metalness', 0.0)),
+        double=bool(s.get('doubleSided', False) if double is None else double),
+    )
 
 
 class Material:

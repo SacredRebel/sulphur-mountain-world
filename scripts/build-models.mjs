@@ -1,18 +1,17 @@
-// Make the massing models at build time, so no .glb is ever committed: the model IS the script.
+// Rebuild committed massing models from their scripts.
 //
 //   node scripts/build-models.mjs
 //
-//   Runs each generator under scripts/ into models/, which is committed and served with the rest
-//   of the pack. Needs python3 with numpy and scipy; if they are
-//   missing it makes a small virtual environment for them (Vercel's Python is managed by uv and
-//   refuses a plain pip install), and if that fails too it says so and lets the build go on —
-//   the world must deploy whether or not the house does.
+//   Each entry in MODELS is one generator. The script is the source of truth; the GLB under
+//   models/ is the artifact and is committed with the pack (static hosting — no deploy build).
+//   Needs python3 with numpy and scipy; if they are missing it makes a small virtual environment.
 import { spawnSync } from 'node:child_process';
 import { mkdirSync, existsSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 
 const MODELS = [
-  { script: 'scripts/oak-leaf.py', out: 'models/oak-leaf-massing.glb' }
+  { script: 'scripts/oak-leaf.py', out: 'models/oak-leaf-massing.glb' },
+  { script: 'scripts/example-box.py', out: 'models/example-box.glb' },
 ];
 const VENV = '.venv-models';
 
@@ -36,12 +35,18 @@ if (!has(python)) {
   python = venvPy;
 }
 
-mkdirSync('public/models', { recursive: true });
+mkdirSync('models', { recursive: true });
 for (const m of MODELS) {
   const r = run(python, [m.script, m.out]);
   if (r.status !== 0 || !existsSync(m.out)) {
-    console.warn(`[models] ${m.script} failed — ${m.out} not built\n` + (r.stderr || '').slice(-600));
+    console.warn(`[models] ${m.script} failed — ${m.out} not built\n` + (r.stderr || r.stdout || '').slice(-600));
     continue;
   }
   console.log(`[models] ${m.out} ${(statSync(m.out).size / 1024).toFixed(0)} KB ${r.stdout.trim()}`);
+  const v = run(python, ['scripts/validate-model.py', m.out]);
+  if (v.status !== 0) {
+    console.warn(`[models] validate failed for ${m.out}\n` + (v.stdout || v.stderr || '').slice(-800));
+  } else {
+    console.log(`[models] validate ok ${m.out}`);
+  }
 }

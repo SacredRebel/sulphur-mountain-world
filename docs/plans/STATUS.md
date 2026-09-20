@@ -1,8 +1,8 @@
 # STATUS — Agent C
-updated: 2026-09-19
-phase: C0
+updated: 2026-09-20
+phase: C1
 state: done
-commit: 2494d802e712250c28767103f87c78a35409f876
-checks: survey only — no models; validator not applicable
+commit: pending
+checks: oak-leaf 2154680 B / 51348 tris / 67 floors / 87 solids validate pass; example-box 10432 B / 114 tris / 1 floor / 5 solids validate pass
 blocked-by: none
-notes: Wrote C0-survey.md from the pack, Notion board (Agent = C — the land), and spatial-map oak-leaf.py/glb.py (read-only). All 18 vision zones are Points; main-residence already has the Oak Leaf elsewhere and is left alone. Proposed footprints/storeys for the other 17 are marked proposed. Materials tiles exist but unused; C1b is the fix. Notion C7 is LiteReality interiors, not stations — noted in the survey.
+notes: Extended the toolkit already in scripts/ (no rewrite). Added massing template, example-box generator, validate-model.py (Oak Leaf passes after correcting teardrop-ring false positives). C1b: materials.json surfaces schema 1; glb.surface(); oak-leaf and example-box take colours only from the pack. Grey boxes are no longer a deliverable.
