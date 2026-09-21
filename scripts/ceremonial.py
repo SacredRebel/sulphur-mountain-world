@@ -7,7 +7,7 @@ Ceremonial Infrastructure — stone/earth kiva with sacred fire circle.
 
   This is outdoor ceremonial ground — a floor you stand on, not a room you enter.
   Low ring wall at 0.45 m (steppable — clear of the engine's 0.55 m step-up limit).
-  HOLD further kiva work until the owner answers open-air vs enclosed.
+  Owner decision 2026-09-21: **open-air**. Complete as built — no enclosure.
 
   Programme massing, not engineered construction.
 
@@ -116,6 +116,7 @@ if __name__ == '__main__':
         'zone': 'ceremonial-infrastructure',
         'work': 'gather around a sacred fire in a stone and earthen kiva',
         'enterable_interior': False,
+        'open_air': True,
         'massing_not_engineering': True,
         'origin_note': 'centre of the sacred fire ring',
         'authority': 'proposed',

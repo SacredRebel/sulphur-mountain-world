@@ -32,7 +32,7 @@ C0 sketch matches: utility yard with tank pads / solar rack / shed ~8×6 m; cere
 | sacred fire | solid |
 | kiva ring wall | **0.45 m** (steppable — not the engine's 0.55 m knife edge) |
 
-**Hold** further kiva work until the owner answers open-air vs enclosed.
+**Owner decision (2026-09-21): open-air.** The kiva is complete as built — no enclosure. Further kiva work closed.
 
 ---
 

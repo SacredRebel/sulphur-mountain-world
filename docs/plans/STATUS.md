@@ -1,8 +1,8 @@
 # STATUS — Agent C
-updated: 2026-09-20
-phase: C11
+updated: 2026-09-21
+phase: C12
 state: done
-commit: 55cc1bb
-checks: C11 review fix — disposal ≥31.1 m well / ≥36.4 m creek; solar pitch 2.40 m yard 12×5.9; kiva wall 0.45 m steppable; hold further kiva
+commit: pending
+checks: knoll analysis 100x100 m; contours 0.5 m; buildable <15% 5922 m2; 69 oaks; plan PNG; kiva closed open-air
 blocked-by: none
-notes: Architect review fixes on C11 massing.
+notes: Architect override — C12 Oak Leaf knoll site analysis (no house). Kiva open-air closed.

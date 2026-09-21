@@ -87,6 +87,13 @@
       "authority": "proposal",
       "what": "footprints for orchard blocks and garden beds that keep the wild vegetation rule out of cultivated ground"
     },
+    "oak_leaf_knoll": {
+      "file": "analysis/oak-leaf-knoll.geojson",
+      "plan": "analysis/oak-leaf-knoll.png",
+      "authority": "derived",
+      "what": "C12 site analysis of the Oak Leaf knoll: 0.5 m contours, slope classes, largest contiguous <15% buildable envelope, surveyed oaks with drip-line protection zones over a 100×100 m window. Analysis only — no house.",
+      "generator": "scripts/oak-leaf-knoll.py"
+    },
     "vision": {
       "file": "vision.geojson",
       "authority": "proposal",

@@ -833,11 +833,12 @@
       ],
       "rotationDeg": 0,
       "altitudeM": 0.0,
-      "bytes": 42176,
+      "bytes": 42208,
       "triangles": 620,
       "authority": "proposed",
-      "note": "MASSING. 13 m kiva, ring wall 0.45 m (steppable). Hold further kiva work until owner answers open-air vs enclosed. No enterable interior.",
+      "note": "MASSING. 13 m open-air kiva, ring wall 0.45 m (steppable). Owner decision open-air — complete as built. No enterable interior.",
       "enterable_interior": false,
+      "open_air": true,
       "massing_not_engineering": true,
       "footprint": [
         [
