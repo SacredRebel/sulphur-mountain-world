@@ -95,6 +95,14 @@
       "what": "C12 site analysis of the Oak Leaf knoll: 0.5 m contours, slope classes, largest contiguous <15% buildable envelope, surveyed oaks with drip-line protection zones over a 100×100 m window. Analysis only — no house.",
       "generator": "scripts/oak-leaf-knoll.py"
     },
+    "drainage": {
+      "file": "drainage.geojson",
+      "plan": "analysis/drainage.png",
+      "authority": "derived",
+      "captured": "2018",
+      "what": "D8 flow channels from the pack 1 m DEM (sink-filled); contributing area >= 2000 m2; Strahler order; simplify ~1 m. Main line checked against the creek ford.",
+      "generator": "scripts/drainage.py"
+    },
     "vision": {
       "file": "vision.geojson",
       "authority": "proposal",

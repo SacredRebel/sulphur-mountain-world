@@ -55,14 +55,28 @@ attributed feature and the world applies it on top. Each feature has an
     add    · zones   a Polygon with a name and a kind: a territory on the ground
     add    · terrain a Polygon with terrain_op (flatten, raise, lower),
                      height_m or to_m, and edge_m: the ground shaped, with
-                     a bank that eases back into the hill
+                     a bank that eases back into the hill. A flatten may
+                     also carry structure (the building name it levels for).
     add    · build   a part of a building, by kind — a wall (a LineString
-                     along its centre: height_m, thick_m, material, smooth,
-                     base_m, openings[] of doors and windows, structure),
-                     a floor (a Polygon: level_m, thick_m, material) or a
-                     roof (a Polygon: form flat/shed/gable/hip/vault,
-                     eaves_m, pitch_deg, overhang_m, ridge_deg, material)
+                     or closed ring along its centre: height_m, thick_m,
+                     material, smooth, base_m, openings[] of doors and
+                     windows, structure, and optional assembly
+                     {structure, infill, insulation}),
+                     a floor (a Polygon: level_m, thick_m, material; may
+                     carry organic — the full OrganicSpec plus perimeter
+                     [[lng,lat],...] and pad_id, so the world can grow it
+                     again), or a
+                     roof (a Polygon: form flat/shed/gable/hip/vault/shell,
+                     eaves_m, pitch_deg, overhang_m, ridge_deg, material;
+                     shell also uses rise_m, finish, solar_ratio,
+                     solar_facing_deg and assembly {roof_structure,
+                     insulation})
     remove · build   target = the id of a part taken down
+
+OrganicSpec field ranges follow the world contract
+(https://github.com/SacredRebel/spatial-map/blob/main/docs/organic-spec.md).
+`scripts/check-edits.py` accepts these fields and never strips unknown
+keys on build/terrain features.
 
 A later feature with the same id replaces the earlier one — that is how a
 wall is changed: it is added again, taller, or moved, under its own id.

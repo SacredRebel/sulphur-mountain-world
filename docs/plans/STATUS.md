@@ -1,8 +1,8 @@
 # STATUS — Agent C
 updated: 2026-09-22
-phase: C15
-state: done
-commit: 6c3f1e1
-checks: frame WGS84; materials world; overlaps clear; produce/bee/infra moved
+phase: C13
+state: committing
+commit: pending
+checks: check-edits; drainage ford 1.26 m; materials organic surfaces
 blocked-by: none
-notes: C15.3→C15.2→C15.1 done. Oak Leaf untouched. Next C13 then C14.
+notes: C13 organic schema + drainage. Next C16 (land-reading layers). C14 waits on owner scans.

@@ -1,0 +1,140 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "organic-pad-demo",
+        "op": "add",
+        "layer": "terrain",
+        "terrain_op": "flatten",
+        "edge_m": 3,
+        "structure": "demo-organic-house"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-119.1554, 34.4330],
+          [-119.1552, 34.4330],
+          [-119.1552, 34.43315],
+          [-119.1554, 34.43315],
+          [-119.1554, 34.4330]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "organic-floor-demo",
+        "op": "add",
+        "layer": "build",
+        "kind": "floor",
+        "level_m": 0,
+        "thick_m": 0.3,
+        "material": "earth",
+        "structure": "demo-organic-house",
+        "organic": {
+          "form": "lobed",
+          "lobes": 5,
+          "depth": 0.35,
+          "turn": 12,
+          "inset": 1.2,
+          "height": 3.2,
+          "rise": 2.4,
+          "overhang": 0.8,
+          "thick": 0.45,
+          "structure": "timber",
+          "infill": "cob",
+          "insulation": "hemp",
+          "roof": "living",
+          "solar": 0.4,
+          "glazing": 0.35,
+          "facing": 180,
+          "door": 90,
+          "floor": "earth",
+          "pad": true,
+          "perimeter": [
+            [-119.1554, 34.4330],
+            [-119.1552, 34.4330],
+            [-119.1552, 34.43315],
+            [-119.1554, 34.43315]
+          ],
+          "pad_id": "organic-pad-demo"
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-119.15538, 34.43302],
+          [-119.15522, 34.43302],
+          [-119.15522, 34.43313],
+          [-119.15538, 34.43313],
+          [-119.15538, 34.43302]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "organic-wall-demo",
+        "op": "add",
+        "layer": "build",
+        "kind": "wall",
+        "height_m": 3.2,
+        "thick_m": 0.45,
+        "material": "cob",
+        "smooth": true,
+        "structure": "demo-organic-house",
+        "openings": [
+          {"kind": "door", "width_m": 1.0, "bearing_deg": 90}
+        ],
+        "assembly": {
+          "structure": "timber",
+          "infill": "cob",
+          "insulation": "hemp"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-119.15538, 34.43302],
+          [-119.15522, 34.43302],
+          [-119.15522, 34.43313],
+          [-119.15538, 34.43313],
+          [-119.15538, 34.43302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "organic-roof-demo",
+        "op": "add",
+        "layer": "build",
+        "kind": "roof",
+        "form": "shell",
+        "eaves_m": 3.2,
+        "rise_m": 2.4,
+        "overhang_m": 0.8,
+        "finish": "living",
+        "solar_ratio": 0.4,
+        "solar_facing_deg": 180,
+        "structure": "demo-organic-house",
+        "assembly": {
+          "roof_structure": "timber",
+          "insulation": "hemp"
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-119.15540, 34.43300],
+          [-119.15520, 34.43300],
+          [-119.15520, 34.43315],
+          [-119.15540, 34.43315],
+          [-119.15540, 34.43300]
+        ]]
+      }
+    }
+  ]
+}
