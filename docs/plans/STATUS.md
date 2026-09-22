@@ -1,8 +1,8 @@
 ﻿# STATUS — Agent C
 updated: 2026-09-22
-phase: C13
+phase: C16
 state: done
-commit: 227cd0c
-checks: check-edits; drainage ford 1.26 m; materials organic surfaces
+commit: f2ae432
+checks: horizon flat 0.0 deg; Dec delays 35-75 min; corridor gap ok
 blocked-by: none
-notes: C13 organic schema + drainage. Next C16 (land-reading layers). C14 waits on owner scans.
+notes: C16 done. C17 positions next. C14 waits on scans.
