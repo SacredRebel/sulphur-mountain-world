@@ -1,0 +1,34 @@
+NOTICE — third-party code used by Agent C land-reading tools (C16+)
+=====================================================================
+
+TopoDrain core (keyline concepts / vendor copy)
+  File: vendor/topo_drain/topo_drain_core.py
+  Copyright (c) 2025 Timo Wicki
+  Licence: MIT — see vendor/topo_drain/LICENSE
+  Note: Only the open core file is vendored. QGIS wrapper files (GPL via PyQGIS)
+  are NOT copied. whitebox_workflows paid tier is NOT used.
+
+astronomy-engine
+  Copyright (c) Don Cross / cosinekitty
+  Licence: MIT — https://github.com/cosinekitty/astronomy
+
+Landlab
+  Copyright (c) Landlab developers
+  Licence: MIT — https://github.com/landlab/landlab
+
+WhiteboxTools / geolibre (when installed as tools)
+  Copyright (c) Whitebox Geospatial Inc. / related authors
+  Licence: MIT — run as tools; open core only
+
+Circuitscape method (McRae et al.)
+  Rewritten in Python with scipy sparse solvers for this pack.
+  Original Circuitscape: MIT-licensed method; not copied verbatim.
+
+meshoptimizer / gltf-transform (C18)
+  Licence: MIT
+
+GRASS GIS r.sun (C16 sun-hours check)
+  Licence: GPL — run only as an outside program; never copied into this repository.
+
+Ladybug
+  Licence: AGPL — only in a separate process if used; never imported into pack scripts.

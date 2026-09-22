@@ -1,0 +1,19 @@
+{
+  "keylines_check": {
+    "ford_en": [
+      275.0,
+      234.0
+    ],
+    "keypoint_to_ford_m": 26.69,
+    "keyline_to_ford_m": 24.98,
+    "keypoint_accum_m2": 1418.0
+  },
+  "storm_method": "kinematic sheet proxy (Landlab unavailable: OverlandFlow is missing required input field: surface_water__depth at node)",
+  "rain_mm": 25.0,
+  "wind_source": "Sea breeze: Ojai Valley daytime westerly onshore winds (Ojai REC climatology appendix, DocumentCenter/View/1464, 1988-89 wind rose). Santa Ana: NWS Southern California Santa Ana \u2014 northeast offshore flow.",
+  "corridor_synthetic": {
+    "ok": true,
+    "gap_current": 0.08617419976273821,
+    "wall_current": 0.008619279109941154
+  }
+}

@@ -103,6 +103,130 @@
       "what": "D8 flow channels from the pack 1 m DEM (sink-filled); contributing area >= 2000 m2; Strahler order; simplify ~1 m. Main line checked against the creek ford.",
       "generator": "scripts/drainage.py"
     },
+    "horizon": {
+      "file": "horizon.json",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "horizon altitude every 0.5 deg; eye 1.6 m; 1 m DEM to 1.5 km; NED 10 m to 30 km; curvature + refraction",
+      "inputs": ["terrain/ 2018", "OpenTopoData ned10m", "models.json", "survey.geojson"],
+      "generator": "scripts/horizon.py"
+    },
+    "sky_events": {
+      "file": "sky-events.json",
+      "authority": "derived",
+      "evidence": "measured",
+      "method": "astronomy-engine sun/moon vs horizon.json; cross-quarters traditional only",
+      "inputs": ["horizon.json", "astronomy-engine"],
+      "generator": "scripts/sky_events.py"
+    },
+    "keylines": {
+      "file": "keylines.geojson",
+      "plan": "analysis/keylines.png",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "keypoints on valley lines; keylines at contour; swale 0.5-1%; topo_drain core (MIT)",
+      "inputs": ["terrain 1 m 2018"],
+      "grid": "analysis/grids/",
+      "generator": "scripts/land_layers.py"
+    },
+    "twi": {
+      "file": "analysis/grids/twi.npz",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "breached depressions + D8 topographic wetness index",
+      "inputs": ["terrain 1 m 2018"],
+      "grid": "analysis/grids/twi.npz",
+      "generator": "scripts/land_layers.py"
+    },
+    "stormwater": {
+      "file": "analysis/grids/stormwater_depth.npz",
+      "plan": "analysis/stormwater.png",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "1-in-10 1-hr ~25 mm sheet-flow depth proxy on 1 m grid",
+      "inputs": ["terrain 1 m 2018"],
+      "grid": "analysis/grids/stormwater_depth.npz",
+      "generator": "scripts/land_layers.py"
+    },
+    "sun_hours": {
+      "file": "analysis/grids/sun_hours_annual.npz",
+      "plan": "analysis/sun-annual.png",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "clear-sky direct sun 12x21st every 30 min; horizon + self-shade",
+      "inputs": ["horizon.json", "terrain 1 m 2018"],
+      "grid": "analysis/grids/",
+      "generator": "scripts/land_layers.py"
+    },
+    "frost": {
+      "file": "analysis/grids/cold_air.npz",
+      "plan": "analysis/frost.png",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "downslope cold-air accumulation + hollow TPI pools",
+      "inputs": ["terrain 1 m 2018"],
+      "grid": "analysis/grids/cold_air.npz",
+      "generator": "scripts/land_layers.py"
+    },
+    "thermal_belt": {
+      "file": "thermal-belt.geojson",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "mid-slope TPI band",
+      "inputs": ["terrain 1 m 2018"],
+      "generator": "scripts/land_layers.py"
+    },
+    "wind_sea_breeze": {
+      "file": "analysis/grids/wind_sea_breeze.npz",
+      "plan": "analysis/wind-sea-breeze.png",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "sheltering index for wind from 270 deg (W); Ojai REC daytime westerly onshore",
+      "inputs": ["terrain 1 m 2018", "Ojai REC DocumentCenter/View/1464"],
+      "grid": "analysis/grids/wind_sea_breeze.npz",
+      "generator": "scripts/land_layers.py"
+    },
+    "wind_santa_ana": {
+      "file": "analysis/grids/wind_santa_ana.npz",
+      "plan": "analysis/wind-santa-ana.png",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "sheltering index for wind from 45 deg (NE); NWS SoCal Santa Ana",
+      "inputs": ["terrain 1 m 2018"],
+      "grid": "analysis/grids/wind_santa_ana.npz",
+      "generator": "scripts/land_layers.py"
+    },
+    "landforms": {
+      "file": "analysis/grids/landforms.npz",
+      "plan": "analysis/landforms.png",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "TPI classes at 20 m and 100 m scales",
+      "inputs": ["terrain 1 m 2018"],
+      "grid": "analysis/grids/landforms.npz",
+      "generator": "scripts/land_layers.py"
+    },
+    "corridors": {
+      "file": "analysis/grids/corridors.npz",
+      "plan": "analysis/corridors.png",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "Circuitscape-style current flow (scipy) creek to woodland",
+      "inputs": ["terrain 1 m 2018", "trees.csv", "models.json footprints"],
+      "grid": "analysis/grids/corridors.npz",
+      "generator": "scripts/land_layers.py"
+    },
+    "positions": {
+      "file": "positions.csv",
+      "geojson": "positions.geojson",
+      "plan": "analysis/positions-proof.png",
+      "authority": "derived",
+      "evidence": "measured",
+      "method": "dual proof: table vs GLB placement + survey/tree checks",
+      "inputs": ["models.json", "survey.geojson", "terrain 1 m", "pack frame C15.3"],
+      "utm": "EPSG:32611",
+      "generator": "scripts/build-positions.py"
+    },
     "vision": {
       "file": "vision.geojson",
       "authority": "proposal",
@@ -161,6 +285,16 @@
         "infrastructure.glb",
         "ceremonial-infrastructure.glb"
       ]
+    },
+    "positions": {
+      "file": "positions.csv",
+      "geojson": "positions.geojson",
+      "plan": "analysis/positions-proof.png",
+      "authority": "derived",
+      "what": "one row per placed thing: every models.json model, named site features (well, ford, gate, road entry, pads), and survey corners. Columns include WGS84, EPSG:32611 UTM 11N, pack frame EN, DEM elev, POB polar, footprint area, parcel clearance",
+      "utm": "EPSG:32611 (WGS84 UTM zone 11N)",
+      "generator": "scripts/build-positions.py",
+      "check": "scripts/check-positions.py"
     }
   },
   "sources": [

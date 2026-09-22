@@ -1,0 +1,13 @@
+{
+  "origin_east_m": 119.82340274053252,
+  "origin_north_m": 119.75574840024214,
+  "cell_m": 1.0,
+  "ncols": 338,
+  "nrows": 258,
+  "crs": "pack-frame metres (equirectangular at origin_lat)",
+  "frame_origin_lng": -119.1594805,
+  "frame_origin_lat": 34.4304373,
+  "metres_per_deg_lng": 91916.198,
+  "metres_per_deg_lat": 110930.184,
+  "axes": "row = north ascending, col = east ascending; value at cell centre"
+}
