@@ -11,8 +11,9 @@ Infrastructure & Utilities — programme-sized massing, not engineering.
     · yard ground between them — walkable floors
     · equipment shed — the one enterable room (tools), open south bay
 
-  Setbacks (CA 100 ft / 30.5 m): disposal group (greywater + leach) sits east of
-  the utility core — clear of the well head and of the creek to the west.
+  Setbacks (CA 100 ft / 30.5 m): disposal group (greywater + leach) sits north of
+  the utility core — clear of the well head, of the creek to the west, of
+  ceremonial to the east, and of retreat-village to the south.
 
   Sizes are PLACEHOLDER programme massing — see C11-done.md.
 
@@ -149,20 +150,21 @@ def build():
         P(sx1 + 0.2, sn1 + 0.3, h + 0.3), P(sx0 - 0.2, sn1 + 0.3, h + 0.3),
     )
 
-    # ---- Disposal group — EAST of core, ≥100 ft from well and from creek ------------
-    # Creek runs west of this zone (~22 m from the well). Disposal goes east so both
-    # setbacks clear. Verified: leach SW ≥31 m from well, ≥36 m from creek bed.
-    de0, dn0 = 22.0, 21.0  # leach SW
+    # ---- Disposal group — NORTH-EAST of core, ≥100 ft from well AND creek;
+    # clear of ceremonial (south of this lobe) and retreat-village (far south).
+    # Creek east edge ~ local e=-11.2 → pad west ≥ +19.3 for 30.5 m setback.
+    de0, dn0 = 20.0, 40.0  # leach SW
     de1, dn1 = de0 + 12.0, dn0 + 8.0  # 12 × 8 = 96 m² placeholder
-    gw_n0, gw_n1 = dn0 - 3.0, dn0 - 1.0
+    gw_n0, gw_n1 = dn0 - 3.0, dn0 - 1.0  # greywater between corridor and leach
 
-    # Corridor floor so the disposal pad is reachable from the core
-    corridor = open_ring(ring_xz(rect_en(ae1 - 0.5, 8.0, de0 + 0.5, 12.0)))
-    m.extrude(GRAVEL, corridor, -0.05, 0.0)
-    m.floor(corridor, 0.0, 'disposal path')
-    spur = open_ring(ring_xz(rect_en(de0 - 0.5, 12.0, de0 + 2.0, gw_n0)))
-    m.extrude(GRAVEL, spur, -0.05, 0.0)
-    m.floor(spur, 0.0, 'disposal spur')
+    # Corridor: north from yard (west of ceremonial), then east into the pad
+    core_n1 = max(10.5, an1 + 0.5)
+    corridor_n = open_ring(ring_xz(rect_en(-1.0, core_n1, 3.0, gw_n0 - 0.5)))
+    m.extrude(GRAVEL, corridor_n, -0.05, 0.0)
+    m.floor(corridor_n, 0.0, 'disposal path north')
+    corridor_e = open_ring(ring_xz(rect_en(3.0, gw_n0 - 0.5, de0 - 0.5, gw_n0 + 1.5)))
+    m.extrude(GRAVEL, corridor_e, -0.05, 0.0)
+    m.floor(corridor_e, 0.0, 'disposal path east')
 
     disposal_pad = open_ring(ring_xz(rect_en(de0 - 0.5, gw_n0 - 0.5, de1 + 0.5, dn1 + 0.5)))
     m.extrude(GRAVEL, disposal_pad, -0.05, 0.0)
@@ -183,14 +185,24 @@ def build():
         m.extrude(STONE, xz, 0.0, 0.35)
         m.solid(xz, 0.0, 0.35, label)
 
-    # Built footprint hugs core + corridor + disposal (not a cleared rectangle between)
+    # Built footprint: core + L-corridor + NE disposal
     fp = [
-        (-10.0, -1.0), (ae1, -1.0), (ae1, 8.0), (de0 + 0.5, 8.0),
-        (de0 + 0.5, gw_n0 - 0.5), (de1 + 0.5, gw_n0 - 0.5),
+        (-10.0, -1.0), (ae1, -1.0),
+        (ae1, core_n1), (3.0, core_n1),
+        (3.0, gw_n0 - 0.5), (de1 + 0.5, gw_n0 - 0.5),
         (de1 + 0.5, dn1 + 0.5), (de0 - 0.5, dn1 + 0.5),
-        (de0 - 0.5, 12.0), (ae1, 12.0), (ae1, max(10.5, an1 + 0.5)),
-        (-10.0, max(10.5, an1 + 0.5)),
+        (de0 - 0.5, gw_n0 + 1.5), (-1.0, gw_n0 + 1.5),
+        (-1.0, core_n1), (-10.0, core_n1),
     ]
+
+    # Min distance well → disposal pad (leach + greywater envelope)
+    pad_corners = [
+        (de0 - 0.5, gw_n0 - 0.5), (de1 + 0.5, gw_n0 - 0.5),
+        (de1 + 0.5, dn1 + 0.5), (de0 - 0.5, dn1 + 0.5),
+    ]
+    well_dist = min(
+        math.hypot(e - well_e, n - well_n) for e, n in pad_corners
+    )
 
     array_m2 = 12.0 * array_depth  # panel plan area (not yard)
     return m, fp, {
@@ -200,13 +212,15 @@ def build():
         'array_panel_m2_placeholder': round(array_m2, 1),
         'array_row_pitch_m': pitch,
         'array_kw_rough_placeholder': (
-            f'{array_m2 / 6:.0f}–{array_m2 / 5:.0f} kW DC '
-            '(rule-of-thumb 5–6 m²/kW — not engineered)'
+            f'{array_m2 / 6:.0f}-{array_m2 / 5:.0f} kW DC '
+            '(rule-of-thumb 5-6 m2/kW — not engineered)'
         ),
         'leach_field_m2_placeholder': 96.0,
         'setback_m': SETBACK_M,
-        'disposal_from_well_m_min': 31.1,
-        'disposal_from_creek_m_min': 36.4,
+        'disposal_from_well_m_min': round(well_dist, 1),
+        'disposal_placement': (
+            'NE of utility core — ≥100 ft well/creek; clears ceremonial & retreat'
+        ),
         'massing_not_engineering': True,
     }
 

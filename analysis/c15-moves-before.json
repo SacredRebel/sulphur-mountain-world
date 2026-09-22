@@ -1,0 +1,48 @@
+{
+  "farmstead-produce-stand": {
+    "origin": [
+      -119.15725,
+      34.4324
+    ],
+    "rotationDeg": 0,
+    "before": null,
+    "before_origin": [
+      -119.156935,
+      34.432483
+    ],
+    "before_fp_sample": [
+      -119.1569688,
+      34.4324667
+    ]
+  },
+  "beekeeping-program": {
+    "origin": [
+      -119.1557,
+      34.43352
+    ],
+    "rotationDeg": 0,
+    "before_origin": [
+      -119.15582,
+      34.433477
+    ],
+    "before_fp_sample": [
+      -119.155845,
+      34.4334698
+    ]
+  },
+  "infrastructure": {
+    "origin": [
+      -119.15625,
+      34.4323
+    ],
+    "rotationDeg": 0,
+    "before_origin": [
+      -119.155966,
+      34.432386
+    ],
+    "before_fp_sample": [
+      -119.1560749,
+      34.432377
+    ]
+  }
+}

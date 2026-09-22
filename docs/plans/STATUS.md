@@ -1,8 +1,8 @@
 # STATUS — Agent C
-updated: 2026-09-21
-phase: C12
-state: done
-commit: 60e8c48
-checks: knoll analysis 100x100 m; contours 0.5 m; buildable <15% 5922 m2; 69 oaks; plan PNG; kiva closed open-air
+updated: 2026-09-22
+phase: C15
+state: committing
+commit: pending
+checks: frame WGS84; materials world; overlaps clear; produce/bee/infra moved
 blocked-by: none
-notes: Architect override — C12 Oak Leaf knoll site analysis (no house). Kiva open-air closed.
+notes: C15.3→C15.2→C15.1 done. Oak Leaf untouched. Next C13 then C14.

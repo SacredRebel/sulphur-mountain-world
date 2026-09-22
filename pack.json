@@ -9,9 +9,10 @@
   "frame": {
     "origin_lng": -119.1594805,
     "origin_lat": 34.4304373,
-    "metres_per_deg_lng": 91818.211,
-    "metres_per_deg_lat": 110540,
-    "axes": "x east, y north, metres (equirectangular at origin_lat): lng = origin_lng + x/metres_per_deg_lng, lat = origin_lat + y/metres_per_deg_lat"
+    "metres_per_deg_lng": 91916.198,
+    "metres_per_deg_lat": 110930.184,
+    "axes": "x east, y north, metres (equirectangular at origin_lat): lng = origin_lng + x/metres_per_deg_lng, lat = origin_lat + y/metres_per_deg_lat",
+    "note": "WGS84 meridional / prime-vertical radii at origin_lat (a=6378137, f=1/298.257223563). C15.3 corrected from prior approximate constants."
   },
   "aoi": {
     "bbox": [
