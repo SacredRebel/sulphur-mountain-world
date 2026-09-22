@@ -1,8 +1,8 @@
 ﻿# STATUS — Agent C
 updated: 2026-09-22
-phase: C16
+phase: C17
 state: done
-commit: 5cdd5fd
-checks: horizon flat 0.0 deg; Dec delays 35-75 min; corridor gap ok
+commit: 1344f23
+checks: check-positions OK 37 rows; Oak Leaf unmoved
 blocked-by: none
-notes: C16 done. C17 positions next. C14 waits on scans.
+notes: C17 done. C18 LODs next. C14 waits on scans.
