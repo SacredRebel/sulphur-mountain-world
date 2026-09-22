@@ -1,11 +1,11 @@
 {
   "tool": "meshoptimizer gltfpack",
   "bytes_full_models": 1300212,
-  "bytes_lod_extra": 347852,
-  "bytes_pack_models_with_lods": 1648064,
+  "bytes_lod_extra": 927512,
+  "bytes_pack_models_with_lods": 2227724,
   "triangles_in_view_bands_if_all_models": {
     "0-60m_full": 19071,
-    "60-250m_lod1": 11999,
-    "250m+_lod2": 11723
+    "60-250m_lod1": 14801,
+    "250m+_lod2": 14801
   }
 }

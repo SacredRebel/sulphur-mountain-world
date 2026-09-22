@@ -252,14 +252,14 @@
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/oak-leaf-massing.lod1.glb",
-          "triangles": 4560,
-          "bytes": 46612,
+          "triangles": 4516,
+          "bytes": 125260,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/oak-leaf-massing.lod2.glb",
-          "triangles": 4560,
-          "bytes": 46604,
+          "triangles": 4516,
+          "bytes": 125260,
           "max_distance_m": null
         }
       ]
@@ -308,13 +308,13 @@
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/retreat-village.lod1.glb",
           "triangles": 928,
-          "bytes": 13560,
+          "bytes": 28996,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/retreat-village.lod2.glb",
           "triangles": 928,
-          "bytes": 13560,
+          "bytes": 28996,
           "max_distance_m": null
         }
       ]
@@ -363,13 +363,13 @@
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/glamping-creek.lod1.glb",
           "triangles": 187,
-          "bytes": 4988,
+          "bytes": 7852,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/glamping-creek.lod2.glb",
           "triangles": 187,
-          "bytes": 4988,
+          "bytes": 7852,
           "max_distance_m": null
         }
       ]
@@ -417,13 +417,13 @@
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/the-barn.lod1.glb",
           "triangles": 124,
-          "bytes": 4604,
+          "bytes": 6244,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/the-barn.lod2.glb",
           "triangles": 124,
-          "bytes": 4604,
+          "bytes": 6244,
           "max_distance_m": null
         }
       ]
@@ -471,13 +471,13 @@
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/agricultural-hub.lod1.glb",
           "triangles": 196,
-          "bytes": 5860,
+          "bytes": 8992,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/agricultural-hub.lod2.glb",
           "triangles": 196,
-          "bytes": 5860,
+          "bytes": 8992,
           "max_distance_m": null
         }
       ]
@@ -529,14 +529,14 @@
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/tropical-dome.lod1.glb",
-          "triangles": 290,
-          "bytes": 6748,
+          "triangles": 312,
+          "bytes": 11176,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/tropical-dome.lod2.glb",
-          "triangles": 290,
-          "bytes": 6748,
+          "triangles": 312,
+          "bytes": 11176,
           "max_distance_m": null
         }
       ]
@@ -595,14 +595,14 @@
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/site-grounds.lod1.glb",
-          "triangles": 1704,
-          "bytes": 17176,
+          "triangles": 4464,
+          "bytes": 131656,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/site-grounds.lod2.glb",
-          "triangles": 1428,
-          "bytes": 14572,
+          "triangles": 4464,
+          "bytes": 131656,
           "max_distance_m": null
         }
       ]
@@ -649,14 +649,14 @@
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/creek.lod1.glb",
-          "triangles": 1465,
-          "bytes": 17048,
+          "triangles": 1528,
+          "bytes": 45348,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/creek.lod2.glb",
-          "triangles": 1465,
-          "bytes": 17048,
+          "triangles": 1528,
+          "bytes": 45348,
           "max_distance_m": null
         }
       ]
@@ -709,13 +709,13 @@
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/community-hub.lod1.glb",
           "triangles": 274,
-          "bytes": 6488,
+          "bytes": 10704,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/community-hub.lod2.glb",
           "triangles": 274,
-          "bytes": 6488,
+          "bytes": 10704,
           "max_distance_m": null
         }
       ]
@@ -768,13 +768,13 @@
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/events-gatherings-hub.lod1.glb",
           "triangles": 314,
-          "bytes": 7184,
+          "bytes": 12480,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/events-gatherings-hub.lod2.glb",
           "triangles": 314,
-          "bytes": 7184,
+          "bytes": 12480,
           "max_distance_m": null
         }
       ]
@@ -827,13 +827,13 @@
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/wellness-facilities.lod1.glb",
           "triangles": 360,
-          "bytes": 7212,
+          "bytes": 12568,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/wellness-facilities.lod2.glb",
           "triangles": 360,
-          "bytes": 7212,
+          "bytes": 12568,
           "max_distance_m": null
         }
       ]
@@ -881,13 +881,13 @@
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/livestock-dairy.lod1.glb",
           "triangles": 208,
-          "bytes": 5864,
+          "bytes": 9016,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/livestock-dairy.lod2.glb",
           "triangles": 208,
-          "bytes": 5864,
+          "bytes": 9016,
           "max_distance_m": null
         }
       ]
@@ -935,13 +935,13 @@
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/mushroom-cultivation.lod1.glb",
           "triangles": 134,
-          "bytes": 4768,
+          "bytes": 6532,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/mushroom-cultivation.lod2.glb",
           "triangles": 134,
-          "bytes": 4768,
+          "bytes": 6532,
           "max_distance_m": null
         }
       ]
@@ -989,13 +989,13 @@
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/beekeeping-program.lod1.glb",
           "triangles": 112,
-          "bytes": 4580,
+          "bytes": 5848,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/beekeeping-program.lod2.glb",
           "triangles": 112,
-          "bytes": 4580,
+          "bytes": 5848,
           "max_distance_m": null
         }
       ]
@@ -1044,13 +1044,13 @@
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/farmstead-produce-stand.lod1.glb",
           "triangles": 134,
-          "bytes": 4836,
+          "bytes": 6708,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/farmstead-produce-stand.lod2.glb",
           "triangles": 134,
-          "bytes": 4836,
+          "bytes": 6708,
           "max_distance_m": null
         }
       ]
@@ -1131,13 +1131,13 @@
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/infrastructure.lod1.glb",
           "triangles": 504,
-          "bytes": 9852,
+          "bytes": 18720,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/infrastructure.lod2.glb",
           "triangles": 504,
-          "bytes": 9852,
+          "bytes": 18720,
           "max_distance_m": null
         }
       ]
@@ -1187,14 +1187,14 @@
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/ceremonial-infrastructure.lod1.glb",
-          "triangles": 505,
-          "bytes": 7852,
+          "triangles": 506,
+          "bytes": 15656,
           "max_distance_m": 250
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/ceremonial-infrastructure.lod2.glb",
-          "triangles": 505,
-          "bytes": 7852,
+          "triangles": 506,
+          "bytes": 15656,
           "max_distance_m": null
         }
       ]

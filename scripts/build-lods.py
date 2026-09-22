@@ -63,7 +63,8 @@ def build_lod(src: Path, dst: Path, ratio: float):
         '-i', str(src),
         '-o', str(dst),
         '-si', str(ratio),
-        '-cc',  # merge / weld
+        '-slb',  # lock borders / silhouettes
+        '-se', '0.02',
     ]
     print(' ', ' '.join(cmd))
     r = subprocess.run(cmd, cwd=str(ROOT), capture_output=True, text=True)
