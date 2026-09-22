@@ -242,7 +242,27 @@
       "bytes": 331744,
       "triangles": 5610,
       "authority": "proposal",
-      "note": "Five-leaf house; chimney origin. Footprint from solids (56 pts, 1132 m²); exceptions: oak lounge fire/seat, standing stone (C10)."
+      "note": "Five-leaf house; chimney origin. Footprint from solids (56 pts, 1132 m²); exceptions: oak lounge fire/seat, standing stone (C10).",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/oak-leaf-massing.glb",
+          "triangles": 5610,
+          "bytes": 331744,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/oak-leaf-massing.lod1.glb",
+          "triangles": 4560,
+          "bytes": 46612,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/oak-leaf-massing.lod2.glb",
+          "triangles": 4560,
+          "bytes": 46604,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "retreat-village",
@@ -277,7 +297,27 @@
       "triangles": 1220,
       "authority": "proposed",
       "seed": 42,
-      "note": "Eight seeded cabins round a shared path; oriented to the south-west view, never a grid."
+      "note": "Eight seeded cabins round a shared path; oriented to the south-west view, never a grid.",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/retreat-village.glb",
+          "triangles": 1220,
+          "bytes": 85432,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/retreat-village.lod1.glb",
+          "triangles": 928,
+          "bytes": 13560,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/retreat-village.lod2.glb",
+          "triangles": 928,
+          "bytes": 13560,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "glamping-creek",
@@ -312,7 +352,27 @@
       "triangles": 211,
       "authority": "proposed",
       "seed": 7,
-      "note": "Five seeded tipís along the creek path; sit 1.4 m below the ridge village. Trees between pads are outside the footprint."
+      "note": "Five seeded tipís along the creek path; sit 1.4 m below the ridge village. Trees between pads are outside the footprint.",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/glamping-creek.glb",
+          "triangles": 211,
+          "bytes": 26732,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/glamping-creek.lod1.glb",
+          "triangles": 187,
+          "bytes": 4988,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/glamping-creek.lod2.glb",
+          "triangles": 187,
+          "bytes": 4988,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "the-barn",
@@ -346,7 +406,27 @@
       "bytes": 14208,
       "triangles": 164,
       "authority": "proposed",
-      "note": "Working barn at the gate; loft over the north third. Lidar roof here is smaller — programme-sized massing."
+      "note": "Working barn at the gate; loft over the north third. Lidar roof here is smaller — programme-sized massing.",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/the-barn.glb",
+          "triangles": 164,
+          "bytes": 14208,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/the-barn.lod1.glb",
+          "triangles": 124,
+          "bytes": 4604,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/the-barn.lod2.glb",
+          "triangles": 124,
+          "bytes": 4604,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "agricultural-hub",
@@ -380,7 +460,27 @@
       "bytes": 20920,
       "triangles": 260,
       "authority": "proposed",
-      "note": "Open shed with posts plus enclosed potting wing; nursery yard outside footprint."
+      "note": "Open shed with posts plus enclosed potting wing; nursery yard outside footprint.",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/agricultural-hub.glb",
+          "triangles": 260,
+          "bytes": 20920,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/agricultural-hub.lod1.glb",
+          "triangles": 196,
+          "bytes": 5860,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/agricultural-hub.lod2.glb",
+          "triangles": 196,
+          "bytes": 5860,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "tropical-dome",
@@ -419,7 +519,27 @@
         "elevation_bands": 3,
         "radius_m": 5.5
       },
-      "note": "Low-segment dome: 12 meridians × 3 bands; door is an omitted bay. Whole model 364 tris — no sphere tessellation, no meshopt."
+      "note": "Low-segment dome: 12 meridians × 3 bands; door is an omitted bay. Whole model 364 tris — no sphere tessellation, no meshopt.",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/tropical-dome.glb",
+          "triangles": 364,
+          "bytes": 26888,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/tropical-dome.lod1.glb",
+          "triangles": 290,
+          "bytes": 6748,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/tropical-dome.lod2.glb",
+          "triangles": 290,
+          "bytes": 6748,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "site-grounds",
@@ -465,7 +585,27 @@
         "tread_m": 0.29,
         "ramp_grade": 0.08
       },
-      "note": "Drive, parking, paths. Ramps ≤8% on long climbs; human stairs (170 mm) on the short oak climb. check-paths asserts building riser 180 mm and engine backstop 0.55 m."
+      "note": "Drive, parking, paths. Ramps ≤8% on long climbs; human stairs (170 mm) on the short oak climb. check-paths asserts building riser 180 mm and engine backstop 0.55 m.",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/site-grounds.glb",
+          "triangles": 5952,
+          "bytes": 412028,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/site-grounds.lod1.glb",
+          "triangles": 1704,
+          "bytes": 17176,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/site-grounds.lod2.glb",
+          "triangles": 1428,
+          "bytes": 14572,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "creek",
@@ -499,7 +639,27 @@
       "bytes": 137016,
       "triangles": 2088,
       "authority": "proposed",
-      "note": "Wet-season creek: bed walkable, water visual only, banks solids. Origin at ford on path to glamping. Bed cut 0.75 m below local grade, verified per station."
+      "note": "Wet-season creek: bed walkable, water visual only, banks solids. Origin at ford on path to glamping. Bed cut 0.75 m below local grade, verified per station.",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/creek.glb",
+          "triangles": 2088,
+          "bytes": 137016,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/creek.lod1.glb",
+          "triangles": 1465,
+          "bytes": 17048,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/creek.lod2.glb",
+          "triangles": 1465,
+          "bytes": 17048,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "community-hub",
@@ -538,7 +698,27 @@
       "clear_floor_m2": 90.0,
       "door_w_m": 1.8,
       "second_door_w_m": 1.8,
-      "note": "Programme ~48 (foyer 20 standing + two rooms ×14 seated). Egress load 102 from area×factor; doors from egress (min 1.8 — over-provision vs 1.43 calc)."
+      "note": "Programme ~48 (foyer 20 standing + two rooms ×14 seated). Egress load 102 from area×factor; doors from egress (min 1.8 — over-provision vs 1.43 calc).",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/community-hub.glb",
+          "triangles": 362,
+          "bytes": 28516,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/community-hub.lod1.glb",
+          "triangles": 274,
+          "bytes": 6488,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/community-hub.lod2.glb",
+          "triangles": 274,
+          "bytes": 6488,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "events-gatherings-hub",
@@ -577,7 +757,27 @@
       "clear_floor_m2": 176.0,
       "door_w_m": 1.8,
       "second_door_w_m": 1.8,
-      "note": "Seated assembly: egress load and design capacity both 125 (176/1.4). Doors sized from egress: 125×28 mm = 3.5 m → 1.8+1.8."
+      "note": "Seated assembly: egress load and design capacity both 125 (176/1.4). Doors sized from egress: 125×28 mm = 3.5 m → 1.8+1.8.",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/events-gatherings-hub.glb",
+          "triangles": 352,
+          "bytes": 27032,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/events-gatherings-hub.lod1.glb",
+          "triangles": 314,
+          "bytes": 7184,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/events-gatherings-hub.lod2.glb",
+          "triangles": 314,
+          "bytes": 7184,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "wellness-facilities",
@@ -616,7 +816,27 @@
       "clear_floor_m2": 88.4,
       "door_w_m": 1.8,
       "second_door_w_m": 1.8,
-      "note": "Programme ~14 (4 rooms ×2 + corridor 6). Egress load 96 from area×factor; doors at min 1.8 (over-provision vs 1.34 calc)."
+      "note": "Programme ~14 (4 rooms ×2 + corridor 6). Egress load 96 from area×factor; doors at min 1.8 (over-provision vs 1.34 calc).",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/wellness-facilities.glb",
+          "triangles": 474,
+          "bytes": 36084,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/wellness-facilities.lod1.glb",
+          "triangles": 360,
+          "bytes": 7212,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/wellness-facilities.lod2.glb",
+          "triangles": 360,
+          "bytes": 7212,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "livestock-dairy",
@@ -650,7 +870,27 @@
       "bytes": 22064,
       "triangles": 276,
       "authority": "proposed",
-      "note": "WORK: milk animals and hose the floor clean afterward. Cow door 3.0 m; wash-down floor."
+      "note": "WORK: milk animals and hose the floor clean afterward. Cow door 3.0 m; wash-down floor.",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/livestock-dairy.glb",
+          "triangles": 276,
+          "bytes": 22064,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/livestock-dairy.lod1.glb",
+          "triangles": 208,
+          "bytes": 5864,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/livestock-dairy.lod2.glb",
+          "triangles": 208,
+          "bytes": 5864,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "mushroom-cultivation",
@@ -684,7 +924,27 @@
       "bytes": 14884,
       "triangles": 178,
       "authority": "proposed",
-      "note": "WORK: grow mushrooms in controlled dark climate. Sealed opaque box; no windows."
+      "note": "WORK: grow mushrooms in controlled dark climate. Sealed opaque box; no windows.",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/mushroom-cultivation.glb",
+          "triangles": 178,
+          "bytes": 14884,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/mushroom-cultivation.lod1.glb",
+          "triangles": 134,
+          "bytes": 4768,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/mushroom-cultivation.lod2.glb",
+          "triangles": 134,
+          "bytes": 4768,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "beekeeping-program",
@@ -718,7 +978,27 @@
       "bytes": 12900,
       "triangles": 146,
       "authority": "proposed",
-      "note": "WORK: store hive tools and extract honey next to the yards. Tool shed only; hive yard outside footprint. Shed pad cleared."
+      "note": "WORK: store hive tools and extract honey next to the yards. Tool shed only; hive yard outside footprint. Shed pad cleared.",
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/beekeeping-program.glb",
+          "triangles": 146,
+          "bytes": 12900,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/beekeeping-program.lod1.glb",
+          "triangles": 112,
+          "bytes": 4580,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/beekeeping-program.lod2.glb",
+          "triangles": 112,
+          "bytes": 4580,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "farmstead-produce-stand",
@@ -753,7 +1033,27 @@
       "triangles": 178,
       "authority": "proposed",
       "note": "WORK: sell produce at the road edge; customers stay outside. No enterable interior. Roadside pad cleared.",
-      "enterable_interior": false
+      "enterable_interior": false,
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/farmstead-produce-stand.glb",
+          "triangles": 178,
+          "bytes": 15364,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/farmstead-produce-stand.lod1.glb",
+          "triangles": 134,
+          "bytes": 4836,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/farmstead-produce-stand.lod2.glb",
+          "triangles": 134,
+          "bytes": 4836,
+          "max_distance_m": null
+        }
+      ]
     },
     {
       "id": "infrastructure",
@@ -820,6 +1120,26 @@
           -119.1560748,
           34.4324807
         ]
+      ],
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/infrastructure.glb",
+          "triangles": 616,
+          "bytes": 46192,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/infrastructure.lod1.glb",
+          "triangles": 504,
+          "bytes": 9852,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/infrastructure.lod2.glb",
+          "triangles": 504,
+          "bytes": 9852,
+          "max_distance_m": null
+        }
       ]
     },
     {
@@ -857,6 +1177,26 @@
           -119.1556527,
           34.4325596
         ]
+      ],
+      "lods": [
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/ceremonial-infrastructure.glb",
+          "triangles": 620,
+          "bytes": 42208,
+          "max_distance_m": 60
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/ceremonial-infrastructure.lod1.glb",
+          "triangles": 505,
+          "bytes": 7852,
+          "max_distance_m": 250
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/ceremonial-infrastructure.lod2.glb",
+          "triangles": 505,
+          "bytes": 7852,
+          "max_distance_m": null
+        }
       ]
     }
   ]
