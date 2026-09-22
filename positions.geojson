@@ -1,0 +1,2178 @@
+{
+  "type": "FeatureCollection",
+  "name": "positions",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "utm": "EPSG:32611 (WGS84 UTM 11N) for utm11_e / utm11_n columns",
+  "frame": "pack.json frame (C15.3 WGS84 constants) for pack_x / pack_y",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "oak-leaf-massing",
+        "kind": "model",
+        "lng": -119.155333,
+        "lat": 34.433118,
+        "utm11_e": 301958.572,
+        "utm11_n": 3812287.769,
+        "pack_x": 381.222,
+        "pack_y": 297.371,
+        "elev_m": 425.625,
+        "from_POB_m": 66.157,
+        "bearing_from_POB_deg": 223.276,
+        "footprint_m2": 1136.95,
+        "inside_parcel": true,
+        "min_boundary_m": 24.208,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.155333,
+          34.433118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "oak-leaf-massing-footprint",
+        "kind": "footprint",
+        "parent": "oak-leaf-massing",
+        "footprint_m2": 1136.95,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1552824,
+              34.4333363
+            ],
+            [
+              -119.1552949,
+              34.4333363
+            ],
+            [
+              -119.1553074,
+              34.4333363
+            ],
+            [
+              -119.1554077,
+              34.4333274
+            ],
+            [
+              -119.155508,
+              34.4333185
+            ],
+            [
+              -119.1555189,
+              34.4333174
+            ],
+            [
+              -119.1555297,
+              34.4333163
+            ],
+            [
+              -119.1555306,
+              34.4333161
+            ],
+            [
+              -119.1555316,
+              34.4333159
+            ],
+            [
+              -119.1555413,
+              34.4333126
+            ],
+            [
+              -119.155551,
+              34.4333093
+            ],
+            [
+              -119.1555574,
+              34.4333044
+            ],
+            [
+              -119.1555637,
+              34.4332996
+            ],
+            [
+              -119.1555644,
+              34.433299
+            ],
+            [
+              -119.1555651,
+              34.4332984
+            ],
+            [
+              -119.1555673,
+              34.4332928
+            ],
+            [
+              -119.1555696,
+              34.4332872
+            ],
+            [
+              -119.1555698,
+              34.4332864
+            ],
+            [
+              -119.1555701,
+              34.4332856
+            ],
+            [
+              -119.1555701,
+              34.4332854
+            ],
+            [
+              -119.1555701,
+              34.4332851
+            ],
+            [
+              -119.1555354,
+              34.4331544
+            ],
+            [
+              -119.1555007,
+              34.4330236
+            ],
+            [
+              -119.1555005,
+              34.4330228
+            ],
+            [
+              -119.1555002,
+              34.433022
+            ],
+            [
+              -119.1554967,
+              34.4330149
+            ],
+            [
+              -119.1554931,
+              34.4330079
+            ],
+            [
+              -119.1554924,
+              34.4330073
+            ],
+            [
+              -119.1554917,
+              34.4330067
+            ],
+            [
+              -119.1554908,
+              34.4330065
+            ],
+            [
+              -119.1554898,
+              34.4330063
+            ],
+            [
+              -119.1554877,
+              34.4330059
+            ],
+            [
+              -119.1554855,
+              34.4330056
+            ],
+            [
+              -119.1553983,
+              34.4330056
+            ],
+            [
+              -119.1553112,
+              34.4330056
+            ],
+            [
+              -119.155238,
+              34.4330147
+            ],
+            [
+              -119.1551647,
+              34.4330238
+            ],
+            [
+              -119.1551637,
+              34.433024
+            ],
+            [
+              -119.1551628,
+              34.4330242
+            ],
+            [
+              -119.1551621,
+              34.4330248
+            ],
+            [
+              -119.1551614,
+              34.4330254
+            ],
+            [
+              -119.1551609,
+              34.433026
+            ],
+            [
+              -119.1551604,
+              34.4330265
+            ],
+            [
+              -119.1551601,
+              34.4330273
+            ],
+            [
+              -119.1551599,
+              34.4330281
+            ],
+            [
+              -119.1551615,
+              34.4331045
+            ],
+            [
+              -119.1551631,
+              34.433181
+            ],
+            [
+              -119.1551633,
+              34.4331818
+            ],
+            [
+              -119.1551636,
+              34.4331825
+            ],
+            [
+              -119.1552066,
+              34.4332456
+            ],
+            [
+              -119.1552496,
+              34.4333087
+            ],
+            [
+              -119.1552559,
+              34.4333176
+            ],
+            [
+              -119.1552621,
+              34.4333266
+            ],
+            [
+              -119.1552628,
+              34.4333272
+            ],
+            [
+              -119.1552635,
+              34.4333278
+            ],
+            [
+              -119.155272,
+              34.4333318
+            ],
+            [
+              -119.1552824,
+              34.4333363
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "retreat-village",
+        "kind": "model",
+        "lng": -119.155628,
+        "lat": 34.432173,
+        "utm11_e": 301929.231,
+        "utm11_n": 3812183.532,
+        "pack_x": 354.107,
+        "pack_y": 192.542,
+        "elev_m": 431.625,
+        "from_POB_m": 169.289,
+        "bearing_from_POB_deg": 205.345,
+        "footprint_m2": 1029.45,
+        "inside_parcel": true,
+        "min_boundary_m": 28.692,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.155628,
+          34.432173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "retreat-village-footprint",
+        "kind": "footprint",
+        "parent": "retreat-village",
+        "footprint_m2": 1029.45,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1558376,
+              34.4320504
+            ],
+            [
+              -119.1554318,
+              34.4320504
+            ],
+            [
+              -119.1554318,
+              34.4322992
+            ],
+            [
+              -119.1558376,
+              34.4322992
+            ],
+            [
+              -119.1558376,
+              34.4320504
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "glamping-creek",
+        "kind": "model",
+        "lng": -119.15654,
+        "lat": 34.432479,
+        "utm11_e": 301846.139,
+        "utm11_n": 3812219.256,
+        "pack_x": 270.28,
+        "pack_y": 226.486,
+        "elev_m": 419.125,
+        "from_POB_m": 196.471,
+        "bearing_from_POB_deg": 232.703,
+        "footprint_m2": 581.22,
+        "inside_parcel": true,
+        "min_boundary_m": 31.512,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.15654,
+          34.432479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "glamping-creek-footprint",
+        "kind": "footprint",
+        "parent": "glamping-creek",
+        "footprint_m2": 581.22,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1565941,
+              34.4324301
+            ],
+            [
+              -119.1561048,
+              34.4324301
+            ],
+            [
+              -119.1561048,
+              34.4325466
+            ],
+            [
+              -119.1565941,
+              34.4325466
+            ],
+            [
+              -119.1565941,
+              34.4324301
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "the-barn",
+        "kind": "model",
+        "lng": -119.156728,
+        "lat": 34.433082,
+        "utm11_e": 301830.286,
+        "utm11_n": 3812286.505,
+        "pack_x": 252.999,
+        "pack_y": 293.377,
+        "elev_m": 420.625,
+        "from_POB_m": 181.242,
+        "bearing_from_POB_deg": 253.274,
+        "footprint_m2": 228.36,
+        "inside_parcel": true,
+        "min_boundary_m": 12.504,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.156728,
+          34.433082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "the-barn-footprint",
+        "kind": "footprint",
+        "parent": "the-barn",
+        "footprint_m2": 228.36,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1567955,
+              34.4330802
+            ],
+            [
+              -119.1566605,
+              34.4330802
+            ],
+            [
+              -119.1566605,
+              34.4332461
+            ],
+            [
+              -119.1567955,
+              34.4332461
+            ],
+            [
+              -119.1567955,
+              34.4330802
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agricultural-hub",
+        "kind": "model",
+        "lng": -119.155982,
+        "lat": 34.433478,
+        "utm11_e": 301899.779,
+        "utm11_n": 3812328.967,
+        "pack_x": 321.569,
+        "pack_y": 337.305,
+        "elev_m": 421.5,
+        "from_POB_m": 105.327,
+        "bearing_from_POB_deg": 265.518,
+        "footprint_m2": 199.91,
+        "inside_parcel": true,
+        "min_boundary_m": 0.647,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.155982,
+          34.433478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agricultural-hub-footprint",
+        "kind": "footprint",
+        "parent": "agricultural-hub",
+        "footprint_m2": 199.91,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1560723,
+              34.4334753
+            ],
+            [
+              -119.155815,
+              34.4334753
+            ],
+            [
+              -119.155815,
+              34.4335515
+            ],
+            [
+              -119.1560723,
+              34.4335515
+            ],
+            [
+              -119.1560723,
+              34.4334753
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tropical-dome",
+        "kind": "model",
+        "lng": -119.156763,
+        "lat": 34.432888,
+        "utm11_e": 301826.612,
+        "utm11_n": 3812265.056,
+        "pack_x": 249.782,
+        "pack_y": 271.857,
+        "elev_m": 418.375,
+        "from_POB_m": 191.531,
+        "bearing_from_POB_deg": 247.376,
+        "footprint_m2": 129.97,
+        "inside_parcel": true,
+        "min_boundary_m": 9.975,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.156763,
+          34.432888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tropical-dome-footprint",
+        "kind": "footprint",
+        "parent": "tropical-dome",
+        "footprint_m2": 129.97,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.156825,
+              34.4328862
+            ],
+            [
+              -119.156701,
+              34.4328862
+            ],
+            [
+              -119.156701,
+              34.432989
+            ],
+            [
+              -119.156825,
+              34.432989
+            ],
+            [
+              -119.156825,
+              34.4328862
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "site-grounds",
+        "kind": "model",
+        "lng": -119.156345,
+        "lat": 34.432675,
+        "utm11_e": 301864.523,
+        "utm11_n": 3812240.613,
+        "pack_x": 288.203,
+        "pack_y": 248.228,
+        "elev_m": 419.25,
+        "from_POB_m": 169.16,
+        "bearing_from_POB_deg": 234.884,
+        "footprint_m2": 35332.43,
+        "inside_parcel": false,
+        "min_boundary_m": -82.169,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.156345,
+          34.432675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "site-grounds-footprint",
+        "kind": "footprint",
+        "parent": "site-grounds",
+        "footprint_m2": 35332.43,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1578235,
+              34.4321434
+            ],
+            [
+              -119.1552845,
+              34.4321434
+            ],
+            [
+              -119.1552845,
+              34.4335082
+            ],
+            [
+              -119.1578235,
+              34.4335082
+            ],
+            [
+              -119.1578235,
+              34.4321434
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "creek",
+        "kind": "model",
+        "lng": -119.156485,
+        "lat": 34.432554,
+        "utm11_e": 301851.371,
+        "utm11_n": 3812227.467,
+        "pack_x": 275.335,
+        "pack_y": 234.806,
+        "elev_m": 418.125,
+        "from_POB_m": 187.442,
+        "bearing_from_POB_deg": 233.79,
+        "footprint_m2": 2241.04,
+        "inside_parcel": false,
+        "min_boundary_m": -5.026,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.156485,
+          34.432554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "creek-footprint",
+        "kind": "footprint",
+        "parent": "creek",
+        "footprint_m2": 2241.04,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1569909,
+              34.4323962
+            ],
+            [
+              -119.1560879,
+              34.4323962
+            ],
+            [
+              -119.1560879,
+              34.4326396
+            ],
+            [
+              -119.1569909,
+              34.4326396
+            ],
+            [
+              -119.1569909,
+              34.4323962
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "community-hub",
+        "kind": "model",
+        "lng": -119.155387,
+        "lat": 34.432771,
+        "utm11_e": 301952.79,
+        "utm11_n": 3812249.387,
+        "pack_x": 376.259,
+        "pack_y": 258.878,
+        "elev_m": 421.188,
+        "from_POB_m": 100.206,
+        "bearing_from_POB_deg": 210.14,
+        "footprint_m2": 141.93,
+        "inside_parcel": true,
+        "min_boundary_m": 27.043,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.155387,
+          34.432771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "community-hub-footprint",
+        "kind": "footprint",
+        "parent": "community-hub",
+        "footprint_m2": 141.93,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1554784,
+              34.4327584
+            ],
+            [
+              -119.1552804,
+              34.4327584
+            ],
+            [
+              -119.1552804,
+              34.4328287
+            ],
+            [
+              -119.1554784,
+              34.4328287
+            ],
+            [
+              -119.1554784,
+              34.4327584
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "events-gatherings-hub",
+        "kind": "model",
+        "lng": -119.155065,
+        "lat": 34.433394,
+        "utm11_e": 301983.853,
+        "utm11_n": 3812317.857,
+        "pack_x": 405.856,
+        "pack_y": 327.987,
+        "elev_m": 425.25,
+        "from_POB_m": 27.152,
+        "bearing_from_POB_deg": 229.734,
+        "footprint_m2": 241.45,
+        "inside_parcel": true,
+        "min_boundary_m": 5.025,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.155065,
+          34.433394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "events-gatherings-hub-footprint",
+        "kind": "footprint",
+        "parent": "events-gatherings-hub",
+        "footprint_m2": 241.45,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1551575,
+              34.4333796
+            ],
+            [
+              -119.1549725,
+              34.4333796
+            ],
+            [
+              -119.1549725,
+              34.4335076
+            ],
+            [
+              -119.1551575,
+              34.4335076
+            ],
+            [
+              -119.1551575,
+              34.4333796
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "wellness-facilities",
+        "kind": "model",
+        "lng": -119.155062,
+        "lat": 34.43293,
+        "utm11_e": 301983.033,
+        "utm11_n": 3812266.387,
+        "pack_x": 406.132,
+        "pack_y": 276.516,
+        "elev_m": 425.812,
+        "from_POB_m": 71.984,
+        "bearing_from_POB_deg": 196.498,
+        "footprint_m2": 158.29,
+        "inside_parcel": true,
+        "min_boundary_m": 7.432,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.155062,
+          34.43293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "wellness-facilities-footprint",
+        "kind": "footprint",
+        "parent": "wellness-facilities",
+        "footprint_m2": 158.29,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1551218,
+              34.4329192
+            ],
+            [
+              -119.1550022,
+              34.4329192
+            ],
+            [
+              -119.1550022,
+              34.433049
+            ],
+            [
+              -119.1551218,
+              34.433049
+            ],
+            [
+              -119.1551218,
+              34.4329192
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "livestock-dairy",
+        "kind": "model",
+        "lng": -119.156143,
+        "lat": 34.432797,
+        "utm11_e": 301883.375,
+        "utm11_n": 3812253.75,
+        "pack_x": 306.77,
+        "pack_y": 261.762,
+        "elev_m": 419.438,
+        "from_POB_m": 146.188,
+        "bearing_from_POB_deg": 235.036,
+        "footprint_m2": 227.35,
+        "inside_parcel": true,
+        "min_boundary_m": 65.331,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.156143,
+          34.432797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "livestock-dairy-footprint",
+        "kind": "footprint",
+        "parent": "livestock-dairy",
+        "footprint_m2": 227.35,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1562235,
+              34.4327835
+            ],
+            [
+              -119.1560157,
+              34.4327835
+            ],
+            [
+              -119.1560157,
+              34.4328908
+            ],
+            [
+              -119.1562235,
+              34.4328908
+            ],
+            [
+              -119.1562235,
+              34.4327835
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mushroom-cultivation",
+        "kind": "model",
+        "lng": -119.156218,
+        "lat": 34.433474,
+        "utm11_e": 301878.081,
+        "utm11_n": 3812328.985,
+        "pack_x": 299.877,
+        "pack_y": 336.862,
+        "elev_m": 421.688,
+        "from_POB_m": 126.994,
+        "bearing_from_POB_deg": 266.083,
+        "footprint_m2": 62.8,
+        "inside_parcel": true,
+        "min_boundary_m": 3.151,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.156218,
+          34.433474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mushroom-cultivation-footprint",
+        "kind": "footprint",
+        "parent": "mushroom-cultivation",
+        "footprint_m2": 62.8,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1562648,
+              34.433465
+            ],
+            [
+              -119.1561712,
+              34.433465
+            ],
+            [
+              -119.1561712,
+              34.4335308
+            ],
+            [
+              -119.1562648,
+              34.4335308
+            ],
+            [
+              -119.1562648,
+              34.433465
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "beekeeping-program",
+        "kind": "model",
+        "lng": -119.1557,
+        "lat": 34.43352,
+        "utm11_e": 301925.794,
+        "utm11_n": 3812333.074,
+        "pack_x": 347.489,
+        "pack_y": 341.964,
+        "elev_m": 422.75,
+        "from_POB_m": 79.165,
+        "bearing_from_POB_deg": 267.414,
+        "footprint_m2": 20.7,
+        "inside_parcel": true,
+        "min_boundary_m": 0.355,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1557,
+          34.43352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "beekeeping-program-footprint",
+        "kind": "footprint",
+        "parent": "beekeeping-program",
+        "footprint_m2": 20.7,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155725,
+              34.4335128
+            ],
+            [
+              -119.155675,
+              34.4335128
+            ],
+            [
+              -119.155675,
+              34.4335534
+            ],
+            [
+              -119.155725,
+              34.4335534
+            ],
+            [
+              -119.155725,
+              34.4335128
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "farmstead-produce-stand",
+        "kind": "model",
+        "lng": -119.15725,
+        "lat": 34.4324,
+        "utm11_e": 301780.703,
+        "utm11_n": 3812211.883,
+        "pack_x": 205.019,
+        "pack_y": 217.723,
+        "elev_m": 417.875,
+        "from_POB_m": 255.779,
+        "bearing_from_POB_deg": 240.02,
+        "footprint_m2": 32.16,
+        "inside_parcel": true,
+        "min_boundary_m": 4.488,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.15725,
+          34.4324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "farmstead-produce-stand-footprint",
+        "kind": "footprint",
+        "parent": "farmstead-produce-stand",
+        "footprint_m2": 32.16,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1572837,
+              34.4323838
+            ],
+            [
+              -119.1572163,
+              34.4323838
+            ],
+            [
+              -119.1572163,
+              34.4324306
+            ],
+            [
+              -119.1572837,
+              34.4324306
+            ],
+            [
+              -119.1572837,
+              34.4323838
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "infrastructure",
+        "kind": "model",
+        "lng": -119.155966,
+        "lat": 34.432386,
+        "utm11_e": 301898.671,
+        "utm11_n": 3812207.818,
+        "pack_x": 323.039,
+        "pack_y": 216.17,
+        "elev_m": 425.25,
+        "from_POB_m": 165.696,
+        "bearing_from_POB_deg": 218.671,
+        "footprint_m2": 571.55,
+        "inside_parcel": true,
+        "min_boundary_m": 57.2,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.155966,
+          34.432386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "infrastructure-footprint",
+        "kind": "footprint",
+        "parent": "infrastructure",
+        "footprint_m2": 571.55,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1560748,
+              34.432377
+            ],
+            [
+              -119.1558191,
+              34.432377
+            ],
+            [
+              -119.1558191,
+              34.4324807
+            ],
+            [
+              -119.1559334,
+              34.4324807
+            ],
+            [
+              -119.1559334,
+              34.432715
+            ],
+            [
+              -119.1556124,
+              34.432715
+            ],
+            [
+              -119.1556124,
+              34.4328232
+            ],
+            [
+              -119.1557539,
+              34.4328232
+            ],
+            [
+              -119.1557539,
+              34.4327331
+            ],
+            [
+              -119.1559769,
+              34.4327331
+            ],
+            [
+              -119.1559769,
+              34.4324807
+            ],
+            [
+              -119.1560748,
+              34.4324807
+            ],
+            [
+              -119.1560748,
+              34.432377
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ceremonial-infrastructure",
+        "kind": "model",
+        "lng": -119.155582,
+        "lat": 34.432501,
+        "utm11_e": 301934.232,
+        "utm11_n": 3812219.822,
+        "pack_x": 358.335,
+        "pack_y": 228.927,
+        "elev_m": 422.312,
+        "from_POB_m": 135.109,
+        "bearing_from_POB_deg": 210.336,
+        "footprint_m2": 168.97,
+        "inside_parcel": true,
+        "min_boundary_m": 47.5,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.155582,
+          34.432501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ceremonial-infrastructure-footprint",
+        "kind": "footprint",
+        "parent": "ceremonial-infrastructure",
+        "footprint_m2": 168.97,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1556527,
+              34.4324424
+            ],
+            [
+              -119.1555113,
+              34.4324424
+            ],
+            [
+              -119.1555113,
+              34.4325596
+            ],
+            [
+              -119.1556527,
+              34.4325596
+            ],
+            [
+              -119.1556527,
+              34.4324424
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POB",
+        "kind": "survey_corner",
+        "lng": -119.1548396,
+        "lat": 34.4335522,
+        "utm11_e": 302004.94,
+        "utm11_n": 3812334.963,
+        "pack_x": 426.574,
+        "pack_y": 345.536,
+        "elev_m": 426.938,
+        "from_POB_m": 0.0,
+        "bearing_from_POB_deg": 0.0,
+        "footprint_m2": 0.0,
+        "inside_parcel": true,
+        "min_boundary_m": 0.0,
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1548396,
+          34.4335522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "corner-2",
+        "kind": "survey_corner",
+        "lng": -119.1569291,
+        "lat": 34.4335632,
+        "utm11_e": 301812.942,
+        "utm11_n": 3812340.27,
+        "pack_x": 234.515,
+        "pack_y": 346.757,
+        "elev_m": 419.375,
+        "from_POB_m": 192.063,
+        "bearing_from_POB_deg": 270.364,
+        "footprint_m2": 0.0,
+        "inside_parcel": true,
+        "min_boundary_m": 0.0,
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1569291,
+          34.4335632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "corner-3",
+        "kind": "survey_corner",
+        "lng": -119.1569371,
+        "lat": 34.4325257,
+        "utm11_e": 301809.756,
+        "utm11_n": 3812225.212,
+        "pack_x": 233.78,
+        "pack_y": 231.667,
+        "elev_m": 418.562,
+        "from_POB_m": 223.911,
+        "bearing_from_POB_deg": 239.433,
+        "footprint_m2": 0.0,
+        "inside_parcel": true,
+        "min_boundary_m": 0.0,
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1569371,
+          34.4325257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "corner-4",
+        "kind": "survey_corner",
+        "lng": -119.1578497,
+        "lat": 34.4323837,
+        "utm11_e": 301725.552,
+        "utm11_n": 3812211.249,
+        "pack_x": 149.897,
+        "pack_y": 215.915,
+        "elev_m": 417.812,
+        "from_POB_m": 305.536,
+        "bearing_from_POB_deg": 244.897,
+        "footprint_m2": 0.0,
+        "inside_parcel": true,
+        "min_boundary_m": 0.0,
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1578497,
+          34.4323837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "corner-5",
+        "kind": "survey_corner",
+        "lng": -119.1578505,
+        "lat": 34.4322793,
+        "utm11_e": 301725.231,
+        "utm11_n": 3812199.671,
+        "pack_x": 149.823,
+        "pack_y": 204.333,
+        "elev_m": 420.438,
+        "from_POB_m": 310.691,
+        "bearing_from_POB_deg": 242.969,
+        "footprint_m2": 0.0,
+        "inside_parcel": true,
+        "min_boundary_m": 0.0,
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1578505,
+          34.4322793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "corner-6",
+        "kind": "survey_corner",
+        "lng": -119.15694,
+        "lat": 34.432141,
+        "utm11_e": 301808.581,
+        "utm11_n": 3812182.549,
+        "pack_x": 233.513,
+        "pack_y": 188.992,
+        "elev_m": 429.562,
+        "from_POB_m": 248.553,
+        "bearing_from_POB_deg": 230.963,
+        "footprint_m2": 0.0,
+        "inside_parcel": true,
+        "min_boundary_m": 0.0,
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.15694,
+          34.432141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "corner-7",
+        "kind": "survey_corner",
+        "lng": -119.1569426,
+        "lat": 34.4317976,
+        "utm11_e": 301807.531,
+        "utm11_n": 3812144.466,
+        "pack_x": 233.274,
+        "pack_y": 150.898,
+        "elev_m": 451.812,
+        "from_POB_m": 274.315,
+        "bearing_from_POB_deg": 224.802,
+        "footprint_m2": 0.0,
+        "inside_parcel": true,
+        "min_boundary_m": 0.0,
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1569426,
+          34.4317976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "corner-8",
+        "kind": "survey_corner",
+        "lng": -119.1549996,
+        "lat": 34.4317873,
+        "utm11_e": 301986.071,
+        "utm11_n": 3812139.523,
+        "pack_x": 411.867,
+        "pack_y": 149.756,
+        "elev_m": 450.0,
+        "from_POB_m": 196.332,
+        "bearing_from_POB_deg": 184.296,
+        "footprint_m2": 0.0,
+        "inside_parcel": true,
+        "min_boundary_m": 0.0,
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1549996,
+          34.4317873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "corner-9",
+        "kind": "survey_corner",
+        "lng": -119.1549928,
+        "lat": 34.4326631,
+        "utm11_e": 301988.763,
+        "utm11_n": 3812236.649,
+        "pack_x": 412.492,
+        "pack_y": 246.908,
+        "elev_m": 421.188,
+        "from_POB_m": 99.628,
+        "bearing_from_POB_deg": 188.125,
+        "footprint_m2": 0.0,
+        "inside_parcel": true,
+        "min_boundary_m": 0.0,
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1549928,
+          34.4326631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "corner-10",
+        "kind": "survey_corner",
+        "lng": -119.1549783,
+        "lat": 34.4328552,
+        "utm11_e": 301990.549,
+        "utm11_n": 3812257.927,
+        "pack_x": 413.825,
+        "pack_y": 268.218,
+        "elev_m": 423.562,
+        "from_POB_m": 78.362,
+        "bearing_from_POB_deg": 189.363,
+        "footprint_m2": 0.0,
+        "inside_parcel": true,
+        "min_boundary_m": 0.0,
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1549783,
+          34.4328552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "corner-11",
+        "kind": "survey_corner",
+        "lng": -119.154845,
+        "lat": 34.4328545,
+        "utm11_e": 302002.798,
+        "utm11_n": 3812257.589,
+        "pack_x": 426.078,
+        "pack_y": 268.14,
+        "elev_m": 423.75,
+        "from_POB_m": 77.398,
+        "bearing_from_POB_deg": 180.367,
+        "footprint_m2": 0.0,
+        "inside_parcel": true,
+        "min_boundary_m": 0.0,
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.154845,
+          34.4328545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ford",
+        "kind": "ford",
+        "lng": -119.1564886,
+        "lat": 34.4325467,
+        "utm11_e": 301851.019,
+        "utm11_n": 3812226.668,
+        "pack_x": 275.0,
+        "pack_y": 234.0,
+        "elev_m": 418.125,
+        "from_POB_m": 188.189,
+        "bearing_from_POB_deg": 233.652,
+        "footprint_m2": 15.0,
+        "inside_parcel": true,
+        "min_boundary_m": 38.695,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1564886,
+          34.4325467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ford-footprint",
+        "kind": "footprint",
+        "parent": "ford",
+        "footprint_m2": 15.0,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15651584299798,
+              34.43253321286714
+            ],
+            [
+              -119.1564614456218,
+              34.43253321286714
+            ],
+            [
+              -119.1564614456218,
+              34.43256025690414
+            ],
+            [
+              -119.15651584299798,
+              34.43256025690414
+            ],
+            [
+              -119.15651584299798,
+              34.43253321286714
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "well",
+        "kind": "well",
+        "lng": -119.1560258,
+        "lat": 34.4324176,
+        "utm11_e": 301893.246,
+        "utm11_n": 3812211.434,
+        "pack_x": 317.539,
+        "pack_y": 219.67,
+        "elev_m": 423.438,
+        "from_POB_m": 166.526,
+        "bearing_from_POB_deg": 220.901,
+        "footprint_m2": 2.56,
+        "inside_parcel": true,
+        "min_boundary_m": 68.504,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1560258,
+          34.4324176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "well-footprint",
+        "kind": "footprint",
+        "parent": "well",
+        "footprint_m2": 2.56,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.156034540694,
+              34.4324103396333
+            ],
+            [
+              -119.15601713353362,
+              34.4324103396333
+            ],
+            [
+              -119.15601713353362,
+              34.43242476311969
+            ],
+            [
+              -119.156034540694,
+              34.43242476311969
+            ],
+            [
+              -119.156034540694,
+              34.4324103396333
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "road-entry",
+        "kind": "road_entry",
+        "lng": -119.1577942,
+        "lat": 34.4324476,
+        "utm11_e": 301730.805,
+        "utm11_n": 3812218.225,
+        "pack_x": 155.0,
+        "pack_y": 223.0,
+        "elev_m": 415.938,
+        "from_POB_m": 297.939,
+        "bearing_from_POB_deg": 245.715,
+        "footprint_m2": 16.0,
+        "inside_parcel": false,
+        "min_boundary_m": -8.357,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1577942,
+          34.4324476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "road-entry-footprint",
+        "kind": "footprint",
+        "parent": "road-entry",
+        "footprint_m2": 16.0,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15781594028877,
+              34.432429544058664
+            ],
+            [
+              -119.15777242238782,
+              34.432429544058664
+            ],
+            [
+              -119.15777242238782,
+              34.432465602774656
+            ],
+            [
+              -119.15781594028877,
+              34.432465602774656
+            ],
+            [
+              -119.15781594028877,
+              34.432429544058664
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "gate",
+        "kind": "gate",
+        "lng": -119.156728,
+        "lat": 34.4330009,
+        "utm11_e": 301830.095,
+        "utm11_n": 3812277.506,
+        "pack_x": 252.999,
+        "pack_y": 284.377,
+        "elev_m": 420.562,
+        "from_POB_m": 184.034,
+        "bearing_from_POB_deg": 250.59,
+        "footprint_m2": 160.0,
+        "inside_parcel": true,
+        "min_boundary_m": 10.851,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.156728,
+          34.4330009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "gate-footprint",
+        "kind": "footprint",
+        "parent": "gate",
+        "footprint_m2": 160.0,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1568150358019,
+              34.43295579449402
+            ],
+            [
+              -119.1566409641981,
+              34.43295579449402
+            ],
+            [
+              -119.1566409641981,
+              34.43304594128401
+            ],
+            [
+              -119.1568150358019,
+              34.43304594128401
+            ],
+            [
+              -119.1568150358019,
+              34.43295579449402
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pad-gate-parking",
+        "kind": "pad",
+        "lng": -119.156728,
+        "lat": 34.4330009,
+        "utm11_e": 301830.095,
+        "utm11_n": 3812277.506,
+        "pack_x": 252.999,
+        "pack_y": 284.377,
+        "elev_m": 420.562,
+        "from_POB_m": 184.034,
+        "bearing_from_POB_deg": 250.59,
+        "footprint_m2": 160.0,
+        "inside_parcel": true,
+        "min_boundary_m": 10.851,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.156728,
+          34.4330009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pad-gate-parking-footprint",
+        "kind": "footprint",
+        "parent": "pad-gate-parking",
+        "footprint_m2": 160.0,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1568150358019,
+              34.43295579449402
+            ],
+            [
+              -119.1566409641981,
+              34.43295579449402
+            ],
+            [
+              -119.1566409641981,
+              34.43304594128401
+            ],
+            [
+              -119.1568150358019,
+              34.43304594128401
+            ],
+            [
+              -119.1568150358019,
+              34.43295579449402
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pad-oak-court-parking",
+        "kind": "pad",
+        "lng": -119.155425,
+        "lat": 34.432952,
+        "utm11_e": 301949.725,
+        "utm11_n": 3812269.537,
+        "pack_x": 372.766,
+        "pack_y": 278.956,
+        "elev_m": 422.188,
+        "from_POB_m": 85.605,
+        "bearing_from_POB_deg": 218.944,
+        "footprint_m2": 160.0,
+        "inside_parcel": true,
+        "min_boundary_m": 31.781,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.155425,
+          34.432952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pad-oak-court-parking-footprint",
+        "kind": "footprint",
+        "parent": "pad-oak-court-parking",
+        "footprint_m2": 160.0,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15553379475236,
+              34.43291594128401
+            ],
+            [
+              -119.15531620524763,
+              34.43291594128401
+            ],
+            [
+              -119.15531620524763,
+              34.43298805871599
+            ],
+            [
+              -119.15553379475236,
+              34.43298805871599
+            ],
+            [
+              -119.15553379475236,
+              34.43291594128401
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pad-arrival",
+        "kind": "pad",
+        "lng": -119.156345,
+        "lat": 34.432675,
+        "utm11_e": 301864.523,
+        "utm11_n": 3812240.613,
+        "pack_x": 288.203,
+        "pack_y": 248.228,
+        "elev_m": 419.25,
+        "from_POB_m": 169.16,
+        "bearing_from_POB_deg": 234.884,
+        "footprint_m2": 36.0,
+        "inside_parcel": true,
+        "min_boundary_m": 51.298,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.156345,
+          34.432675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pad-arrival-footprint",
+        "kind": "footprint",
+        "parent": "pad-arrival",
+        "footprint_m2": 36.0,
+        "source": "derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15637763842571,
+              34.432647955963006
+            ],
+            [
+              -119.1563123615743,
+              34.432647955963006
+            ],
+            [
+              -119.1563123615743,
+              34.432702044037
+            ],
+            [
+              -119.15637763842571,
+              34.432702044037
+            ],
+            [
+              -119.15637763842571,
+              34.432647955963006
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pad-oak-leaf-court",
+        "kind": "pad",
+        "lng": -119.155425,
+        "lat": 34.4329525,
+        "utm11_e": 301949.727,
+        "utm11_n": 3812269.592,
+        "pack_x": 372.766,
+        "pack_y": 279.012,
+        "elev_m": 422.188,
+        "from_POB_m": 85.562,
+        "bearing_from_POB_deg": 218.967,
+        "footprint_m2": 166.71,
+        "inside_parcel": true,
+        "min_boundary_m": 31.741,
+        "source": "owner plan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.155425,
+          34.4329525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pad-oak-leaf-court-footprint",
+        "kind": "footprint",
+        "parent": "pad-oak-leaf-court",
+        "footprint_m2": 166.71,
+        "source": "owner plan"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155534,
+              34.43299
+            ],
+            [
+              -119.155316,
+              34.43299
+            ],
+            [
+              -119.155316,
+              34.432915
+            ],
+            [
+              -119.155534,
+              34.432915
+            ],
+            [
+              -119.155534,
+              34.43299
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "oak-lounge",
+        "kind": "feature",
+        "lng": -119.155643,
+        "lat": 34.433109,
+        "utm11_e": 301930.062,
+        "utm11_n": 3812287.377,
+        "pack_x": 352.728,
+        "pack_y": 296.372,
+        "elev_m": 424.375,
+        "from_POB_m": 88.715,
+        "bearing_from_POB_deg": 236.345,
+        "footprint_m2": 0.0,
+        "inside_parcel": true,
+        "min_boundary_m": 49.632,
+        "source": "owner plan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.155643,
+          34.433109
+        ]
+      }
+    }
+  ]
+}

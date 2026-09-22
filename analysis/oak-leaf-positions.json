@@ -1,0 +1,19 @@
+{
+  "id": "oak-leaf-massing",
+  "lng": -119.155333,
+  "lat": 34.433118,
+  "pack_x": 381.222,
+  "pack_y": 297.371,
+  "elev_m": 425.625,
+  "footprint_m2": 1136.95,
+  "from_POB_m": 66.157,
+  "bearing_from_POB_deg": 223.276,
+  "min_boundary_m": 24.208,
+  "inside_parcel": true,
+  "dist_creek_footprint_m": 68.251,
+  "trees_inside_footprint": 6,
+  "trees_near_5m_hge8": 4,
+  "nearest_tree_m": 0.076,
+  "moved": false,
+  "note": "C17.3 - Oak Leaf not moved"
+}
