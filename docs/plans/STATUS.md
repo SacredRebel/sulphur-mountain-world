@@ -1,8 +1,8 @@
-# STATUS - Agent C
+﻿# STATUS - Agent C
 updated: 2026-09-22
-phase: C14
+phase: C20
 state: done
-commit: 284f0d8
-checks: check-scans OK; prior checks still green; real captures wait on Sacred Rebel
-blocked-by: private scan storage + one Scaniverse zone (tooling ready)
-notes: C14.1 capture plan (160 zones); C14.2 scan.py + scans.json; C14.3 synthetic RMS 0.000 m. C19 on main.
+commit: a73823f
+checks: check-rasters OK (non-zero probes); check-surfaces OK; check-defensible OK; check-water OK; prior suite green
+blocked-by: private scan storage + one Scaniverse zone (C14 tooling ready; real captures wait)
+notes: C20.1 buildable/gathering bands (gathers alias of buildable); C20.2 defensible-space; C20.3 water-harvest. Oak proof EN(260.8,267.8) buildable=0 gathering=1. Open ground 1.74 of 9.46 ac. Held 58 m3 (16.8%) of 25 mm runoff.
