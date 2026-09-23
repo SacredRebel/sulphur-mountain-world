@@ -1,8 +1,8 @@
 ﻿# STATUS - Agent C
 updated: 2026-09-22
-phase: C20
+phase: C21
 state: done
-commit: a73823f
-checks: check-rasters OK (non-zero probes); check-surfaces OK; check-defensible OK; check-water OK; prior suite green
+commit: fa577f7
+checks: full suite green; negatives OK on check-rasters/surfaces/water/pack-layers/defensible
 blocked-by: private scan storage + one Scaniverse zone (C14 tooling ready; real captures wait)
-notes: C20.1 buildable/gathering bands (gathers alias of buildable); C20.2 defensible-space; C20.3 water-harvest. Oak proof EN(260.8,267.8) buildable=0 gathering=1. Open ground 1.74 of 9.46 ac. Held 58 m3 (16.8%) of 25 mm runoff.
+notes: C21.1 water on flow×TWI held 117 m3 (34%, ~31k gal); on_channel ponds flagged. C21.2 oak proof recomputed from npz+trees. C21.3 pack-layers.json 29 layers (14 display PNG + 15 geojson).
