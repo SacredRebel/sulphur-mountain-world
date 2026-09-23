@@ -8367,6 +8367,154 @@
           }
         ]
       }
+    },
+    {
+      "id": "guides",
+      "label": "Snap guides",
+      "group": "proposed",
+      "kind": "geojson",
+      "path": "guides.geojson",
+      "style_by": "kind",
+      "bounds_lnglat": [
+        -119.15948,
+        34.43044,
+        -119.15321,
+        34.43491
+      ],
+      "z": 52,
+      "opacity_default": 0.85,
+      "units": "geometry",
+      "authority": "derived",
+      "evidence": "modelled",
+      "legend": {
+        "type": "categories",
+        "categories": [
+          {
+            "value": "building_edge",
+            "rgba": [
+              31,
+              119,
+              180,
+              200
+            ],
+            "label": "building_edge"
+          },
+          {
+            "value": "contour",
+            "rgba": [
+              255,
+              127,
+              14,
+              200
+            ],
+            "label": "contour"
+          },
+          {
+            "value": "easement_edge",
+            "rgba": [
+              152,
+              223,
+              138,
+              200
+            ],
+            "label": "easement_edge"
+          },
+          {
+            "value": "keyline",
+            "rgba": [
+              148,
+              103,
+              189,
+              200
+            ],
+            "label": "keyline"
+          },
+          {
+            "value": "monument",
+            "rgba": [
+              196,
+              156,
+              148,
+              200
+            ],
+            "label": "monument"
+          },
+          {
+            "value": "solar_grid",
+            "rgba": [
+              127,
+              127,
+              127,
+              200
+            ],
+            "label": "solar_grid"
+          },
+          {
+            "value": "survey_call",
+            "rgba": [
+              219,
+              219,
+              141,
+              200
+            ],
+            "label": "survey_call"
+          },
+          {
+            "value": "true_north_grid",
+            "rgba": [
+              158,
+              218,
+              229,
+              200
+            ],
+            "label": "true_north_grid"
+          }
+        ]
+      }
+    },
+    {
+      "id": "construction_grid",
+      "label": "Construction grid (symbolic)",
+      "group": "proposed",
+      "kind": "geojson",
+      "path": "construction-grid.geojson",
+      "style_by": "kind",
+      "bounds_lnglat": [
+        -119.1581615,
+        34.4308909,
+        -119.1538689,
+        34.4344478
+      ],
+      "z": 53,
+      "opacity_default": 0.55,
+      "units": "geometry",
+      "authority": "symbolic",
+      "evidence": "design-intent",
+      "legend": {
+        "type": "categories",
+        "categories": [
+          {
+            "value": "construction",
+            "rgba": [
+              31,
+              119,
+              180,
+              200
+            ],
+            "label": "construction"
+          },
+          {
+            "value": "__other__",
+            "rgba": [
+              180,
+              180,
+              180,
+              120
+            ],
+            "label": "Other"
+          }
+        ]
+      }
     }
   ],
   "not_drawable": {
@@ -8384,7 +8532,8 @@
     "walk_graph": "connectivity table, not a map overlay",
     "collision": "physics mesh, not a map overlay",
     "trees_instances": "instance table + archetype meshes; not an atlas overlay",
-    "budget": "cost table, not geometry"
+    "budget": "cost table, not geometry",
+    "grid": "snap-grid definition table; drawn via guides / construction_grid"
   },
   "pack_aliases": {
     "terrain_hillshade": "terrain",

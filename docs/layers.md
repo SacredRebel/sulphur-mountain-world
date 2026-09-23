@@ -40,7 +40,12 @@ Drawable atlas layers (RGBA display PNGs + `pack-layers.json`) are published by
 | `drainage` | D8 flow channels | m² accum / slope / Strahler | modelled | GeoJSON |
 | `thermal-belt` | mid-slope thermal belt | geometry | modelled | GeoJSON (`thermal_belt`) |
 | `oak-leaf-knoll` | Oak Leaf knoll site analysis | geometry | modelled | GeoJSON (`oak_leaf_knoll`) |
-| `sky_events` | sun/moon vs horizon; cross-quarters traditional | azimuth / local time | measured / traditional | JSON — stays its own layer |
+| `sky_events` | sun vs real horizon; alignments drawable | azimuth / local time / delay min | modelled | JSON + `alignments.geojson` |
+| `guides` | snap guides (survey, buildings, contours, grids) | geometry | modelled / measured | GeoJSON |
+| `grid` | pack-frame snap grid + worked example | metres / index | modelled | JSON |
+| `construction_grid` | 30 ft solar-aligned construction module | geometry | design-intent | GeoJSON — **`authority: symbolic`** |
+
+**Symbolic layers.** A layer with `authority: symbolic` and `evidence: design-intent` is a geometric construction for design and snapping only — it is not measured ground and must not feed surfaces, water, or defensible computations. `construction_grid` is the first of these.
 
 Sidecar JSON for every grid also records `bounds_lnglat` `[west, south, east, north]`,
 `encoding`, `value_min`, `value_max`, `nodata`, and `decode`. Display PNGs (RGBA) and

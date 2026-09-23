@@ -1,0 +1,1368 @@
+{
+  "type": "FeatureCollection",
+  "name": "construction-grid",
+  "properties": {
+    "authority": "symbolic",
+    "evidence": "design-intent",
+    "generator": "scripts/build-guides.py",
+    "construction_method": "Square module of 9.1440 m (30 US survey feet) through origin EN(318.520560926929, 247.6013933385672), rotated so grid-north equals the 2026 June flat-horizon sunrise azimuth 60.53\u00b0 (clockwise from true north). Reproducible from origin + spacing + azimuth alone. No claim about measured ground.",
+    "spacing_m": 9.144,
+    "rotation_deg_from_true_north": 60.53,
+    "origin_en_m": [
+      318.521,
+      247.601
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -12,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1581614515484,
+            34.43280057113083
+          ],
+          [
+            -119.15504348093317,
+            34.434260479645836
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -12,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15793544117709,
+            34.43347447837056
+          ],
+          [
+            -119.15617353278971,
+            34.43089094344714
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -11,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15811250964875,
+            34.43272880627184
+          ],
+          [
+            -119.15499453903352,
+            34.43418871478685
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -11,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15784883088222,
+            34.43351503138487
+          ],
+          [
+            -119.15608692249484,
+            34.43093149646144
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -10,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1580635677491,
+            34.43265704141286
+          ],
+          [
+            -119.15494559713387,
+            34.43411694992786
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -10,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15776222058736,
+            34.43355558439918
+          ],
+          [
+            -119.15600031219996,
+            34.43097204947575
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -9,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15801462584945,
+            34.43258527655387
+          ],
+          [
+            -119.15489665523423,
+            34.43404518506888
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -9,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15767561029249,
+            34.43359613741348
+          ],
+          [
+            -119.1559137019051,
+            34.43101260249005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -8,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1579656839498,
+            34.43251351169489
+          ],
+          [
+            -119.15484771333458,
+            34.433973420209895
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -8,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15758899999761,
+            34.43363669042779
+          ],
+          [
+            -119.15582709161023,
+            34.43105315550436
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -7,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15791674205015,
+            34.432441746835906
+          ],
+          [
+            -119.15479877143493,
+            34.433901655350915
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -7,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15750238970276,
+            34.4336772434421
+          ],
+          [
+            -119.15574048131536,
+            34.43109370851867
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -6,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1578678001505,
+            34.43236998197692
+          ],
+          [
+            -119.15474982953528,
+            34.43382989049193
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -6,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15741577940788,
+            34.4337177964564
+          ],
+          [
+            -119.1556538710205,
+            34.43113426153297
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -5,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15781885825085,
+            34.43229821711794
+          ],
+          [
+            -119.15470088763563,
+            34.43375812563294
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -5,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15732916911303,
+            34.43375834947071
+          ],
+          [
+            -119.15556726072563,
+            34.431174814547276
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -4,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1577699163512,
+            34.43222645225895
+          ],
+          [
+            -119.15465194573598,
+            34.43368636077396
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -4,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15724255881815,
+            34.43379890248501
+          ],
+          [
+            -119.15548065043076,
+            34.431215367561585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -3,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15772097445155,
+            34.43215468739997
+          ],
+          [
+            -119.15460300383633,
+            34.433614595914975
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -3,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15715594852328,
+            34.43383945549932
+          ],
+          [
+            -119.1553940401359,
+            34.431255920575886
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -2,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1576720325519,
+            34.432082922540985
+          ],
+          [
+            -119.15455406193668,
+            34.43354283105599
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -2,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15706933822842,
+            34.433880008513626
+          ],
+          [
+            -119.15530742984103,
+            34.431296473590194
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -1,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15762309065225,
+            34.432011157682
+          ],
+          [
+            -119.15450512003703,
+            34.43347106619701
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": -1,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15698272793355,
+            34.43392056152793
+          ],
+          [
+            -119.15522081954616,
+            34.431337026604496
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 0,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1575741487526,
+            34.43193939282302
+          ],
+          [
+            -119.15445617813738,
+            34.43339930133802
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 0,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15689611763868,
+            34.433961114542235
+          ],
+          [
+            -119.1551342092513,
+            34.431377579618804
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 1,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15752520685295,
+            34.43186762796403
+          ],
+          [
+            -119.15440723623773,
+            34.43332753647904
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 1,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15680950734382,
+            34.434001667556544
+          ],
+          [
+            -119.15504759895643,
+            34.43141813263311
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 2,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1574762649533,
+            34.43179586310505
+          ],
+          [
+            -119.15435829433808,
+            34.433255771620054
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 2,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15672289704895,
+            34.434042220570845
+          ],
+          [
+            -119.15496098866156,
+            34.431458685647414
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 3,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15742732305365,
+            34.431724098246065
+          ],
+          [
+            -119.15430935243843,
+            34.43318400676107
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 3,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15663628675408,
+            34.43408277358515
+          ],
+          [
+            -119.1548743783667,
+            34.43149923866172
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 4,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.157378381154,
+            34.43165233338708
+          ],
+          [
+            -119.15426041053878,
+            34.43311224190209
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 4,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654967645922,
+            34.434123326599455
+          ],
+          [
+            -119.15478776807183,
+            34.43153979167603
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 5,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15732943925435,
+            34.4315805685281
+          ],
+          [
+            -119.15421146863913,
+            34.4330404770431
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 5,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15646306616435,
+            34.43416387961376
+          ],
+          [
+            -119.15470115777696,
+            34.43158034469033
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 6,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1572804973547,
+            34.43150880366911
+          ],
+          [
+            -119.15416252673948,
+            34.43296871218412
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 6,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15637645586948,
+            34.43420443262807
+          ],
+          [
+            -119.1546145474821,
+            34.43162089770464
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 7,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15723155545506,
+            34.431437038810124
+          ],
+          [
+            -119.15411358483983,
+            34.43289694732513
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 7,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15628984557462,
+            34.43424498564237
+          ],
+          [
+            -119.15452793718723,
+            34.43166145071894
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 8,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1571826135554,
+            34.431365273951144
+          ],
+          [
+            -119.15406464294018,
+            34.432825182466146
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 8,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15620323527975,
+            34.43428553865668
+          ],
+          [
+            -119.15444132689237,
+            34.43170200373325
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 9,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15713367165576,
+            34.43129350909216
+          ],
+          [
+            -119.15401570104054,
+            34.43275341760717
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 9,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15611662498488,
+            34.43432609167099
+          ],
+          [
+            -119.1543547165975,
+            34.43174255674756
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 10,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15708472975611,
+            34.43122174423318
+          ],
+          [
+            -119.15396675914089,
+            34.43268165274818
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 10,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15603001469002,
+            34.43436664468529
+          ],
+          [
+            -119.15426810630262,
+            34.43178310976186
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 11,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15703578785646,
+            34.43114997937419
+          ],
+          [
+            -119.15391781724124,
+            34.4326098878892
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 11,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15594340439515,
+            34.4344071976996
+          ],
+          [
+            -119.15418149600777,
+            34.43182366277617
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 12,
+        "axis": "N",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15698684595681,
+            34.4310782145152
+          ],
+          [
+            -119.15386887534159,
+            34.43253812303021
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "construction",
+        "source": "construction-grid:30ft-solar",
+        "priority": 20,
+        "authority": "symbolic",
+        "evidence": "design-intent",
+        "index": 12,
+        "axis": "E",
+        "spacing_m": 9.144,
+        "rotation_deg": 60.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15585679410027,
+            34.4344477507139
+          ],
+          [
+            -119.1540948857129,
+            34.431864215790476
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -93,6 +93,9 @@ VECTOR_SPECS = [
     ('trees_trunks', 'trees-trunks.geojson', 'height_m', 'habitat', 9, 0.5, 'Tree trunks'),
     ('horizon', 'horizon.geojson', 'viewpoint', 'sun', 18, 0.75, 'Horizon profile'),
     ('alignments', 'alignments.geojson', 'event', 'sun', 19, 0.8, 'Solar alignments'),
+    ('guides', 'guides.geojson', 'kind', 'proposed', 52, 0.85, 'Snap guides'),
+    ('construction_grid', 'construction-grid.geojson', 'kind', 'proposed', 53, 0.55,
+     'Construction grid (symbolic)'),
     ('drainage', 'drainage.geojson', 'order', 'water', 24, 0.85, 'Drainage channels'),
     ('keylines', 'keylines.geojson', 'kind', 'water', 25, 0.8, 'Keylines'),
     ('thermal_belt', 'thermal-belt.geojson', 'kind', 'habitat', 20, 0.55, 'Thermal belt'),
@@ -483,6 +486,7 @@ def main():
         'collision': 'physics mesh, not a map overlay',
         'trees_instances': 'instance table + archetype meshes; not an atlas overlay',
         'budget': 'cost table, not geometry',
+        'grid': 'snap-grid definition table; drawn via guides / construction_grid',
     }
     manifest = {
         'schema': 1,

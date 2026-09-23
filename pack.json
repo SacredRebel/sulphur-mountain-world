@@ -605,6 +605,32 @@
       "evidence": "modelled",
       "kind": "table",
       "generator": "scripts/build-budget.py"
+    },
+    "guides": {
+      "file": "guides.geojson",
+      "authority": "derived",
+      "evidence": "modelled",
+      "kind": "vector",
+      "units": "geometry",
+      "generator": "scripts/build-guides.py",
+      "what": "snap guides: survey calls/monuments, easement edges, building edges, contours, keylines, true-north and solar grids"
+    },
+    "grid": {
+      "file": "grid.json",
+      "authority": "derived",
+      "evidence": "modelled",
+      "kind": "table",
+      "generator": "scripts/build-guides.py",
+      "what": "pack-frame snap grid: origin, spacing, rotation, index↔lng/lat with worked example"
+    },
+    "construction_grid": {
+      "file": "construction-grid.geojson",
+      "authority": "symbolic",
+      "evidence": "design-intent",
+      "kind": "vector",
+      "units": "geometry",
+      "generator": "scripts/build-guides.py",
+      "what": "30 ft solar-aligned construction module — design geometry only, not measured ground"
     }
   },
   "sources": [

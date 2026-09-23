@@ -1,8 +1,8 @@
-# STATUS - Agent C
+﻿# STATUS - Agent C
 updated: 2026-09-23
-phase: C26
+phase: C27
 state: done
-commit: c554223
-checks: check-sky + --self-test green; check-pack-layers OK
+commit: PENDING
+checks: check-guides + --self-test green
 blocked-by: private scan storage; owner water variant
-notes: C26 sky-events 17 observers x 8 events; alignments 272; SunCalc worst 2.4 min / 0.42 deg; June delay 29-30 min, Dec 36-75 min.
+notes: C27 guides 368; grid.json worked example; construction-grid symbolic 30ft solar module.

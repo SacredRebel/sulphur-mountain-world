@@ -1,0 +1,50 @@
+{
+  "authority": "derived",
+  "evidence": "modelled",
+  "generator": "scripts/build-guides.py",
+  "frame": {
+    "origin_lng": -119.1594805,
+    "origin_lat": 34.4304373,
+    "metres_per_deg_lng": 91916.198,
+    "metres_per_deg_lat": 110930.184,
+    "axes": "x east, y north (pack metres)"
+  },
+  "grid": {
+    "origin_east_m": 318.5206,
+    "origin_north_m": 247.6014,
+    "origin_lnglat": [
+      -119.15601516344499,
+      34.43266934708052
+    ],
+    "spacing_m": 10.0,
+    "rotation_deg_from_true_north": 0.0,
+    "rotation_note": "0 = true-north grid (axes aligned to pack E/N). Non-zero rotates grid-north clockwise from true north.",
+    "index_axes": "index i along grid-east, index j along grid-north; EN = origin + i*spacing*east_hat + j*spacing*north_hat"
+  },
+  "formulas": {
+    "index_to_lnglat": "east_hat=(cos \u03b8, \u2212sin \u03b8), north_hat=(sin \u03b8, cos \u03b8) with \u03b8=rotation_deg; E = E0 + i\u00b7s\u00b7east_e + j\u00b7s\u00b7north_e; N similar; lng = origin_lng + E/metres_per_deg_lng; lat = origin_lat + N/metres_per_deg_lat",
+    "lnglat_to_index": "invert the linear map above (exact for equirectangular frame)"
+  },
+  "worked_example": {
+    "index": [
+      3,
+      -2
+    ],
+    "lnglat": [
+      -119.15568878,
+      34.43248905
+    ],
+    "east_m": 348.5206,
+    "north_m": 227.6014,
+    "roundtrip_index": [
+      3.000000000036,
+      -1.999999999964
+    ],
+    "note": "roundtrip_index must equal index within float noise"
+  },
+  "solar_aligned": {
+    "rotation_deg_from_true_north": 60.53,
+    "spacing_m": 10.0,
+    "note": "Same origin and spacing as true-north grid; rotate by June flat sunrise az"
+  }
+}
