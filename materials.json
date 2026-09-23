@@ -1,431 +1,465 @@
 {
- "schema": 1,
- "note": "What the ground looks like from a metre away. The aerial carries the colour of every square metre; these tiles carry the grain the aerial cannot. Each is a CC0 material from ambientCG, recoloured so its mean matches a sunlit patch in one of the owner's photographs, so the straw is this straw's colour and the drive is this drive's. The world chooses the tile from the aerial's own colour under your feet: straw where it is bright and gold, gravel where it is pale and grey, leaf litter where the aerial shows canopy, dirt otherwise. Building massings use `surfaces` below — scripts call glb.surface(key) and never hardcode RGB.",
- "licence": "CC0 1.0 (ambientCG.com); the recolouring is derived data of this pack",
- "materials": {
-  "straw": {
-   "albedo": "textures/straw.jpg",
-   "albedo_512": "textures/straw_512.jpg",
-   "normal": "textures/straw_normal.jpg",
-   "metres": 1.6,
-   "source": {
-    "id": "Grass004",
-    "url": "https://ambientcg.com/a/Grass004"
-   },
-   "matched_to": {
-    "srgb": "#bca885",
-    "photo": "7583e2e3",
-    "taken": "2025-07-17",
-    "what": "the mowed field in sun"
-   }
-  },
-  "dirt": {
-   "albedo": "textures/dirt.jpg",
-   "albedo_512": "textures/dirt_512.jpg",
-   "normal": "textures/dirt_normal.jpg",
-   "metres": 2.0,
-   "source": {
-    "id": "Ground109",
-    "url": "https://ambientcg.com/a/Ground109"
-   },
-   "matched_to": {
-    "srgb": "#cdb897",
-    "photo": "2d3ec09b / 42144513",
-    "taken": "2025-07-17 / 2025-08-04",
-    "what": "the dirt drive in sun"
-   }
-  },
-  "gravel": {
-   "albedo": "textures/gravel.jpg",
-   "albedo_512": "textures/gravel_512.jpg",
-   "normal": "textures/gravel_normal.jpg",
-   "metres": 1.2,
-   "source": {
-    "id": "Gravel043",
-    "url": "https://ambientcg.com/a/Gravel043"
-   },
-   "matched_to": {
-    "srgb": "#c7b89f",
-    "photo": "4a2b49ff",
-    "taken": "2025-07-17",
-    "what": "the gravel drive in sun"
-   }
-  },
-  "litter": {
-   "albedo": "textures/litter.jpg",
-   "albedo_512": "textures/litter_512.jpg",
-   "normal": "textures/litter_normal.jpg",
-   "metres": 1.5,
-   "source": {
-    "id": "ScatteredLeaves009",
-    "url": "https://ambientcg.com/a/ScatteredLeaves009"
-   },
-   "matched_to": {
-    "srgb": "#9a8a70",
-    "photo": "705776bb",
-    "taken": "2025-07-17",
-    "what": "leaf litter under the oaks, photographed in shade at #746858 and lifted to sun"
-   }
-  },
-  "asphalt": {
-   "albedo": "textures/asphalt.jpg",
-   "albedo_512": "textures/asphalt_512.jpg",
-   "normal": "textures/asphalt_normal.jpg",
-   "metres": 3.0,
-   "source": {
-    "id": "Asphalt033",
-    "url": "https://ambientcg.com/a/Asphalt033"
-   },
-   "matched_to": null,
-   "note": "the county road; no photograph yet"
-  },
-  "bark": {
-   "albedo": "textures/bark.jpg",
-   "albedo_512": "textures/bark_512.jpg",
-   "normal": "textures/bark_normal.jpg",
-   "metres": 1.0,
-   "source": {
-    "id": "Bark012",
-    "url": "https://ambientcg.com/a/Bark012"
-   },
-   "matched_to": null,
-   "note": "oak bark, for the trunks"
-  }
- },
- "surfaces": {
   "schema": 1,
-  "note": "PBR surfaces for massing scripts (glb.surface). baseColor is linear sRGB 0–1. Textures, when present, are ≤512 px and shared across models via textures/. Opacity < 1 implies alphaMode BLEND.",
-  "stone": {
-   "name": "stone",
-   "baseColor": [
-    0.8,
-    0.74,
-    0.62
-   ],
-   "roughness": 0.8,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "albedo_512": "textures/gravel_512.jpg",
-   "note": "floors, plinths, standing stones — grain from gravel tile until a dedicated stone tile exists",
-   "world": "stone"
+  "note": "What the ground looks like from a metre away. The aerial carries the colour of every square metre; these tiles carry the grain the aerial cannot. Each is a CC0 material from ambientCG, recoloured so its mean matches a sunlit patch in one of the owner's photographs, so the straw is this straw's colour and the drive is this drive's. The world chooses the tile from the aerial's own colour under your feet: straw where it is bright and gold, gravel where it is pale and grey, leaf litter where the aerial shows canopy, dirt otherwise. Building massings use `surfaces` below \u2014 scripts call glb.surface(key) and never hardcode RGB.",
+  "licence": "CC0-1.0",
+  "materials": {
+    "straw": {
+      "albedo": "textures/straw.jpg",
+      "albedo_512": "textures/straw_512.jpg",
+      "normal": "textures/straw_normal.jpg",
+      "metres": 1.6,
+      "source": "https://ambientcg.com/a/Grass004",
+      "matched_to": {
+        "srgb": "#bca885",
+        "photo": "7583e2e3",
+        "taken": "2025-07-17",
+        "what": "the mowed field in sun"
+      },
+      "licence": "CC0-1.0"
+    },
+    "dirt": {
+      "albedo": "textures/dirt.jpg",
+      "albedo_512": "textures/dirt_512.jpg",
+      "normal": "textures/dirt_normal.jpg",
+      "metres": 2.0,
+      "source": "https://ambientcg.com/a/Ground109",
+      "matched_to": {
+        "srgb": "#cdb897",
+        "photo": "2d3ec09b / 42144513",
+        "taken": "2025-07-17 / 2025-08-04",
+        "what": "the dirt drive in sun"
+      },
+      "licence": "CC0-1.0"
+    },
+    "gravel": {
+      "albedo": "textures/gravel.jpg",
+      "albedo_512": "textures/gravel_512.jpg",
+      "normal": "textures/gravel_normal.jpg",
+      "metres": 1.2,
+      "source": "https://ambientcg.com/a/Gravel043",
+      "matched_to": {
+        "srgb": "#c7b89f",
+        "photo": "4a2b49ff",
+        "taken": "2025-07-17",
+        "what": "the gravel drive in sun"
+      },
+      "licence": "CC0-1.0"
+    },
+    "litter": {
+      "albedo": "textures/litter.jpg",
+      "albedo_512": "textures/litter_512.jpg",
+      "normal": "textures/litter_normal.jpg",
+      "metres": 1.5,
+      "source": "https://ambientcg.com/a/ScatteredLeaves009",
+      "matched_to": {
+        "srgb": "#9a8a70",
+        "photo": "705776bb",
+        "taken": "2025-07-17",
+        "what": "leaf litter under the oaks, photographed in shade at #746858 and lifted to sun"
+      },
+      "licence": "CC0-1.0"
+    },
+    "asphalt": {
+      "albedo": "textures/asphalt.jpg",
+      "albedo_512": "textures/asphalt_512.jpg",
+      "normal": "textures/asphalt_normal.jpg",
+      "metres": 3.0,
+      "source": "https://ambientcg.com/a/Asphalt033",
+      "matched_to": null,
+      "note": "the county road; no photograph yet",
+      "licence": "CC0-1.0"
+    },
+    "bark": {
+      "albedo": "textures/bark.jpg",
+      "albedo_512": "textures/bark_512.jpg",
+      "normal": "textures/bark_normal.jpg",
+      "metres": 1.0,
+      "source": "https://ambientcg.com/a/Bark012",
+      "matched_to": null,
+      "note": "oak bark, for the trunks",
+      "licence": "CC0-1.0"
+    }
   },
-  "dark_stone": {
-   "name": "dark stone",
-   "baseColor": [
-    0.3,
-    0.28,
-    0.26
-   ],
-   "roughness": 0.95,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "note": "hearths, fire rings, low seats",
-   "world": "stone"
+  "surfaces": {
+    "schema": 1,
+    "note": "PBR surfaces for massing scripts (glb.surface). baseColor is linear sRGB 0\u20131. Textures, when present, are \u2264512 px and shared across models via textures/. Opacity < 1 implies alphaMode BLEND.",
+    "stone": {
+      "name": "stone",
+      "baseColor": [
+        0.8,
+        0.74,
+        0.62
+      ],
+      "roughness": 0.8,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "albedo_512": "textures/gravel_512.jpg",
+      "note": "floors, plinths, standing stones \u2014 grain from gravel tile until a dedicated stone tile exists",
+      "world": "stone",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "dark_stone": {
+      "name": "dark stone",
+      "baseColor": [
+        0.3,
+        0.28,
+        0.26
+      ],
+      "roughness": 0.95,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "note": "hearths, fire rings, low seats",
+      "world": "stone",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "river_stone": {
+      "name": "river stone",
+      "baseColor": [
+        0.52,
+        0.48,
+        0.42
+      ],
+      "roughness": 0.95,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "note": "chimney and retaining \u2014 matches the Oak Leaf heart",
+      "world": "stone",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "timber": {
+      "name": "timber",
+      "baseColor": [
+        0.55,
+        0.38,
+        0.22
+      ],
+      "roughness": 0.7,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "doubleSided": true,
+      "albedo_512": "textures/bark_512.jpg",
+      "note": "structure, soffits, decks; bark_512 reused for grain",
+      "world": "timber",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "timber_rib": {
+      "name": "timber rib",
+      "baseColor": [
+        0.42,
+        0.27,
+        0.15
+      ],
+      "roughness": 0.7,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "albedo_512": "textures/bark_512.jpg",
+      "world": "timber",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "board_and_batten": {
+      "name": "board and batten",
+      "baseColor": [
+        0.62,
+        0.55,
+        0.42
+      ],
+      "roughness": 0.75,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "note": "cabin and barn cladding",
+      "world": "wood",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "glass": {
+      "name": "glass",
+      "baseColor": [
+        0.72,
+        0.85,
+        0.92
+      ],
+      "roughness": 0.15,
+      "metalness": 0.0,
+      "opacity": 0.32,
+      "doubleSided": true,
+      "world": "glass",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "stucco": {
+      "name": "stucco",
+      "baseColor": [
+        0.86,
+        0.82,
+        0.74
+      ],
+      "roughness": 0.9,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "world": "plaster",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "concrete": {
+      "name": "concrete",
+      "baseColor": [
+        0.6,
+        0.58,
+        0.54
+      ],
+      "roughness": 0.9,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "albedo_512": "textures/dirt_512.jpg",
+      "world": "stone",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "living_roof": {
+      "name": "living roof",
+      "baseColor": [
+        0.3,
+        0.42,
+        0.2
+      ],
+      "roughness": 0.95,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "albedo_512": "textures/straw_512.jpg",
+      "world": "living",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "standing_seam_metal": {
+      "name": "standing-seam metal",
+      "baseColor": [
+        0.45,
+        0.48,
+        0.5
+      ],
+      "roughness": 0.35,
+      "metalness": 0.85,
+      "opacity": 1.0,
+      "world": "metal",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "canvas": {
+      "name": "canvas",
+      "baseColor": [
+        0.88,
+        0.82,
+        0.7
+      ],
+      "roughness": 0.85,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "doubleSided": true,
+      "note": "glamping / tip\u00ed skins",
+      "world": "thatch",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "bronze": {
+      "name": "bronze",
+      "baseColor": [
+        0.25,
+        0.2,
+        0.15
+      ],
+      "roughness": 0.5,
+      "metalness": 0.3,
+      "opacity": 1.0,
+      "note": "posts and rails \u2014 Oak Leaf reference",
+      "world": "metal",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "water": {
+      "name": "water",
+      "baseColor": [
+        0.25,
+        0.55,
+        0.75
+      ],
+      "roughness": 0.05,
+      "metalness": 0.0,
+      "opacity": 0.7,
+      "world": "glass",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "pool_floor": {
+      "name": "pool floor",
+      "baseColor": [
+        0.55,
+        0.75,
+        0.85
+      ],
+      "roughness": 0.4,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "doubleSided": true,
+      "world": "stone",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "dirt": {
+      "name": "dirt",
+      "baseColor": [
+        0.8,
+        0.72,
+        0.59
+      ],
+      "roughness": 0.95,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "albedo_512": "textures/dirt_512.jpg",
+      "note": "dirt drive \u2014 matched to pack ground tile",
+      "world": "adobe",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "gravel": {
+      "name": "gravel",
+      "baseColor": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "roughness": 0.9,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "albedo_512": "textures/gravel_512.jpg",
+      "note": "paths and parking \u2014 matched to pack ground tile",
+      "world": "stone",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "cob": {
+      "name": "cob",
+      "baseColor": [
+        0.62,
+        0.48,
+        0.34
+      ],
+      "roughness": 0.95,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "world": "cob",
+      "note": "earthen wall infill",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "hempcrete": {
+      "name": "hempcrete",
+      "baseColor": [
+        0.72,
+        0.7,
+        0.58
+      ],
+      "roughness": 0.92,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "world": "hempcrete",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "strawbale": {
+      "name": "strawbale",
+      "baseColor": [
+        0.78,
+        0.68,
+        0.42
+      ],
+      "roughness": 0.95,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "world": "strawbale",
+      "albedo_512": "textures/straw_512.jpg",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "rammed_earth": {
+      "name": "rammed earth",
+      "baseColor": [
+        0.58,
+        0.42,
+        0.3
+      ],
+      "roughness": 0.9,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "world": "rammed_earth",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "bamboo": {
+      "name": "bamboo",
+      "baseColor": [
+        0.7,
+        0.62,
+        0.35
+      ],
+      "roughness": 0.7,
+      "metalness": 0.0,
+      "opacity": 1.0,
+      "world": "wood",
+      "note": "structure \u2014 world wall word is wood; structure field uses bamboo",
+      "licence": "own-work",
+      "source": "own-work"
+    },
+    "steel": {
+      "name": "steel",
+      "baseColor": [
+        0.55,
+        0.56,
+        0.58
+      ],
+      "roughness": 0.4,
+      "metalness": 0.9,
+      "opacity": 1.0,
+      "world": "metal",
+      "note": "structure \u2014 maps to world metal for finish checks",
+      "licence": "own-work",
+      "source": "own-work"
+    }
   },
-  "river_stone": {
-   "name": "river stone",
-   "baseColor": [
-    0.52,
-    0.48,
-    0.42
-   ],
-   "roughness": 0.95,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "note": "chimney and retaining — matches the Oak Leaf heart",
-   "world": "stone"
-  },
-  "timber": {
-   "name": "timber",
-   "baseColor": [
-    0.55,
-    0.38,
-    0.22
-   ],
-   "roughness": 0.7,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "doubleSided": true,
-   "albedo_512": "textures/bark_512.jpg",
-   "note": "structure, soffits, decks; bark_512 reused for grain",
-   "world": "timber"
-  },
-  "timber_rib": {
-   "name": "timber rib",
-   "baseColor": [
-    0.42,
-    0.27,
-    0.15
-   ],
-   "roughness": 0.7,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "albedo_512": "textures/bark_512.jpg",
-   "world": "timber"
-  },
-  "board_and_batten": {
-   "name": "board and batten",
-   "baseColor": [
-    0.62,
-    0.55,
-    0.42
-   ],
-   "roughness": 0.75,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "note": "cabin and barn cladding",
-   "world": "wood"
-  },
-  "glass": {
-   "name": "glass",
-   "baseColor": [
-    0.72,
-    0.85,
-    0.92
-   ],
-   "roughness": 0.15,
-   "metalness": 0.0,
-   "opacity": 0.32,
-   "doubleSided": true,
-   "world": "glass"
-  },
-  "stucco": {
-   "name": "stucco",
-   "baseColor": [
-    0.86,
-    0.82,
-    0.74
-   ],
-   "roughness": 0.9,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "world": "plaster"
-  },
-  "concrete": {
-   "name": "concrete",
-   "baseColor": [
-    0.6,
-    0.58,
-    0.54
-   ],
-   "roughness": 0.9,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "albedo_512": "textures/dirt_512.jpg",
-   "world": "stone"
-  },
-  "living_roof": {
-   "name": "living roof",
-   "baseColor": [
-    0.3,
-    0.42,
-    0.2
-   ],
-   "roughness": 0.95,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "albedo_512": "textures/straw_512.jpg",
-   "world": "living"
-  },
-  "standing_seam_metal": {
-   "name": "standing-seam metal",
-   "baseColor": [
-    0.45,
-    0.48,
-    0.5
-   ],
-   "roughness": 0.35,
-   "metalness": 0.85,
-   "opacity": 1.0,
-   "world": "metal"
-  },
-  "canvas": {
-   "name": "canvas",
-   "baseColor": [
-    0.88,
-    0.82,
-    0.7
-   ],
-   "roughness": 0.85,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "doubleSided": true,
-   "note": "glamping / tipí skins",
-   "world": "thatch"
-  },
-  "bronze": {
-   "name": "bronze",
-   "baseColor": [
-    0.25,
-    0.2,
-    0.15
-   ],
-   "roughness": 0.5,
-   "metalness": 0.3,
-   "opacity": 1.0,
-   "note": "posts and rails — Oak Leaf reference",
-   "world": "metal"
-  },
-  "water": {
-   "name": "water",
-   "baseColor": [
-    0.25,
-    0.55,
-    0.75
-   ],
-   "roughness": 0.05,
-   "metalness": 0.0,
-   "opacity": 0.7,
-   "world": "glass"
-  },
-  "pool_floor": {
-   "name": "pool floor",
-   "baseColor": [
-    0.55,
-    0.75,
-    0.85
-   ],
-   "roughness": 0.4,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "doubleSided": true,
-   "world": "stone"
-  },
-  "dirt": {
-   "name": "dirt",
-   "baseColor": [
-    0.8,
-    0.72,
-    0.59
-   ],
-   "roughness": 0.95,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "albedo_512": "textures/dirt_512.jpg",
-   "note": "dirt drive — matched to pack ground tile",
-   "world": "adobe"
-  },
-  "gravel": {
-   "name": "gravel",
-   "baseColor": [
-    0.78,
-    0.72,
-    0.62
-   ],
-   "roughness": 0.9,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "albedo_512": "textures/gravel_512.jpg",
-   "note": "paths and parking — matched to pack ground tile",
-   "world": "stone"
-  },
-  "cob": {
-   "name": "cob",
-   "baseColor": [
-    0.62,
-    0.48,
-    0.34
-   ],
-   "roughness": 0.95,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "world": "cob",
-   "note": "earthen wall infill"
-  },
-  "hempcrete": {
-   "name": "hempcrete",
-   "baseColor": [
-    0.72,
-    0.7,
-    0.58
-   ],
-   "roughness": 0.92,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "world": "hempcrete"
-  },
-  "strawbale": {
-   "name": "strawbale",
-   "baseColor": [
-    0.78,
-    0.68,
-    0.42
-   ],
-   "roughness": 0.95,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "world": "strawbale",
-   "albedo_512": "textures/straw_512.jpg"
-  },
-  "rammed_earth": {
-   "name": "rammed earth",
-   "baseColor": [
-    0.58,
-    0.42,
-    0.3
-   ],
-   "roughness": 0.9,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "world": "rammed_earth"
-  },
-  "bamboo": {
-   "name": "bamboo",
-   "baseColor": [
-    0.7,
-    0.62,
-    0.35
-   ],
-   "roughness": 0.7,
-   "metalness": 0.0,
-   "opacity": 1.0,
-   "world": "wood",
-   "note": "structure — world wall word is wood; structure field uses bamboo"
-  },
-  "steel": {
-   "name": "steel",
-   "baseColor": [
-    0.55,
-    0.56,
-    0.58
-   ],
-   "roughness": 0.4,
-   "metalness": 0.9,
-   "opacity": 1.0,
-   "world": "metal",
-   "note": "structure — maps to world metal for finish checks"
+  "recolouring": {
+    "straw": {
+      "source_mean": "#647034",
+      "now": "#bba885",
+      "target": "#bca885"
+    },
+    "dirt": {
+      "source_mean": "#7f7056",
+      "now": "#cdb897",
+      "target": "#cdb897"
+    },
+    "gravel": {
+      "source_mean": "#6e6e6a",
+      "now": "#c4b79f",
+      "target": "#c7b89f"
+    },
+    "litter": {
+      "source_mean": "#94703d",
+      "now": "#9a8a70",
+      "target": "#9a8a70"
+    },
+    "asphalt": {
+      "source_mean": "#565248",
+      "now": "#565248",
+      "target": null
+    },
+    "bark": {
+      "source_mean": "#8c7c55",
+      "now": "#8c7c55",
+      "target": null
+    }
   }
- },
- "recolouring": {
-  "straw": {
-   "source_mean": "#647034",
-   "now": "#bba885",
-   "target": "#bca885"
-  },
-  "dirt": {
-   "source_mean": "#7f7056",
-   "now": "#cdb897",
-   "target": "#cdb897"
-  },
-  "gravel": {
-   "source_mean": "#6e6e6a",
-   "now": "#c4b79f",
-   "target": "#c7b89f"
-  },
-  "litter": {
-   "source_mean": "#94703d",
-   "now": "#9a8a70",
-   "target": "#9a8a70"
-  },
-  "asphalt": {
-   "source_mean": "#565248",
-   "now": "#565248",
-   "target": null
-  },
-  "bark": {
-   "source_mean": "#8c7c55",
-   "now": "#8c7c55",
-   "target": null
-  }
- }
 }

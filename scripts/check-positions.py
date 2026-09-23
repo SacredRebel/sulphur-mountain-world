@@ -160,20 +160,30 @@ def glb_plan_outline_en(doc, rot_deg: float, model_id: str | None = None):
     extras = walk_extras(doc)
 
     if model_id == 'site-grounds':
-        # Plan outline = padded AABB of walk floors (vegetation envelope from geometry)
+        # C23.1: registry footprint is floors∪ + 3 m (not an AABB envelope).
+        # Compare against the same construction from walk extras.
         floors = (extras.get('walk') or {}).get('floors') or []
-        es, ns = [], []
+        polys = []
         for fl in floors:
-            for x, z in fl.get('ring') or []:
+            ring = fl.get('ring') or []
+            if len(ring) < 3:
+                continue
+            pts = []
+            for x, z in ring:
                 xr, zr = rotate_xz(float(x), float(z), rot_deg)
-                es.append(xr)
-                ns.append(-zr)
-        if not es:
+                pts.append((xr, -zr))
+            try:
+                p = Polygon(pts)
+                if p.is_valid and p.area > 0.05:
+                    polys.append(p)
+            except Exception:
+                continue
+        if not polys:
             return 'envelope'
-        pad = 3.0
-        e0, e1 = min(es) - pad, max(es) + pad
-        n0, n1 = min(ns) - pad, max(ns) + pad
-        return [(e0, n0), (e1, n0), (e1, n1), (e0, n1)]
+        u = unary_union(polys).buffer(3.0).simplify(0.5, preserve_topology=True)
+        if u.geom_type == 'MultiPolygon':
+            u = max(u.geoms, key=lambda g: g.area)
+        return list(u.exterior.coords)[:-1]
 
     if model_id == 'oak-leaf-massing':
         # C9 solids hull is the registry footprint; extras may lag

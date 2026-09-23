@@ -1,0 +1,1042 @@
+{
+  "schema": 1,
+  "generator": "scripts/build-licence-manifest.py",
+  "allowed_licences": [
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "CC0-1.0",
+    "MIT",
+    "Unlicense",
+    "own-work"
+  ],
+  "count": 146,
+  "by_licence": {
+    "own-work": 115,
+    "CC0-1.0": 31
+  },
+  "assets": [
+    {
+      "path": "analysis/buildable-figure.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "1cb7fb203ea42ccff6e996a3c5b637dd7387087533192c49f67389dfb4b4f823",
+      "bytes": 230881
+    },
+    {
+      "path": "analysis/capture-plan.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "6a02f9dd45cc138023a3c783b91d038ee8ef1e11dc38e53932e857e56fbe9e21",
+      "bytes": 301086
+    },
+    {
+      "path": "analysis/corridors.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "bf8b8668587fcc277cbcb031d3f4abbd837d2431127520db0a776578768da6c3",
+      "bytes": 156717
+    },
+    {
+      "path": "analysis/defensible-space.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "44e450e5224e9edca05449df2886e00195d521f09b5f594a803f684073e55c36",
+      "bytes": 454266
+    },
+    {
+      "path": "analysis/display/buildable.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "fb545fd8ccd19dd2867b9d3239a0bf93ad13e29c3524804746021755b506f914",
+      "bytes": 21103
+    },
+    {
+      "path": "analysis/display/cold_air.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "3ec079fd9d535b57a3d15557482baba94a0137563fdb095ca93b0d2196a5f997",
+      "bytes": 59068
+    },
+    {
+      "path": "analysis/display/corridors.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "b73e3fae72ff142810ae0189dc58e33b6e17b5573497accbb9303023a3826031",
+      "bytes": 34839
+    },
+    {
+      "path": "analysis/display/flow_accum.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "356d2fff1217d39b61d47a07e99f46d7695beab8c0b8586a4a9f4dc6230afebe",
+      "bytes": 27531
+    },
+    {
+      "path": "analysis/display/gathering.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "1e5ed503081aa3e9e69b060f30e7a16c475b9d8534005153d78507ab8a06d68a",
+      "bytes": 37796
+    },
+    {
+      "path": "analysis/display/landforms.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "87c0c30bcd5b41bdb36e967aef4946f039ecdccab566355f65de1506d1fa58f3",
+      "bytes": 16991
+    },
+    {
+      "path": "analysis/display/stormwater_depth.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "6cf54ca3b6ea36362976bb1a6b0f9c4cf9350c35d8e168714968da8f3c2e13f8",
+      "bytes": 98982
+    },
+    {
+      "path": "analysis/display/sun_hours_annual.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "abd796b863338fd5bef283d595c5ca82e540f3b0f3d68678bda1892876d4ae28",
+      "bytes": 53874
+    },
+    {
+      "path": "analysis/display/sun_hours_dec.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "dd1e98f54b1feced19d9a9fd8894c2589c654bba99a6921f7b4b5b21b89b2c3f",
+      "bytes": 5347
+    },
+    {
+      "path": "analysis/display/sun_hours_jun.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "1caf61d432507308edcf4fe092d5ad5232146e62fc2a3d7c58466ac4cc89d2b0",
+      "bytes": 25942
+    },
+    {
+      "path": "analysis/display/terrain.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "85c627b7b767e2b13fa58de9326e0647d3510ea20d5a729091538e08396b5445",
+      "bytes": 63883
+    },
+    {
+      "path": "analysis/display/twi.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "e50f3390f7070c9f862195d266787ce284756cde8edd9ec3689d5dd258a6e373",
+      "bytes": 168052
+    },
+    {
+      "path": "analysis/display/wind_santa_ana.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "7b153c516f22d5a6122d2977bf6b1caaf4b8b0546e57dbcaecf5550952466050",
+      "bytes": 25244
+    },
+    {
+      "path": "analysis/display/wind_sea_breeze.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "7c4311aa4a482f23a64de2983677d531b651d9fd70173bf3330a3df27db37c86",
+      "bytes": 14929
+    },
+    {
+      "path": "analysis/drainage.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "399e04b215158fc1fe384ce8d6498a78f01222a3b4092be45081cfb2149f108e",
+      "bytes": 266302
+    },
+    {
+      "path": "analysis/frost.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "04a0951d8308404d90d1555b165c62b150f3fdc9ee1c2ca47dfd53327592bb97",
+      "bytes": 227970
+    },
+    {
+      "path": "analysis/gathering-figure.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "1f205906e52cb8188564dcd9f682f0ce7887dddb570034a4a463f4e1af9727eb",
+      "bytes": 265779
+    },
+    {
+      "path": "analysis/gathers-figure.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "1cb7fb203ea42ccff6e996a3c5b637dd7387087533192c49f67389dfb4b4f823",
+      "bytes": 230881
+    },
+    {
+      "path": "analysis/grids/buildable.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "5712146c33494d2ea0e82170753e6c7f952b448e91a928dd189d4789cb60a910",
+      "bytes": 26941
+    },
+    {
+      "path": "analysis/grids/buildable.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "5d273606f9fb7c39ff3353366c42da95df6f409c8eb4007b548b7863edb8f411",
+      "bytes": 16452
+    },
+    {
+      "path": "analysis/grids/cold_air.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "6f1c1e90e291931829078474dbc2bdc8424cce6e070c5e67ac14fb6cc86f43ba",
+      "bytes": 98475
+    },
+    {
+      "path": "analysis/grids/cold_air.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "6c697b56858bc55816bab02f22b03b8f013bf4523c2b9590db547704bafb3902",
+      "bytes": 67893
+    },
+    {
+      "path": "analysis/grids/corridors.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "1ba3d1f53ba138813393600141db627c656ec56f56e46c2feebf5a4e32cb41c6",
+      "bytes": 317930
+    },
+    {
+      "path": "analysis/grids/corridors.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "c3a743cfb80ae5d8502fed9898781bcb8a280a3deab72b83df128ca391a05d57",
+      "bytes": 92819
+    },
+    {
+      "path": "analysis/grids/dem_1km_30km.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "27aaa53ce7846104f07dae6e77794d27634e982bd12ad1a2284706f6b9e09636",
+      "bytes": 15144
+    },
+    {
+      "path": "analysis/grids/dem_1m.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "0a3d57a8476e28f94e6e7e0b88e2ced82105da2b59ba4f2286043152f36bff17",
+      "bytes": 62262
+    },
+    {
+      "path": "analysis/grids/flow_accum.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "08256316cfbfe42f2551cfd5d6ee1154aea1eb7028787dbed81da98c29fb1862",
+      "bytes": 88875
+    },
+    {
+      "path": "analysis/grids/flow_accum.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "9d1e116afe4ddc4bd568e860a637f8132c1b20e331173c01c2fbc68ac2dcffa2",
+      "bytes": 70104
+    },
+    {
+      "path": "analysis/grids/gathering.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "9ba2879bcb0c29330e4e5ef97f26213c3f952eedbad44e343aacb6a8185c97fa",
+      "bytes": 53648
+    },
+    {
+      "path": "analysis/grids/gathering.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "48f932edb756a4173377d48131b792074007b78e00823b8265fcf254541f12dd",
+      "bytes": 32171
+    },
+    {
+      "path": "analysis/grids/gathers.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "6ad07704190e29c1365977238e39d89b2cf608fbe8165be6f5b78d56b6d9b38f",
+      "bytes": 26939
+    },
+    {
+      "path": "analysis/grids/gathers.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "5d273606f9fb7c39ff3353366c42da95df6f409c8eb4007b548b7863edb8f411",
+      "bytes": 16452
+    },
+    {
+      "path": "analysis/grids/landforms.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "8df5e91436ab2f1fee1506133afa88bbd7762cfea4ed45c7be794f50f5408f56",
+      "bytes": 15008
+    },
+    {
+      "path": "analysis/grids/landforms.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "ecde28dcd5c4e53a8b9530ec60ce5af90611e6d3a4f331af8b195b8ff84c6f4d",
+      "bytes": 14487
+    },
+    {
+      "path": "analysis/grids/stormwater_depth.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "cb3bb1ef354b771211b60d03af5ad65962156b500eea50211cb0e7ae45623ce8",
+      "bytes": 95063
+    },
+    {
+      "path": "analysis/grids/stormwater_depth.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "3af75214d61eac12fcc5460ac5b95691c4991ed98a94d312c1aa046bc1b22514",
+      "bytes": 97143
+    },
+    {
+      "path": "analysis/grids/sun_hours_annual.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "65115b81603c670cc350e9ec9f4996627e0b6d7923511c061f4f270999413614",
+      "bytes": 175750
+    },
+    {
+      "path": "analysis/grids/sun_hours_annual.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "96eb66456a4dab0ed87a4fe68393a1aca295d6f19edd491a6ef353275c925adf",
+      "bytes": 88827
+    },
+    {
+      "path": "analysis/grids/sun_hours_dec.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "1d7eed90a043cc5c8e3077ed776db4a6646a4b4ad9ade63137bf53e71fa26eb6",
+      "bytes": 9570
+    },
+    {
+      "path": "analysis/grids/sun_hours_dec.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "f3b3b343812d0e6e8e8adbe84cf93339eb162bd3033b58b3460202d9047b1cb7",
+      "bytes": 5295
+    },
+    {
+      "path": "analysis/grids/sun_hours_jun.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "cf7a3544abae283872b45be1942f6d3c94d9d4629eded9aacd73b15da469d18f",
+      "bytes": 54585
+    },
+    {
+      "path": "analysis/grids/sun_hours_jun.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "830cd5a01a0fa627af1c9d95a433298bcc1a5f16e2d95254530310165e38ae2c",
+      "bytes": 31508
+    },
+    {
+      "path": "analysis/grids/twi.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "ef579176233faa0fd18f7c51e9d1ac5c2c63657a75528b9009279070957a1cbf",
+      "bytes": 140220
+    },
+    {
+      "path": "analysis/grids/twi.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "493b68a1e58377b257827e91c8805ce8940631137a171684ed8cfb69f3b465c5",
+      "bytes": 150281
+    },
+    {
+      "path": "analysis/grids/wind_santa_ana.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "d190d11596067b239122bf4a54cc54adcd9ca5c191af6239fdcb7da3a489eedc",
+      "bytes": 19735
+    },
+    {
+      "path": "analysis/grids/wind_santa_ana.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "22dee76fd4f533bb7a97b112e75f0a5542fdd5952788a2ab25f8b108fb30af66",
+      "bytes": 19140
+    },
+    {
+      "path": "analysis/grids/wind_sea_breeze.npz",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "40763cae6d631414cc90974da6bff59c82d554d934200bd8eaf094b893ee3984",
+      "bytes": 12327
+    },
+    {
+      "path": "analysis/grids/wind_sea_breeze.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "470e9465610fde6581ab336e0fc0732bc7190c8fa3b283872d7e6fdc20b2d5a2",
+      "bytes": 10799
+    },
+    {
+      "path": "analysis/keylines.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "c0f84125e0fc5b519a79bd78399a0940232adca1cf55e03e2aaff387bd6a16a0",
+      "bytes": 170288
+    },
+    {
+      "path": "analysis/landforms.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "28f6d078d30414bdbbd0333336a598b9dda00336dbde28cbf21f0e32b034189c",
+      "bytes": 517015
+    },
+    {
+      "path": "analysis/oak-leaf-knoll.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "0da531021f7f757aca6a2c9eb40d8f8cf7a9332faf9c0cef3946463c1636af62",
+      "bytes": 450566
+    },
+    {
+      "path": "analysis/positions-proof.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "ac6ac41367edecab5ac6e4e297cf148b48a6482b5712b5ac33cb3c75b5ddc6da",
+      "bytes": 197432
+    },
+    {
+      "path": "analysis/stormwater.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "141c0bfe8f0809aaf199cd7bf08abdcccc427ffd3fb4e4dff03dad6cce297f25",
+      "bytes": 566413
+    },
+    {
+      "path": "analysis/sun-annual.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "9c37599100188b590a62d971cf0cdaf1813a1516780128fbcb3e49ef0d0259b0",
+      "bytes": 364756
+    },
+    {
+      "path": "analysis/sun-december.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "4e4b57fe4dc90993c94260e2c1cb5753bea05a9e77aab0cb576ee5a8f7f90ea9",
+      "bytes": 109224
+    },
+    {
+      "path": "analysis/sun-june.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "cfcf8f502b818746bf1556adc98d5b04f62a1b890bfe0715b90e64458e684eed",
+      "bytes": 214162
+    },
+    {
+      "path": "analysis/water-harvest.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "e6aa6e0a9876300b4180a3464283d749604cfa04ee576b5b6cf9ccc5e7724b87",
+      "bytes": 179390
+    },
+    {
+      "path": "analysis/wind-santa-ana.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "aaf14b1c931264f8374534b5d9393f4f0469efb9aa24915e9e352211c4389ac7",
+      "bytes": 299735
+    },
+    {
+      "path": "analysis/wind-sea-breeze.png",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "2b6147e6285b17e9e254371d034a0f6575be3f3ee4b01d2d16e57fda1126d05f",
+      "bytes": 209407
+    },
+    {
+      "path": "models/agricultural-hub.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "2ad559f7e9b4fcd5f95082c104355977f0f989148dea8fdb199ec5689712ed24",
+      "bytes": 20920
+    },
+    {
+      "path": "models/beekeeping-program.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "11276529a2c9abf3385c603673d1a1518d1e85fc29984a8d7fcaf32f96455817",
+      "bytes": 12900
+    },
+    {
+      "path": "models/ceremonial-infrastructure.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "ab8ae44f89348f27c86db4dc0fd512df51cea51683a909524183115b974a496c",
+      "bytes": 42208
+    },
+    {
+      "path": "models/community-hub.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "a1ab05b79a3e8cfebc111453891df31bff13f599944e174de8498c579f0c671e",
+      "bytes": 28516
+    },
+    {
+      "path": "models/creek.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "2be6eb04247226f0d19021f21949f8c81bdf2288e2cb10fb244f98b257e4cf69",
+      "bytes": 137016
+    },
+    {
+      "path": "models/events-gatherings-hub.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "f8d73fb3d72446f8da303f973b10320c624171a767fbca110d00b13805d87d18",
+      "bytes": 27032
+    },
+    {
+      "path": "models/example-box.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "fca1f21f593aedd306769e047c0dab61d124007fbc803431c53f4c8db7ea8754",
+      "bytes": 10432
+    },
+    {
+      "path": "models/farmstead-produce-stand.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "77ddc9c4630e14c823ddb9cce837ed1ace4237d8856b1ffddb4946c2b270d2a8",
+      "bytes": 15364
+    },
+    {
+      "path": "models/glamping-creek.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "05ff1ff183748c9bb9131d246f068ac3a2c7afd2c03eb60002aaddf67926f689",
+      "bytes": 26732
+    },
+    {
+      "path": "models/infrastructure.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "0f3237f4cac0c427245e57be55e9ed4074348d64044a5e779f60123e0b28e9e8",
+      "bytes": 46192
+    },
+    {
+      "path": "models/livestock-dairy.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "ab447b048a3fe54e1b70f4004b05917a57d50f432fc9781e5950d534eacddf70",
+      "bytes": 22064
+    },
+    {
+      "path": "models/lod/agricultural-hub.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "ee255d9c1c6402550c780457cae605144254f4281ff895bbb0135fc3cb108992",
+      "bytes": 8992
+    },
+    {
+      "path": "models/lod/agricultural-hub.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "ee255d9c1c6402550c780457cae605144254f4281ff895bbb0135fc3cb108992",
+      "bytes": 8992
+    },
+    {
+      "path": "models/lod/beekeeping-program.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "e797b8d57162dc9d2578eb52323ad386212653cb3c19d1f21f39d1d662939cbe",
+      "bytes": 5848
+    },
+    {
+      "path": "models/lod/beekeeping-program.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "f2d1d0358457b59ab20584b31d516c5ec05aa2ce3aa60d4bc483432f0e5e809e",
+      "bytes": 5848
+    },
+    {
+      "path": "models/lod/ceremonial-infrastructure.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "bc8089f39e194fbe486f5756d3406d9a2dbfad725bd2fdf82dd37af7943892ea",
+      "bytes": 15656
+    },
+    {
+      "path": "models/lod/ceremonial-infrastructure.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "be254da9618fbbcfddd6310f2f3eefacc8b2ff577bc4e9fa644cfb3e68dfd114",
+      "bytes": 15656
+    },
+    {
+      "path": "models/lod/community-hub.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "c85ec09faa56d1af2d2b7a3d9a563a146ce7bec1f3e2df4171d3092b1d7d7bd6",
+      "bytes": 10704
+    },
+    {
+      "path": "models/lod/community-hub.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "b1b1dadc550d11f630dd5964a46b873cb3d95864264e8147c27425885cec4f0f",
+      "bytes": 10704
+    },
+    {
+      "path": "models/lod/creek.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "f02765c020e6340b5eff524a5ae57b1d16c4cd9e3b46302571a70d6f763aa33a",
+      "bytes": 45348
+    },
+    {
+      "path": "models/lod/creek.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "58ddedd59ffec542d0c1f7e76f73044caebb3eed7b0b561651a078a7044e061c",
+      "bytes": 45348
+    },
+    {
+      "path": "models/lod/events-gatherings-hub.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "9d65de54abd6c36fd17208f57743c2c0c70ba287ab281b3aa2e9473397798831",
+      "bytes": 12480
+    },
+    {
+      "path": "models/lod/events-gatherings-hub.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "9d65de54abd6c36fd17208f57743c2c0c70ba287ab281b3aa2e9473397798831",
+      "bytes": 12480
+    },
+    {
+      "path": "models/lod/farmstead-produce-stand.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "5599c80af42e8c0dd2d07f4e52af8806c106c1c27bff51d0e9e41ee33d596466",
+      "bytes": 6708
+    },
+    {
+      "path": "models/lod/farmstead-produce-stand.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "5599c80af42e8c0dd2d07f4e52af8806c106c1c27bff51d0e9e41ee33d596466",
+      "bytes": 6708
+    },
+    {
+      "path": "models/lod/glamping-creek.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "16af7e7c86c613f4de1acfd64b6b156159fde64c802460838d335ee867dd1c94",
+      "bytes": 7852
+    },
+    {
+      "path": "models/lod/glamping-creek.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "16af7e7c86c613f4de1acfd64b6b156159fde64c802460838d335ee867dd1c94",
+      "bytes": 7852
+    },
+    {
+      "path": "models/lod/infrastructure.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "ea5a1b214d7eb32506aa0d95c32408eb576920a48fd22ff65eee7285b9c5d103",
+      "bytes": 18720
+    },
+    {
+      "path": "models/lod/infrastructure.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "ea5a1b214d7eb32506aa0d95c32408eb576920a48fd22ff65eee7285b9c5d103",
+      "bytes": 18720
+    },
+    {
+      "path": "models/lod/livestock-dairy.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "a00ce5e57e0dfb09d7149176b5234f0707272ba456a66444299dec6dd16ca905",
+      "bytes": 9016
+    },
+    {
+      "path": "models/lod/livestock-dairy.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "a00ce5e57e0dfb09d7149176b5234f0707272ba456a66444299dec6dd16ca905",
+      "bytes": 9016
+    },
+    {
+      "path": "models/lod/mushroom-cultivation.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "4ea3b1361e15789c30863f07863be0f02e923173d36c01c9f4a247b0afc89a59",
+      "bytes": 6532
+    },
+    {
+      "path": "models/lod/mushroom-cultivation.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "4ea3b1361e15789c30863f07863be0f02e923173d36c01c9f4a247b0afc89a59",
+      "bytes": 6532
+    },
+    {
+      "path": "models/lod/oak-leaf-massing.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "e2ba75e0293f43867bb1e97bb6d8265c177282700762b6d39e9362f702fdde0a",
+      "bytes": 125260
+    },
+    {
+      "path": "models/lod/oak-leaf-massing.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "e2ba75e0293f43867bb1e97bb6d8265c177282700762b6d39e9362f702fdde0a",
+      "bytes": 125260
+    },
+    {
+      "path": "models/lod/retreat-village.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "e3afc42aea30e8fe2b3dcff43fea5b42e6b962de2ca5f83ed0d305b440aef444",
+      "bytes": 28996
+    },
+    {
+      "path": "models/lod/retreat-village.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "37b1ace6a99bee80a851b095cbce2a52747d56d9804534d1e14e7a25c6902b8a",
+      "bytes": 28996
+    },
+    {
+      "path": "models/lod/site-grounds.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "c33de9b1e8b0e02795862300b0df41e3bc2cd5e9e483fe14a248410a62bf898d",
+      "bytes": 131656
+    },
+    {
+      "path": "models/lod/site-grounds.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "c33de9b1e8b0e02795862300b0df41e3bc2cd5e9e483fe14a248410a62bf898d",
+      "bytes": 131656
+    },
+    {
+      "path": "models/lod/the-barn.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "15b0630434b8cd7b989670ddd209393fbbb0b66722d8fb3976d42c4fba260f3e",
+      "bytes": 6244
+    },
+    {
+      "path": "models/lod/the-barn.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "15b0630434b8cd7b989670ddd209393fbbb0b66722d8fb3976d42c4fba260f3e",
+      "bytes": 6244
+    },
+    {
+      "path": "models/lod/tropical-dome.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "f42ef7c75be691b8623f557ca9615cc7c3a2cd89c434e6a09bebf07985dd76b6",
+      "bytes": 11176
+    },
+    {
+      "path": "models/lod/tropical-dome.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "f42ef7c75be691b8623f557ca9615cc7c3a2cd89c434e6a09bebf07985dd76b6",
+      "bytes": 11176
+    },
+    {
+      "path": "models/lod/wellness-facilities.lod1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "50b7e408d6b6ab8842eddf56d075644dd9178cf8fc255759854e203e253561a3",
+      "bytes": 12568
+    },
+    {
+      "path": "models/lod/wellness-facilities.lod2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "50b7e408d6b6ab8842eddf56d075644dd9178cf8fc255759854e203e253561a3",
+      "bytes": 12568
+    },
+    {
+      "path": "models/mushroom-cultivation.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "13b513d1d68cb9634f17e2036f454509bb361615cdf44b85154d4f279c277085",
+      "bytes": 14884
+    },
+    {
+      "path": "models/oak-leaf-massing.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "b2330cbf27ea32eee1c7419d75fe33361ff09d2ac31b5fa421be35d25f01181e",
+      "bytes": 331744
+    },
+    {
+      "path": "models/retreat-village.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "7467e3040ec492b87caa6b5caedfd59593b9ba973d98a4b7a0b2cda2e925a578",
+      "bytes": 85432
+    },
+    {
+      "path": "models/site-grounds.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "357bb31f3045ad75d2cd9561beeb4bfc63e393893ac1e9996829aaa2c91cdaee",
+      "bytes": 412028
+    },
+    {
+      "path": "models/the-barn.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "a9b7d5d3d7784681a0972ea18704b473fa1ec53f9194ebec68a9ad694385c229",
+      "bytes": 14208
+    },
+    {
+      "path": "models/tropical-dome.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "37d518b1dadaef4af846b976ed2850113c912de89f8c32632c7042ac3ec3c82a",
+      "bytes": 26888
+    },
+    {
+      "path": "models/wellness-facilities.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "32c0a5ecdff5ee3336dde3a9441a0c9f5db707aea2ff6dbcb8c0d3d284d40da7",
+      "bytes": 36084
+    },
+    {
+      "path": "terrain/13/1384/3260.png",
+      "licence": "CC0-1.0",
+      "source": "https://www.usgs.gov/3d-elevation-program",
+      "sha256": "62339b7c575836653a0ee8169bb1172d8609cf09267085f08d822f4c70b45605",
+      "bytes": 80224
+    },
+    {
+      "path": "terrain/14/2768/6521.png",
+      "licence": "CC0-1.0",
+      "source": "https://www.usgs.gov/3d-elevation-program",
+      "sha256": "3363ad1075606541e4d5b86f634e1b756c6ded7fe03144e515ec3bf15f999a25",
+      "bytes": 75270
+    },
+    {
+      "path": "terrain/14/2769/6521.png",
+      "licence": "CC0-1.0",
+      "source": "https://www.usgs.gov/3d-elevation-program",
+      "sha256": "f68f38b59db3866d488fadd03fca2b17494162a92bcfcfa748375e3d911a35d8",
+      "bytes": 74244
+    },
+    {
+      "path": "terrain/15/5537/13042.png",
+      "licence": "CC0-1.0",
+      "source": "https://www.usgs.gov/3d-elevation-program",
+      "sha256": "ffb595c74d2f9e53f0ad2d91b3ce546f7be45b69c1118ee275ed14e3592c28b9",
+      "bytes": 57928
+    },
+    {
+      "path": "terrain/15/5538/13042.png",
+      "licence": "CC0-1.0",
+      "source": "https://www.usgs.gov/3d-elevation-program",
+      "sha256": "7b901167d32efdbe1c9b1adbc3478cb080fc3d7661ee31efa22c457831c5cdab",
+      "bytes": 61619
+    },
+    {
+      "path": "terrain/16/11075/26084.png",
+      "licence": "CC0-1.0",
+      "source": "https://www.usgs.gov/3d-elevation-program",
+      "sha256": "aa4669a57627835b3371ff129ae21c19bcfb0a178cf015d0589b71e4beb924c9",
+      "bytes": 38672
+    },
+    {
+      "path": "terrain/16/11076/26084.png",
+      "licence": "CC0-1.0",
+      "source": "https://www.usgs.gov/3d-elevation-program",
+      "sha256": "554322605ad89cd85988c6d1774f426557e339b3aeb5292752f2c49e5927f517",
+      "bytes": 46718
+    },
+    {
+      "path": "terrain/17/22151/52168.png",
+      "licence": "CC0-1.0",
+      "source": "https://www.usgs.gov/3d-elevation-program",
+      "sha256": "924cbf6ba4d81723ea0d52dc4ff57ef42ac9c9be231af8cff54ad97850e52c1b",
+      "bytes": 24588
+    },
+    {
+      "path": "terrain/17/22151/52169.png",
+      "licence": "CC0-1.0",
+      "source": "https://www.usgs.gov/3d-elevation-program",
+      "sha256": "2275de5043cb13e5fa062dd47c6185abb0a3a802f613bd277f1823538282ab43",
+      "bytes": 37316
+    },
+    {
+      "path": "terrain/17/22152/52168.png",
+      "licence": "CC0-1.0",
+      "source": "https://www.usgs.gov/3d-elevation-program",
+      "sha256": "b71a824cb1d14c08a5447af79f2ccda3e524aee8bc07574ee93aa8a6c0ca96dd",
+      "bytes": 26379
+    },
+    {
+      "path": "terrain/17/22152/52169.png",
+      "licence": "CC0-1.0",
+      "source": "https://www.usgs.gov/3d-elevation-program",
+      "sha256": "4ba94833f2a08718b7ca684d8f1dff258b7589f3c63c77f6f502df62d400f22f",
+      "bytes": 38984
+    },
+    {
+      "path": "terrain/17/22153/52168.png",
+      "licence": "CC0-1.0",
+      "source": "https://www.usgs.gov/3d-elevation-program",
+      "sha256": "f65104304da2fbab9a1ffe22ccb7891d59ebe76e6b9c226d88b7843fbced62b1",
+      "bytes": 28499
+    },
+    {
+      "path": "terrain/17/22153/52169.png",
+      "licence": "CC0-1.0",
+      "source": "https://www.usgs.gov/3d-elevation-program",
+      "sha256": "f9b98b778e63ec09a7f7103775cb6d286f089e2eaf30822d892a28b5c2509b2c",
+      "bytes": 37232
+    },
+    {
+      "path": "textures/asphalt.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "87a7d9e890185160c2fa1f61826d725687134e51a8b748601ddfe2d027582e27",
+      "bytes": 147612
+    },
+    {
+      "path": "textures/asphalt_512.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "da5286e149fc40cd91cde91da43b23f0939245283c17f21d4c622304d8d9d891",
+      "bytes": 30183
+    },
+    {
+      "path": "textures/asphalt_normal.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "fb07e2583e0b6f930028893d62c510e460d4d66ad8acacc0d855c181e9173d95",
+      "bytes": 346526
+    },
+    {
+      "path": "textures/bark.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "42fa5ea0efc8f7d5ab44965807cc06d5b51b2c39e5192cfc61c24ba73c2f5fab",
+      "bytes": 384006
+    },
+    {
+      "path": "textures/bark_512.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "b28498f80f792c3f4cfbc25a01709e2d68327c2b9acd69de435e570cd18553da",
+      "bytes": 92217
+    },
+    {
+      "path": "textures/bark_normal.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "d752942710ba0f4449a9b77c1509b3785411461fc973fcdf77db7e5dc02e131d",
+      "bytes": 459077
+    },
+    {
+      "path": "textures/dirt.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "45eabc33c87fb603862e76c894a7ac45328d747b243f94cda1306a585e70902e",
+      "bytes": 325691
+    },
+    {
+      "path": "textures/dirt_512.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "b1d9cefa76b3d07994ec0b3b1f9b1eaaf889c3553099208b5239a0182254f3db",
+      "bytes": 86901
+    },
+    {
+      "path": "textures/dirt_normal.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "4d863eb135f11571ef97896cafe16a1a0e1ccd288d51b7c48bf781ed675fa61d",
+      "bytes": 270513
+    },
+    {
+      "path": "textures/gravel.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "c4dfe74bd74ad11fd58b8c0aa1f68e276c77024f9ce9d238622590d9d7b7cb18",
+      "bytes": 416830
+    },
+    {
+      "path": "textures/gravel_512.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "df293566075408c6e56c235774840cb94bebf43d5fb1f5faaca3146ddbdc0faf",
+      "bytes": 112403
+    },
+    {
+      "path": "textures/gravel_normal.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "9eae3346b6511baf5602d05c4ed43964186435a8cc28ff4d89b9605629644d44",
+      "bytes": 382082
+    },
+    {
+      "path": "textures/litter.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "59d9585e935197be9530d74b184c9e12114550d23bc089cba7430f2d4babaefa",
+      "bytes": 373308
+    },
+    {
+      "path": "textures/litter_512.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "b798acd68ab3886861c97ec0a857a26d376ed808f34efa58107c235220e772b7",
+      "bytes": 102816
+    },
+    {
+      "path": "textures/litter_normal.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "93168ca4372af65f43430859f42bba090e2ee7158e6307f54e83c22248aa7f30",
+      "bytes": 405708
+    },
+    {
+      "path": "textures/straw.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "6ff26ea70a17c68b49b4ec8dcf6b65b90b2246eea6ac576d69e549515c8166e0",
+      "bytes": 466504
+    },
+    {
+      "path": "textures/straw_512.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "4fe16da7ea88048aa4d27819f8d9aeadacdb147b7f65ee241460c91762fc1495",
+      "bytes": 126824
+    },
+    {
+      "path": "textures/straw_normal.jpg",
+      "licence": "CC0-1.0",
+      "source": "https://ambientcg.com/",
+      "sha256": "2ca8d2a8e8ca8abe568c6911c321025f02d440f38f38fa5a204b30c8d264af6d",
+      "bytes": 413482
+    }
+  ]
+}

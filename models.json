@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "note": "Manifest for the architect — Agent C never writes the registry. Built ground only in footprint (suppresses recorded vegetation). Authority is proposed unless noted. Each row carries a display `name` so the registry need not invent one from the id.",
+  "note": "Manifest for the architect \u2014 Agent C never writes the registry. Built ground only in footprint (suppresses recorded vegetation). Authority is proposed unless noted. Each row carries a display `name` so the registry need not invent one from the id.",
   "models": [
     {
       "id": "oak-leaf-massing",
@@ -242,27 +242,36 @@
       "bytes": 331744,
       "triangles": 5610,
       "authority": "proposal",
-      "note": "Five-leaf house; chimney origin. Footprint from solids (56 pts, 1132 m²); exceptions: oak lounge fire/seat, standing stone (C10).",
+      "note": "Five-leaf house; chimney origin. Footprint from solids (56 pts, 1132 m\u00b2); exceptions: oak lounge fire/seat, standing stone (C10).",
       "lods": [
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/oak-leaf-massing.glb",
           "triangles": 5610,
           "bytes": 331744,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/oak-leaf-massing.lod1.glb",
           "triangles": 4516,
           "bytes": 125260,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/oak-leaf-massing.lod2.glb",
           "triangles": 4516,
           "bytes": 125260,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 1136.95,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "retreat-village",
@@ -303,21 +312,30 @@
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/retreat-village.glb",
           "triangles": 1220,
           "bytes": 85432,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/retreat-village.lod1.glb",
           "triangles": 928,
           "bytes": 28996,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/retreat-village.lod2.glb",
           "triangles": 928,
           "bytes": 28996,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 1029.45,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "glamping-creek",
@@ -352,27 +370,36 @@
       "triangles": 211,
       "authority": "proposed",
       "seed": 7,
-      "note": "Five seeded tipís along the creek path; sit 1.4 m below the ridge village. Trees between pads are outside the footprint.",
+      "note": "Five seeded tip\u00eds along the creek path; sit 1.4 m below the ridge village. Trees between pads are outside the footprint.",
       "lods": [
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/glamping-creek.glb",
           "triangles": 211,
           "bytes": 26732,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/glamping-creek.lod1.glb",
           "triangles": 187,
           "bytes": 7852,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/glamping-creek.lod2.glb",
           "triangles": 187,
           "bytes": 7852,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 581.22,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "the-barn",
@@ -406,27 +433,36 @@
       "bytes": 14208,
       "triangles": 164,
       "authority": "proposed",
-      "note": "Working barn at the gate; loft over the north third. Lidar roof here is smaller — programme-sized massing.",
+      "note": "Working barn at the gate; loft over the north third. Lidar roof here is smaller \u2014 programme-sized massing.",
       "lods": [
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/the-barn.glb",
           "triangles": 164,
           "bytes": 14208,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/the-barn.lod1.glb",
           "triangles": 124,
           "bytes": 6244,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/the-barn.lod2.glb",
           "triangles": 124,
           "bytes": 6244,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 228.36,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "agricultural-hub",
@@ -466,21 +502,30 @@
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/agricultural-hub.glb",
           "triangles": 260,
           "bytes": 20920,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/agricultural-hub.lod1.glb",
           "triangles": 196,
           "bytes": 8992,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/agricultural-hub.lod2.glb",
           "triangles": 196,
           "bytes": 8992,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 199.91,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "tropical-dome",
@@ -519,27 +564,36 @@
         "elevation_bands": 3,
         "radius_m": 5.5
       },
-      "note": "Low-segment dome: 12 meridians × 3 bands; door is an omitted bay. Whole model 364 tris — no sphere tessellation, no meshopt.",
+      "note": "Low-segment dome: 12 meridians \u00d7 3 bands; door is an omitted bay. Whole model 364 tris \u2014 no sphere tessellation, no meshopt.",
       "lods": [
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/tropical-dome.glb",
           "triangles": 364,
           "bytes": 26888,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/tropical-dome.lod1.glb",
           "triangles": 312,
           "bytes": 11176,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/tropical-dome.lod2.glb",
           "triangles": 312,
           "bytes": 11176,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 129.97,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "site-grounds",
@@ -554,20 +608,508 @@
       "altitudeM": 0.0,
       "footprint": [
         [
-          -119.1578235,
-          34.4321434
+          -119.15779403786622,
+          34.43249858772776
         ],
         [
-          -119.1552845,
-          34.4321434
+          -119.15708967302201,
+          34.43250199006704
         ],
         [
-          -119.1552845,
-          34.4335082
+          -119.15707455935446,
+          34.43251452532319
         ],
         [
-          -119.1578235,
-          34.4335082
+          -119.1570665257764,
+          34.43254435179879
+        ],
+        [
+          -119.1569835816785,
+          34.43270757858157
+        ],
+        [
+          -119.15698235052494,
+          34.432938871320985
+        ],
+        [
+          -119.156970120512,
+          34.43297350216625
+        ],
+        [
+          -119.15694559034726,
+          34.43300330063627
+        ],
+        [
+          -119.15690381396855,
+          34.43302844798939
+        ],
+        [
+          -119.15684726185378,
+          34.43303973237156
+        ],
+        [
+          -119.15684340794974,
+          34.43305726016294
+        ],
+        [
+          -119.15683000907545,
+          34.43306836240345
+        ],
+        [
+          -119.15676418566774,
+          34.43307155572914
+        ],
+        [
+          -119.15674716117681,
+          34.43309270941519
+        ],
+        [
+          -119.15645433746076,
+          34.43322310041083
+        ],
+        [
+          -119.15623754687994,
+          34.433375615508226
+        ],
+        [
+          -119.15599661722534,
+          34.43350707827678
+        ],
+        [
+          -119.15597176148296,
+          34.43350500700633
+        ],
+        [
+          -119.15595039185307,
+          34.43348415310786
+        ],
+        [
+          -119.15594509289326,
+          34.43346646885843
+        ],
+        [
+          -119.15595453581464,
+          34.433450013151834
+        ],
+        [
+          -119.1561883683497,
+          34.43332050909723
+        ],
+        [
+          -119.15640666717896,
+          34.43316693029761
+        ],
+        [
+          -119.15662623794746,
+          34.43306878242632
+        ],
+        [
+          -119.15660831597432,
+          34.43304853333105
+        ],
+        [
+          -119.15610047487002,
+          34.43300341977341
+        ],
+        [
+          -119.15577719995521,
+          34.43299002671762
+        ],
+        [
+          -119.15560498908242,
+          34.43299212514514
+        ],
+        [
+          -119.15556834197096,
+          34.43301001959947
+        ],
+        [
+          -119.15546375296861,
+          34.433014132223924
+        ],
+        [
+          -119.15541997051392,
+          34.43306958813553
+        ],
+        [
+          -119.15539377026758,
+          34.43307752890576
+        ],
+        [
+          -119.15536167027858,
+          34.43306370468058
+        ],
+        [
+          -119.15535102377231,
+          34.43305070815774
+        ],
+        [
+          -119.1553508905839,
+          34.43303500087294
+        ],
+        [
+          -119.1553657736921,
+          34.433014132223924
+        ],
+        [
+          -119.15530770890108,
+          34.43301296771677
+        ],
+        [
+          -119.1552859503099,
+          34.43299493865648
+        ],
+        [
+          -119.15528470207319,
+          34.43291231997577
+        ],
+        [
+          -119.15530469315118,
+          34.43288998532269
+        ],
+        [
+          -119.15553797196584,
+          34.432888056942375
+        ],
+        [
+          -119.15556554455421,
+          34.43290605199259
+        ],
+        [
+          -119.15559671161324,
+          34.432905672215085
+        ],
+        [
+          -119.1556539898264,
+          34.4328653585799
+        ],
+        [
+          -119.15627972314859,
+          34.4326594910268
+        ],
+        [
+          -119.15628112854823,
+          34.432640105493455
+        ],
+        [
+          -119.15629165597622,
+          34.43262705063971
+        ],
+        [
+          -119.15635337317936,
+          34.432620911926016
+        ],
+        [
+          -119.15643710382763,
+          34.43255444109182
+        ],
+        [
+          -119.15642678216003,
+          34.432531374627615
+        ],
+        [
+          -119.15640917553411,
+          34.4325280464485
+        ],
+        [
+          -119.15638546351958,
+          34.43251055217504
+        ],
+        [
+          -119.15635328321528,
+          34.43240519449934
+        ],
+        [
+          -119.15628401258259,
+          34.43241568407874
+        ],
+        [
+          -119.156228371053,
+          34.43244777289316
+        ],
+        [
+          -119.15620356543565,
+          34.43245024445022
+        ],
+        [
+          -119.15617749503816,
+          34.4324371175461
+        ],
+        [
+          -119.15616683982783,
+          34.432421706102964
+        ],
+        [
+          -119.1561394761569,
+          34.43242154970749
+        ],
+        [
+          -119.1561170540701,
+          34.43241107019435
+        ],
+        [
+          -119.15610640399588,
+          34.43239566272765
+        ],
+        [
+          -119.1560820116785,
+          34.43239652159227
+        ],
+        [
+          -119.15605660286397,
+          34.43238502330251
+        ],
+        [
+          -119.15604595808855,
+          34.43236961915307
+        ],
+        [
+          -119.15602463262076,
+          34.432371244431685
+        ],
+        [
+          -119.15599615539438,
+          34.43235897909938
+        ],
+        [
+          -119.15598493490562,
+          34.432337802957605
+        ],
+        [
+          -119.15599472160385,
+          34.432299943159045
+        ],
+        [
+          -119.15578137988123,
+          34.43224026812654
+        ],
+        [
+          -119.15570210553965,
+          34.43227397519542
+        ],
+        [
+          -119.15566806168866,
+          34.43227041489813
+        ],
+        [
+          -119.15559014606221,
+          34.43218571070773
+        ],
+        [
+          -119.15559552698139,
+          34.43216301515587
+        ],
+        [
+          -119.15562467932354,
+          34.432145015217706
+        ],
+        [
+          -119.15565760390193,
+          34.432150374192204
+        ],
+        [
+          -119.15570101158242,
+          34.43219775657153
+        ],
+        [
+          -119.15576190957964,
+          34.43217155266039
+        ],
+        [
+          -119.15578556499082,
+          34.43216945125464
+        ],
+        [
+          -119.15598938944592,
+          34.43222800239683
+        ],
+        [
+          -119.15603793223104,
+          34.43220050102015
+        ],
+        [
+          -119.15605987209928,
+          34.43219921583013
+        ],
+        [
+          -119.15608595392678,
+          34.43221235997278
+        ],
+        [
+          -119.15609659534206,
+          34.43222775529184
+        ],
+        [
+          -119.15612395898464,
+          34.43222790963831
+        ],
+        [
+          -119.1561463845673,
+          34.43223839989393
+        ],
+        [
+          -119.15615703130217,
+          34.43225379862206
+        ],
+        [
+          -119.1561814225328,
+          34.432252937708135
+        ],
+        [
+          -119.15620683577613,
+          34.43226444678804
+        ],
+        [
+          -119.15621747711837,
+          34.43227984183299
+        ],
+        [
+          -119.15623881501362,
+          34.43227821793102
+        ],
+        [
+          -119.15626727071053,
+          34.432290472957135
+        ],
+        [
+          -119.15627843491104,
+          34.43230899750888
+        ],
+        [
+          -119.15626905126156,
+          34.43234830294145
+        ],
+        [
+          -119.15637982408124,
+          34.43233166794059
+        ],
+        [
+          -119.15641202024518,
+          34.432342294786174
+        ],
+        [
+          -119.15642327007652,
+          34.4323549318702
+        ],
+        [
+          -119.15645422443606,
+          34.43245782200672
+        ],
+        [
+          -119.15654819167102,
+          34.43244683971004
+        ],
+        [
+          -119.15656725575835,
+          34.432460225592536
+        ],
+        [
+          -119.1565743872942,
+          34.4324858294598
+        ],
+        [
+          -119.15656077646078,
+          34.43250869358008
+        ],
+        [
+          -119.15651013395498,
+          34.432520584034435
+        ],
+        [
+          -119.15652569002592,
+          34.432556845890616
+        ],
+        [
+          -119.1565197661829,
+          34.4325820818873
+        ],
+        [
+          -119.15642305958832,
+          34.432660478064975
+        ],
+        [
+          -119.15661881994022,
+          34.43271660099856
+        ],
+        [
+          -119.15679616603269,
+          34.43286749750154
+        ],
+        [
+          -119.15679736579385,
+          34.43289528461082
+        ],
+        [
+          -119.15675908668447,
+          34.43291922752897
+        ],
+        [
+          -119.15673527911224,
+          34.43291295478329
+        ],
+        [
+          -119.15668975249524,
+          34.43287440412652
+        ],
+        [
+          -119.15668979691505,
+          34.43292732086517
+        ],
+        [
+          -119.15682099086905,
+          34.43292784050876
+        ],
+        [
+          -119.15683985327233,
+          34.43293720834672
+        ],
+        [
+          -119.15684716527839,
+          34.43295273601925
+        ],
+        [
+          -119.15686880258254,
+          34.43294453010922
+        ],
+        [
+          -119.15687855307132,
+          34.43292868402692
+        ],
+        [
+          -119.15688213381611,
+          34.43268454154558
+        ],
+        [
+          -119.1569810007173,
+          34.432475871928204
+        ],
+        [
+          -119.15702699124218,
+          34.432432322588184
+        ],
+        [
+          -119.15706327284089,
+          34.43241764580234
+        ],
+        [
+          -119.15710543180116,
+          34.432412177033804
+        ],
+        [
+          -119.15779083874106,
+          34.432412177033804
+        ],
+        [
+          -119.15781154433914,
+          34.4324183157475
+        ],
+        [
+          -119.15782332000384,
+          34.43243657029163
+        ],
+        [
+          -119.15782099271456,
+          34.432482023220096
         ]
       ],
       "bytes": 412028,
@@ -585,27 +1127,38 @@
         "tread_m": 0.29,
         "ramp_grade": 0.08
       },
-      "note": "Drive, parking, paths. Ramps ≤8% on long climbs; human stairs (170 mm) on the short oak climb. check-paths asserts building riser 180 mm and engine backstop 0.55 m.",
+      "note": "Drive, parking, paths. Ramps \u22648% on long climbs; human stairs (170 mm) on the short oak climb. check-paths asserts building riser 180 mm and engine backstop 0.55 m. C23.1: footprint was AABB+3m vegetation envelope (6925 m\u00b2); replaced with floors\u222a+3m (6973 m\u00b2).",
       "lods": [
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/site-grounds.glb",
           "triangles": 5952,
           "bytes": 412028,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/site-grounds.lod1.glb",
           "triangles": 4464,
           "bytes": 131656,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/site-grounds.lod2.glb",
           "triangles": 4464,
           "bytes": 131656,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 6972.82,
+      "outline_method": "walk_floors_union_buffer_3m",
+      "crosses_survey": true,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "creek",
@@ -645,21 +1198,31 @@
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/creek.glb",
           "triangles": 2088,
           "bytes": 137016,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/creek.lod1.glb",
           "triangles": 1528,
           "bytes": 45348,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/creek.lod2.glb",
           "triangles": 1528,
           "bytes": 45348,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 2241.04,
+      "crosses_survey": true,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "community-hub",
@@ -698,27 +1261,36 @@
       "clear_floor_m2": 90.0,
       "door_w_m": 1.8,
       "second_door_w_m": 1.8,
-      "note": "Programme ~48 (foyer 20 standing + two rooms ×14 seated). Egress load 102 from area×factor; doors from egress (min 1.8 — over-provision vs 1.43 calc).",
+      "note": "Programme ~48 (foyer 20 standing + two rooms \u00d714 seated). Egress load 102 from area\u00d7factor; doors from egress (min 1.8 \u2014 over-provision vs 1.43 calc).",
       "lods": [
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/community-hub.glb",
           "triangles": 362,
           "bytes": 28516,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/community-hub.lod1.glb",
           "triangles": 274,
           "bytes": 10704,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/community-hub.lod2.glb",
           "triangles": 274,
           "bytes": 10704,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 141.93,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "events-gatherings-hub",
@@ -757,27 +1329,36 @@
       "clear_floor_m2": 176.0,
       "door_w_m": 1.8,
       "second_door_w_m": 1.8,
-      "note": "Seated assembly: egress load and design capacity both 125 (176/1.4). Doors sized from egress: 125×28 mm = 3.5 m → 1.8+1.8.",
+      "note": "Seated assembly: egress load and design capacity both 125 (176/1.4). Doors sized from egress: 125\u00d728 mm = 3.5 m \u2192 1.8+1.8.",
       "lods": [
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/events-gatherings-hub.glb",
           "triangles": 352,
           "bytes": 27032,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/events-gatherings-hub.lod1.glb",
           "triangles": 314,
           "bytes": 12480,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/events-gatherings-hub.lod2.glb",
           "triangles": 314,
           "bytes": 12480,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 241.45,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "wellness-facilities",
@@ -816,27 +1397,36 @@
       "clear_floor_m2": 88.4,
       "door_w_m": 1.8,
       "second_door_w_m": 1.8,
-      "note": "Programme ~14 (4 rooms ×2 + corridor 6). Egress load 96 from area×factor; doors at min 1.8 (over-provision vs 1.34 calc).",
+      "note": "Programme ~14 (4 rooms \u00d72 + corridor 6). Egress load 96 from area\u00d7factor; doors at min 1.8 (over-provision vs 1.34 calc).",
       "lods": [
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/wellness-facilities.glb",
           "triangles": 474,
           "bytes": 36084,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/wellness-facilities.lod1.glb",
           "triangles": 360,
           "bytes": 12568,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/wellness-facilities.lod2.glb",
           "triangles": 360,
           "bytes": 12568,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 158.29,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "livestock-dairy",
@@ -876,21 +1466,30 @@
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/livestock-dairy.glb",
           "triangles": 276,
           "bytes": 22064,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/livestock-dairy.lod1.glb",
           "triangles": 208,
           "bytes": 9016,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/livestock-dairy.lod2.glb",
           "triangles": 208,
           "bytes": 9016,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 227.35,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "mushroom-cultivation",
@@ -930,21 +1529,30 @@
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/mushroom-cultivation.glb",
           "triangles": 178,
           "bytes": 14884,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/mushroom-cultivation.lod1.glb",
           "triangles": 134,
           "bytes": 6532,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/mushroom-cultivation.lod2.glb",
           "triangles": 134,
           "bytes": 6532,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 62.8,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "beekeeping-program",
@@ -984,21 +1592,30 @@
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/beekeeping-program.glb",
           "triangles": 146,
           "bytes": 12900,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/beekeeping-program.lod1.glb",
           "triangles": 112,
           "bytes": 5848,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/beekeeping-program.lod2.glb",
           "triangles": 112,
           "bytes": 5848,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 20.7,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "farmstead-produce-stand",
@@ -1039,21 +1656,30 @@
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/farmstead-produce-stand.glb",
           "triangles": 178,
           "bytes": 15364,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/farmstead-produce-stand.lod1.glb",
           "triangles": 134,
           "bytes": 6708,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/farmstead-produce-stand.lod2.glb",
           "triangles": 134,
           "bytes": 6708,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 32.16,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "infrastructure",
@@ -1126,21 +1752,30 @@
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/infrastructure.glb",
           "triangles": 616,
           "bytes": 46192,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/infrastructure.lod1.glb",
           "triangles": 504,
           "bytes": 18720,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/infrastructure.lod2.glb",
           "triangles": 504,
           "bytes": 18720,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 571.55,
+      "licence": "own-work",
+      "source": "own-work"
     },
     {
       "id": "ceremonial-infrastructure",
@@ -1156,7 +1791,7 @@
       "bytes": 42208,
       "triangles": 620,
       "authority": "proposed",
-      "note": "MASSING. 13 m open-air kiva, ring wall 0.45 m (steppable). Owner decision open-air — complete as built. No enterable interior.",
+      "note": "MASSING. 13 m open-air kiva, ring wall 0.45 m (steppable). Owner decision open-air \u2014 complete as built. No enterable interior.",
       "enterable_interior": false,
       "open_air": true,
       "massing_not_engineering": true,
@@ -1183,21 +1818,30 @@
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/ceremonial-infrastructure.glb",
           "triangles": 620,
           "bytes": 42208,
-          "max_distance_m": 60
+          "max_distance_m": 60,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/ceremonial-infrastructure.lod1.glb",
           "triangles": 506,
           "bytes": 15656,
-          "max_distance_m": 250
+          "max_distance_m": 250,
+          "licence": "own-work",
+          "source": "own-work"
         },
         {
           "url": "https://raw.githubusercontent.com/SacredRebel/sulphur-mountain-world/main/models/lod/ceremonial-infrastructure.lod2.glb",
           "triangles": 506,
           "bytes": 15656,
-          "max_distance_m": null
+          "max_distance_m": null,
+          "licence": "own-work",
+          "source": "own-work"
         }
-      ]
+      ],
+      "area_m2": 168.97,
+      "licence": "own-work",
+      "source": "own-work"
     }
   ]
 }
