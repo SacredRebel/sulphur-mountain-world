@@ -1,8 +1,8 @@
-﻿# STATUS — Agent C
+# STATUS - Agent C
 updated: 2026-09-22
-phase: C18
+phase: C19
 state: done
-commit: 052675c
-checks: check-lods OK; C16/C17/C18 shipped; C14 waits on scans
+commit: PENDING
+checks: check-rasters OK; check-gathers OK; prior checks still green; C14 waits on scans
 blocked-by: none
-notes: C13 drainage, C16 land layers, C17 positions, C18 LODs done. C14 deferred until owner scans.
+notes: C19.1 drawable grid rasters + docs/layers.md; C19.2 gathers overlay. C14 deferred until owner scans.

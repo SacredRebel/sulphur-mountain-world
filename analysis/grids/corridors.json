@@ -9,5 +9,29 @@
   "frame_origin_lat": 34.4304373,
   "metres_per_deg_lng": 91916.198,
   "metres_per_deg_lat": 110930.184,
-  "axes": "row = north ascending, col = east ascending; value at cell centre"
+  "axes": "row = north ascending, col = east ascending; value at cell centre",
+  "units": "dimensionless",
+  "what": "animal-corridor current",
+  "evidence": "modelled",
+  "encoding": "uint16_greyscale",
+  "value_min": 0.0,
+  "value_max": 0.4470638334751129,
+  "nodata": 65535,
+  "decode": "if pixel == 65535: nodata; else value = value_min + (pixel / 65534) * (value_max - value_min)",
+  "row_order": "north_to_south",
+  "col_order": "west_to_east",
+  "axes_npz": "row = north ascending (south at index 0), col = east ascending",
+  "bounds_lnglat": [
+    -119.1581823,
+    34.4315124,
+    -119.1545051,
+    34.4338381
+  ],
+  "bounds_en_m": [
+    119.32340274053252,
+    119.25574840024214,
+    457.3234027405325,
+    377.25574840024217
+  ],
+  "raster": "analysis/grids/corridors.png"
 }

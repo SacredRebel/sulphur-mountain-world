@@ -1,0 +1,23 @@
+{
+  "weights": {
+    "sun_hours_annual": 0.18,
+    "sun_hours_dec": 0.12,
+    "cold_air_inv": 0.12,
+    "thermal_belt": 0.08,
+    "twi_inv": 0.1,
+    "stormwater_inv": 0.08,
+    "wind_santa_ana_inv": 0.1,
+    "wind_sea_breeze": 0.04,
+    "slope": 0.12,
+    "landform": 0.06
+  },
+  "threshold": 0.9495642739428887,
+  "n_polygons": 3,
+  "exclusions": {
+    "creek_buffer_m": 15.0,
+    "boundary_buffer_m": 5.0,
+    "tree_extra_m": 3.0,
+    "corridor_quantile": 0.9,
+    "stormwater_flood_m": 0.02
+  }
+}

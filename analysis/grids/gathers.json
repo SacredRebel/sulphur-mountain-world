@@ -1,0 +1,61 @@
+{
+  "origin_east_m": 119.82340274053252,
+  "origin_north_m": 119.75574840024214,
+  "cell_m": 1.0,
+  "ncols": 338,
+  "nrows": 258,
+  "crs": "pack-frame metres (equirectangular at origin_lat)",
+  "frame_origin_lng": -119.1594805,
+  "frame_origin_lat": 34.4304373,
+  "metres_per_deg_lng": 91916.198,
+  "metres_per_deg_lat": 110930.184,
+  "axes": "row = north ascending, col = east ascending; value at cell centre",
+  "evidence": "modelled",
+  "authority": "derived",
+  "method": "weighted overlay of C16 land-reading layers with hard exclusions",
+  "weights": {
+    "sun_hours_annual": 0.18,
+    "sun_hours_dec": 0.12,
+    "cold_air_inv": 0.12,
+    "thermal_belt": 0.08,
+    "twi_inv": 0.1,
+    "stormwater_inv": 0.08,
+    "wind_santa_ana_inv": 0.1,
+    "wind_sea_breeze": 0.04,
+    "slope": 0.12,
+    "landform": 0.06
+  },
+  "weights_sum": 1.0,
+  "percentile_threshold": 85.0,
+  "score_threshold": 0.9495642739428887,
+  "exclusions": {
+    "creek_buffer_m": 15.0,
+    "boundary_buffer_m": 5.0,
+    "tree_extra_m": 3.0,
+    "corridor_quantile": 0.9,
+    "stormwater_flood_m": 0.02
+  },
+  "what": "where the land gathers \u2014 ranked suitability",
+  "closing": "3x3 binary_closing on 85th-percentile mask, clipped to usable cells",
+  "units": "score 0-1",
+  "encoding": "uint16_greyscale",
+  "nodata": 65535,
+  "row_order": "north_to_south",
+  "col_order": "west_to_east",
+  "bounds_en_m": [
+    119.32340274053252,
+    119.25574840024214,
+    457.3234027405325,
+    377.25574840024217
+  ],
+  "bounds_lnglat": [
+    -119.1581823,
+    34.4315124,
+    -119.1545051,
+    34.4338381
+  ],
+  "raster": "analysis/grids/gathers.png",
+  "value_min": 0.0,
+  "value_max": 0.9704050506968815,
+  "decode": "if pixel == 65535: nodata; else value = value_min + (pixel / 65534) * (value_max - value_min)"
+}

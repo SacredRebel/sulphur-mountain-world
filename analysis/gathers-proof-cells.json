@@ -1,0 +1,38 @@
+{
+  "good": {
+    "en": {
+      "e": 418.0,
+      "n": 324.0
+    },
+    "score": 0.9704050421714783,
+    "q80": 0.9462220072746277,
+    "ij": [
+      204,
+      298
+    ]
+  },
+  "bad": {
+    "en": {
+      "e": 275.0,
+      "n": 234.0
+    },
+    "score": 0.0,
+    "q20": 0.8823977708816528,
+    "ij": [
+      114,
+      155
+    ]
+  },
+  "weights": {
+    "sun_hours_annual": 0.18,
+    "sun_hours_dec": 0.12,
+    "cold_air_inv": 0.12,
+    "thermal_belt": 0.08,
+    "twi_inv": 0.1,
+    "stormwater_inv": 0.08,
+    "wind_santa_ana_inv": 0.1,
+    "wind_sea_breeze": 0.04,
+    "slope": 0.12,
+    "landform": 0.06
+  }
+}
