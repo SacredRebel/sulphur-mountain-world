@@ -8185,7 +8185,10 @@
     "trees": "tabular crowns; drawn as trees_crowns + trees_trunks",
     "cultivated": "tabular plantings; drawn as cultivated_ground",
     "sky_events": "event table awaiting C26 alignments drawable",
-    "terrain": "terrarium tile pyramid; hillshade display is layer terrain"
+    "terrain": "terrarium tile pyramid; hillshade display is layer terrain",
+    "walkable": "walkable.geojson published; atlas export deferred (C24 contract file)",
+    "walk_graph": "connectivity table, not a map overlay",
+    "collision": "physics mesh, not a map overlay"
   },
   "pack_aliases": {
     "terrain_hillshade": "terrain",

@@ -1,0 +1,292 @@
+{
+  "authority": "derived",
+  "evidence": "modelled",
+  "slope_max_deg": 30.0,
+  "slope_note": "30\u00b0 is the usual limit before walking becomes scrambling on unimproved ground; not an accessibility standard.",
+  "exclusions": [
+    "building footprints (not site-grounds / creek)",
+    "trunk radius 0.45 m",
+    "slope > 30.0\u00b0",
+    "creek channel footprint"
+  ],
+  "not_excluded": [
+    "tree canopy"
+  ],
+  "component_count": 14,
+  "total_area_m2": 28374.0,
+  "touches": [
+    {
+      "a": "1",
+      "b": "4",
+      "distance_m": 0.707
+    },
+    {
+      "a": "26",
+      "b": "3",
+      "distance_m": 1.0
+    },
+    {
+      "a": "3",
+      "b": "34",
+      "distance_m": 0.707
+    },
+    {
+      "a": "3",
+      "b": "47",
+      "distance_m": 0.707
+    }
+  ],
+  "gaps": [
+    {
+      "a": "26",
+      "b": "33",
+      "narrowest_gap_m": 1.414
+    },
+    {
+      "a": "3",
+      "b": "40",
+      "narrowest_gap_m": 1.414
+    },
+    {
+      "a": "40",
+      "b": "47",
+      "narrowest_gap_m": 1.414
+    },
+    {
+      "a": "3",
+      "b": "4",
+      "narrowest_gap_m": 2.0
+    },
+    {
+      "a": "3",
+      "b": "5",
+      "narrowest_gap_m": 2.0
+    },
+    {
+      "a": "1",
+      "b": "5",
+      "narrowest_gap_m": 2.121
+    },
+    {
+      "a": "30",
+      "b": "31",
+      "narrowest_gap_m": 2.236
+    },
+    {
+      "a": "12",
+      "b": "3",
+      "narrowest_gap_m": 3.162
+    },
+    {
+      "a": "26",
+      "b": "35",
+      "narrowest_gap_m": 3.606
+    },
+    {
+      "a": "1",
+      "b": "3",
+      "narrowest_gap_m": 4.0
+    },
+    {
+      "a": "4",
+      "b": "5",
+      "narrowest_gap_m": 4.0
+    },
+    {
+      "a": "33",
+      "b": "35",
+      "narrowest_gap_m": 4.123
+    },
+    {
+      "a": "31",
+      "b": "34",
+      "narrowest_gap_m": 5.385
+    },
+    {
+      "a": "20",
+      "b": "3",
+      "narrowest_gap_m": 5.831
+    },
+    {
+      "a": "3",
+      "b": "31",
+      "narrowest_gap_m": 5.831
+    },
+    {
+      "a": "3",
+      "b": "30",
+      "narrowest_gap_m": 9.22
+    },
+    {
+      "a": "30",
+      "b": "34",
+      "narrowest_gap_m": 10.198
+    },
+    {
+      "a": "26",
+      "b": "30",
+      "narrowest_gap_m": 11.402
+    },
+    {
+      "a": "26",
+      "b": "31",
+      "narrowest_gap_m": 12.166
+    },
+    {
+      "a": "20",
+      "b": "26",
+      "narrowest_gap_m": 13.0
+    },
+    {
+      "a": "20",
+      "b": "33",
+      "narrowest_gap_m": 13.038
+    },
+    {
+      "a": "26",
+      "b": "34",
+      "narrowest_gap_m": 13.435
+    },
+    {
+      "a": "34",
+      "b": "40",
+      "narrowest_gap_m": 14.318
+    },
+    {
+      "a": "20",
+      "b": "35",
+      "narrowest_gap_m": 15.232
+    },
+    {
+      "a": "30",
+      "b": "35",
+      "narrowest_gap_m": 17.263
+    },
+    {
+      "a": "12",
+      "b": "5",
+      "narrowest_gap_m": 17.804
+    },
+    {
+      "a": "12",
+      "b": "20",
+      "narrowest_gap_m": 17.889
+    },
+    {
+      "a": "12",
+      "b": "30",
+      "narrowest_gap_m": 18.682
+    },
+    {
+      "a": "34",
+      "b": "47",
+      "narrowest_gap_m": 19.313
+    },
+    {
+      "a": "20",
+      "b": "4",
+      "narrowest_gap_m": 20.0
+    },
+    {
+      "a": "3",
+      "b": "35",
+      "narrowest_gap_m": 20.518
+    },
+    {
+      "a": "3",
+      "b": "33",
+      "narrowest_gap_m": 21.213
+    },
+    {
+      "a": "12",
+      "b": "31",
+      "narrowest_gap_m": 21.633
+    },
+    {
+      "a": "20",
+      "b": "5",
+      "narrowest_gap_m": 21.84
+    },
+    {
+      "a": "1",
+      "b": "12",
+      "narrowest_gap_m": 21.932
+    },
+    {
+      "a": "12",
+      "b": "4",
+      "narrowest_gap_m": 22.672
+    },
+    {
+      "a": "1",
+      "b": "20",
+      "narrowest_gap_m": 22.804
+    },
+    {
+      "a": "30",
+      "b": "33",
+      "narrowest_gap_m": 24.187
+    },
+    {
+      "a": "31",
+      "b": "35",
+      "narrowest_gap_m": 24.331
+    },
+    {
+      "a": "12",
+      "b": "35",
+      "narrowest_gap_m": 24.597
+    },
+    {
+      "a": "31",
+      "b": "40",
+      "narrowest_gap_m": 24.739
+    },
+    {
+      "a": "20",
+      "b": "30",
+      "narrowest_gap_m": 25.495
+    },
+    {
+      "a": "26",
+      "b": "40",
+      "narrowest_gap_m": 26.571
+    },
+    {
+      "a": "12",
+      "b": "26",
+      "narrowest_gap_m": 28.284
+    },
+    {
+      "a": "12",
+      "b": "33",
+      "narrowest_gap_m": 28.32
+    },
+    {
+      "a": "12",
+      "b": "34",
+      "narrowest_gap_m": 29.0
+    },
+    {
+      "a": "26",
+      "b": "4",
+      "narrowest_gap_m": 29.0
+    },
+    {
+      "a": "26",
+      "b": "47",
+      "narrowest_gap_m": 29.428
+    },
+    {
+      "a": "30",
+      "b": "40",
+      "narrowest_gap_m": 29.614
+    },
+    {
+      "a": "31",
+      "b": "47",
+      "narrowest_gap_m": 29.732
+    }
+  ],
+  "gaps_note": "narrowest_gap_m between components that do not touch; path candidates"
+}

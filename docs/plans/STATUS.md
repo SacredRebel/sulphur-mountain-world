@@ -1,8 +1,8 @@
 # STATUS - Agent C
 updated: 2026-09-23
-phase: C23
+phase: C24
 state: done
-commit: 7eb00bca8b13d96bdd418d259772b72e3c46d2cb
-checks: check-outlines + check-licences green; positions/materials/water/pack-layers OK
-blocked-by: private scan storage + one Scaniverse zone (C14 tooling ready; real captures wait); owner chooses water variant / permitting
-notes: C23 site-grounds outline AABB 35332 -> floors+3m 6973 m2 (-28360). Licence-manifest 146 assets (115 own-work, 31 CC0-1.0).
+commit: PENDING
+checks: check-walkable green (+ self-test); pack-layers coverage OK
+blocked-by: private scan storage + one Scaniverse zone; owner chooses water variant / permitting
+notes: C24 walkable 28374 m2 (30 deg, no canopy exclude); walk-graph; collision.glb 8404 tris max_dev 0.75 m.

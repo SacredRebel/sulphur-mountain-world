@@ -10,9 +10,9 @@
     "Unlicense",
     "own-work"
   ],
-  "count": 146,
+  "count": 147,
   "by_licence": {
-    "own-work": 115,
+    "own-work": 116,
     "CC0-1.0": 31
   },
   "assets": [
@@ -477,6 +477,13 @@
       "source": "own-work",
       "sha256": "ab8ae44f89348f27c86db4dc0fd512df51cea51683a909524183115b974a496c",
       "bytes": 42208
+    },
+    {
+      "path": "models/collision.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "82376733f761e7f9bd956965e0ddbeb46ec23ee7fb3d9a9f48ab04702a250e86",
+      "bytes": 506164
     },
     {
       "path": "models/community-hub.glb",

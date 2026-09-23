@@ -1,0 +1,10 @@
+{
+  "authority": "derived",
+  "evidence": "modelled",
+  "path": "models/collision.glb",
+  "triangles": 8404,
+  "max_deviation_from_dem_m": 0.75,
+  "deviation_bound_m": 2.5,
+  "step_m": 3.0,
+  "frame": "pack spawn origin; x east, y up, z south"
+}

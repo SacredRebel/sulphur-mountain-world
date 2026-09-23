@@ -550,6 +550,29 @@
       "evidence": "measured",
       "what": "Gaussian-splat placement records; binary scans stay in private storage (scans/ git-ignored)",
       "generator": "scripts/scan.py"
+    },
+    "walkable": {
+      "file": "walkable.geojson",
+      "authority": "derived",
+      "evidence": "modelled",
+      "kind": "vector",
+      "units": "geometry; area_m2; mean_slope_deg",
+      "generator": "scripts/walkable.py"
+    },
+    "walk_graph": {
+      "file": "walk-graph.json",
+      "authority": "derived",
+      "evidence": "modelled",
+      "kind": "table",
+      "generator": "scripts/walkable.py"
+    },
+    "collision": {
+      "file": "models/collision.glb",
+      "meta": "collision.json",
+      "authority": "derived",
+      "evidence": "modelled",
+      "kind": "mesh",
+      "generator": "scripts/walkable.py"
     }
   },
   "sources": [
