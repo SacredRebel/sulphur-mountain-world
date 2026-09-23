@@ -1,0 +1,16 @@
+{
+  "zone": "z-synth",
+  "rms_m": 0.0,
+  "centre_offset_m": 0.0052,
+  "scale": 1.05,
+  "truth_s": 1.05,
+  "truth_centre_en": [
+    300.0,
+    250.0
+  ],
+  "placed_en": [
+    299.9961,
+    250.0034
+  ],
+  "splats": 1600
+}

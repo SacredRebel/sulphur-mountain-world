@@ -1,0 +1,6094 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "authority": "derived",
+    "evidence": "modelled",
+    "zone_m": 20.0,
+    "overlap_m": 3.0,
+    "generator": "scripts/capture-plan.py",
+    "n_zones": 160,
+    "note": "Scan files stay private (scans/ is git-ignored). This plan is the walk order only."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z001",
+        "walk_order": 1,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 84.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15689310617915,
+              34.4317873
+            ],
+            [
+              -119.15689310617915,
+              34.43196759357997
+            ],
+            [
+              -119.1571106956839,
+              34.43196759357997
+            ],
+            [
+              -119.1571106956839,
+              34.4317873
+            ],
+            [
+              -119.15689310617915,
+              34.4317873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z002",
+        "walk_order": 2,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 378.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15670815510013,
+              34.4317873
+            ],
+            [
+              -119.15670815510013,
+              34.43196759357997
+            ],
+            [
+              -119.15692574460486,
+              34.43196759357997
+            ],
+            [
+              -119.15692574460486,
+              34.4317873
+            ],
+            [
+              -119.15670815510013,
+              34.4317873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z003",
+        "walk_order": 3,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 380.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15652320402111,
+              34.4317873
+            ],
+            [
+              -119.15652320402111,
+              34.43196759357997
+            ],
+            [
+              -119.15674079352584,
+              34.43196759357997
+            ],
+            [
+              -119.15674079352584,
+              34.4317873
+            ],
+            [
+              -119.15652320402111,
+              34.4317873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z004",
+        "walk_order": 4,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 383.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15633825294208,
+              34.4317873
+            ],
+            [
+              -119.15633825294208,
+              34.43196759357997
+            ],
+            [
+              -119.15655584244682,
+              34.43196759357997
+            ],
+            [
+              -119.15655584244682,
+              34.4317873
+            ],
+            [
+              -119.15633825294208,
+              34.4317873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z005",
+        "walk_order": 5,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 385.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15615330186306,
+              34.4317873
+            ],
+            [
+              -119.15615330186306,
+              34.43196759357997
+            ],
+            [
+              -119.1563708913678,
+              34.43196759357997
+            ],
+            [
+              -119.1563708913678,
+              34.4317873
+            ],
+            [
+              -119.15615330186306,
+              34.4317873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z006",
+        "walk_order": 6,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 387.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15596835078404,
+              34.4317873
+            ],
+            [
+              -119.15596835078404,
+              34.43196759357997
+            ],
+            [
+              -119.15618594028876,
+              34.43196759357997
+            ],
+            [
+              -119.15618594028876,
+              34.4317873
+            ],
+            [
+              -119.15596835078404,
+              34.4317873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z007",
+        "walk_order": 7,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 389.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155783399705,
+              34.4317873
+            ],
+            [
+              -119.155783399705,
+              34.43196759357997
+            ],
+            [
+              -119.15600098920974,
+              34.43196759357997
+            ],
+            [
+              -119.15600098920974,
+              34.4317873
+            ],
+            [
+              -119.155783399705,
+              34.4317873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z008",
+        "walk_order": 8,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 391.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15559844862598,
+              34.4317873
+            ],
+            [
+              -119.15559844862598,
+              34.43196759357997
+            ],
+            [
+              -119.15581603813072,
+              34.43196759357997
+            ],
+            [
+              -119.15581603813072,
+              34.4317873
+            ],
+            [
+              -119.15559844862598,
+              34.4317873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z009",
+        "walk_order": 9,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 393.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15541349754696,
+              34.4317873
+            ],
+            [
+              -119.15541349754696,
+              34.43196759357997
+            ],
+            [
+              -119.15563108705169,
+              34.43196759357997
+            ],
+            [
+              -119.15563108705169,
+              34.4317873
+            ],
+            [
+              -119.15541349754696,
+              34.4317873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z010",
+        "walk_order": 10,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 396.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15522854646792,
+              34.4317873
+            ],
+            [
+              -119.15522854646792,
+              34.43196759357997
+            ],
+            [
+              -119.15544613597267,
+              34.43196759357997
+            ],
+            [
+              -119.15544613597267,
+              34.4317873
+            ],
+            [
+              -119.15522854646792,
+              34.4317873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z011",
+        "walk_order": 11,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 398.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1550435953889,
+              34.4317873
+            ],
+            [
+              -119.1550435953889,
+              34.43196759357997
+            ],
+            [
+              -119.15526118489365,
+              34.43196759357997
+            ],
+            [
+              -119.15526118489365,
+              34.4317873
+            ],
+            [
+              -119.1550435953889,
+              34.4317873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z012",
+        "walk_order": 12,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 142.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15485864430988,
+              34.4317873
+            ],
+            [
+              -119.15485864430988,
+              34.43196759357997
+            ],
+            [
+              -119.15507623381461,
+              34.43196759357997
+            ],
+            [
+              -119.15507623381461,
+              34.4317873
+            ],
+            [
+              -119.15485864430988,
+              34.4317873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z013",
+        "walk_order": 13,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 144.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15485864430988,
+              34.43194054954298
+            ],
+            [
+              -119.15485864430988,
+              34.432120843122945
+            ],
+            [
+              -119.15507623381461,
+              34.432120843122945
+            ],
+            [
+              -119.15507623381461,
+              34.43194054954298
+            ],
+            [
+              -119.15485864430988,
+              34.43194054954298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z014",
+        "walk_order": 14,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1550435953889,
+              34.43194054954298
+            ],
+            [
+              -119.1550435953889,
+              34.432120843122945
+            ],
+            [
+              -119.15526118489365,
+              34.432120843122945
+            ],
+            [
+              -119.15526118489365,
+              34.43194054954298
+            ],
+            [
+              -119.1550435953889,
+              34.43194054954298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z015",
+        "walk_order": 15,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15522854646792,
+              34.43194054954298
+            ],
+            [
+              -119.15522854646792,
+              34.432120843122945
+            ],
+            [
+              -119.15544613597267,
+              34.432120843122945
+            ],
+            [
+              -119.15544613597267,
+              34.43194054954298
+            ],
+            [
+              -119.15522854646792,
+              34.43194054954298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z016",
+        "walk_order": 16,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15541349754696,
+              34.43194054954298
+            ],
+            [
+              -119.15541349754696,
+              34.432120843122945
+            ],
+            [
+              -119.15563108705169,
+              34.432120843122945
+            ],
+            [
+              -119.15563108705169,
+              34.43194054954298
+            ],
+            [
+              -119.15541349754696,
+              34.43194054954298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z017",
+        "walk_order": 17,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15559844862598,
+              34.43194054954298
+            ],
+            [
+              -119.15559844862598,
+              34.432120843122945
+            ],
+            [
+              -119.15581603813072,
+              34.432120843122945
+            ],
+            [
+              -119.15581603813072,
+              34.43194054954298
+            ],
+            [
+              -119.15559844862598,
+              34.43194054954298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z018",
+        "walk_order": 18,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155783399705,
+              34.43194054954298
+            ],
+            [
+              -119.155783399705,
+              34.432120843122945
+            ],
+            [
+              -119.15600098920974,
+              34.432120843122945
+            ],
+            [
+              -119.15600098920974,
+              34.43194054954298
+            ],
+            [
+              -119.155783399705,
+              34.43194054954298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z019",
+        "walk_order": 19,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15596835078404,
+              34.43194054954298
+            ],
+            [
+              -119.15596835078404,
+              34.432120843122945
+            ],
+            [
+              -119.15618594028876,
+              34.432120843122945
+            ],
+            [
+              -119.15618594028876,
+              34.43194054954298
+            ],
+            [
+              -119.15596835078404,
+              34.43194054954298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z020",
+        "walk_order": 20,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15615330186306,
+              34.43194054954298
+            ],
+            [
+              -119.15615330186306,
+              34.432120843122945
+            ],
+            [
+              -119.1563708913678,
+              34.432120843122945
+            ],
+            [
+              -119.1563708913678,
+              34.43194054954298
+            ],
+            [
+              -119.15615330186306,
+              34.43194054954298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z021",
+        "walk_order": 21,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15633825294208,
+              34.43194054954298
+            ],
+            [
+              -119.15633825294208,
+              34.432120843122945
+            ],
+            [
+              -119.15655584244682,
+              34.432120843122945
+            ],
+            [
+              -119.15655584244682,
+              34.43194054954298
+            ],
+            [
+              -119.15633825294208,
+              34.43194054954298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z022",
+        "walk_order": 22,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15652320402111,
+              34.43194054954298
+            ],
+            [
+              -119.15652320402111,
+              34.432120843122945
+            ],
+            [
+              -119.15674079352584,
+              34.432120843122945
+            ],
+            [
+              -119.15674079352584,
+              34.43194054954298
+            ],
+            [
+              -119.15652320402111,
+              34.43194054954298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z023",
+        "walk_order": 23,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15670815510013,
+              34.43194054954298
+            ],
+            [
+              -119.15670815510013,
+              34.432120843122945
+            ],
+            [
+              -119.15692574460486,
+              34.432120843122945
+            ],
+            [
+              -119.15692574460486,
+              34.43194054954298
+            ],
+            [
+              -119.15670815510013,
+              34.43194054954298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z024",
+        "walk_order": 24,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 87.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15689310617915,
+              34.43194054954298
+            ],
+            [
+              -119.15689310617915,
+              34.432120843122945
+            ],
+            [
+              -119.1571106956839,
+              34.432120843122945
+            ],
+            [
+              -119.1571106956839,
+              34.43194054954298
+            ],
+            [
+              -119.15689310617915,
+              34.43194054954298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z025",
+        "walk_order": 25,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 26.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15763291049527,
+              34.43209379908595
+            ],
+            [
+              -119.15763291049527,
+              34.43227409266592
+            ],
+            [
+              -119.1578505,
+              34.43227409266592
+            ],
+            [
+              -119.1578505,
+              34.43209379908595
+            ],
+            [
+              -119.15763291049527,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z026",
+        "walk_order": 26,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 87.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15744795941623,
+              34.43209379908595
+            ],
+            [
+              -119.15744795941623,
+              34.43227409266592
+            ],
+            [
+              -119.15766554892097,
+              34.43227409266592
+            ],
+            [
+              -119.15766554892097,
+              34.43209379908595
+            ],
+            [
+              -119.15744795941623,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z027",
+        "walk_order": 27,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 149.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15726300833721,
+              34.43209379908595
+            ],
+            [
+              -119.15726300833721,
+              34.43227409266592
+            ],
+            [
+              -119.15748059784194,
+              34.43227409266592
+            ],
+            [
+              -119.15748059784194,
+              34.43209379908595
+            ],
+            [
+              -119.15726300833721,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z028",
+        "walk_order": 28,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 212.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15707805725819,
+              34.43209379908595
+            ],
+            [
+              -119.15707805725819,
+              34.43227409266592
+            ],
+            [
+              -119.15729564676292,
+              34.43227409266592
+            ],
+            [
+              -119.15729564676292,
+              34.43209379908595
+            ],
+            [
+              -119.15707805725819,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z029",
+        "walk_order": 29,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 295.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15689310617915,
+              34.43209379908595
+            ],
+            [
+              -119.15689310617915,
+              34.43227409266592
+            ],
+            [
+              -119.1571106956839,
+              34.43227409266592
+            ],
+            [
+              -119.1571106956839,
+              34.43209379908595
+            ],
+            [
+              -119.15689310617915,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z030",
+        "walk_order": 30,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15670815510013,
+              34.43209379908595
+            ],
+            [
+              -119.15670815510013,
+              34.43227409266592
+            ],
+            [
+              -119.15692574460486,
+              34.43227409266592
+            ],
+            [
+              -119.15692574460486,
+              34.43209379908595
+            ],
+            [
+              -119.15670815510013,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z031",
+        "walk_order": 31,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15652320402111,
+              34.43209379908595
+            ],
+            [
+              -119.15652320402111,
+              34.43227409266592
+            ],
+            [
+              -119.15674079352584,
+              34.43227409266592
+            ],
+            [
+              -119.15674079352584,
+              34.43209379908595
+            ],
+            [
+              -119.15652320402111,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z032",
+        "walk_order": 32,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15633825294208,
+              34.43209379908595
+            ],
+            [
+              -119.15633825294208,
+              34.43227409266592
+            ],
+            [
+              -119.15655584244682,
+              34.43227409266592
+            ],
+            [
+              -119.15655584244682,
+              34.43209379908595
+            ],
+            [
+              -119.15633825294208,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z033",
+        "walk_order": 33,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15615330186306,
+              34.43209379908595
+            ],
+            [
+              -119.15615330186306,
+              34.43227409266592
+            ],
+            [
+              -119.1563708913678,
+              34.43227409266592
+            ],
+            [
+              -119.1563708913678,
+              34.43209379908595
+            ],
+            [
+              -119.15615330186306,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z034",
+        "walk_order": 34,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15596835078404,
+              34.43209379908595
+            ],
+            [
+              -119.15596835078404,
+              34.43227409266592
+            ],
+            [
+              -119.15618594028876,
+              34.43227409266592
+            ],
+            [
+              -119.15618594028876,
+              34.43209379908595
+            ],
+            [
+              -119.15596835078404,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z035",
+        "walk_order": 35,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155783399705,
+              34.43209379908595
+            ],
+            [
+              -119.155783399705,
+              34.43227409266592
+            ],
+            [
+              -119.15600098920974,
+              34.43227409266592
+            ],
+            [
+              -119.15600098920974,
+              34.43209379908595
+            ],
+            [
+              -119.155783399705,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z036",
+        "walk_order": 36,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15559844862598,
+              34.43209379908595
+            ],
+            [
+              -119.15559844862598,
+              34.43227409266592
+            ],
+            [
+              -119.15581603813072,
+              34.43227409266592
+            ],
+            [
+              -119.15581603813072,
+              34.43209379908595
+            ],
+            [
+              -119.15559844862598,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z037",
+        "walk_order": 37,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15541349754696,
+              34.43209379908595
+            ],
+            [
+              -119.15541349754696,
+              34.43227409266592
+            ],
+            [
+              -119.15563108705169,
+              34.43227409266592
+            ],
+            [
+              -119.15563108705169,
+              34.43209379908595
+            ],
+            [
+              -119.15541349754696,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z038",
+        "walk_order": 38,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15522854646792,
+              34.43209379908595
+            ],
+            [
+              -119.15522854646792,
+              34.43227409266592
+            ],
+            [
+              -119.15544613597267,
+              34.43227409266592
+            ],
+            [
+              -119.15544613597267,
+              34.43209379908595
+            ],
+            [
+              -119.15522854646792,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z039",
+        "walk_order": 39,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1550435953889,
+              34.43209379908595
+            ],
+            [
+              -119.1550435953889,
+              34.43227409266592
+            ],
+            [
+              -119.15526118489365,
+              34.43227409266592
+            ],
+            [
+              -119.15526118489365,
+              34.43209379908595
+            ],
+            [
+              -119.1550435953889,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z040",
+        "walk_order": 40,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 146.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15485864430988,
+              34.43209379908595
+            ],
+            [
+              -119.15485864430988,
+              34.43227409266592
+            ],
+            [
+              -119.15507623381461,
+              34.43227409266592
+            ],
+            [
+              -119.15507623381461,
+              34.43209379908595
+            ],
+            [
+              -119.15485864430988,
+              34.43209379908595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z041",
+        "walk_order": 41,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 148.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15485864430988,
+              34.43224704862892
+            ],
+            [
+              -119.15485864430988,
+              34.4324273422089
+            ],
+            [
+              -119.15507623381461,
+              34.4324273422089
+            ],
+            [
+              -119.15507623381461,
+              34.43224704862892
+            ],
+            [
+              -119.15485864430988,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z042",
+        "walk_order": 42,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1550435953889,
+              34.43224704862892
+            ],
+            [
+              -119.1550435953889,
+              34.4324273422089
+            ],
+            [
+              -119.15526118489365,
+              34.4324273422089
+            ],
+            [
+              -119.15526118489365,
+              34.43224704862892
+            ],
+            [
+              -119.1550435953889,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z043",
+        "walk_order": 43,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15522854646792,
+              34.43224704862892
+            ],
+            [
+              -119.15522854646792,
+              34.4324273422089
+            ],
+            [
+              -119.15544613597267,
+              34.4324273422089
+            ],
+            [
+              -119.15544613597267,
+              34.43224704862892
+            ],
+            [
+              -119.15522854646792,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z044",
+        "walk_order": 44,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15541349754696,
+              34.43224704862892
+            ],
+            [
+              -119.15541349754696,
+              34.4324273422089
+            ],
+            [
+              -119.15563108705169,
+              34.4324273422089
+            ],
+            [
+              -119.15563108705169,
+              34.43224704862892
+            ],
+            [
+              -119.15541349754696,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z045",
+        "walk_order": 45,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15559844862598,
+              34.43224704862892
+            ],
+            [
+              -119.15559844862598,
+              34.4324273422089
+            ],
+            [
+              -119.15581603813072,
+              34.4324273422089
+            ],
+            [
+              -119.15581603813072,
+              34.43224704862892
+            ],
+            [
+              -119.15559844862598,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z046",
+        "walk_order": 46,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155783399705,
+              34.43224704862892
+            ],
+            [
+              -119.155783399705,
+              34.4324273422089
+            ],
+            [
+              -119.15600098920974,
+              34.4324273422089
+            ],
+            [
+              -119.15600098920974,
+              34.43224704862892
+            ],
+            [
+              -119.155783399705,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z047",
+        "walk_order": 47,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15596835078404,
+              34.43224704862892
+            ],
+            [
+              -119.15596835078404,
+              34.4324273422089
+            ],
+            [
+              -119.15618594028876,
+              34.4324273422089
+            ],
+            [
+              -119.15618594028876,
+              34.43224704862892
+            ],
+            [
+              -119.15596835078404,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z048",
+        "walk_order": 48,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15615330186306,
+              34.43224704862892
+            ],
+            [
+              -119.15615330186306,
+              34.4324273422089
+            ],
+            [
+              -119.1563708913678,
+              34.4324273422089
+            ],
+            [
+              -119.1563708913678,
+              34.43224704862892
+            ],
+            [
+              -119.15615330186306,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z049",
+        "walk_order": 49,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15633825294208,
+              34.43224704862892
+            ],
+            [
+              -119.15633825294208,
+              34.4324273422089
+            ],
+            [
+              -119.15655584244682,
+              34.4324273422089
+            ],
+            [
+              -119.15655584244682,
+              34.43224704862892
+            ],
+            [
+              -119.15633825294208,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z050",
+        "walk_order": 50,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15652320402111,
+              34.43224704862892
+            ],
+            [
+              -119.15652320402111,
+              34.4324273422089
+            ],
+            [
+              -119.15674079352584,
+              34.4324273422089
+            ],
+            [
+              -119.15674079352584,
+              34.43224704862892
+            ],
+            [
+              -119.15652320402111,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z051",
+        "walk_order": 51,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15670815510013,
+              34.43224704862892
+            ],
+            [
+              -119.15670815510013,
+              34.4324273422089
+            ],
+            [
+              -119.15692574460486,
+              34.4324273422089
+            ],
+            [
+              -119.15692574460486,
+              34.43224704862892
+            ],
+            [
+              -119.15670815510013,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z052",
+        "walk_order": 52,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15689310617915,
+              34.43224704862892
+            ],
+            [
+              -119.15689310617915,
+              34.4324273422089
+            ],
+            [
+              -119.1571106956839,
+              34.4324273422089
+            ],
+            [
+              -119.1571106956839,
+              34.43224704862892
+            ],
+            [
+              -119.15689310617915,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z053",
+        "walk_order": 53,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15707805725819,
+              34.43224704862892
+            ],
+            [
+              -119.15707805725819,
+              34.4324273422089
+            ],
+            [
+              -119.15729564676292,
+              34.4324273422089
+            ],
+            [
+              -119.15729564676292,
+              34.43224704862892
+            ],
+            [
+              -119.15707805725819,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z054",
+        "walk_order": 54,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15726300833721,
+              34.43224704862892
+            ],
+            [
+              -119.15726300833721,
+              34.4324273422089
+            ],
+            [
+              -119.15748059784194,
+              34.4324273422089
+            ],
+            [
+              -119.15748059784194,
+              34.43224704862892
+            ],
+            [
+              -119.15726300833721,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z055",
+        "walk_order": 55,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 392.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15744795941623,
+              34.43224704862892
+            ],
+            [
+              -119.15744795941623,
+              34.4324273422089
+            ],
+            [
+              -119.15766554892097,
+              34.4324273422089
+            ],
+            [
+              -119.15766554892097,
+              34.43224704862892
+            ],
+            [
+              -119.15744795941623,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z056",
+        "walk_order": 56,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 305.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15763291049527,
+              34.43224704862892
+            ],
+            [
+              -119.15763291049527,
+              34.4324273422089
+            ],
+            [
+              -119.1578505,
+              34.4324273422089
+            ],
+            [
+              -119.1578505,
+              34.43224704862892
+            ],
+            [
+              -119.15763291049527,
+              34.43224704862892
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z057",
+        "walk_order": 57,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 64.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15744795941623,
+              34.4324002981719
+            ],
+            [
+              -119.15744795941623,
+              34.432580591751865
+            ],
+            [
+              -119.15766554892097,
+              34.432580591751865
+            ],
+            [
+              -119.15766554892097,
+              34.4324002981719
+            ],
+            [
+              -119.15744795941623,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z058",
+        "walk_order": 58,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 128.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15726300833721,
+              34.4324002981719
+            ],
+            [
+              -119.15726300833721,
+              34.432580591751865
+            ],
+            [
+              -119.15748059784194,
+              34.432580591751865
+            ],
+            [
+              -119.15748059784194,
+              34.4324002981719
+            ],
+            [
+              -119.15726300833721,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z059",
+        "walk_order": 59,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 192.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15707805725819,
+              34.4324002981719
+            ],
+            [
+              -119.15707805725819,
+              34.432580591751865
+            ],
+            [
+              -119.15729564676292,
+              34.432580591751865
+            ],
+            [
+              -119.15729564676292,
+              34.4324002981719
+            ],
+            [
+              -119.15707805725819,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z060",
+        "walk_order": 60,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 278.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15689310617915,
+              34.4324002981719
+            ],
+            [
+              -119.15689310617915,
+              34.432580591751865
+            ],
+            [
+              -119.1571106956839,
+              34.432580591751865
+            ],
+            [
+              -119.1571106956839,
+              34.4324002981719
+            ],
+            [
+              -119.15689310617915,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z061",
+        "walk_order": 61,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15670815510013,
+              34.4324002981719
+            ],
+            [
+              -119.15670815510013,
+              34.432580591751865
+            ],
+            [
+              -119.15692574460486,
+              34.432580591751865
+            ],
+            [
+              -119.15692574460486,
+              34.4324002981719
+            ],
+            [
+              -119.15670815510013,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z062",
+        "walk_order": 62,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15652320402111,
+              34.4324002981719
+            ],
+            [
+              -119.15652320402111,
+              34.432580591751865
+            ],
+            [
+              -119.15674079352584,
+              34.432580591751865
+            ],
+            [
+              -119.15674079352584,
+              34.4324002981719
+            ],
+            [
+              -119.15652320402111,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z063",
+        "walk_order": 63,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15633825294208,
+              34.4324002981719
+            ],
+            [
+              -119.15633825294208,
+              34.432580591751865
+            ],
+            [
+              -119.15655584244682,
+              34.432580591751865
+            ],
+            [
+              -119.15655584244682,
+              34.4324002981719
+            ],
+            [
+              -119.15633825294208,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z064",
+        "walk_order": 64,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15615330186306,
+              34.4324002981719
+            ],
+            [
+              -119.15615330186306,
+              34.432580591751865
+            ],
+            [
+              -119.1563708913678,
+              34.432580591751865
+            ],
+            [
+              -119.1563708913678,
+              34.4324002981719
+            ],
+            [
+              -119.15615330186306,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z065",
+        "walk_order": 65,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15596835078404,
+              34.4324002981719
+            ],
+            [
+              -119.15596835078404,
+              34.432580591751865
+            ],
+            [
+              -119.15618594028876,
+              34.432580591751865
+            ],
+            [
+              -119.15618594028876,
+              34.4324002981719
+            ],
+            [
+              -119.15596835078404,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z066",
+        "walk_order": 66,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155783399705,
+              34.4324002981719
+            ],
+            [
+              -119.155783399705,
+              34.432580591751865
+            ],
+            [
+              -119.15600098920974,
+              34.432580591751865
+            ],
+            [
+              -119.15600098920974,
+              34.4324002981719
+            ],
+            [
+              -119.155783399705,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z067",
+        "walk_order": 67,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15559844862598,
+              34.4324002981719
+            ],
+            [
+              -119.15559844862598,
+              34.432580591751865
+            ],
+            [
+              -119.15581603813072,
+              34.432580591751865
+            ],
+            [
+              -119.15581603813072,
+              34.4324002981719
+            ],
+            [
+              -119.15559844862598,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z068",
+        "walk_order": 68,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15541349754696,
+              34.4324002981719
+            ],
+            [
+              -119.15541349754696,
+              34.432580591751865
+            ],
+            [
+              -119.15563108705169,
+              34.432580591751865
+            ],
+            [
+              -119.15563108705169,
+              34.4324002981719
+            ],
+            [
+              -119.15541349754696,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z069",
+        "walk_order": 69,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15522854646792,
+              34.4324002981719
+            ],
+            [
+              -119.15522854646792,
+              34.432580591751865
+            ],
+            [
+              -119.15544613597267,
+              34.432580591751865
+            ],
+            [
+              -119.15544613597267,
+              34.4324002981719
+            ],
+            [
+              -119.15522854646792,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z070",
+        "walk_order": 70,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1550435953889,
+              34.4324002981719
+            ],
+            [
+              -119.1550435953889,
+              34.432580591751865
+            ],
+            [
+              -119.15526118489365,
+              34.432580591751865
+            ],
+            [
+              -119.15526118489365,
+              34.4324002981719
+            ],
+            [
+              -119.1550435953889,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z071",
+        "walk_order": 71,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 150.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15485864430988,
+              34.4324002981719
+            ],
+            [
+              -119.15485864430988,
+              34.432580591751865
+            ],
+            [
+              -119.15507623381461,
+              34.432580591751865
+            ],
+            [
+              -119.15507623381461,
+              34.4324002981719
+            ],
+            [
+              -119.15485864430988,
+              34.4324002981719
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z072",
+        "walk_order": 72,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 154.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15485864430988,
+              34.432553547714875
+            ],
+            [
+              -119.15485864430988,
+              34.43273384129484
+            ],
+            [
+              -119.15507623381461,
+              34.43273384129484
+            ],
+            [
+              -119.15507623381461,
+              34.432553547714875
+            ],
+            [
+              -119.15485864430988,
+              34.432553547714875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z073",
+        "walk_order": 73,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1550435953889,
+              34.432553547714875
+            ],
+            [
+              -119.1550435953889,
+              34.43273384129484
+            ],
+            [
+              -119.15526118489365,
+              34.43273384129484
+            ],
+            [
+              -119.15526118489365,
+              34.432553547714875
+            ],
+            [
+              -119.1550435953889,
+              34.432553547714875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z074",
+        "walk_order": 74,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15522854646792,
+              34.432553547714875
+            ],
+            [
+              -119.15522854646792,
+              34.43273384129484
+            ],
+            [
+              -119.15544613597267,
+              34.43273384129484
+            ],
+            [
+              -119.15544613597267,
+              34.432553547714875
+            ],
+            [
+              -119.15522854646792,
+              34.432553547714875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z075",
+        "walk_order": 75,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15541349754696,
+              34.432553547714875
+            ],
+            [
+              -119.15541349754696,
+              34.43273384129484
+            ],
+            [
+              -119.15563108705169,
+              34.43273384129484
+            ],
+            [
+              -119.15563108705169,
+              34.432553547714875
+            ],
+            [
+              -119.15541349754696,
+              34.432553547714875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z076",
+        "walk_order": 76,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15559844862598,
+              34.432553547714875
+            ],
+            [
+              -119.15559844862598,
+              34.43273384129484
+            ],
+            [
+              -119.15581603813072,
+              34.43273384129484
+            ],
+            [
+              -119.15581603813072,
+              34.432553547714875
+            ],
+            [
+              -119.15559844862598,
+              34.432553547714875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z077",
+        "walk_order": 77,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155783399705,
+              34.432553547714875
+            ],
+            [
+              -119.155783399705,
+              34.43273384129484
+            ],
+            [
+              -119.15600098920974,
+              34.43273384129484
+            ],
+            [
+              -119.15600098920974,
+              34.432553547714875
+            ],
+            [
+              -119.155783399705,
+              34.432553547714875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z078",
+        "walk_order": 78,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15596835078404,
+              34.432553547714875
+            ],
+            [
+              -119.15596835078404,
+              34.43273384129484
+            ],
+            [
+              -119.15618594028876,
+              34.43273384129484
+            ],
+            [
+              -119.15618594028876,
+              34.432553547714875
+            ],
+            [
+              -119.15596835078404,
+              34.432553547714875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z079",
+        "walk_order": 79,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15615330186306,
+              34.432553547714875
+            ],
+            [
+              -119.15615330186306,
+              34.43273384129484
+            ],
+            [
+              -119.1563708913678,
+              34.43273384129484
+            ],
+            [
+              -119.1563708913678,
+              34.432553547714875
+            ],
+            [
+              -119.15615330186306,
+              34.432553547714875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z080",
+        "walk_order": 80,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15633825294208,
+              34.432553547714875
+            ],
+            [
+              -119.15633825294208,
+              34.43273384129484
+            ],
+            [
+              -119.15655584244682,
+              34.43273384129484
+            ],
+            [
+              -119.15655584244682,
+              34.432553547714875
+            ],
+            [
+              -119.15633825294208,
+              34.432553547714875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z081",
+        "walk_order": 81,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15652320402111,
+              34.432553547714875
+            ],
+            [
+              -119.15652320402111,
+              34.43273384129484
+            ],
+            [
+              -119.15674079352584,
+              34.43273384129484
+            ],
+            [
+              -119.15674079352584,
+              34.432553547714875
+            ],
+            [
+              -119.15652320402111,
+              34.432553547714875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z082",
+        "walk_order": 82,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15670815510013,
+              34.432553547714875
+            ],
+            [
+              -119.15670815510013,
+              34.43273384129484
+            ],
+            [
+              -119.15692574460486,
+              34.43273384129484
+            ],
+            [
+              -119.15692574460486,
+              34.432553547714875
+            ],
+            [
+              -119.15670815510013,
+              34.432553547714875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z083",
+        "walk_order": 83,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 79.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15689310617915,
+              34.432553547714875
+            ],
+            [
+              -119.15689310617915,
+              34.43273384129484
+            ],
+            [
+              -119.1571106956839,
+              34.43273384129484
+            ],
+            [
+              -119.1571106956839,
+              34.432553547714875
+            ],
+            [
+              -119.15689310617915,
+              34.432553547714875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z084",
+        "walk_order": 84,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 77.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15689310617915,
+              34.43270679725784
+            ],
+            [
+              -119.15689310617915,
+              34.432887090837816
+            ],
+            [
+              -119.1571106956839,
+              34.432887090837816
+            ],
+            [
+              -119.1571106956839,
+              34.43270679725784
+            ],
+            [
+              -119.15689310617915,
+              34.43270679725784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z085",
+        "walk_order": 85,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15670815510013,
+              34.43270679725784
+            ],
+            [
+              -119.15670815510013,
+              34.432887090837816
+            ],
+            [
+              -119.15692574460486,
+              34.432887090837816
+            ],
+            [
+              -119.15692574460486,
+              34.43270679725784
+            ],
+            [
+              -119.15670815510013,
+              34.43270679725784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z086",
+        "walk_order": 86,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15652320402111,
+              34.43270679725784
+            ],
+            [
+              -119.15652320402111,
+              34.432887090837816
+            ],
+            [
+              -119.15674079352584,
+              34.432887090837816
+            ],
+            [
+              -119.15674079352584,
+              34.43270679725784
+            ],
+            [
+              -119.15652320402111,
+              34.43270679725784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z087",
+        "walk_order": 87,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15633825294208,
+              34.43270679725784
+            ],
+            [
+              -119.15633825294208,
+              34.432887090837816
+            ],
+            [
+              -119.15655584244682,
+              34.432887090837816
+            ],
+            [
+              -119.15655584244682,
+              34.43270679725784
+            ],
+            [
+              -119.15633825294208,
+              34.43270679725784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z088",
+        "walk_order": 88,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15615330186306,
+              34.43270679725784
+            ],
+            [
+              -119.15615330186306,
+              34.432887090837816
+            ],
+            [
+              -119.1563708913678,
+              34.432887090837816
+            ],
+            [
+              -119.1563708913678,
+              34.43270679725784
+            ],
+            [
+              -119.15615330186306,
+              34.43270679725784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z089",
+        "walk_order": 89,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15596835078404,
+              34.43270679725784
+            ],
+            [
+              -119.15596835078404,
+              34.432887090837816
+            ],
+            [
+              -119.15618594028876,
+              34.432887090837816
+            ],
+            [
+              -119.15618594028876,
+              34.43270679725784
+            ],
+            [
+              -119.15596835078404,
+              34.43270679725784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z090",
+        "walk_order": 90,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155783399705,
+              34.43270679725784
+            ],
+            [
+              -119.155783399705,
+              34.432887090837816
+            ],
+            [
+              -119.15600098920974,
+              34.432887090837816
+            ],
+            [
+              -119.15600098920974,
+              34.43270679725784
+            ],
+            [
+              -119.155783399705,
+              34.43270679725784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z091",
+        "walk_order": 91,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15559844862598,
+              34.43270679725784
+            ],
+            [
+              -119.15559844862598,
+              34.432887090837816
+            ],
+            [
+              -119.15581603813072,
+              34.432887090837816
+            ],
+            [
+              -119.15581603813072,
+              34.43270679725784
+            ],
+            [
+              -119.15559844862598,
+              34.43270679725784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z092",
+        "walk_order": 92,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15541349754696,
+              34.43270679725784
+            ],
+            [
+              -119.15541349754696,
+              34.432887090837816
+            ],
+            [
+              -119.15563108705169,
+              34.432887090837816
+            ],
+            [
+              -119.15563108705169,
+              34.43270679725784
+            ],
+            [
+              -119.15541349754696,
+              34.43270679725784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z093",
+        "walk_order": 93,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15522854646792,
+              34.43270679725784
+            ],
+            [
+              -119.15522854646792,
+              34.432887090837816
+            ],
+            [
+              -119.15544613597267,
+              34.432887090837816
+            ],
+            [
+              -119.15544613597267,
+              34.43270679725784
+            ],
+            [
+              -119.15522854646792,
+              34.43270679725784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z094",
+        "walk_order": 94,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1550435953889,
+              34.43270679725784
+            ],
+            [
+              -119.1550435953889,
+              34.432887090837816
+            ],
+            [
+              -119.15526118489365,
+              34.432887090837816
+            ],
+            [
+              -119.15526118489365,
+              34.43270679725784
+            ],
+            [
+              -119.1550435953889,
+              34.43270679725784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z095",
+        "walk_order": 95,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 210.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15485864430988,
+              34.43270679725784
+            ],
+            [
+              -119.15485864430988,
+              34.432887090837816
+            ],
+            [
+              -119.15507623381461,
+              34.432887090837816
+            ],
+            [
+              -119.15507623381461,
+              34.43270679725784
+            ],
+            [
+              -119.15485864430988,
+              34.43270679725784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z096",
+        "walk_order": 96,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 86.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15467369323086,
+              34.43286004680082
+            ],
+            [
+              -119.15467369323086,
+              34.43304034038079
+            ],
+            [
+              -119.15489128273559,
+              34.43304034038079
+            ],
+            [
+              -119.15489128273559,
+              34.43286004680082
+            ],
+            [
+              -119.15467369323086,
+              34.43286004680082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z097",
+        "walk_order": 97,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15485864430988,
+              34.43286004680082
+            ],
+            [
+              -119.15485864430988,
+              34.43304034038079
+            ],
+            [
+              -119.15507623381461,
+              34.43304034038079
+            ],
+            [
+              -119.15507623381461,
+              34.43286004680082
+            ],
+            [
+              -119.15485864430988,
+              34.43286004680082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z098",
+        "walk_order": 98,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1550435953889,
+              34.43286004680082
+            ],
+            [
+              -119.1550435953889,
+              34.43304034038079
+            ],
+            [
+              -119.15526118489365,
+              34.43304034038079
+            ],
+            [
+              -119.15526118489365,
+              34.43286004680082
+            ],
+            [
+              -119.1550435953889,
+              34.43286004680082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z099",
+        "walk_order": 99,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15522854646792,
+              34.43286004680082
+            ],
+            [
+              -119.15522854646792,
+              34.43304034038079
+            ],
+            [
+              -119.15544613597267,
+              34.43304034038079
+            ],
+            [
+              -119.15544613597267,
+              34.43286004680082
+            ],
+            [
+              -119.15522854646792,
+              34.43286004680082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z100",
+        "walk_order": 100,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15541349754696,
+              34.43286004680082
+            ],
+            [
+              -119.15541349754696,
+              34.43304034038079
+            ],
+            [
+              -119.15563108705169,
+              34.43304034038079
+            ],
+            [
+              -119.15563108705169,
+              34.43286004680082
+            ],
+            [
+              -119.15541349754696,
+              34.43286004680082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z101",
+        "walk_order": 101,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15559844862598,
+              34.43286004680082
+            ],
+            [
+              -119.15559844862598,
+              34.43304034038079
+            ],
+            [
+              -119.15581603813072,
+              34.43304034038079
+            ],
+            [
+              -119.15581603813072,
+              34.43286004680082
+            ],
+            [
+              -119.15559844862598,
+              34.43286004680082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z102",
+        "walk_order": 102,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155783399705,
+              34.43286004680082
+            ],
+            [
+              -119.155783399705,
+              34.43304034038079
+            ],
+            [
+              -119.15600098920974,
+              34.43304034038079
+            ],
+            [
+              -119.15600098920974,
+              34.43286004680082
+            ],
+            [
+              -119.155783399705,
+              34.43286004680082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z103",
+        "walk_order": 103,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15596835078404,
+              34.43286004680082
+            ],
+            [
+              -119.15596835078404,
+              34.43304034038079
+            ],
+            [
+              -119.15618594028876,
+              34.43304034038079
+            ],
+            [
+              -119.15618594028876,
+              34.43286004680082
+            ],
+            [
+              -119.15596835078404,
+              34.43286004680082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z104",
+        "walk_order": 104,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15615330186306,
+              34.43286004680082
+            ],
+            [
+              -119.15615330186306,
+              34.43304034038079
+            ],
+            [
+              -119.1563708913678,
+              34.43304034038079
+            ],
+            [
+              -119.1563708913678,
+              34.43286004680082
+            ],
+            [
+              -119.15615330186306,
+              34.43286004680082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z105",
+        "walk_order": 105,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15633825294208,
+              34.43286004680082
+            ],
+            [
+              -119.15633825294208,
+              34.43304034038079
+            ],
+            [
+              -119.15655584244682,
+              34.43304034038079
+            ],
+            [
+              -119.15655584244682,
+              34.43286004680082
+            ],
+            [
+              -119.15633825294208,
+              34.43286004680082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z106",
+        "walk_order": 106,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15652320402111,
+              34.43286004680082
+            ],
+            [
+              -119.15652320402111,
+              34.43304034038079
+            ],
+            [
+              -119.15674079352584,
+              34.43304034038079
+            ],
+            [
+              -119.15674079352584,
+              34.43286004680082
+            ],
+            [
+              -119.15652320402111,
+              34.43286004680082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z107",
+        "walk_order": 107,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15670815510013,
+              34.43286004680082
+            ],
+            [
+              -119.15670815510013,
+              34.43304034038079
+            ],
+            [
+              -119.15692574460486,
+              34.43304034038079
+            ],
+            [
+              -119.15692574460486,
+              34.43286004680082
+            ],
+            [
+              -119.15670815510013,
+              34.43286004680082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z108",
+        "walk_order": 108,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 74.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15689310617915,
+              34.43286004680082
+            ],
+            [
+              -119.15689310617915,
+              34.43304034038079
+            ],
+            [
+              -119.1571106956839,
+              34.43304034038079
+            ],
+            [
+              -119.1571106956839,
+              34.43286004680082
+            ],
+            [
+              -119.15689310617915,
+              34.43286004680082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z109",
+        "walk_order": 109,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 72.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15689310617915,
+              34.433013296343795
+            ],
+            [
+              -119.15689310617915,
+              34.43319358992376
+            ],
+            [
+              -119.1571106956839,
+              34.43319358992376
+            ],
+            [
+              -119.1571106956839,
+              34.433013296343795
+            ],
+            [
+              -119.15689310617915,
+              34.433013296343795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z110",
+        "walk_order": 110,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15670815510013,
+              34.433013296343795
+            ],
+            [
+              -119.15670815510013,
+              34.43319358992376
+            ],
+            [
+              -119.15692574460486,
+              34.43319358992376
+            ],
+            [
+              -119.15692574460486,
+              34.433013296343795
+            ],
+            [
+              -119.15670815510013,
+              34.433013296343795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z111",
+        "walk_order": 111,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15652320402111,
+              34.433013296343795
+            ],
+            [
+              -119.15652320402111,
+              34.43319358992376
+            ],
+            [
+              -119.15674079352584,
+              34.43319358992376
+            ],
+            [
+              -119.15674079352584,
+              34.433013296343795
+            ],
+            [
+              -119.15652320402111,
+              34.433013296343795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z112",
+        "walk_order": 112,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15633825294208,
+              34.433013296343795
+            ],
+            [
+              -119.15633825294208,
+              34.43319358992376
+            ],
+            [
+              -119.15655584244682,
+              34.43319358992376
+            ],
+            [
+              -119.15655584244682,
+              34.433013296343795
+            ],
+            [
+              -119.15633825294208,
+              34.433013296343795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z113",
+        "walk_order": 113,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15615330186306,
+              34.433013296343795
+            ],
+            [
+              -119.15615330186306,
+              34.43319358992376
+            ],
+            [
+              -119.1563708913678,
+              34.43319358992376
+            ],
+            [
+              -119.1563708913678,
+              34.433013296343795
+            ],
+            [
+              -119.15615330186306,
+              34.433013296343795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z114",
+        "walk_order": 114,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15596835078404,
+              34.433013296343795
+            ],
+            [
+              -119.15596835078404,
+              34.43319358992376
+            ],
+            [
+              -119.15618594028876,
+              34.43319358992376
+            ],
+            [
+              -119.15618594028876,
+              34.433013296343795
+            ],
+            [
+              -119.15596835078404,
+              34.433013296343795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z115",
+        "walk_order": 115,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155783399705,
+              34.433013296343795
+            ],
+            [
+              -119.155783399705,
+              34.43319358992376
+            ],
+            [
+              -119.15600098920974,
+              34.43319358992376
+            ],
+            [
+              -119.15600098920974,
+              34.433013296343795
+            ],
+            [
+              -119.155783399705,
+              34.433013296343795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z116",
+        "walk_order": 116,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15559844862598,
+              34.433013296343795
+            ],
+            [
+              -119.15559844862598,
+              34.43319358992376
+            ],
+            [
+              -119.15581603813072,
+              34.43319358992376
+            ],
+            [
+              -119.15581603813072,
+              34.433013296343795
+            ],
+            [
+              -119.15559844862598,
+              34.433013296343795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z117",
+        "walk_order": 117,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15541349754696,
+              34.433013296343795
+            ],
+            [
+              -119.15541349754696,
+              34.43319358992376
+            ],
+            [
+              -119.15563108705169,
+              34.43319358992376
+            ],
+            [
+              -119.15563108705169,
+              34.433013296343795
+            ],
+            [
+              -119.15541349754696,
+              34.433013296343795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z118",
+        "walk_order": 118,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15522854646792,
+              34.433013296343795
+            ],
+            [
+              -119.15522854646792,
+              34.43319358992376
+            ],
+            [
+              -119.15544613597267,
+              34.43319358992376
+            ],
+            [
+              -119.15544613597267,
+              34.433013296343795
+            ],
+            [
+              -119.15522854646792,
+              34.433013296343795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z119",
+        "walk_order": 119,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1550435953889,
+              34.433013296343795
+            ],
+            [
+              -119.1550435953889,
+              34.43319358992376
+            ],
+            [
+              -119.15526118489365,
+              34.43319358992376
+            ],
+            [
+              -119.15526118489365,
+              34.433013296343795
+            ],
+            [
+              -119.1550435953889,
+              34.433013296343795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z120",
+        "walk_order": 120,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15485864430988,
+              34.433013296343795
+            ],
+            [
+              -119.15485864430988,
+              34.43319358992376
+            ],
+            [
+              -119.15507623381461,
+              34.43319358992376
+            ],
+            [
+              -119.15507623381461,
+              34.433013296343795
+            ],
+            [
+              -119.15485864430988,
+              34.433013296343795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z121",
+        "walk_order": 121,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 88.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15467369323086,
+              34.433013296343795
+            ],
+            [
+              -119.15467369323086,
+              34.43319358992376
+            ],
+            [
+              -119.15489128273559,
+              34.43319358992376
+            ],
+            [
+              -119.15489128273559,
+              34.433013296343795
+            ],
+            [
+              -119.15467369323086,
+              34.433013296343795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z122",
+        "walk_order": 122,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 90.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15467369323086,
+              34.43316654588677
+            ],
+            [
+              -119.15467369323086,
+              34.433346839466736
+            ],
+            [
+              -119.15489128273559,
+              34.433346839466736
+            ],
+            [
+              -119.15489128273559,
+              34.43316654588677
+            ],
+            [
+              -119.15467369323086,
+              34.43316654588677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z123",
+        "walk_order": 123,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15485864430988,
+              34.43316654588677
+            ],
+            [
+              -119.15485864430988,
+              34.433346839466736
+            ],
+            [
+              -119.15507623381461,
+              34.433346839466736
+            ],
+            [
+              -119.15507623381461,
+              34.43316654588677
+            ],
+            [
+              -119.15485864430988,
+              34.43316654588677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z124",
+        "walk_order": 124,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1550435953889,
+              34.43316654588677
+            ],
+            [
+              -119.1550435953889,
+              34.433346839466736
+            ],
+            [
+              -119.15526118489365,
+              34.433346839466736
+            ],
+            [
+              -119.15526118489365,
+              34.43316654588677
+            ],
+            [
+              -119.1550435953889,
+              34.43316654588677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z125",
+        "walk_order": 125,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15522854646792,
+              34.43316654588677
+            ],
+            [
+              -119.15522854646792,
+              34.433346839466736
+            ],
+            [
+              -119.15544613597267,
+              34.433346839466736
+            ],
+            [
+              -119.15544613597267,
+              34.43316654588677
+            ],
+            [
+              -119.15522854646792,
+              34.43316654588677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z126",
+        "walk_order": 126,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15541349754696,
+              34.43316654588677
+            ],
+            [
+              -119.15541349754696,
+              34.433346839466736
+            ],
+            [
+              -119.15563108705169,
+              34.433346839466736
+            ],
+            [
+              -119.15563108705169,
+              34.43316654588677
+            ],
+            [
+              -119.15541349754696,
+              34.43316654588677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z127",
+        "walk_order": 127,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15559844862598,
+              34.43316654588677
+            ],
+            [
+              -119.15559844862598,
+              34.433346839466736
+            ],
+            [
+              -119.15581603813072,
+              34.433346839466736
+            ],
+            [
+              -119.15581603813072,
+              34.43316654588677
+            ],
+            [
+              -119.15559844862598,
+              34.43316654588677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z128",
+        "walk_order": 128,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155783399705,
+              34.43316654588677
+            ],
+            [
+              -119.155783399705,
+              34.433346839466736
+            ],
+            [
+              -119.15600098920974,
+              34.433346839466736
+            ],
+            [
+              -119.15600098920974,
+              34.43316654588677
+            ],
+            [
+              -119.155783399705,
+              34.43316654588677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z129",
+        "walk_order": 129,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15596835078404,
+              34.43316654588677
+            ],
+            [
+              -119.15596835078404,
+              34.433346839466736
+            ],
+            [
+              -119.15618594028876,
+              34.433346839466736
+            ],
+            [
+              -119.15618594028876,
+              34.43316654588677
+            ],
+            [
+              -119.15596835078404,
+              34.43316654588677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z130",
+        "walk_order": 130,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15615330186306,
+              34.43316654588677
+            ],
+            [
+              -119.15615330186306,
+              34.433346839466736
+            ],
+            [
+              -119.1563708913678,
+              34.433346839466736
+            ],
+            [
+              -119.1563708913678,
+              34.43316654588677
+            ],
+            [
+              -119.15615330186306,
+              34.43316654588677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z131",
+        "walk_order": 131,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15633825294208,
+              34.43316654588677
+            ],
+            [
+              -119.15633825294208,
+              34.433346839466736
+            ],
+            [
+              -119.15655584244682,
+              34.433346839466736
+            ],
+            [
+              -119.15655584244682,
+              34.43316654588677
+            ],
+            [
+              -119.15633825294208,
+              34.43316654588677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z132",
+        "walk_order": 132,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15652320402111,
+              34.43316654588677
+            ],
+            [
+              -119.15652320402111,
+              34.433346839466736
+            ],
+            [
+              -119.15674079352584,
+              34.433346839466736
+            ],
+            [
+              -119.15674079352584,
+              34.43316654588677
+            ],
+            [
+              -119.15652320402111,
+              34.43316654588677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z133",
+        "walk_order": 133,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15670815510013,
+              34.43316654588677
+            ],
+            [
+              -119.15670815510013,
+              34.433346839466736
+            ],
+            [
+              -119.15692574460486,
+              34.433346839466736
+            ],
+            [
+              -119.15692574460486,
+              34.43316654588677
+            ],
+            [
+              -119.15670815510013,
+              34.43316654588677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z134",
+        "walk_order": 134,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 70.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15689310617915,
+              34.43316654588677
+            ],
+            [
+              -119.15689310617915,
+              34.433346839466736
+            ],
+            [
+              -119.1571106956839,
+              34.433346839466736
+            ],
+            [
+              -119.1571106956839,
+              34.43316654588677
+            ],
+            [
+              -119.15689310617915,
+              34.43316654588677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z135",
+        "walk_order": 135,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 68.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15689310617915,
+              34.43331979542974
+            ],
+            [
+              -119.15689310617915,
+              34.43350008900971
+            ],
+            [
+              -119.1571106956839,
+              34.43350008900971
+            ],
+            [
+              -119.1571106956839,
+              34.43331979542974
+            ],
+            [
+              -119.15689310617915,
+              34.43331979542974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z136",
+        "walk_order": 136,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15670815510013,
+              34.43331979542974
+            ],
+            [
+              -119.15670815510013,
+              34.43350008900971
+            ],
+            [
+              -119.15692574460486,
+              34.43350008900971
+            ],
+            [
+              -119.15692574460486,
+              34.43331979542974
+            ],
+            [
+              -119.15670815510013,
+              34.43331979542974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z137",
+        "walk_order": 137,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15652320402111,
+              34.43331979542974
+            ],
+            [
+              -119.15652320402111,
+              34.43350008900971
+            ],
+            [
+              -119.15674079352584,
+              34.43350008900971
+            ],
+            [
+              -119.15674079352584,
+              34.43331979542974
+            ],
+            [
+              -119.15652320402111,
+              34.43331979542974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z138",
+        "walk_order": 138,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15633825294208,
+              34.43331979542974
+            ],
+            [
+              -119.15633825294208,
+              34.43350008900971
+            ],
+            [
+              -119.15655584244682,
+              34.43350008900971
+            ],
+            [
+              -119.15655584244682,
+              34.43331979542974
+            ],
+            [
+              -119.15633825294208,
+              34.43331979542974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z139",
+        "walk_order": 139,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15615330186306,
+              34.43331979542974
+            ],
+            [
+              -119.15615330186306,
+              34.43350008900971
+            ],
+            [
+              -119.1563708913678,
+              34.43350008900971
+            ],
+            [
+              -119.1563708913678,
+              34.43331979542974
+            ],
+            [
+              -119.15615330186306,
+              34.43331979542974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z140",
+        "walk_order": 140,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15596835078404,
+              34.43331979542974
+            ],
+            [
+              -119.15596835078404,
+              34.43350008900971
+            ],
+            [
+              -119.15618594028876,
+              34.43350008900971
+            ],
+            [
+              -119.15618594028876,
+              34.43331979542974
+            ],
+            [
+              -119.15596835078404,
+              34.43331979542974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z141",
+        "walk_order": 141,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155783399705,
+              34.43331979542974
+            ],
+            [
+              -119.155783399705,
+              34.43350008900971
+            ],
+            [
+              -119.15600098920974,
+              34.43350008900971
+            ],
+            [
+              -119.15600098920974,
+              34.43331979542974
+            ],
+            [
+              -119.155783399705,
+              34.43331979542974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z142",
+        "walk_order": 142,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15559844862598,
+              34.43331979542974
+            ],
+            [
+              -119.15559844862598,
+              34.43350008900971
+            ],
+            [
+              -119.15581603813072,
+              34.43350008900971
+            ],
+            [
+              -119.15581603813072,
+              34.43331979542974
+            ],
+            [
+              -119.15559844862598,
+              34.43331979542974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z143",
+        "walk_order": 143,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15541349754696,
+              34.43331979542974
+            ],
+            [
+              -119.15541349754696,
+              34.43350008900971
+            ],
+            [
+              -119.15563108705169,
+              34.43350008900971
+            ],
+            [
+              -119.15563108705169,
+              34.43331979542974
+            ],
+            [
+              -119.15541349754696,
+              34.43331979542974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z144",
+        "walk_order": 144,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15522854646792,
+              34.43331979542974
+            ],
+            [
+              -119.15522854646792,
+              34.43350008900971
+            ],
+            [
+              -119.15544613597267,
+              34.43350008900971
+            ],
+            [
+              -119.15544613597267,
+              34.43331979542974
+            ],
+            [
+              -119.15522854646792,
+              34.43331979542974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z145",
+        "walk_order": 145,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1550435953889,
+              34.43331979542974
+            ],
+            [
+              -119.1550435953889,
+              34.43350008900971
+            ],
+            [
+              -119.15526118489365,
+              34.43350008900971
+            ],
+            [
+              -119.15526118489365,
+              34.43331979542974
+            ],
+            [
+              -119.1550435953889,
+              34.43331979542974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z146",
+        "walk_order": 146,
+        "tip": "start at the NW corner of this square, walk the perimeter slowly, then a figure-eight inside",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15485864430988,
+              34.43331979542974
+            ],
+            [
+              -119.15485864430988,
+              34.43350008900971
+            ],
+            [
+              -119.15507623381461,
+              34.43350008900971
+            ],
+            [
+              -119.15507623381461,
+              34.43331979542974
+            ],
+            [
+              -119.15485864430988,
+              34.43331979542974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z147",
+        "walk_order": 147,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 93.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15467369323086,
+              34.43331979542974
+            ],
+            [
+              -119.15467369323086,
+              34.43350008900971
+            ],
+            [
+              -119.15489128273559,
+              34.43350008900971
+            ],
+            [
+              -119.15489128273559,
+              34.43331979542974
+            ],
+            [
+              -119.15467369323086,
+              34.43331979542974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z148",
+        "walk_order": 148,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 41.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15467369323086,
+              34.433473044972715
+            ],
+            [
+              -119.15467369323086,
+              34.43365333855269
+            ],
+            [
+              -119.15489128273559,
+              34.43365333855269
+            ],
+            [
+              -119.15489128273559,
+              34.433473044972715
+            ],
+            [
+              -119.15467369323086,
+              34.433473044972715
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z149",
+        "walk_order": 149,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 177.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15485864430988,
+              34.433473044972715
+            ],
+            [
+              -119.15485864430988,
+              34.43365333855269
+            ],
+            [
+              -119.15507623381461,
+              34.43365333855269
+            ],
+            [
+              -119.15507623381461,
+              34.433473044972715
+            ],
+            [
+              -119.15485864430988,
+              34.433473044972715
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z150",
+        "walk_order": 150,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 179.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1550435953889,
+              34.433473044972715
+            ],
+            [
+              -119.1550435953889,
+              34.43365333855269
+            ],
+            [
+              -119.15526118489365,
+              34.43365333855269
+            ],
+            [
+              -119.15526118489365,
+              34.433473044972715
+            ],
+            [
+              -119.1550435953889,
+              34.433473044972715
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z151",
+        "walk_order": 151,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 181.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15522854646792,
+              34.433473044972715
+            ],
+            [
+              -119.15522854646792,
+              34.43365333855269
+            ],
+            [
+              -119.15544613597267,
+              34.43365333855269
+            ],
+            [
+              -119.15544613597267,
+              34.433473044972715
+            ],
+            [
+              -119.15522854646792,
+              34.433473044972715
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z152",
+        "walk_order": 152,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 183.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15541349754696,
+              34.433473044972715
+            ],
+            [
+              -119.15541349754696,
+              34.43365333855269
+            ],
+            [
+              -119.15563108705169,
+              34.43365333855269
+            ],
+            [
+              -119.15563108705169,
+              34.433473044972715
+            ],
+            [
+              -119.15541349754696,
+              34.433473044972715
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z153",
+        "walk_order": 153,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 185.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15559844862598,
+              34.433473044972715
+            ],
+            [
+              -119.15559844862598,
+              34.43365333855269
+            ],
+            [
+              -119.15581603813072,
+              34.43365333855269
+            ],
+            [
+              -119.15581603813072,
+              34.433473044972715
+            ],
+            [
+              -119.15559844862598,
+              34.433473044972715
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z154",
+        "walk_order": 154,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 187.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.155783399705,
+              34.433473044972715
+            ],
+            [
+              -119.155783399705,
+              34.43365333855269
+            ],
+            [
+              -119.15600098920974,
+              34.43365333855269
+            ],
+            [
+              -119.15600098920974,
+              34.433473044972715
+            ],
+            [
+              -119.155783399705,
+              34.433473044972715
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z155",
+        "walk_order": 155,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 190.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15596835078404,
+              34.433473044972715
+            ],
+            [
+              -119.15596835078404,
+              34.43365333855269
+            ],
+            [
+              -119.15618594028876,
+              34.43365333855269
+            ],
+            [
+              -119.15618594028876,
+              34.433473044972715
+            ],
+            [
+              -119.15596835078404,
+              34.433473044972715
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z156",
+        "walk_order": 156,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 192.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15615330186306,
+              34.433473044972715
+            ],
+            [
+              -119.15615330186306,
+              34.43365333855269
+            ],
+            [
+              -119.1563708913678,
+              34.43365333855269
+            ],
+            [
+              -119.1563708913678,
+              34.433473044972715
+            ],
+            [
+              -119.15615330186306,
+              34.433473044972715
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z157",
+        "walk_order": 157,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 194.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15633825294208,
+              34.433473044972715
+            ],
+            [
+              -119.15633825294208,
+              34.43365333855269
+            ],
+            [
+              -119.15655584244682,
+              34.43365333855269
+            ],
+            [
+              -119.15655584244682,
+              34.433473044972715
+            ],
+            [
+              -119.15633825294208,
+              34.433473044972715
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z158",
+        "walk_order": 158,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 196.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15652320402111,
+              34.433473044972715
+            ],
+            [
+              -119.15652320402111,
+              34.43365333855269
+            ],
+            [
+              -119.15674079352584,
+              34.43365333855269
+            ],
+            [
+              -119.15674079352584,
+              34.433473044972715
+            ],
+            [
+              -119.15652320402111,
+              34.433473044972715
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z159",
+        "walk_order": 159,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 198.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15670815510013,
+              34.433473044972715
+            ],
+            [
+              -119.15670815510013,
+              34.43365333855269
+            ],
+            [
+              -119.15692574460486,
+              34.43365333855269
+            ],
+            [
+              -119.15692574460486,
+              34.433473044972715
+            ],
+            [
+              -119.15670815510013,
+              34.433473044972715
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z160",
+        "walk_order": 160,
+        "tip": "edge zone \u2014 stay inside the survey line; walk the parcel edge first, then fill the interior",
+        "size_m": 20.0,
+        "overlap_m": 3.0,
+        "area_in_parcel_m2": 33.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.15689310617915,
+              34.433473044972715
+            ],
+            [
+              -119.15689310617915,
+              34.43365333855269
+            ],
+            [
+              -119.1571106956839,
+              34.43365333855269
+            ],
+            [
+              -119.1571106956839,
+              34.433473044972715
+            ],
+            [
+              -119.15689310617915,
+              34.433473044972715
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

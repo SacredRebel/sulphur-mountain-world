@@ -1,0 +1,7 @@
+{
+  "authority": "derived",
+  "evidence": "measured",
+  "note": "Placement rows only. Binary scans live in private storage; scans/ is git-ignored.",
+  "placement": "centre on mid of 2nd\u201398th pct (x,z); rest base (2nd pct y) on DEM; turn clockwise turn_deg; scale; add lift_m",
+  "scans": []
+}

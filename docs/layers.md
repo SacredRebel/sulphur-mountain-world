@@ -19,6 +19,8 @@ Grid rasters are plain `ncols × nrows` 16-bit greyscale PNGs (`row_order: north
 | `landforms` | TPI landform class | class 1–6 | modelled | grid raster + `.npz` |
 | `flow_accum` | D8 flow accumulation | m² | modelled | grid raster + `.npz` |
 | `gathers` | where the land gathers (weighted overlay) | score 0–1 | modelled | grid raster + `.npz` + `gathers.geojson` |
+| `capture_plan` | phone-scan walk order (~20 m zones) | geometry | modelled | GeoJSON + plan PNG |
+| `scans` | Gaussian-splat placement rows | lng/lat, turn, scale, lift | measured | `scans.json` only — binaries stay private |
 | `keylines` | keyline / swale candidates | geometry | modelled | GeoJSON |
 | `drainage` | D8 flow channels | m² accum / slope / Strahler | modelled | GeoJSON |
 | `thermal-belt` | mid-slope thermal belt | geometry | modelled | GeoJSON (`thermal_belt`) |

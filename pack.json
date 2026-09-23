@@ -448,6 +448,25 @@
       "evidence": "modelled",
       "method": "weighted overlay of land-reading layers with hard exclusions",
       "generator": "scripts/gathers.py"
+    },
+    "capture_plan": {
+      "kind": "vector",
+      "file": "capture-plan.geojson",
+      "plan": "analysis/capture-plan.png",
+      "units": "geometry",
+      "authority": "derived",
+      "evidence": "modelled",
+      "what": "C14 phone-scan walk order: ~20 m zones with 3 m overlap",
+      "generator": "scripts/capture-plan.py"
+    },
+    "scans": {
+      "kind": "table",
+      "file": "scans.json",
+      "units": "placement rows (lng/lat, turn_deg, scale, lift_m)",
+      "authority": "derived",
+      "evidence": "measured",
+      "what": "Gaussian-splat placement records; binary scans stay in private storage (scans/ git-ignored)",
+      "generator": "scripts/scan.py"
     }
   },
   "sources": [
