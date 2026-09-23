@@ -1,0 +1,213 @@
+{
+  "authority": "derived",
+  "evidence": "modelled",
+  "zones_m": {
+    "0": [
+      0.0,
+      1.5
+    ],
+    "1": [
+      1.5,
+      9.1
+    ],
+    "2": [
+      9.1,
+      30.5
+    ]
+  },
+  "slope_extend_factor": 1.5,
+  "structures": [
+    {
+      "structure_id": "oak-leaf-massing",
+      "slope_pct_at_centroid": 0.0,
+      "zone2_outer_m": 30.5,
+      "zone0_crowns": 15,
+      "zone0_overhang": 11,
+      "zone1_crowns": 17,
+      "zone1_canopy_pct": 22.5,
+      "zone2_crowns": 47,
+      "zone2_canopy_pct": 23.8,
+      "zone2_crosses_boundary": true
+    },
+    {
+      "structure_id": "retreat-village",
+      "slope_pct_at_centroid": 64.3,
+      "zone2_outer_m": 45.75,
+      "zone0_crowns": 23,
+      "zone0_overhang": 23,
+      "zone1_crowns": 34,
+      "zone1_canopy_pct": 70.0,
+      "zone2_crowns": 176,
+      "zone2_canopy_pct": 60.5,
+      "zone2_crosses_boundary": true
+    },
+    {
+      "structure_id": "glamping-creek",
+      "slope_pct_at_centroid": 14.0,
+      "zone2_outer_m": 30.5,
+      "zone0_crowns": 21,
+      "zone0_overhang": 16,
+      "zone1_crowns": 20,
+      "zone1_canopy_pct": 69.0,
+      "zone2_crowns": 67,
+      "zone2_canopy_pct": 52.5,
+      "zone2_crosses_boundary": false
+    },
+    {
+      "structure_id": "the-barn",
+      "slope_pct_at_centroid": 12.5,
+      "zone2_outer_m": 30.5,
+      "zone0_crowns": 5,
+      "zone0_overhang": 3,
+      "zone1_crowns": 11,
+      "zone1_canopy_pct": 37.5,
+      "zone2_crowns": 41,
+      "zone2_canopy_pct": 34.0,
+      "zone2_crosses_boundary": true
+    },
+    {
+      "structure_id": "agricultural-hub",
+      "slope_pct_at_centroid": 6.2,
+      "zone2_outer_m": 30.5,
+      "zone0_crowns": 6,
+      "zone0_overhang": 6,
+      "zone1_crowns": 8,
+      "zone1_canopy_pct": 50.8,
+      "zone2_crowns": 10,
+      "zone2_canopy_pct": 14.5,
+      "zone2_crosses_boundary": true
+    },
+    {
+      "structure_id": "tropical-dome",
+      "slope_pct_at_centroid": 31.2,
+      "zone2_outer_m": 45.75,
+      "zone0_crowns": 5,
+      "zone0_overhang": 2,
+      "zone1_crowns": 11,
+      "zone1_canopy_pct": 63.5,
+      "zone2_crowns": 83,
+      "zone2_canopy_pct": 28.8,
+      "zone2_crosses_boundary": true
+    },
+    {
+      "structure_id": "creek",
+      "slope_pct_at_centroid": 8.8,
+      "zone2_outer_m": 30.5,
+      "zone0_crowns": 39,
+      "zone0_overhang": 33,
+      "zone1_crowns": 42,
+      "zone1_canopy_pct": 58.8,
+      "zone2_crowns": 98,
+      "zone2_canopy_pct": 49.2,
+      "zone2_crosses_boundary": true
+    },
+    {
+      "structure_id": "community-hub",
+      "slope_pct_at_centroid": 0.0,
+      "zone2_outer_m": 30.5,
+      "zone0_crowns": 9,
+      "zone0_overhang": 6,
+      "zone1_crowns": 14,
+      "zone1_canopy_pct": 42.5,
+      "zone2_crowns": 54,
+      "zone2_canopy_pct": 43.0,
+      "zone2_crosses_boundary": true
+    },
+    {
+      "structure_id": "events-gatherings-hub",
+      "slope_pct_at_centroid": 6.2,
+      "zone2_outer_m": 30.5,
+      "zone0_crowns": 0,
+      "zone0_overhang": 0,
+      "zone1_crowns": 2,
+      "zone1_canopy_pct": 2.0,
+      "zone2_crowns": 16,
+      "zone2_canopy_pct": 13.2,
+      "zone2_crosses_boundary": true
+    },
+    {
+      "structure_id": "wellness-facilities",
+      "slope_pct_at_centroid": 6.2,
+      "zone2_outer_m": 30.5,
+      "zone0_crowns": 7,
+      "zone0_overhang": 6,
+      "zone1_crowns": 13,
+      "zone1_canopy_pct": 31.8,
+      "zone2_crowns": 51,
+      "zone2_canopy_pct": 47.8,
+      "zone2_crosses_boundary": true
+    },
+    {
+      "structure_id": "livestock-dairy",
+      "slope_pct_at_centroid": 0.0,
+      "zone2_outer_m": 30.5,
+      "zone0_crowns": 4,
+      "zone0_overhang": 4,
+      "zone1_crowns": 11,
+      "zone1_canopy_pct": 30.8,
+      "zone2_crowns": 37,
+      "zone2_canopy_pct": 27.5,
+      "zone2_crosses_boundary": false
+    },
+    {
+      "structure_id": "mushroom-cultivation",
+      "slope_pct_at_centroid": 22.5,
+      "zone2_outer_m": 45.75,
+      "zone0_crowns": 3,
+      "zone0_overhang": 2,
+      "zone1_crowns": 4,
+      "zone1_canopy_pct": 54.5,
+      "zone2_crowns": 33,
+      "zone2_canopy_pct": 17.0,
+      "zone2_crosses_boundary": true
+    },
+    {
+      "structure_id": "beekeeping-program",
+      "slope_pct_at_centroid": 14.0,
+      "zone2_outer_m": 30.5,
+      "zone0_crowns": 2,
+      "zone0_overhang": 2,
+      "zone1_crowns": 3,
+      "zone1_canopy_pct": 53.0,
+      "zone2_crowns": 14,
+      "zone2_canopy_pct": 19.5,
+      "zone2_crosses_boundary": true
+    },
+    {
+      "structure_id": "farmstead-produce-stand",
+      "slope_pct_at_centroid": 31.2,
+      "zone2_outer_m": 45.75,
+      "zone0_crowns": 3,
+      "zone0_overhang": 3,
+      "zone1_crowns": 8,
+      "zone1_canopy_pct": 44.0,
+      "zone2_crowns": 81,
+      "zone2_canopy_pct": 55.2,
+      "zone2_crosses_boundary": true
+    },
+    {
+      "structure_id": "infrastructure",
+      "slope_pct_at_centroid": 19.8,
+      "zone2_outer_m": 30.5,
+      "zone0_crowns": 15,
+      "zone0_overhang": 14,
+      "zone1_crowns": 31,
+      "zone1_canopy_pct": 46.0,
+      "zone2_crowns": 94,
+      "zone2_canopy_pct": 52.2,
+      "zone2_crosses_boundary": false
+    },
+    {
+      "structure_id": "ceremonial-infrastructure",
+      "slope_pct_at_centroid": 12.5,
+      "zone2_outer_m": 30.5,
+      "zone0_crowns": 5,
+      "zone0_overhang": 5,
+      "zone1_crowns": 15,
+      "zone1_canopy_pct": 36.5,
+      "zone2_crowns": 62,
+      "zone2_canopy_pct": 57.5,
+      "zone2_crosses_boundary": false
+    }
+  ]
+}

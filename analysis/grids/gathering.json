@@ -12,18 +12,19 @@
   "axes": "row = north ascending, col = east ascending; value at cell centre",
   "evidence": "modelled",
   "authority": "derived",
-  "method": "alias of buildable for one phase (C20)",
+  "method": "weighted overlay; canopy earns shade; trunks exclude 1.5 m",
   "weights": {
-    "sun_hours_annual": 0.18,
-    "sun_hours_dec": 0.12,
-    "cold_air_inv": 0.12,
-    "thermal_belt": 0.08,
-    "twi_inv": 0.1,
-    "stormwater_inv": 0.08,
-    "wind_santa_ana_inv": 0.1,
+    "sun_hours_annual": 0.12,
+    "sun_hours_dec": 0.1,
+    "cold_air_inv": 0.1,
+    "thermal_belt": 0.06,
+    "twi_inv": 0.08,
+    "stormwater_inv": 0.06,
+    "wind_santa_ana_inv": 0.08,
     "wind_sea_breeze": 0.04,
-    "slope": 0.12,
-    "landform": 0.06
+    "slope": 0.1,
+    "landform": 0.06,
+    "shade": 0.2
   },
   "weights_sum": 1.0,
   "exclusions": {
@@ -31,16 +32,15 @@
     "boundary_buffer_m": 5.0,
     "corridor_quantile": 0.9,
     "stormwater_flood_m": 0.02,
-    "tree_extra_m": 3.0,
-    "canopy": true
+    "trunk_radius_m": 1.5,
+    "canopy": false
   },
   "bands": {
     "best": 0.67,
     "good": 0.33,
     "workable": 0.05
   },
-  "what": "alias of buildable \u2014 where a structure could stand",
-  "alias_of": "buildable",
+  "what": "where people would want to gather (oaks welcome)",
   "units": "score 0-1",
   "encoding": "uint16_greyscale",
   "nodata": 65535,
@@ -58,7 +58,7 @@
     -119.1545051,
     34.4338381
   ],
-  "raster": "analysis/grids/gathers.png",
+  "raster": "analysis/grids/gathering.png",
   "value_min": 0.0,
   "value_max": 1.0,
   "decode": "if pixel == 65535: nodata; else value = value_min + (pixel / 65534) * (value_max - value_min)"

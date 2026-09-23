@@ -69,14 +69,40 @@ def main():
         if png.ndim != 2:
             errs.append(f'{name}: png not greyscale')
             continue
-        # three sample cells in npz index space
-        samples = [
-            (nrows // 4, ncols // 4),
-            (nrows // 2, ncols // 2),
-            (3 * nrows // 4, 3 * ncols // 4),
-        ]
+        # three non-zero finite cells (fixed probe cells can all be zero / excluded)
+        finite = np.isfinite(data)
+        nonzero = finite & (np.abs(data) > 1e-12)
+        # prefer cells away from edges
+        ys, xs = np.where(nonzero)
+        if ys.size < 3:
+            ys, xs = np.where(finite)
+        if ys.size < 3:
+            errs.append(f'{name}: fewer than 3 finite cells to probe')
+            continue
+        # spread samples across the value range of non-zero cells
+        vals = data[ys, xs]
+        order = np.argsort(vals)
+        picks = [order[0], order[len(order) // 2], order[-1]]
+        samples = [(int(ys[k]), int(xs[k])) for k in picks]
+        # de-dupe if range collapses
+        seen = set()
+        uniq = []
+        for ij in samples:
+            if ij not in seen:
+                seen.add(ij)
+                uniq.append(ij)
+        while len(uniq) < 3 and len(uniq) < ys.size:
+            for k in range(ys.size):
+                ij = (int(ys[k]), int(xs[k]))
+                if ij not in seen:
+                    seen.add(ij)
+                    uniq.append(ij)
+                if len(uniq) >= 3:
+                    break
+        samples = uniq[:3]
         span = float(meta['value_max']) - float(meta['value_min']) or 1.0
         print(f'--- {name} ---')
+        n_nonzero_ok = 0
         for i, j in samples:
             # png row for north_to_south
             pr = nrows - 1 - i
@@ -95,6 +121,10 @@ def main():
             print(f'  cell ({i},{j}): npz={want:.6g} decoded={got:.6g} rel={err*100:.4f}%')
             if err > 0.001:
                 errs.append(f'{name}[{i},{j}]: decode error {err*100:.3f}% > 0.1%')
+            if abs(want) > 1e-12:
+                n_nonzero_ok += 1
+        if n_nonzero_ok < 1:
+            errs.append(f'{name}: all probe cells were zero — pick non-zero cells')
 
         # bounds round-trip
         west, south, east, north = meta['bounds_lnglat']

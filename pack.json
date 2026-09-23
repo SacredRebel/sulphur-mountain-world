@@ -446,8 +446,59 @@
       "units": "score 0-1",
       "authority": "derived",
       "evidence": "modelled",
-      "method": "weighted overlay of land-reading layers with hard exclusions",
-      "generator": "scripts/gathers.py"
+      "method": "C20 alias of buildable for one phase",
+      "generator": "scripts/surfaces.py",
+      "alias_of": "buildable"
+    },
+    "buildable": {
+      "kind": "grid",
+      "file": "analysis/grids/buildable.npz",
+      "raster": "analysis/grids/buildable.png",
+      "meta": "analysis/grids/buildable.json",
+      "geojson": "buildable.geojson",
+      "plan": "analysis/buildable-figure.png",
+      "units": "score 0-1",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "weighted overlay; canopy+3m excluded (foundations)",
+      "generator": "scripts/surfaces.py",
+      "what": "where a structure could stand"
+    },
+    "gathering": {
+      "kind": "grid",
+      "file": "analysis/grids/gathering.npz",
+      "raster": "analysis/grids/gathering.png",
+      "meta": "analysis/grids/gathering.json",
+      "geojson": "gathering.geojson",
+      "plan": "analysis/gathering-figure.png",
+      "units": "score 0-1",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "weighted overlay; canopy earns shade; trunks exclude 1.5 m",
+      "generator": "scripts/surfaces.py",
+      "what": "where people would want to gather (oaks welcome)"
+    },
+    "defensible_space": {
+      "kind": "vector",
+      "file": "defensible-space.geojson",
+      "meta": "defensible.json",
+      "plan": "analysis/defensible-space.png",
+      "units": "geometry / crowns / canopy pct",
+      "authority": "derived",
+      "evidence": "modelled",
+      "what": "Geometric reading of published 0-5 / 5-30 / 30-100 ft defensible-space distances. Not a fire-agency inspection. No tree removal is implied.",
+      "generator": "scripts/defensible-space.py"
+    },
+    "water_harvest": {
+      "kind": "vector",
+      "file": "water-harvest.geojson",
+      "meta": "water-harvest.json",
+      "plan": "analysis/water-harvest.png",
+      "units": "m3 / m2",
+      "authority": "derived",
+      "evidence": "modelled",
+      "what": "Keyline swale catchments and pond sites sized to a 25 mm event",
+      "generator": "scripts/water-harvest.py"
     },
     "capture_plan": {
       "kind": "vector",

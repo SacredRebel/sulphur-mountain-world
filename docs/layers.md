@@ -18,7 +18,11 @@ Grid rasters are plain `ncols × nrows` 16-bit greyscale PNGs (`row_order: north
 | `corridors` | animal-corridor current | dimensionless | modelled | grid raster + `.npz` |
 | `landforms` | TPI landform class | class 1–6 | modelled | grid raster + `.npz` |
 | `flow_accum` | D8 flow accumulation | m² | modelled | grid raster + `.npz` |
-| `gathers` | where the land gathers (weighted overlay) | score 0–1 | modelled | grid raster + `.npz` + `gathers.geojson` |
+| `buildable` | where a structure could stand (canopy excluded) | score 0–1 | modelled | grid + GeoJSON bands |
+| `gathering` | where people gather (shade earns; trunks exclude) | score 0–1 | modelled | grid + GeoJSON bands |
+| `gathers` | **alias of `buildable`** for one phase (C20) | score 0–1 | modelled | same files as buildable |
+| `defensible_space` | 0–5 / 5–30 / 30–100 ft rings per structure | geometry | modelled | GeoJSON + summary — geometric reading only; **not a fire-agency inspection; no tree removal implied** |
+| `water_harvest` | keyline swale catchments and pond sites vs 25 mm | m³ / m² | modelled | GeoJSON + summary |
 | `capture_plan` | phone-scan walk order (~20 m zones) | geometry | modelled | GeoJSON + plan PNG |
 | `scans` | Gaussian-splat placement rows | lng/lat, turn, scale, lift | measured | `scans.json` only — binaries stay private |
 | `keylines` | keyline / swale candidates | geometry | modelled | GeoJSON |

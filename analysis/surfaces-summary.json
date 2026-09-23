@@ -1,0 +1,69 @@
+{
+  "parcel_cells": 38281,
+  "parcel_acres": 9.46,
+  "open_ground_buildable_cells": 7051,
+  "open_ground_buildable_acres": 1.74,
+  "buildable_band_m2": {
+    "best": 6532,
+    "good": 490,
+    "workable": 28,
+    "total_above_workable": 7050
+  },
+  "gathering_band_m2": {
+    "best": 3223,
+    "good": 11393,
+    "workable": 172,
+    "total_above_workable": 14788
+  },
+  "buildable_range": {
+    "min": 0.0,
+    "max": 1.0
+  },
+  "gathering_range": {
+    "min": 0.0,
+    "max": 1.0
+  },
+  "proof_oak_cell": {
+    "e": 260.8234027405325,
+    "n": 267.75574840024217,
+    "i": 148,
+    "j": 141,
+    "buildable": 0.0,
+    "gathering": 1.0,
+    "excl_buildable": true,
+    "excl_gathering": false,
+    "under_crown": true,
+    "near_trunk": false
+  },
+  "proof_trunk_cell": {
+    "e": 283.8234027405325,
+    "n": 150.75574840024214,
+    "buildable": 0.0,
+    "gathering": 0.0
+  },
+  "weights_buildable": {
+    "sun_hours_annual": 0.18,
+    "sun_hours_dec": 0.12,
+    "cold_air_inv": 0.12,
+    "thermal_belt": 0.08,
+    "twi_inv": 0.1,
+    "stormwater_inv": 0.08,
+    "wind_santa_ana_inv": 0.1,
+    "wind_sea_breeze": 0.04,
+    "slope": 0.12,
+    "landform": 0.06
+  },
+  "weights_gathering": {
+    "sun_hours_annual": 0.12,
+    "sun_hours_dec": 0.1,
+    "cold_air_inv": 0.1,
+    "thermal_belt": 0.06,
+    "twi_inv": 0.08,
+    "stormwater_inv": 0.06,
+    "wind_santa_ana_inv": 0.08,
+    "wind_sea_breeze": 0.04,
+    "slope": 0.1,
+    "landform": 0.06,
+    "shade": 0.2
+  }
+}

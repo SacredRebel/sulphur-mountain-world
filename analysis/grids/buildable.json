@@ -12,7 +12,7 @@
   "axes": "row = north ascending, col = east ascending; value at cell centre",
   "evidence": "modelled",
   "authority": "derived",
-  "method": "alias of buildable for one phase (C20)",
+  "method": "C19 weighted overlay; canopy+3m excluded (foundations)",
   "weights": {
     "sun_hours_annual": 0.18,
     "sun_hours_dec": 0.12,
@@ -39,8 +39,8 @@
     "good": 0.33,
     "workable": 0.05
   },
-  "what": "alias of buildable \u2014 where a structure could stand",
-  "alias_of": "buildable",
+  "what": "where a structure could stand",
+  "alias_of": null,
   "units": "score 0-1",
   "encoding": "uint16_greyscale",
   "nodata": 65535,
@@ -58,7 +58,7 @@
     -119.1545051,
     34.4338381
   ],
-  "raster": "analysis/grids/gathers.png",
+  "raster": "analysis/grids/buildable.png",
   "value_min": 0.0,
   "value_max": 1.0,
   "decode": "if pixel == 65535: nodata; else value = value_min + (pixel / 65534) * (value_max - value_min)"

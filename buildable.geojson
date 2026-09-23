@@ -20,8 +20,7 @@
       "good": ">=0.33",
       "workable": ">=0.05"
     },
-    "generator": "scripts/surfaces.py",
-    "alias_of": "buildable"
+    "generator": "scripts/surfaces.py"
   },
   "features": [
     {

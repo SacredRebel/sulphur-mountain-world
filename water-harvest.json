@@ -1,0 +1,159 @@
+{
+  "authority": "derived",
+  "evidence": "modelled",
+  "storm_mm": 25.0,
+  "assumptions": {
+    "runoff_coefficient": 0.45,
+    "runoff_coefficient_note": "Assumed 0.45 for a 1-hour 25 mm event on mixed oak/grass/compacted hillside \u2014 not measured on site.",
+    "infiltration_mm_during_event": 5.0,
+    "infiltration_note": "Assumed 5 mm infiltrates during the event (sandy-loam order of magnitude) \u2014 not a field measurement.",
+    "swale_section_m2": 0.15,
+    "swale_section_note": "Assumed 0.6 m wide \u00d7 0.3 m deep trapezoid \u2248 0.15 m\u00b2.",
+    "pond_depth_m": 1.2,
+    "season_mm_proxy": 400,
+    "season_note": "Season volume uses a 400 mm proxy of similar-intensity catch \u2014 named assumption."
+  },
+  "parcel_m2": 38310.0,
+  "parcel_acres": 9.47,
+  "parcel_rain_m3_25mm": 957.8,
+  "parcel_runoff_m3_25mm": 344.8,
+  "swale_capacity_m3_total": 30.0,
+  "pond_capacity_m3_total": 723.9,
+  "held_m3_total": 58.0,
+  "fraction_of_runoff_held": 0.168,
+  "catchment_sum_m2": 21655.0,
+  "catchment_sum_raw_m2": 21655.0,
+  "parcel_plus_upslope_m2": 39951.0,
+  "upslope_max_accum_m2": 1641.0,
+  "swales": [
+    {
+      "id": "swale-1",
+      "kind": "swale",
+      "catchment_m2": 3815.0,
+      "length_m": 25.0,
+      "section_m2": 0.15,
+      "capacity_m3": 3.75,
+      "event_volume_m3": 34.34,
+      "needed_section_m2": 1.373,
+      "holds_event": false
+    },
+    {
+      "id": "swale-2",
+      "kind": "swale",
+      "catchment_m2": 3649.0,
+      "length_m": 25.0,
+      "section_m2": 0.15,
+      "capacity_m3": 3.75,
+      "event_volume_m3": 32.84,
+      "needed_section_m2": 1.314,
+      "holds_event": false
+    },
+    {
+      "id": "swale-3",
+      "kind": "swale",
+      "catchment_m2": 3276.0,
+      "length_m": 25.0,
+      "section_m2": 0.15,
+      "capacity_m3": 3.75,
+      "event_volume_m3": 29.48,
+      "needed_section_m2": 1.179,
+      "holds_event": false
+    },
+    {
+      "id": "swale-4",
+      "kind": "swale",
+      "catchment_m2": 2074.0,
+      "length_m": 25.0,
+      "section_m2": 0.15,
+      "capacity_m3": 3.75,
+      "event_volume_m3": 18.67,
+      "needed_section_m2": 0.747,
+      "holds_event": false
+    },
+    {
+      "id": "swale-5",
+      "kind": "swale",
+      "catchment_m2": 2066.0,
+      "length_m": 25.0,
+      "section_m2": 0.15,
+      "capacity_m3": 3.75,
+      "event_volume_m3": 18.59,
+      "needed_section_m2": 0.744,
+      "holds_event": false
+    },
+    {
+      "id": "swale-6",
+      "kind": "swale",
+      "catchment_m2": 1711.0,
+      "length_m": 25.0,
+      "section_m2": 0.15,
+      "capacity_m3": 3.75,
+      "event_volume_m3": 15.4,
+      "needed_section_m2": 0.616,
+      "holds_event": false
+    },
+    {
+      "id": "swale-7",
+      "kind": "swale",
+      "catchment_m2": 1373.0,
+      "length_m": 25.0,
+      "section_m2": 0.15,
+      "capacity_m3": 3.75,
+      "event_volume_m3": 12.36,
+      "needed_section_m2": 0.494,
+      "holds_event": false
+    },
+    {
+      "id": "swale-8",
+      "kind": "swale",
+      "catchment_m2": 577.0,
+      "length_m": 25.0,
+      "section_m2": 0.15,
+      "capacity_m3": 3.75,
+      "event_volume_m3": 5.19,
+      "needed_section_m2": 0.208,
+      "holds_event": false
+    }
+  ],
+  "ponds": [
+    {
+      "id": "pond-1",
+      "kind": "pond",
+      "catchment_m2": 1452.0,
+      "event_volume_m3": 13.07,
+      "season_volume_m3": 130.7,
+      "pond_capacity_m3": 241.3,
+      "radius_m": 8.0,
+      "depth_m_assumed": 1.2,
+      "buildable_score": 0.654,
+      "east_m": 277.8,
+      "north_m": 263.8
+    },
+    {
+      "id": "pond-2",
+      "kind": "pond",
+      "catchment_m2": 1087.0,
+      "event_volume_m3": 9.78,
+      "season_volume_m3": 97.8,
+      "pond_capacity_m3": 241.3,
+      "radius_m": 8.0,
+      "depth_m_assumed": 1.2,
+      "buildable_score": 0.577,
+      "east_m": 363.8,
+      "north_m": 271.8
+    },
+    {
+      "id": "pond-3",
+      "kind": "pond",
+      "catchment_m2": 575.0,
+      "event_volume_m3": 5.17,
+      "season_volume_m3": 51.8,
+      "pond_capacity_m3": 241.3,
+      "radius_m": 8.0,
+      "depth_m_assumed": 1.2,
+      "buildable_score": 0.745,
+      "east_m": 322.8,
+      "north_m": 257.8
+    }
+  ]
+}
