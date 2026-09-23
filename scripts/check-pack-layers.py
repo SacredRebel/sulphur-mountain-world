@@ -19,6 +19,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / 'pack-layers.json'
 SCORE_LAYERS = frozenset({'buildable', 'gathering', 'gathers'})
+DISPLAY_ONLY_IMAGES = frozenset({'terrain', 'terrain_hillshade'})
 
 
 def decode_pixel(pixel: int, meta: dict) -> float | None:
@@ -112,6 +113,89 @@ def sample_display_alpha(layer_id: str, entry: dict, meta: dict, rng: random.Ran
     return errs
 
 
+def check_tree_crown_count(manifest: dict) -> list[str]:
+    errs = []
+    with (ROOT / 'trees.csv').open(encoding='utf-8', newline='') as fh:
+        csv_rows = sum(1 for _ in fh) - 1
+    crown_path = ROOT / 'trees-crowns.geojson'
+    if not crown_path.exists():
+        errs.append('missing trees-crowns.geojson')
+        return errs
+    gj = json.loads(crown_path.read_text(encoding='utf-8'))
+    crown_n = len(gj.get('features') or [])
+    print(f'  tree crowns: csv={csv_rows} geojson={crown_n}')
+    if crown_n != csv_rows:
+        errs.append(f'trees_crowns: feature count {crown_n} != trees.csv rows {csv_rows}')
+    return errs
+
+
+def check_hillshade_range() -> list[str]:
+    errs = []
+    path = ROOT / 'analysis/display/terrain.png'
+    if not path.exists():
+        errs.append('missing analysis/display/terrain.png')
+        return errs
+    disp = np.array(Image.open(path))
+    if disp.ndim != 3 or disp.shape[2] != 4:
+        errs.append('terrain hillshade: display not RGBA')
+        return errs
+    mask = disp[..., 3] > 0
+    if not mask.any():
+        errs.append('terrain hillshade: no opaque pixels')
+        return errs
+    rgb = disp[..., :3][mask].astype(np.float64) / 255.0
+    span = float(rgb.max() - rgb.min())
+    print(f'  hillshade RGB span: {span:.3f}')
+    if span <= 0.5:
+        errs.append(f'terrain hillshade: range {span:.3f} <= 0.5')
+    return errs
+
+
+def pack_layer_covered(pack_key: str, manifest: dict) -> bool:
+    mids = {L['id'] for L in manifest.get('layers') or []}
+    if pack_key in mids:
+        return True
+    aliases = manifest.get('pack_aliases') or {}
+    alias = aliases.get(pack_key)
+    if alias is None:
+        return False
+    if isinstance(alias, str):
+        return alias in mids
+    return all(a in mids for a in alias)
+
+
+def check_pack_coverage(manifest: dict) -> list[str]:
+    """Every pack.json layer is in the manifest or an explicit not_drawable reason."""
+    errs = []
+    pack = json.loads((ROOT / 'pack.json').read_text(encoding='utf-8'))
+    not_drawable = manifest.get('not_drawable') or {}
+    if not isinstance(not_drawable, dict) or not not_drawable:
+        errs.append('manifest missing not_drawable map with reasons')
+        return errs
+    for key, reason in not_drawable.items():
+        if not str(reason).strip():
+            errs.append(f'not_drawable.{key}: empty reason')
+        if key not in pack.get('layers', {}):
+            errs.append(f'not_drawable.{key}: not a pack.json layer')
+    missing = []
+    for pack_key in pack.get('layers', {}):
+        if pack_key in not_drawable:
+            continue
+        if pack_layer_covered(pack_key, manifest):
+            continue
+        missing.append(pack_key)
+    if missing:
+        errs.append(
+            'pack layers neither in manifest nor not_drawable: ' + ', '.join(sorted(missing))
+        )
+    print(
+        f'  pack coverage: {len(pack["layers"])} pack keys; '
+        f'{len(manifest.get("layers") or [])} drawable; '
+        f'{len(not_drawable)} not_drawable'
+    )
+    return errs
+
+
 def validate_manifest(manifest: dict) -> list[str]:
     errs = []
     pack = json.loads((ROOT / 'pack.json').read_text(encoding='utf-8'))
@@ -131,6 +215,18 @@ def validate_manifest(manifest: dict) -> list[str]:
                 Image.open(path).verify()
             except Exception as exc:
                 errs.append(f'{lid}: PNG open failed: {exc}')
+            if lid in DISPLAY_ONLY_IMAGES:
+                meta_path = ROOT / 'analysis/grids/terrain.json'
+                if not meta_path.exists():
+                    errs.append(f'{lid}: missing analysis/grids/terrain.json')
+                    continue
+                meta = json.loads(meta_path.read_text(encoding='utf-8'))
+                errs.extend(bounds_roundtrip(lid, entry['bounds_lnglat'], meta))
+                legend = entry.get('legend') or {}
+                stops = legend.get('stops') or []
+                if len(stops) < 2:
+                    errs.append(f'{lid}: ramp needs >=2 stops')
+                continue
             grid_layer = grid_by_id.get(lid)
             if not grid_layer:
                 errs.append(f'{lid}: no pack grid layer')
@@ -189,6 +285,21 @@ def self_test():
         print('FAIL negative: bad bounds should fail')
         raise SystemExit(1)
 
+    bad_cov = copy.deepcopy(manifest)
+    bad_cov['not_drawable'] = dict(manifest.get('not_drawable') or {})
+    # drop a known not_drawable entry so coverage fails if survey is still required
+    # forge: remove trees_crowns from layers and clear aliases so trees is uncovered
+    bad_cov['layers'] = [L for L in bad_cov['layers'] if L['id'] != 'trees_crowns']
+    aliases = dict(bad_cov.get('pack_aliases') or {})
+    aliases.pop('trees', None)
+    bad_cov['pack_aliases'] = aliases
+    nd = dict(bad_cov.get('not_drawable') or {})
+    nd.pop('trees', None)
+    bad_cov['not_drawable'] = nd
+    if not check_pack_coverage(bad_cov):
+        print('FAIL negative: missing pack coverage should fail')
+        raise SystemExit(1)
+
     print('OK negative check-pack-layers')
 
 
@@ -204,13 +315,20 @@ def main():
         raise SystemExit('missing pack-layers.json — run scripts/pack-layers.py')
     manifest = json.loads(MANIFEST.read_text(encoding='utf-8'))
     errs = validate_manifest(manifest)
+    errs.extend(check_pack_coverage(manifest))
+    errs.extend(check_tree_crown_count(manifest))
+    errs.extend(check_hillshade_range())
     if errs:
         for e in errs:
             print('FAIL', e)
         raise SystemExit(1)
     n_img = sum(1 for L in manifest['layers'] if L['kind'] == 'image')
     n_geo = sum(1 for L in manifest['layers'] if L['kind'] == 'geojson')
-    print(f'OK check-pack-layers: {n_img} image, {n_geo} geojson')
+    by_group: dict[str, int] = {}
+    for L in manifest['layers']:
+        by_group[L['group']] = by_group.get(L['group'], 0) + 1
+    groups = ', '.join(f'{g}={by_group[g]}' for g in sorted(by_group))
+    print(f'OK check-pack-layers: {n_img} image, {n_geo} geojson ({groups})')
 
 
 if __name__ == '__main__':

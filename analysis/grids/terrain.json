@@ -1,0 +1,70 @@
+{
+  "origin_east_m": 129.82340274053252,
+  "origin_north_m": 129.75574840024214,
+  "cell_m": 1.0,
+  "ncols": 318,
+  "nrows": 238,
+  "crs": "pack-frame metres (equirectangular at origin_lat)",
+  "frame_origin_lng": -119.1594805,
+  "frame_origin_lat": 34.4304373,
+  "metres_per_deg_lng": 91916.198,
+  "metres_per_deg_lat": 110930.184,
+  "axes": "row = north ascending, col = east ascending; value at cell centre",
+  "what": "1 m DEM hillshade for map underlay",
+  "evidence": "measured",
+  "method": "matplotlib LightSource hillshade on dem_1m.npz",
+  "units": "normalised shade 0\u20131",
+  "encoding": "display_rgba",
+  "value_min": 0.0,
+  "value_max": 1.0,
+  "row_order": "north_to_south",
+  "bounds_lnglat": [
+    -119.1580735,
+    34.4316025,
+    -119.1546139,
+    34.433748
+  ],
+  "bounds_en_m": [
+    129.32340274053252,
+    129.25574840024214,
+    447.3234027405325,
+    367.25574840024217
+  ],
+  "display_raster": "analysis/display/terrain.png",
+  "ramp": {
+    "name": "greyscale",
+    "stops": [
+      {
+        "value": 0.0,
+        "rgba": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "label": "0"
+      },
+      {
+        "value": 0.5,
+        "rgba": [
+          128,
+          128,
+          128,
+          255
+        ],
+        "label": "0.5"
+      },
+      {
+        "value": 1.0,
+        "rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "label": "1"
+      }
+    ]
+  },
+  "source_dem": "analysis/grids/dem_1m.npz"
+}

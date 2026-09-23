@@ -70,6 +70,10 @@ GRID_META = {
         'label': 'Landform classes', 'group': 'terrain', 'z': 11, 'opacity': 0.75,
         'cmap': 'tab10', 'categorical': True,
     },
+    'terrain': {
+        'label': 'Terrain hillshade', 'group': 'terrain', 'z': 8, 'opacity': 0.88,
+        'cmap': 'grey',
+    },
     'buildable': {
         'label': 'Buildable score', 'group': 'surfaces', 'z': 28, 'opacity': 0.72,
         'cmap': 'YlGn',
@@ -85,6 +89,9 @@ GRID_META = {
 }
 
 VECTOR_SPECS = [
+    ('trees_crowns', 'trees-crowns.geojson', 'height_m', 'habitat', 8, 0.35, 'Tree crowns'),
+    ('trees_trunks', 'trees-trunks.geojson', 'height_m', 'habitat', 9, 0.5, 'Tree trunks'),
+    ('horizon', 'horizon.geojson', 'viewpoint', 'sun', 18, 0.75, 'Horizon profile'),
     ('drainage', 'drainage.geojson', 'order', 'water', 24, 0.85, 'Drainage channels'),
     ('keylines', 'keylines.geojson', 'kind', 'water', 25, 0.8, 'Keylines'),
     ('thermal_belt', 'thermal-belt.geojson', 'kind', 'habitat', 20, 0.55, 'Thermal belt'),
@@ -97,7 +104,7 @@ VECTOR_SPECS = [
      'Defensible space'),
     ('water_harvest', 'water-harvest.geojson', 'kind', 'proposed', 42, 0.85, 'Water harvest'),
     ('capture_plan', 'capture-plan.geojson', 'walk_order', 'proposed', 41, 0.5, 'Capture plan'),
-    ('cultivated_ground', 'cultivated-ground.geojson', 'kind', 'proposed', 38, 0.6,
+    ('cultivated_ground', 'cultivated-ground.geojson', 'kind', 'habitat', 37, 0.6,
      'Cultivated ground'),
     ('vision', 'vision.geojson', 'type', 'proposed', 45, 0.9, 'Vision zones'),
     ('survey', 'survey.geojson', 'layer', 'terrain', 50, 0.95, 'Survey'),
@@ -285,14 +292,15 @@ def process_grid(lid: str, layer: dict, pack: dict, display_cache: dict) -> dict
     return manifest_image_entry(lid, layer, pack, gmeta, rel, ramp, meta)
 
 
-def manifest_image_entry(lid, layer, pack, gmeta, rel, ramp, meta):
+def manifest_image_entry(lid, layer, pack, gmeta, rel, ramp, meta, data_raster: str | None = None):
+    dr = data_raster if data_raster is not None else layer.get('raster')
     return {
         'id': lid,
         'label': gmeta['label'],
         'group': gmeta['group'],
         'kind': 'image',
         'path': rel,
-        'data_raster': layer['raster'],
+        'data_raster': dr,
         'bounds_lnglat': meta['bounds_lnglat'],
         'z': gmeta['z'],
         'opacity_default': gmeta['opacity'],
@@ -355,6 +363,28 @@ def category_legend(style_by: str, values: list, lid: str) -> dict:
     return {'type': 'categories', 'categories': categories}
 
 
+def manifest_terrain_hillshade(pack: dict) -> dict | None:
+    meta_path = ROOT / 'analysis' / 'grids' / 'terrain.json'
+    display_path = ROOT / 'analysis' / 'display' / 'terrain.png'
+    if not meta_path.exists() or not display_path.exists():
+        return None
+    meta = json.loads(meta_path.read_text(encoding='utf-8'))
+    layer = pack['layers'].get('terrain_hillshade', {})
+    gmeta = GRID_META['terrain']
+    rel = meta.get('display_raster', 'analysis/display/terrain.png')
+    ramp = meta.get('ramp') or {
+        'name': 'greyscale',
+        'stops': [
+            {'value': 0.0, 'rgba': [0, 0, 0, 255], 'label': '0'},
+            {'value': 1.0, 'rgba': [255, 255, 255, 255], 'label': '1'},
+        ],
+    }
+    return manifest_image_entry(
+        'terrain', layer, pack, gmeta, rel, ramp, meta,
+        data_raster=layer.get('meta') or meta.get('source_dem'),
+    )
+
+
 def vector_manifest_entry(spec, pack: dict) -> dict | None:
     vid, relpath, style_by, group, z, opacity, label = spec
     path = ROOT / relpath
@@ -370,7 +400,7 @@ def vector_manifest_entry(spec, pack: dict) -> dict | None:
         p = f.get('properties') or {}
         prop_vals.append(p.get(style_by))
 
-    pack_layer = pack['layers'].get(vid.split('_')[0]) or {}
+    pack_layer = pack['layers'].get(vid) or pack['layers'].get(vid.split('_')[0]) or {}
     if vid.endswith('_zones'):
         base = vid.replace('_zones', '')
         pack_layer = pack['layers'].get(base, pack_layer)
@@ -430,18 +460,42 @@ def main():
         if entry:
             manifest_layers.append(entry)
 
+    terrain_entry = manifest_terrain_hillshade(pack)
+    if terrain_entry:
+        manifest_layers.append(terrain_entry)
+
     manifest_layers.sort(key=lambda L: (L['z'], L['id']))
+    # pack.json keys that are intentionally not atlas overlays (C22.3)
+    not_drawable = {
+        'models': 'GLB inventory and meshes — engine loads, not a map overlay',
+        'scans': 'placement table; splat binaries stay private / gitignored',
+        'positions': 'placement CSV for the engine, not an atlas drawable',
+        'materials': 'material table, not geometry',
+        'imagery': 'streamed XYZ tiles, never committed',
+        'county': 'assessor ring kept for drift checks, not for siting or drawing',
+        'trees': 'tabular crowns; drawn as trees_crowns + trees_trunks',
+        'cultivated': 'tabular plantings; drawn as cultivated_ground',
+        'sky_events': 'event table awaiting C26 alignments drawable',
+        'terrain': 'terrarium tile pyramid; hillshade display is layer terrain',
+    }
     manifest = {
         'schema': 1,
         'generator': 'scripts/pack-layers.py',
         'layers': manifest_layers,
+        'not_drawable': not_drawable,
+        # pack keys that resolve to a different manifest id
+        'pack_aliases': {
+            'terrain_hillshade': 'terrain',
+            'trees': ['trees_crowns', 'trees_trunks'],
+            'cultivated': 'cultivated_ground',
+        },
     }
     MANIFEST.write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
     patch_pack_registry()
 
     n_img = sum(1 for L in manifest_layers if L['kind'] == 'image')
     n_geo = sum(1 for L in manifest_layers if L['kind'] == 'geojson')
-    print(f'OK pack-layers: {n_img} image, {n_geo} geojson')
+    print(f'OK pack-layers: {n_img} image, {n_geo} geojson; not_drawable={len(not_drawable)}')
 
 
 if __name__ == '__main__':

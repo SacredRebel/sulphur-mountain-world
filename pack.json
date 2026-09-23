@@ -56,6 +56,26 @@
       "evidence": "derived",
       "units": "geometry"
     },
+    "trees_crowns": {
+      "file": "trees-crowns.geojson",
+      "authority": "derived",
+      "captured": "2018",
+      "what": "2018 lidar tree crown circles from trees.csv for map overlay",
+      "generator": "scripts/export-drawable-extras.py",
+      "kind": "vector",
+      "evidence": "measured",
+      "units": "m (height, crown radius)"
+    },
+    "trees_trunks": {
+      "file": "trees-trunks.geojson",
+      "authority": "derived",
+      "captured": "2018",
+      "what": "2018 lidar tree trunk points from trees.csv",
+      "generator": "scripts/export-drawable-extras.py",
+      "kind": "vector",
+      "evidence": "measured",
+      "units": "m (height)"
+    },
     "trees": {
       "file": "trees.csv",
       "authority": "derived",
@@ -127,6 +147,7 @@
     },
     "horizon": {
       "file": "horizon.json",
+      "drawable": "horizon.geojson",
       "authority": "derived",
       "evidence": "modelled",
       "method": "horizon altitude every 0.5 deg; eye 1.6 m; 1 m DEM to 1.5 km; NED 10 m to 30 km; curvature + refraction",
@@ -137,6 +158,7 @@
         "survey.geojson"
       ],
       "generator": "scripts/horizon.py",
+      "drawable_generator": "scripts/export-drawable-extras.py",
       "kind": "table",
       "units": "degrees"
     },
@@ -307,6 +329,16 @@
       "authority": "derived",
       "evidence": "measured",
       "units": "m"
+    },
+    "terrain_hillshade": {
+      "kind": "display",
+      "file": "analysis/display/terrain.png",
+      "meta": "analysis/grids/terrain.json",
+      "authority": "derived",
+      "evidence": "measured",
+      "what": "1 m DEM hillshade RGBA underlay for the map UI",
+      "generator": "scripts/export-drawable-extras.py",
+      "units": "normalised hillshade 0-1"
     },
     "edits": {
       "file": "edits.geojson",

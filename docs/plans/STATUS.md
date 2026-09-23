@@ -1,8 +1,8 @@
-﻿# STATUS - Agent C
-updated: 2026-09-22
-phase: C21
+# STATUS - Agent C
+updated: 2026-09-23
+phase: C22
 state: done
-commit: fa577f7
-checks: full suite green; negatives OK on check-rasters/surfaces/water/pack-layers/defensible
-blocked-by: private scan storage + one Scaniverse zone (C14 tooling ready; real captures wait)
-notes: C21.1 water on flow×TWI held 117 m3 (34%, ~31k gal); on_channel ponds flagged. C21.2 oak proof recomputed from npz+trees. C21.3 pack-layers.json 29 layers (14 display PNG + 15 geojson).
+commit: PENDING
+checks: full suite green; check-water + check-pack-layers self-tests OK
+blocked-by: private scan storage + one Scaniverse zone (C14 tooling ready; real captures wait); owner chooses water variant / permitting
+notes: C22 exclusive first-hit D8 - routed=catchment_sum=11647 m2; held 88 m3 (25.5%). Off-channel variant 56 m3 (16.2%). Catchment polygons published. Atlas +trees/cultivated/horizon/terrain hillshade; 33 manifest layers; 10 not_drawable.
