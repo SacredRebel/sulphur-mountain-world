@@ -573,6 +573,21 @@
       "evidence": "modelled",
       "kind": "mesh",
       "generator": "scripts/walkable.py"
+    },
+    "trees_instances": {
+      "file": "trees-instances.json",
+      "authority": "generated",
+      "evidence": "modelled",
+      "kind": "instances",
+      "generator": "scripts/build-tree-instances.py",
+      "what": "16 oak archetypes + 3663 instances fitted to trees.csv"
+    },
+    "budget": {
+      "file": "budget.json",
+      "authority": "derived",
+      "evidence": "modelled",
+      "kind": "table",
+      "generator": "scripts/build-budget.py"
     }
   },
   "sources": [

@@ -8188,7 +8188,9 @@
     "terrain": "terrarium tile pyramid; hillshade display is layer terrain",
     "walkable": "walkable.geojson published; atlas export deferred (C24 contract file)",
     "walk_graph": "connectivity table, not a map overlay",
-    "collision": "physics mesh, not a map overlay"
+    "collision": "physics mesh, not a map overlay",
+    "trees_instances": "instance table + archetype meshes; not an atlas overlay",
+    "budget": "cost table, not geometry"
   },
   "pack_aliases": {
     "terrain_hillshade": "terrain",

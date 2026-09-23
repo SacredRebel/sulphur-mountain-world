@@ -10,9 +10,9 @@
     "Unlicense",
     "own-work"
   ],
-  "count": 147,
+  "count": 163,
   "by_licence": {
-    "own-work": 116,
+    "own-work": 132,
     "CC0-1.0": 31
   },
   "assets": [
@@ -566,7 +566,7 @@
       "path": "models/lod/beekeeping-program.lod2.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "f2d1d0358457b59ab20584b31d516c5ec05aa2ce3aa60d4bc483432f0e5e809e",
+      "sha256": "e797b8d57162dc9d2578eb52323ad386212653cb3c19d1f21f39d1d662939cbe",
       "bytes": 5848
     },
     {
@@ -580,8 +580,8 @@
       "path": "models/lod/ceremonial-infrastructure.lod2.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "be254da9618fbbcfddd6310f2f3eefacc8b2ff577bc4e9fa644cfb3e68dfd114",
-      "bytes": 15656
+      "sha256": "dcd5aa6e86cd5938cc067d20ddec75dd0b55ff41051f367c6358d4530c551f36",
+      "bytes": 15404
     },
     {
       "path": "models/lod/community-hub.lod1.glb",
@@ -594,36 +594,36 @@
       "path": "models/lod/community-hub.lod2.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "b1b1dadc550d11f630dd5964a46b873cb3d95864264e8147c27425885cec4f0f",
+      "sha256": "c85ec09faa56d1af2d2b7a3d9a563a146ce7bec1f3e2df4171d3092b1d7d7bd6",
       "bytes": 10704
     },
     {
       "path": "models/lod/creek.lod1.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "f02765c020e6340b5eff524a5ae57b1d16c4cd9e3b46302571a70d6f763aa33a",
+      "sha256": "13de616203881dde58c0937dcee5c6b1967013c16e301126c0953fbb58b8ab43",
       "bytes": 45348
     },
     {
       "path": "models/lod/creek.lod2.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "58ddedd59ffec542d0c1f7e76f73044caebb3eed7b0b561651a078a7044e061c",
-      "bytes": 45348
+      "sha256": "60d1f11839f835843b1cc406dee93b18ede5521ca0750ad9f4ea93a07bae1090",
+      "bytes": 41876
     },
     {
       "path": "models/lod/events-gatherings-hub.lod1.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "9d65de54abd6c36fd17208f57743c2c0c70ba287ab281b3aa2e9473397798831",
+      "sha256": "c52e0f0032fe379ef5b1896c2c156e6dff2323bf4d800f94ad45996a0a681b8f",
       "bytes": 12480
     },
     {
       "path": "models/lod/events-gatherings-hub.lod2.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "9d65de54abd6c36fd17208f57743c2c0c70ba287ab281b3aa2e9473397798831",
-      "bytes": 12480
+      "sha256": "bfabd41bd2a82f112b64f9c5961543cad4a62f22d31edc9f632e9bddf601a595",
+      "bytes": 9084
     },
     {
       "path": "models/lod/farmstead-produce-stand.lod1.glb",
@@ -657,15 +657,15 @@
       "path": "models/lod/infrastructure.lod1.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "ea5a1b214d7eb32506aa0d95c32408eb576920a48fd22ff65eee7285b9c5d103",
+      "sha256": "78695effddd6d78a007740200eefbaa7f72918f8d78e796f2fa41aed4ab4fe78",
       "bytes": 18720
     },
     {
       "path": "models/lod/infrastructure.lod2.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "ea5a1b214d7eb32506aa0d95c32408eb576920a48fd22ff65eee7285b9c5d103",
-      "bytes": 18720
+      "sha256": "3a01d785a809ff9bd908512256971e4fe3f50014299f03adc88cbfafd470b4b2",
+      "bytes": 15052
     },
     {
       "path": "models/lod/livestock-dairy.lod1.glb",
@@ -713,15 +713,15 @@
       "path": "models/lod/retreat-village.lod1.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "e3afc42aea30e8fe2b3dcff43fea5b42e6b962de2ca5f83ed0d305b440aef444",
+      "sha256": "2b196f6a6b2eae5fca78ef7623c772d06d762df2f0185287cc8bc5b1c6037ec2",
       "bytes": 28996
     },
     {
       "path": "models/lod/retreat-village.lod2.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "37b1ace6a99bee80a851b095cbce2a52747d56d9804534d1e14e7a25c6902b8a",
-      "bytes": 28996
+      "sha256": "0d26e31ade947bb180a416a2dd3e6b9b0dcdc80a49ce76302b48e4eb4e1814e8",
+      "bytes": 28456
     },
     {
       "path": "models/lod/site-grounds.lod1.glb",
@@ -734,8 +734,8 @@
       "path": "models/lod/site-grounds.lod2.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "c33de9b1e8b0e02795862300b0df41e3bc2cd5e9e483fe14a248410a62bf898d",
-      "bytes": 131656
+      "sha256": "a649a42a45aa5ff9df431be577a38d184410c74b2bc670ce978b4894cd66f7b6",
+      "bytes": 60008
     },
     {
       "path": "models/lod/the-barn.lod1.glb",
@@ -762,21 +762,21 @@
       "path": "models/lod/tropical-dome.lod2.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "f42ef7c75be691b8623f557ca9615cc7c3a2cd89c434e6a09bebf07985dd76b6",
-      "bytes": 11176
+      "sha256": "8e2ede7730f4df555206822a30534603df539071d5d8395692b075eec4e2d0d2",
+      "bytes": 10780
     },
     {
       "path": "models/lod/wellness-facilities.lod1.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "50b7e408d6b6ab8842eddf56d075644dd9178cf8fc255759854e203e253561a3",
+      "sha256": "0ee50d1e25b671b351e14d874e4e7c547abe3bf863785af0539fa591b21a57fb",
       "bytes": 12568
     },
     {
       "path": "models/lod/wellness-facilities.lod2.glb",
       "licence": "own-work",
       "source": "own-work",
-      "sha256": "50b7e408d6b6ab8842eddf56d075644dd9178cf8fc255759854e203e253561a3",
+      "sha256": "0ee50d1e25b671b351e14d874e4e7c547abe3bf863785af0539fa591b21a57fb",
       "bytes": 12568
     },
     {
@@ -813,6 +813,118 @@
       "source": "own-work",
       "sha256": "a9b7d5d3d7784681a0972ea18704b473fa1ec53f9194ebec68a9ad694385c229",
       "bytes": 14208
+    },
+    {
+      "path": "models/trees/oak-arch-0.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "2a5899e1c3ea26277b998674aba5f828cdfba01c1c9b2215f5e3183303aee20c",
+      "bytes": 10744
+    },
+    {
+      "path": "models/trees/oak-arch-1.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "70f80329837e09bb32f026a9b148acfe0cffac6c976b3786c817e20a06ffe08c",
+      "bytes": 10748
+    },
+    {
+      "path": "models/trees/oak-arch-10.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "3c604e594a6443a66da9a8c0207ece7468e4218158619c37b91a3b22b63dd6ef",
+      "bytes": 10744
+    },
+    {
+      "path": "models/trees/oak-arch-11.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "06806952f7a4356d8e21ddd8fdcc26975af2c3a80c5a3388eccae81471555d84",
+      "bytes": 10748
+    },
+    {
+      "path": "models/trees/oak-arch-12.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "4b6a0db56e0f34f92a47e11cd792d0d1b0c7eb2e7872a7d05aea086e47b905c2",
+      "bytes": 10744
+    },
+    {
+      "path": "models/trees/oak-arch-13.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "65f6743b04ca15de6d89ba8fd9da2cb80e2ca3270faf9f4edf3cbc4252b9c1c3",
+      "bytes": 10736
+    },
+    {
+      "path": "models/trees/oak-arch-14.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "cb962715ebffe86ae6a836d73fb3b080705d7bd7792811a4ace5880238df9c33",
+      "bytes": 10748
+    },
+    {
+      "path": "models/trees/oak-arch-15.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "f0ff7d5249265f7824544d31e02acaaee283536fdd3d448212d9bb5c805b5cef",
+      "bytes": 10744
+    },
+    {
+      "path": "models/trees/oak-arch-2.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "49b807273178fa9ad7e327a319a8762eebf72e80a9fa4db6e15dabb0ec920b35",
+      "bytes": 10744
+    },
+    {
+      "path": "models/trees/oak-arch-3.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "3f43d5b419a95726a1a02607977e9c6bc30ccf3887bd7477d59efa52d499935c",
+      "bytes": 10744
+    },
+    {
+      "path": "models/trees/oak-arch-4.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "a47aca266c353c3e03c1a59a7186166c850b36744fa147a0edf06dd9ac74a8e1",
+      "bytes": 10744
+    },
+    {
+      "path": "models/trees/oak-arch-5.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "f7776cfde9b4cf8d7b9482d5c5ff2e84aa80b5d70be1b86513ee908d076c8976",
+      "bytes": 10736
+    },
+    {
+      "path": "models/trees/oak-arch-6.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "bc46ec4e10b49b00f31832333f9f5c3d62b3808a80547c79a3de977f83c15fd5",
+      "bytes": 10740
+    },
+    {
+      "path": "models/trees/oak-arch-7.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "461e57a79d5f16577659f5b33f1149831953ecf71412c560438004edc66c381c",
+      "bytes": 10744
+    },
+    {
+      "path": "models/trees/oak-arch-8.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "850a23ca167ef264e2650120e76761efbd65dc31e5e771be0a9d7e3eb63eec65",
+      "bytes": 10748
+    },
+    {
+      "path": "models/trees/oak-arch-9.glb",
+      "licence": "own-work",
+      "source": "own-work",
+      "sha256": "c6bb48a5bf198f1d4757443711cff9f8d40a314fec8469d306102b07d7f564da",
+      "bytes": 10740
     },
     {
       "path": "models/tropical-dome.glb",

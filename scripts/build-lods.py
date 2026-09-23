@@ -55,17 +55,17 @@ def triangle_count(glb: Path) -> int:
     return tris
 
 
-def build_lod(src: Path, dst: Path, ratio: float):
+def build_lod(src: Path, dst: Path, ratio: float, *, lock_silhouette: bool = True):
     dst.parent.mkdir(parents=True, exist_ok=True)
-    # -si N keeps roughly N fraction of triangles; -noq disables quantization extras
     cmd = [
         str(GLTFPACK),
         '-i', str(src),
         '-o', str(dst),
         '-si', str(ratio),
-        '-slb',  # lock borders / silhouettes
         '-se', '0.02',
     ]
+    if lock_silhouette:
+        cmd.append('-slb')
     print(' ', ' '.join(cmd))
     r = subprocess.run(cmd, cwd=str(ROOT), capture_output=True, text=True)
     if r.returncode != 0:
@@ -94,15 +94,21 @@ def main():
         lod1 = MODELS / 'lod' / f'{mid}.lod1.glb'
         lod2 = MODELS / 'lod' / f'{mid}.lod2.glb'
         print(f'{mid}: full {full_tris} tris')
-        build_lod(src, lod1, 0.25)
-        build_lod(src, lod2, 0.05)
+        build_lod(src, lod1, 0.35, lock_silhouette=True)
+        build_lod(src, lod2, 0.12, lock_silhouette=False)
         t1, t2 = triangle_count(lod1), triangle_count(lod2)
-        # triangle budget: allow 40% slack on ratio (simplify is approximate)
-        if full_tris > 20:
-            if t1 > full_tris * 0.40:
-                print(f'  WARN lod1 tris {t1} > 40% of {full_tris}')
-            if t2 > full_tris * 0.12:
-                print(f'  WARN lod2 tris {t2} > 12% of {full_tris}')
+        # C25: each level must be strictly smaller; relax silhouette lock / ratio if not
+        if t1 >= full_tris and full_tris > 0:
+            build_lod(src, lod1, 0.5, lock_silhouette=False)
+            t1 = triangle_count(lod1)
+        if t2 >= t1:
+            for ratio in (0.08, 0.04, 0.02):
+                build_lod(src, lod2, ratio, lock_silhouette=False)
+                t2 = triangle_count(lod2)
+                if t2 < t1:
+                    break
+        if not (t2 < t1 < full_tris or full_tris <= 24):
+            print(f'  WARN not strictly decreasing: full={full_tris} lod1={t1} lod2={t2}')
         m['lods'] = [
             {
                 'url': f'{BASE_URL}/{mid}.glb',
@@ -115,15 +121,17 @@ def main():
                 'triangles': t1,
                 'bytes': lod1.stat().st_size,
                 'max_distance_m': LOD_1_M,
+                'ratio': round(t1 / full_tris, 4) if full_tris else None,
             },
             {
                 'url': f'{BASE_URL}/lod/{mid}.lod2.glb',
                 'triangles': t2,
                 'bytes': lod2.stat().st_size,
                 'max_distance_m': None,
+                'ratio': round(t2 / full_tris, 4) if full_tris else None,
             },
         ]
-        print(f'  lod1 {t1} tris {lod1.stat().st_size} B; lod2 {t2} tris {lod2.stat().st_size} B')
+        print(f'  lod1 {t1} tris ({t1 / max(full_tris, 1):.2f}); lod2 {t2} tris ({t2 / max(full_tris, 1):.2f})')
 
     lod_bytes = 0
     for m in man['models']:

@@ -1,0 +1,789 @@
+{
+  "authority": "derived",
+  "evidence": "modelled",
+  "generator": "scripts/build-budget.py",
+  "bands": {
+    "near": {
+      "distance_m": [
+        0,
+        60
+      ],
+      "lod": "full"
+    },
+    "mid": {
+      "distance_m": [
+        60,
+        250
+      ],
+      "lod": "lod1"
+    },
+    "far": {
+      "distance_m": [
+        250,
+        null
+      ],
+      "lod": "lod2"
+    }
+  },
+  "layers": [
+    {
+      "id": "terrain",
+      "kind": "image",
+      "path": "analysis/display/terrain.png",
+      "bytes": 63883,
+      "group": "terrain",
+      "appear_band": "near",
+      "disappear_band": "far"
+    },
+    {
+      "id": "trees_crowns",
+      "kind": "geojson",
+      "path": "trees-crowns.geojson",
+      "bytes": 7227526,
+      "group": "habitat",
+      "appear_band": "near",
+      "disappear_band": "far",
+      "feature_count": 3663
+    },
+    {
+      "id": "trees_trunks",
+      "kind": "geojson",
+      "path": "trees-trunks.geojson",
+      "bytes": 1005111,
+      "group": "habitat",
+      "appear_band": "near",
+      "disappear_band": "far",
+      "feature_count": 3663
+    },
+    {
+      "id": "landforms",
+      "kind": "image",
+      "path": "analysis/display/landforms.png",
+      "bytes": 16991,
+      "group": "terrain",
+      "appear_band": "near",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 14487
+    },
+    {
+      "id": "oak_leaf_knoll",
+      "kind": "geojson",
+      "path": "analysis/oak-leaf-knoll.geojson",
+      "bytes": 662535,
+      "group": "terrain",
+      "appear_band": "near",
+      "disappear_band": "far",
+      "feature_count": 103
+    },
+    {
+      "id": "corridors",
+      "kind": "image",
+      "path": "analysis/display/corridors.png",
+      "bytes": 34839,
+      "group": "habitat",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 92819
+    },
+    {
+      "id": "wind_sea_breeze",
+      "kind": "image",
+      "path": "analysis/display/wind_sea_breeze.png",
+      "bytes": 14929,
+      "group": "habitat",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 10799
+    },
+    {
+      "id": "wind_santa_ana",
+      "kind": "image",
+      "path": "analysis/display/wind_santa_ana.png",
+      "bytes": 25244,
+      "group": "habitat",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 19140
+    },
+    {
+      "id": "cold_air",
+      "kind": "image",
+      "path": "analysis/display/cold_air.png",
+      "bytes": 59068,
+      "group": "water",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 67893
+    },
+    {
+      "id": "flow_accum",
+      "kind": "image",
+      "path": "analysis/display/flow_accum.png",
+      "bytes": 27531,
+      "group": "water",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 70104
+    },
+    {
+      "id": "horizon",
+      "kind": "geojson",
+      "path": "horizon.geojson",
+      "bytes": 277952,
+      "group": "sun",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 3
+    },
+    {
+      "id": "twi",
+      "kind": "image",
+      "path": "analysis/display/twi.png",
+      "bytes": 168052,
+      "group": "water",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 150281
+    },
+    {
+      "id": "stormwater_depth",
+      "kind": "image",
+      "path": "analysis/display/stormwater_depth.png",
+      "bytes": 98982,
+      "group": "water",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 97143
+    },
+    {
+      "id": "thermal_belt",
+      "kind": "geojson",
+      "path": "thermal-belt.geojson",
+      "bytes": 151683,
+      "group": "habitat",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 1
+    },
+    {
+      "id": "sun_hours_dec",
+      "kind": "image",
+      "path": "analysis/display/sun_hours_dec.png",
+      "bytes": 5347,
+      "group": "sun",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 5295
+    },
+    {
+      "id": "sun_hours_annual",
+      "kind": "image",
+      "path": "analysis/display/sun_hours_annual.png",
+      "bytes": 53874,
+      "group": "sun",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 88827
+    },
+    {
+      "id": "sun_hours_jun",
+      "kind": "image",
+      "path": "analysis/display/sun_hours_jun.png",
+      "bytes": 25942,
+      "group": "sun",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 31508
+    },
+    {
+      "id": "drainage",
+      "kind": "geojson",
+      "path": "drainage.geojson",
+      "bytes": 6627,
+      "group": "water",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 7
+    },
+    {
+      "id": "keylines",
+      "kind": "geojson",
+      "path": "keylines.geojson",
+      "bytes": 112566,
+      "group": "water",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 83
+    },
+    {
+      "id": "roofs",
+      "kind": "geojson",
+      "path": "roofs.geojson",
+      "bytes": 2889,
+      "group": "surfaces",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 3
+    },
+    {
+      "id": "gathers",
+      "kind": "image",
+      "path": "analysis/display/buildable.png",
+      "bytes": 21103,
+      "group": "surfaces",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 16452
+    },
+    {
+      "id": "buildable",
+      "kind": "image",
+      "path": "analysis/display/buildable.png",
+      "bytes": 21103,
+      "group": "surfaces",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 16452
+    },
+    {
+      "id": "gathering",
+      "kind": "image",
+      "path": "analysis/display/gathering.png",
+      "bytes": 37796,
+      "group": "surfaces",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "cell_count": 87204,
+      "data_bytes": 32171
+    },
+    {
+      "id": "buildable_zones",
+      "kind": "geojson",
+      "path": "buildable.geojson",
+      "bytes": 134121,
+      "group": "surfaces",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 3
+    },
+    {
+      "id": "gathering_zones",
+      "kind": "geojson",
+      "path": "gathering.geojson",
+      "bytes": 331770,
+      "group": "surfaces",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 18
+    },
+    {
+      "id": "gathers_zones",
+      "kind": "geojson",
+      "path": "gathers.geojson",
+      "bytes": 134151,
+      "group": "surfaces",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 3
+    },
+    {
+      "id": "defensible_space",
+      "kind": "geojson",
+      "path": "defensible-space.geojson",
+      "bytes": 645814,
+      "group": "defensible",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 48
+    },
+    {
+      "id": "cultivated_ground",
+      "kind": "geojson",
+      "path": "cultivated-ground.geojson",
+      "bytes": 5620,
+      "group": "habitat",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 8
+    },
+    {
+      "id": "capture_plan",
+      "kind": "geojson",
+      "path": "capture-plan.geojson",
+      "bytes": 151278,
+      "group": "proposed",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 160
+    },
+    {
+      "id": "water_harvest",
+      "kind": "geojson",
+      "path": "water-harvest.geojson",
+      "bytes": 83796,
+      "group": "proposed",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 17
+    },
+    {
+      "id": "vision",
+      "kind": "geojson",
+      "path": "vision.geojson",
+      "bytes": 8652,
+      "group": "proposed",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 18
+    },
+    {
+      "id": "edits",
+      "kind": "geojson",
+      "path": "edits.geojson",
+      "bytes": 3448,
+      "group": "proposed",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 4
+    },
+    {
+      "id": "survey",
+      "kind": "geojson",
+      "path": "survey.geojson",
+      "bytes": 5948,
+      "group": "terrain",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 18
+    },
+    {
+      "id": "trees_instances",
+      "kind": "instances",
+      "path": "trees-instances.json",
+      "bytes": 1399972,
+      "feature_count": 3663,
+      "triangle_count": 2432,
+      "appear_band": "near",
+      "disappear_band": "far"
+    }
+  ],
+  "models_lod": [
+    {
+      "id": "oak-leaf-massing",
+      "full_tris": 5610,
+      "full_bytes": 331744,
+      "levels": {
+        "full": {
+          "triangles": 5610,
+          "bytes": 331744
+        },
+        "lod1": {
+          "triangles": 4516,
+          "bytes": 125260,
+          "ratio": 0.805
+        },
+        "lod2": {
+          "triangles": 4516,
+          "bytes": 125260,
+          "ratio": 0.805
+        }
+      }
+    },
+    {
+      "id": "retreat-village",
+      "full_tris": 1220,
+      "full_bytes": 85432,
+      "levels": {
+        "full": {
+          "triangles": 1220,
+          "bytes": 85432
+        },
+        "lod1": {
+          "triangles": 928,
+          "bytes": 28996,
+          "ratio": 0.761
+        },
+        "lod2": {
+          "triangles": 910,
+          "bytes": 28456,
+          "ratio": 0.746
+        }
+      }
+    },
+    {
+      "id": "glamping-creek",
+      "full_tris": 211,
+      "full_bytes": 26732,
+      "levels": {
+        "full": {
+          "triangles": 211,
+          "bytes": 26732
+        },
+        "lod1": {
+          "triangles": 187,
+          "bytes": 7852,
+          "ratio": 0.886
+        },
+        "lod2": {
+          "triangles": 187,
+          "bytes": 7852,
+          "ratio": 0.886
+        }
+      }
+    },
+    {
+      "id": "the-barn",
+      "full_tris": 164,
+      "full_bytes": 14208,
+      "levels": {
+        "full": {
+          "triangles": 164,
+          "bytes": 14208
+        },
+        "lod1": {
+          "triangles": 124,
+          "bytes": 6244,
+          "ratio": 0.756
+        },
+        "lod2": {
+          "triangles": 124,
+          "bytes": 6244,
+          "ratio": 0.756
+        }
+      }
+    },
+    {
+      "id": "agricultural-hub",
+      "full_tris": 260,
+      "full_bytes": 20920,
+      "levels": {
+        "full": {
+          "triangles": 260,
+          "bytes": 20920
+        },
+        "lod1": {
+          "triangles": 196,
+          "bytes": 8992,
+          "ratio": 0.754
+        },
+        "lod2": {
+          "triangles": 196,
+          "bytes": 8992,
+          "ratio": 0.754
+        }
+      }
+    },
+    {
+      "id": "tropical-dome",
+      "full_tris": 364,
+      "full_bytes": 26888,
+      "levels": {
+        "full": {
+          "triangles": 364,
+          "bytes": 26888
+        },
+        "lod1": {
+          "triangles": 312,
+          "bytes": 11176,
+          "ratio": 0.857
+        },
+        "lod2": {
+          "triangles": 290,
+          "bytes": 10780,
+          "ratio": 0.797
+        }
+      }
+    },
+    {
+      "id": "site-grounds",
+      "full_tris": 5952,
+      "full_bytes": 412028,
+      "levels": {
+        "full": {
+          "triangles": 5952,
+          "bytes": 412028
+        },
+        "lod1": {
+          "triangles": 4464,
+          "bytes": 131656,
+          "ratio": 0.75
+        },
+        "lod2": {
+          "triangles": 2076,
+          "bytes": 60008,
+          "ratio": 0.349
+        }
+      }
+    },
+    {
+      "id": "creek",
+      "full_tris": 2088,
+      "full_bytes": 137016,
+      "levels": {
+        "full": {
+          "triangles": 2088,
+          "bytes": 137016
+        },
+        "lod1": {
+          "triangles": 1528,
+          "bytes": 45348,
+          "ratio": 0.732
+        },
+        "lod2": {
+          "triangles": 1411,
+          "bytes": 41876,
+          "ratio": 0.676
+        }
+      }
+    },
+    {
+      "id": "community-hub",
+      "full_tris": 362,
+      "full_bytes": 28516,
+      "levels": {
+        "full": {
+          "triangles": 362,
+          "bytes": 28516
+        },
+        "lod1": {
+          "triangles": 274,
+          "bytes": 10704,
+          "ratio": 0.757
+        },
+        "lod2": {
+          "triangles": 274,
+          "bytes": 10704,
+          "ratio": 0.757
+        }
+      }
+    },
+    {
+      "id": "events-gatherings-hub",
+      "full_tris": 352,
+      "full_bytes": 27032,
+      "levels": {
+        "full": {
+          "triangles": 352,
+          "bytes": 27032
+        },
+        "lod1": {
+          "triangles": 314,
+          "bytes": 12480,
+          "ratio": 0.892
+        },
+        "lod2": {
+          "triangles": 212,
+          "bytes": 9084,
+          "ratio": 0.602
+        }
+      }
+    },
+    {
+      "id": "wellness-facilities",
+      "full_tris": 474,
+      "full_bytes": 36084,
+      "levels": {
+        "full": {
+          "triangles": 474,
+          "bytes": 36084
+        },
+        "lod1": {
+          "triangles": 360,
+          "bytes": 12568,
+          "ratio": 0.759
+        },
+        "lod2": {
+          "triangles": 360,
+          "bytes": 12568,
+          "ratio": 0.759
+        }
+      }
+    },
+    {
+      "id": "livestock-dairy",
+      "full_tris": 276,
+      "full_bytes": 22064,
+      "levels": {
+        "full": {
+          "triangles": 276,
+          "bytes": 22064
+        },
+        "lod1": {
+          "triangles": 208,
+          "bytes": 9016,
+          "ratio": 0.754
+        },
+        "lod2": {
+          "triangles": 208,
+          "bytes": 9016,
+          "ratio": 0.754
+        }
+      }
+    },
+    {
+      "id": "mushroom-cultivation",
+      "full_tris": 178,
+      "full_bytes": 14884,
+      "levels": {
+        "full": {
+          "triangles": 178,
+          "bytes": 14884
+        },
+        "lod1": {
+          "triangles": 134,
+          "bytes": 6532,
+          "ratio": 0.753
+        },
+        "lod2": {
+          "triangles": 134,
+          "bytes": 6532,
+          "ratio": 0.753
+        }
+      }
+    },
+    {
+      "id": "beekeeping-program",
+      "full_tris": 146,
+      "full_bytes": 12900,
+      "levels": {
+        "full": {
+          "triangles": 146,
+          "bytes": 12900
+        },
+        "lod1": {
+          "triangles": 112,
+          "bytes": 5848,
+          "ratio": 0.767
+        },
+        "lod2": {
+          "triangles": 112,
+          "bytes": 5848,
+          "ratio": 0.767
+        }
+      }
+    },
+    {
+      "id": "farmstead-produce-stand",
+      "full_tris": 178,
+      "full_bytes": 15364,
+      "levels": {
+        "full": {
+          "triangles": 178,
+          "bytes": 15364
+        },
+        "lod1": {
+          "triangles": 134,
+          "bytes": 6708,
+          "ratio": 0.753
+        },
+        "lod2": {
+          "triangles": 134,
+          "bytes": 6708,
+          "ratio": 0.753
+        }
+      }
+    },
+    {
+      "id": "infrastructure",
+      "full_tris": 616,
+      "full_bytes": 46192,
+      "levels": {
+        "full": {
+          "triangles": 616,
+          "bytes": 46192
+        },
+        "lod1": {
+          "triangles": 504,
+          "bytes": 18720,
+          "ratio": 0.818
+        },
+        "lod2": {
+          "triangles": 388,
+          "bytes": 15052,
+          "ratio": 0.63
+        }
+      }
+    },
+    {
+      "id": "ceremonial-infrastructure",
+      "full_tris": 620,
+      "full_bytes": 42208,
+      "levels": {
+        "full": {
+          "triangles": 620,
+          "bytes": 42208
+        },
+        "lod1": {
+          "triangles": 506,
+          "bytes": 15656,
+          "ratio": 0.816
+        },
+        "lod2": {
+          "triangles": 492,
+          "bytes": 15404,
+          "ratio": 0.794
+        }
+      }
+    }
+  ],
+  "lod_totals": {
+    "full": {
+      "triangles": 19071,
+      "bytes": 1300212
+    },
+    "lod1": {
+      "triangles": 14801,
+      "bytes": 463756
+    },
+    "lod2": {
+      "triangles": 12024,
+      "bytes": 380384
+    }
+  },
+  "scene_by_band": {
+    "near": {
+      "distance_m": [
+        0,
+        60
+      ],
+      "triangles": 19071,
+      "bytes_models": 1300212,
+      "bytes_layers": 13026143,
+      "bytes_total": 14326355
+    },
+    "mid": {
+      "distance_m": [
+        60,
+        250
+      ],
+      "triangles": 14801,
+      "bytes_models": 463756,
+      "bytes_layers": 13026143,
+      "bytes_total": 13489899
+    },
+    "far": {
+      "distance_m": [
+        250,
+        null
+      ],
+      "triangles": 12024,
+      "bytes_models": 380384,
+      "bytes_layers": 13026143,
+      "bytes_total": 13406527
+    }
+  },
+  "layer_bytes_sum": 13026143
+}
