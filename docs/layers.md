@@ -5,6 +5,17 @@ Grid rasters are plain `ncols × nrows` 16-bit greyscale PNGs (`row_order: north
 `nodata: 65535`). Decode with the sidecar formula:
 `value = value_min + (pixel / 65534) * (value_max - value_min)`.
 
+**Array vs image row order (do not conflate them).** The `.npz` array and the sidecar
+field `axes: "row = north ascending"` put **row 0 at the south**:
+`i = round((n − origin_north_m) / cell_m)`, so larger `i` is further north.
+The drawable PNG flips that for image conventions: `row_order: north_to_south` means
+**PNG row 0 is the north edge**, so `png_row = nrows − 1 − i`. Worked example — oak proof
+cell under two crowns: pack EN ≈ (260.82, 267.76) → array `(i, j) = (148, 141)` →
+PNG pixel `(png_row, j) = (nrows − 1 − 148, 141)`. Same cell, two index systems.
+
+Drawable atlas layers (RGBA display PNGs + `pack-layers.json`) are published by
+`scripts/pack-layers.py` — see that manifest for client draw order, ramps and legends.
+
 | layer | what | units | evidence | how to read |
 |---|---|---|---|---|
 | `twi` | topographic wetness index | dimensionless | modelled | grid raster + `.npz` |
@@ -32,4 +43,5 @@ Grid rasters are plain `ncols × nrows` 16-bit greyscale PNGs (`row_order: north
 | `sky_events` | sun/moon vs horizon; cross-quarters traditional | azimuth / local time | measured / traditional | JSON — stays its own layer |
 
 Sidecar JSON for every grid also records `bounds_lnglat` `[west, south, east, north]`,
-`encoding`, `value_min`, `value_max`, `nodata`, and `decode`.
+`encoding`, `value_min`, `value_max`, `nodata`, and `decode`. Display PNGs (RGBA) and
+ramp stops live under `analysis/display/` and are listed in `pack-layers.json`.

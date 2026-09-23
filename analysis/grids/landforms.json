@@ -38,5 +38,72 @@
     457.3234027405325,
     377.25574840024217
   ],
-  "raster": "analysis/grids/landforms.png"
+  "raster": "analysis/grids/landforms.png",
+  "categorical": true,
+  "display_raster": "analysis/display/landforms.png",
+  "ramp": {
+    "name": "tab10",
+    "stops": [
+      {
+        "value": 1.0,
+        "rgba": [
+          31,
+          119,
+          180,
+          255
+        ],
+        "label": "Ridge"
+      },
+      {
+        "value": 2.0,
+        "rgba": [
+          44,
+          160,
+          44,
+          255
+        ],
+        "label": "Upper slope"
+      },
+      {
+        "value": 3.0,
+        "rgba": [
+          148,
+          103,
+          189,
+          255
+        ],
+        "label": "Mid slope"
+      },
+      {
+        "value": 4.0,
+        "rgba": [
+          227,
+          119,
+          194,
+          255
+        ],
+        "label": "Flat"
+      },
+      {
+        "value": 5.0,
+        "rgba": [
+          188,
+          189,
+          34,
+          255
+        ],
+        "label": "Lower slope"
+      },
+      {
+        "value": 6.0,
+        "rgba": [
+          23,
+          190,
+          207,
+          255
+        ],
+        "label": "Valley"
+      }
+    ]
+  }
 }

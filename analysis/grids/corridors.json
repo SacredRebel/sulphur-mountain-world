@@ -33,5 +33,72 @@
     457.3234027405325,
     377.25574840024217
   ],
-  "raster": "analysis/grids/corridors.png"
+  "raster": "analysis/grids/corridors.png",
+  "categorical": false,
+  "display_raster": "analysis/display/corridors.png",
+  "ramp": {
+    "name": "YlGn",
+    "stops": [
+      {
+        "value": 0.0,
+        "rgba": [
+          255,
+          255,
+          229,
+          255
+        ],
+        "label": "0"
+      },
+      {
+        "value": 0.089413,
+        "rgba": [
+          229,
+          245,
+          172,
+          255
+        ],
+        "label": "0.0894"
+      },
+      {
+        "value": 0.178826,
+        "rgba": [
+          162,
+          216,
+          138,
+          255
+        ],
+        "label": "0.179"
+      },
+      {
+        "value": 0.268238,
+        "rgba": [
+          76,
+          176,
+          99,
+          255
+        ],
+        "label": "0.268"
+      },
+      {
+        "value": 0.357651,
+        "rgba": [
+          21,
+          121,
+          62,
+          255
+        ],
+        "label": "0.358"
+      },
+      {
+        "value": 0.447064,
+        "rgba": [
+          0,
+          69,
+          41,
+          255
+        ],
+        "label": "0.447"
+      }
+    ]
+  }
 }

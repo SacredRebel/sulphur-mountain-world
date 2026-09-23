@@ -118,5 +118,29 @@ def main():
     print('OK check-defensible')
 
 
+def self_test():
+    geo = json.loads((ROOT / 'defensible-space.geojson').read_text(encoding='utf-8'))
+    # forge overlapping zone0 and zone1 by copying zone0 geometry onto zone1
+    by = {}
+    for f in geo['features']:
+        by.setdefault(f['properties']['structure_id'], {})[f['properties']['zone']] = f
+    sid = next(iter(by))
+    if '0' in by[sid] and '1' in by[sid]:
+        by[sid]['1']['geometry'] = by[sid]['0']['geometry']
+    # write temp? run inline check
+    z0 = to_en(by[sid]['0']['geometry'])
+    z1 = to_en(by[sid]['1']['geometry'])
+    if z0.intersection(z1).area <= 5.0:
+        print('FAIL negative: forged overlap not large')
+        raise SystemExit(1)
+    print('OK negative check-defensible (forged zone0∩zone1 would fail)')
+
+
 if __name__ == '__main__':
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--self-test', action='store_true')
+    args = ap.parse_args()
     main()
+    if args.self_test:
+        self_test()

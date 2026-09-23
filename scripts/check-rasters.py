@@ -2,9 +2,11 @@
 C19.1 — check drawable grid rasters.
 
     python scripts/check-rasters.py
+    python scripts/check-rasters.py --self-test
 """
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -33,7 +35,7 @@ def decode(pixel, meta):
     return vmin + (float(pixel) / 65534.0) * (vmax - vmin)
 
 
-def main():
+def run_checks() -> list[str]:
     layers = load_pack_grids()
     if not layers:
         raise SystemExit('no kind=grid layers in pack.json')
@@ -64,27 +66,22 @@ def main():
             errs.append(f'{name}: row_order must be north_to_south')
 
         data = np.asarray(np.load(npz_path)['data'], dtype=np.float64)
-        # PNG is north_to_south; npz is south→north (north ascending)
         png = np.array(im)
         if png.ndim != 2:
             errs.append(f'{name}: png not greyscale')
             continue
-        # three non-zero finite cells (fixed probe cells can all be zero / excluded)
         finite = np.isfinite(data)
         nonzero = finite & (np.abs(data) > 1e-12)
-        # prefer cells away from edges
         ys, xs = np.where(nonzero)
         if ys.size < 3:
             ys, xs = np.where(finite)
         if ys.size < 3:
             errs.append(f'{name}: fewer than 3 finite cells to probe')
             continue
-        # spread samples across the value range of non-zero cells
         vals = data[ys, xs]
         order = np.argsort(vals)
         picks = [order[0], order[len(order) // 2], order[-1]]
         samples = [(int(ys[k]), int(xs[k])) for k in picks]
-        # de-dupe if range collapses
         seen = set()
         uniq = []
         for ij in samples:
@@ -104,7 +101,6 @@ def main():
         print(f'--- {name} ---')
         n_nonzero_ok = 0
         for i, j in samples:
-            # png row for north_to_south
             pr = nrows - 1 - i
             pix = int(png[pr, j])
             got = decode(pix, meta)
@@ -126,7 +122,6 @@ def main():
         if n_nonzero_ok < 1:
             errs.append(f'{name}: all probe cells were zero — pick non-zero cells')
 
-        # bounds round-trip
         west, south, east, north = meta['bounds_lnglat']
         mx = float(meta['metres_per_deg_lng'])
         my = float(meta['metres_per_deg_lat'])
@@ -144,9 +139,8 @@ def main():
             if abs(a - b) > 0.05:
                 errs.append(f'{name}: bounds {label} off by {abs(a-b):.3f} m')
 
-    # every pack layer needs kind/authority/evidence/units
     pack = json.loads((ROOT / 'pack.json').read_text(encoding='utf-8'))
-    skip = {'imagery', 'terrain', 'models', 'materials'}  # structural
+    skip = {'imagery', 'terrain', 'models', 'materials'}
     for name, layer in pack['layers'].items():
         if not isinstance(layer, dict):
             continue
@@ -154,16 +148,52 @@ def main():
             continue
         for key in ('kind', 'authority', 'evidence', 'units'):
             if key not in layer:
-                # evidence/units optional for older survey/county until we add them
                 if key in ('kind', 'authority') or layer.get('kind') in ('grid', 'vector', 'table'):
                     if key not in layer:
                         errs.append(f'pack.layers.{name}: missing {key}')
+    return errs
 
+
+def self_test():
+    layers = load_pack_grids()
+    name, layer = next(iter(layers.items()))
+    meta = json.loads((ROOT / layer['meta']).read_text(encoding='utf-8'))
+    data = np.asarray(np.load(ROOT / layer['file'])['data'], dtype=np.float64)
+    png = np.array(Image.open(ROOT / layer['raster']))
+    ys, xs = np.where(np.isfinite(data) & (np.abs(data) > 1e-12))
+    i, j = int(ys[len(ys) // 2]), int(xs[len(xs) // 2])
+    pr = int(meta['nrows']) - 1 - i
+    pix = int(png[pr, j])
+    broken = dict(meta)
+    broken['value_min'], broken['value_max'] = meta['value_max'], meta['value_min']
+    got = decode(pix, broken)
+    want = float(data[i, j])
+    span = abs(float(meta['value_max']) - float(meta['value_min'])) or 1.0
+    if abs(got - want) / span <= 0.001:
+        print('FAIL negative: forged decode still matched')
+        raise SystemExit(1)
+    print('OK negative check-rasters (forged value_min/max diverges)')
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--self-test', action='store_true')
+    args = ap.parse_args()
+    if args.self_test:
+        errs = run_checks()
+        if errs:
+            for e in errs:
+                print('FAIL', e)
+            raise SystemExit(1)
+        print(f'OK check-rasters: {len(load_pack_grids())} grid layers')
+        self_test()
+        return
+    errs = run_checks()
     if errs:
         for e in errs:
             print('FAIL', e)
         raise SystemExit(1)
-    print(f'OK check-rasters: {len(layers)} grid layers')
+    print(f'OK check-rasters: {len(load_pack_grids())} grid layers')
 
 
 if __name__ == '__main__':

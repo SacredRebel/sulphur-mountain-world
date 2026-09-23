@@ -35,5 +35,72 @@
     457.3234027405325,
     377.25574840024217
   ],
-  "raster": "analysis/grids/wind_sea_breeze.png"
+  "raster": "analysis/grids/wind_sea_breeze.png",
+  "categorical": false,
+  "display_raster": "analysis/display/wind_sea_breeze.png",
+  "ramp": {
+    "name": "Purples",
+    "stops": [
+      {
+        "value": 0.0,
+        "rgba": [
+          252,
+          251,
+          253,
+          255
+        ],
+        "label": "0"
+      },
+      {
+        "value": 0.2,
+        "rgba": [
+          226,
+          226,
+          239,
+          255
+        ],
+        "label": "0.2"
+      },
+      {
+        "value": 0.4,
+        "rgba": [
+          182,
+          182,
+          216,
+          255
+        ],
+        "label": "0.4"
+      },
+      {
+        "value": 0.6,
+        "rgba": [
+          134,
+          131,
+          189,
+          255
+        ],
+        "label": "0.6"
+      },
+      {
+        "value": 0.8,
+        "rgba": [
+          97,
+          64,
+          155,
+          255
+        ],
+        "label": "0.8"
+      },
+      {
+        "value": 1.0,
+        "rgba": [
+          63,
+          0,
+          125,
+          255
+        ],
+        "label": "1.00"
+      }
+    ]
+  }
 }

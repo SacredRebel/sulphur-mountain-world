@@ -33,5 +33,72 @@
     457.3234027405325,
     377.25574840024217
   ],
-  "raster": "analysis/grids/sun_hours_annual.png"
+  "raster": "analysis/grids/sun_hours_annual.png",
+  "categorical": false,
+  "display_raster": "analysis/display/sun_hours_annual.png",
+  "ramp": {
+    "name": "YlOrRd",
+    "stops": [
+      {
+        "value": 114.956757,
+        "rgba": [
+          255,
+          255,
+          204,
+          255
+        ],
+        "label": "115.0"
+      },
+      {
+        "value": 119.065405,
+        "rgba": [
+          254,
+          225,
+          135,
+          255
+        ],
+        "label": "119.1"
+      },
+      {
+        "value": 123.174054,
+        "rgba": [
+          254,
+          171,
+          73,
+          255
+        ],
+        "label": "123.2"
+      },
+      {
+        "value": 127.282703,
+        "rgba": [
+          252,
+          91,
+          46,
+          255
+        ],
+        "label": "127.3"
+      },
+      {
+        "value": 131.391351,
+        "rgba": [
+          212,
+          16,
+          32,
+          255
+        ],
+        "label": "131.4"
+      },
+      {
+        "value": 135.5,
+        "rgba": [
+          128,
+          0,
+          38,
+          255
+        ],
+        "label": "135.5"
+      }
+    ]
+  }
 }

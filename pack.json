@@ -625,5 +625,14 @@
     "the county ring is kept to show the drift and is never used for siting",
     "imagery and terrain are streamed by URL from their publishers and are never bulk-copied into this repository",
     "nothing here names a person: no owner names, no residents, no purchased data"
-  ]
+  ],
+  "pack_layers": {
+    "file": "pack-layers.json",
+    "kind": "table",
+    "authority": "derived",
+    "evidence": "modelled",
+    "units": "overlay registry",
+    "generator": "scripts/pack-layers.py",
+    "what": "RGBA display rasters and drawable vector layers for the map UI"
+  }
 }
