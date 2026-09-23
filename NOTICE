@@ -12,6 +12,11 @@ astronomy-engine
   Copyright (c) Don Cross / cosinekitty
   Licence: MIT — https://github.com/cosinekitty/astronomy
 
+mourner/suncalc (C26 flat-horizon cross-check)
+  File: tools/suncalc.js (+ tools/suncalc_cli.js)
+  Copyright (c) 2011-2015, Vladimir Agafonkin
+  Licence: BSD-2-Clause — https://github.com/mourner/suncalc
+
 Landlab
   Copyright (c) Landlab developers
   Licence: MIT — https://github.com/landlab/landlab

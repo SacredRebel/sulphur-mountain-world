@@ -5221,6 +5221,190 @@
       }
     },
     {
+      "id": "alignments",
+      "label": "Solar alignments",
+      "group": "sun",
+      "kind": "geojson",
+      "path": "alignments.geojson",
+      "style_by": "event",
+      "bounds_lnglat": [
+        -119.2442856,
+        34.3784952,
+        -119.0680945,
+        34.4670989
+      ],
+      "z": 19,
+      "opacity_default": 0.8,
+      "units": "geometry",
+      "authority": "derived",
+      "evidence": "modelled",
+      "legend": {
+        "type": "categories",
+        "categories": [
+          {
+            "value": "beltane_sunrise",
+            "rgba": [
+              31,
+              119,
+              180,
+              200
+            ],
+            "label": "beltane_sunrise"
+          },
+          {
+            "value": "beltane_sunset",
+            "rgba": [
+              174,
+              199,
+              232,
+              200
+            ],
+            "label": "beltane_sunset"
+          },
+          {
+            "value": "december_solstice_sunrise",
+            "rgba": [
+              255,
+              127,
+              14,
+              200
+            ],
+            "label": "december_solstice_sunrise"
+          },
+          {
+            "value": "december_solstice_sunset",
+            "rgba": [
+              44,
+              160,
+              44,
+              200
+            ],
+            "label": "december_solstice_sunset"
+          },
+          {
+            "value": "imbolc_sunrise",
+            "rgba": [
+              152,
+              223,
+              138,
+              200
+            ],
+            "label": "imbolc_sunrise"
+          },
+          {
+            "value": "imbolc_sunset",
+            "rgba": [
+              214,
+              39,
+              40,
+              200
+            ],
+            "label": "imbolc_sunset"
+          },
+          {
+            "value": "june_solstice_sunrise",
+            "rgba": [
+              148,
+              103,
+              189,
+              200
+            ],
+            "label": "june_solstice_sunrise"
+          },
+          {
+            "value": "june_solstice_sunset",
+            "rgba": [
+              197,
+              176,
+              213,
+              200
+            ],
+            "label": "june_solstice_sunset"
+          },
+          {
+            "value": "lunasa_sunrise",
+            "rgba": [
+              140,
+              86,
+              75,
+              200
+            ],
+            "label": "lunasa_sunrise"
+          },
+          {
+            "value": "lunasa_sunset",
+            "rgba": [
+              227,
+              119,
+              194,
+              200
+            ],
+            "label": "lunasa_sunset"
+          },
+          {
+            "value": "march_equinox_sunrise",
+            "rgba": [
+              247,
+              182,
+              210,
+              200
+            ],
+            "label": "march_equinox_sunrise"
+          },
+          {
+            "value": "march_equinox_sunset",
+            "rgba": [
+              127,
+              127,
+              127,
+              200
+            ],
+            "label": "march_equinox_sunset"
+          },
+          {
+            "value": "samhain_sunrise",
+            "rgba": [
+              188,
+              189,
+              34,
+              200
+            ],
+            "label": "samhain_sunrise"
+          },
+          {
+            "value": "samhain_sunset",
+            "rgba": [
+              219,
+              219,
+              141,
+              200
+            ],
+            "label": "samhain_sunset"
+          },
+          {
+            "value": "september_equinox_sunrise",
+            "rgba": [
+              23,
+              190,
+              207,
+              200
+            ],
+            "label": "september_equinox_sunrise"
+          },
+          {
+            "value": "september_equinox_sunset",
+            "rgba": [
+              158,
+              218,
+              229,
+              200
+            ],
+            "label": "september_equinox_sunset"
+          }
+        ]
+      }
+    },
+    {
       "id": "stormwater_depth",
       "label": "Storm sheet depth",
       "group": "water",
@@ -7887,8 +8071,8 @@
       "style_by": "kind",
       "bounds_lnglat": [
         -119.1578505,
-        34.4323823,
-        -119.1554788,
+        34.4317896,
+        -119.1548396,
         34.4335632
       ],
       "z": 42,
@@ -7900,11 +8084,21 @@
         "type": "categories",
         "categories": [
           {
-            "value": "pond",
+            "value": "catchment",
             "rgba": [
               31,
               119,
               180,
+              200
+            ],
+            "label": "Catchment"
+          },
+          {
+            "value": "pond",
+            "rgba": [
+              214,
+              39,
+              40,
               200
             ],
             "label": "Pond"
@@ -7912,9 +8106,9 @@
           {
             "value": "swale",
             "rgba": [
-              140,
-              86,
-              75,
+              247,
+              182,
+              210,
               200
             ],
             "label": "Swale"
@@ -8184,7 +8378,7 @@
     "county": "assessor ring kept for drift checks, not for siting or drawing",
     "trees": "tabular crowns; drawn as trees_crowns + trees_trunks",
     "cultivated": "tabular plantings; drawn as cultivated_ground",
-    "sky_events": "event table awaiting C26 alignments drawable",
+    "sky_events": "event table; drawn as alignments",
     "terrain": "terrarium tile pyramid; hillshade display is layer terrain",
     "walkable": "walkable.geojson published; atlas export deferred (C24 contract file)",
     "walk_graph": "connectivity table, not a map overlay",
@@ -8198,6 +8392,7 @@
       "trees_crowns",
       "trees_trunks"
     ],
-    "cultivated": "cultivated_ground"
+    "cultivated": "cultivated_ground",
+    "sky_events": "alignments"
   }
 }

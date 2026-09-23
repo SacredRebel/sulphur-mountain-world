@@ -92,6 +92,7 @@ VECTOR_SPECS = [
     ('trees_crowns', 'trees-crowns.geojson', 'height_m', 'habitat', 8, 0.35, 'Tree crowns'),
     ('trees_trunks', 'trees-trunks.geojson', 'height_m', 'habitat', 9, 0.5, 'Tree trunks'),
     ('horizon', 'horizon.geojson', 'viewpoint', 'sun', 18, 0.75, 'Horizon profile'),
+    ('alignments', 'alignments.geojson', 'event', 'sun', 19, 0.8, 'Solar alignments'),
     ('drainage', 'drainage.geojson', 'order', 'water', 24, 0.85, 'Drainage channels'),
     ('keylines', 'keylines.geojson', 'kind', 'water', 25, 0.8, 'Keylines'),
     ('thermal_belt', 'thermal-belt.geojson', 'kind', 'habitat', 20, 0.55, 'Thermal belt'),
@@ -475,8 +476,13 @@ def main():
         'county': 'assessor ring kept for drift checks, not for siting or drawing',
         'trees': 'tabular crowns; drawn as trees_crowns + trees_trunks',
         'cultivated': 'tabular plantings; drawn as cultivated_ground',
-        'sky_events': 'event table awaiting C26 alignments drawable',
+        'sky_events': 'event table; drawn as alignments',
         'terrain': 'terrarium tile pyramid; hillshade display is layer terrain',
+        'walkable': 'walkable.geojson published; atlas export deferred (C24 contract file)',
+        'walk_graph': 'connectivity table, not a map overlay',
+        'collision': 'physics mesh, not a map overlay',
+        'trees_instances': 'instance table + archetype meshes; not an atlas overlay',
+        'budget': 'cost table, not geometry',
     }
     manifest = {
         'schema': 1,
@@ -488,6 +494,7 @@ def main():
             'terrain_hillshade': 'terrain',
             'trees': ['trees_crowns', 'trees_trunks'],
             'cultivated': 'cultivated_ground',
+            'sky_events': 'alignments',
         },
     }
     MANIFEST.write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')

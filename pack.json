@@ -164,16 +164,33 @@
     },
     "sky_events": {
       "file": "sky-events.json",
+      "drawable": "alignments.geojson",
       "authority": "derived",
-      "evidence": "measured",
-      "method": "astronomy-engine sun/moon vs horizon.json; cross-quarters traditional only",
+      "evidence": "modelled",
+      "method": "astronomy-engine sun vs nearest horizon.json profile; flat SearchRiseSet cross-checked with mourner/suncalc; America/Los_Angeles",
       "inputs": [
         "horizon.json",
-        "astronomy-engine"
+        "gathering.geojson",
+        "models.json",
+        "astronomy-engine",
+        "tools/suncalc.js"
       ],
       "generator": "scripts/sky_events.py",
       "kind": "table",
-      "units": "azimuth deg / local time"
+      "units": "azimuth deg / local time / delay min"
+    },
+    "alignments": {
+      "file": "alignments.geojson",
+      "authority": "derived",
+      "evidence": "modelled",
+      "method": "sight-lines from each sky-events observer along true sunrise/sunset azimuth to horizon draw radius",
+      "inputs": [
+        "sky-events.json",
+        "horizon.json"
+      ],
+      "generator": "scripts/sky_events.py",
+      "kind": "vector",
+      "units": "geometry"
     },
     "keylines": {
       "file": "keylines.geojson",

@@ -1,0 +1,6814 @@
+{
+  "type": "FeatureCollection",
+  "name": "alignments",
+  "properties": {
+    "authority": "derived",
+    "evidence": "modelled",
+    "generator": "scripts/sky_events.py",
+    "source": "sky-events.json",
+    "draw_radius_m": 8000.0,
+    "note": "Each LineString runs from the observer along the true sunrise/sunset azimuth to the published horizon draw radius (8000 m), matching horizon.geojson convention."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.06909011009746,
+            34.430096144748816
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 269.89,
+        "delay_min": 6.3,
+        "true_time": "2026-03-20T19:02:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.24309325397586,
+            34.432814160548425
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.57,
+        "delay_min": 29.2,
+        "true_time": "2026-06-21T06:14:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.07745465902867,
+            34.46392042254364
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.23308322117602,
+            34.46653153949538
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.06911140787244,
+            34.42968115378219
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.24308615532233,
+            34.432021213777325
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 128.14,
+        "delay_min": 65.6,
+        "true_time": "2026-12-21T08:05:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.08760360110878,
+            34.38841396389748
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 232.73,
+        "delay_min": 60.3,
+        "true_time": "2026-12-21T15:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.22531989128893,
+            34.38928033229632
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.07709313279179,
+            34.402622849044505
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 246.34,
+        "delay_min": 25.5,
+        "true_time": "2026-02-01T17:01:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.23577744446817,
+            34.40401128289888
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.07226896435573,
+            34.452467625251856
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.2,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.23895940172653,
+            34.45491466964769
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.07353880301832,
+            34.45588355308312
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.23750690618313,
+            34.458373654180456
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.77,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.07522919115583,
+            34.40620558522135
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_best",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.13,
+        "delay_min": 17.9,
+        "true_time": "2026-11-01T16:45:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15605761248293,
+            34.43295261599336
+          ],
+          [
+            -119.2379118441321,
+            34.40844082613713
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.06894109557598,
+            34.430206646483214
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 269.89,
+        "delay_min": 6.3,
+        "true_time": "2026-03-20T19:02:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.24294423945437,
+            34.43292466228282
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.57,
+        "delay_min": 29.2,
+        "true_time": "2026-06-21T06:14:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.07730564450719,
+            34.464030924278035
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.23293420665453,
+            34.466642041229775
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.06896239335096,
+            34.42979165551659
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.24293714080085,
+            34.43213171551172
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 128.14,
+        "delay_min": 65.6,
+        "true_time": "2026-12-21T08:05:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.0874545865873,
+            34.388524465631875
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 232.73,
+        "delay_min": 60.3,
+        "true_time": "2026-12-21T15:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.22517087676745,
+            34.38939083403072
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.0769441182703,
+            34.4027333507789
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 246.35,
+        "delay_min": 25.5,
+        "true_time": "2026-02-01T17:01:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.23563452485348,
+            34.40413331392594
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.07211994983425,
+            34.45257812698625
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.2,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.23881038720505,
+            34.45502517138209
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.07338978849684,
+            34.455994054817516
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.23735789166165,
+            34.45848415591485
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.77,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.07508017663434,
+            34.40631608695575
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "gathering_good",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.13,
+        "delay_min": 17.9,
+        "true_time": "2026-11-01T16:45:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15590859796144,
+            34.433063117727755
+          ],
+          [
+            -119.23776282961062,
+            34.40855132787153
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.06836549761454,
+            34.43026152875546
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 270.17,
+        "delay_min": 4.3,
+        "true_time": "2026-03-20T19:04:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.24236841878714,
+            34.43333197641421
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.71,
+        "delay_min": 30.2,
+        "true_time": "2026-06-21T06:15:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.07663895968224,
+            34.46392657161163
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.23235860869309,
+            34.46669692350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.06838679538951,
+            34.42984653778883
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.2423615428394,
+            34.43218659778397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 123.39,
+        "delay_min": 35.6,
+        "true_time": "2026-12-21T07:35:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.08266298572798,
+            34.393429251389485
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 236.35,
+        "delay_min": 37.3,
+        "true_time": "2026-12-21T16:13:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.22778490871704,
+            34.3931564184461
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.07636852030886,
+            34.40278823305115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 247.51,
+        "delay_min": 17.5,
+        "true_time": "2026-02-01T17:09:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.235749407937,
+            34.4055314827621
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.0715443518728,
+            34.4526330092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.1,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.2382347892436,
+            34.455080053654335
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.0728141905354,
+            34.45604893708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.2367822937002,
+            34.4585390381871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.77,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.0745045786729,
+            34.40637096922799
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_oak-leaf-massing",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.84,
+        "delay_min": 12.9,
+        "true_time": "2026-11-01T16:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155333,
+            34.433118
+          ],
+          [
+            -119.23754751738562,
+            34.40944853470332
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.06866049761453,
+            34.42931652875546
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 270.03,
+        "delay_min": 5.3,
+        "true_time": "2026-03-20T19:03:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.24266378996356,
+            34.432210760597364
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.57,
+        "delay_min": 29.2,
+        "true_time": "2026-06-21T06:14:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.07702504654574,
+            34.46314080655028
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.23265360869308,
+            34.46575192350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.46,
+        "delay_min": 19.3,
+        "true_time": "2026-09-23T07:05:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.06867240767278,
+            34.429077582106665
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.2426565428394,
+            34.431241597783966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 129.64,
+        "delay_min": 74.6,
+        "true_time": "2026-12-21T08:14:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.08860450982922,
+            34.386164836588726
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 221.9,
+        "delay_min": 121.3,
+        "true_time": "2026-12-21T14:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.2137533419965,
+            34.37849516268703
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 115.02,
+        "delay_min": 33.7,
+        "true_time": "2026-02-01T07:28:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.07675961945873,
+            34.40167204295947
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 242.24,
+        "delay_min": 52.5,
+        "true_time": "2026-02-01T16:34:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.23264653454991,
+            34.39858293778835
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.0718393518728,
+            34.4516880092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.1,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.2385297892436,
+            34.45413505365433
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.07310919053539,
+            34.45510393708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.2370772937002,
+            34.457594038187096
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.77,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.0747995786729,
+            34.40542596922799
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_retreat-village",
+        "event": "samhain_sunset",
+        "azimuth_deg": 246.58,
+        "delay_min": 41.9,
+        "true_time": "2026-11-01T16:21:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155628,
+            34.432173
+          ],
+          [
+            -119.23549343908248,
+            34.40350861244384
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.06957249761454,
+            34.42962252875546
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 269.89,
+        "delay_min": 6.3,
+        "true_time": "2026-03-20T19:02:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.24357564149294,
+            34.43234054455507
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.57,
+        "delay_min": 29.2,
+        "true_time": "2026-06-21T06:14:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.07793704654576,
+            34.46344680655028
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.2335656086931,
+            34.46605792350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.06959379538952,
+            34.429207537788834
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.24356854283941,
+            34.43154759778397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 128.14,
+        "delay_min": 65.6,
+        "true_time": "2026-12-21T08:05:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.08808598862586,
+            34.38794034790412
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 232.73,
+        "delay_min": 60.3,
+        "true_time": "2026-12-21T15:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.22580227880601,
+            34.388806716302966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.07757552030887,
+            34.40214923305115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 246.34,
+        "delay_min": 25.5,
+        "true_time": "2026-02-01T17:01:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.23625983198525,
+            34.40353766690552
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.07275135187281,
+            34.4519940092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.2,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.23944178924361,
+            34.454441053654335
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.0740211905354,
+            34.45540993708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.23798929370021,
+            34.4579000381871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.76,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.07570594598467,
+            34.40574365880823
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_glamping-creek",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.12,
+        "delay_min": 17.9,
+        "true_time": "2026-11-01T16:45:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15654,
+            34.432479
+          ],
+          [
+            -119.23838906730799,
+            34.407955372994536
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.26,
+        "delay_min": 19.8,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.06975989726006,
+            34.430238105787986
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 269.89,
+        "delay_min": 6.3,
+        "true_time": "2026-03-20T19:02:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.24376364149293,
+            34.432943544555066
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.57,
+        "delay_min": 29.2,
+        "true_time": "2026-06-21T06:14:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.07812504654575,
+            34.46404980655028
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.23375360869309,
+            34.46666092350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.06978179538952,
+            34.42981053778883
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.2437565428394,
+            34.432150597783966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 128.14,
+        "delay_min": 65.6,
+        "true_time": "2026-12-21T08:05:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.08827398862586,
+            34.38854334790412
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 232.73,
+        "delay_min": 60.3,
+        "true_time": "2026-12-21T15:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.22599027880601,
+            34.389409716302964
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.07776352030886,
+            34.402752233051146
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 246.34,
+        "delay_min": 25.5,
+        "true_time": "2026-02-01T17:01:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.23644783198525,
+            34.40414066690552
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.0729393518728,
+            34.4525970092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.2,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.23962978924361,
+            34.45504405365433
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.0742091905354,
+            34.45601293708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.2381772937002,
+            34.4585030381871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.76,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.07589394598466,
+            34.406346658808225
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_the-barn",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.12,
+        "delay_min": 17.9,
+        "true_time": "2026-11-01T16:45:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156728,
+            34.433082
+          ],
+          [
+            -119.23857706730799,
+            34.408558372994534
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.06901449761453,
+            34.43062152875546
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 270.17,
+        "delay_min": 4.3,
+        "true_time": "2026-03-20T19:04:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.24301741878713,
+            34.43369197641421
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.7,
+        "delay_min": 30.2,
+        "true_time": "2026-06-21T06:15:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.07729445031168,
+            34.464297951647225
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.23300760869309,
+            34.46705692350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.06903579538951,
+            34.430206537788834
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.2430105428394,
+            34.43254659778397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 123.39,
+        "delay_min": 35.6,
+        "true_time": "2026-12-21T07:35:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.08331198572797,
+            34.393789251389485
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 236.35,
+        "delay_min": 37.3,
+        "true_time": "2026-12-21T16:13:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.22843390871704,
+            34.3935164184461
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.07701752030886,
+            34.40314823305115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 247.51,
+        "delay_min": 17.5,
+        "true_time": "2026-02-01T17:09:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.236398407937,
+            34.4058914827621
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.0721933518728,
+            34.4529930092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.2,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.2388837892436,
+            34.455440053654335
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.07346319053539,
+            34.45640893708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.2374312937002,
+            34.4588990381871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.77,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.0751535786729,
+            34.40673096922799
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_agricultural-hub",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.84,
+        "delay_min": 12.9,
+        "true_time": "2026-11-01T16:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155982,
+            34.433478
+          ],
+          [
+            -119.23819651738562,
+            34.40980853470332
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.26,
+        "delay_min": 19.8,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.06979489726005,
+            34.430044105787985
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 269.89,
+        "delay_min": 6.3,
+        "true_time": "2026-03-20T19:02:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.24379864149293,
+            34.432749544555065
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.57,
+        "delay_min": 29.2,
+        "true_time": "2026-06-21T06:14:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.07816004654575,
+            34.46385580655028
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.23378860869309,
+            34.46646692350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.06981679538951,
+            34.42961653778883
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.2437915428394,
+            34.431956597783966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 128.14,
+        "delay_min": 65.6,
+        "true_time": "2026-12-21T08:05:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.08830898862585,
+            34.38834934790412
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 232.73,
+        "delay_min": 60.3,
+        "true_time": "2026-12-21T15:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.226025278806,
+            34.389215716302964
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.07779852030886,
+            34.402558233051145
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 246.34,
+        "delay_min": 25.5,
+        "true_time": "2026-02-01T17:01:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.23648283198524,
+            34.40394666690552
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.0729743518728,
+            34.4524030092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.2,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.2396647892436,
+            34.45485005365433
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.0742441905354,
+            34.45581893708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.2382122937002,
+            34.458309038187096
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.76,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.07592894598466,
+            34.406152658808224
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_tropical-dome",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.12,
+        "delay_min": 17.9,
+        "true_time": "2026-11-01T16:45:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156763,
+            34.432888
+          ],
+          [
+            -119.23861206730798,
+            34.408364372994534
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.06841949761454,
+            34.42991452875546
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 270.03,
+        "delay_min": 5.3,
+        "true_time": "2026-03-20T19:03:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.24242278996357,
+            34.43280876059737
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.57,
+        "delay_min": 29.2,
+        "true_time": "2026-06-21T06:14:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.07678404654575,
+            34.46373880655028
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.2324126086931,
+            34.46634992350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.46,
+        "delay_min": 19.3,
+        "true_time": "2026-09-23T07:05:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.06843140767279,
+            34.42967558210667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.24241554283941,
+            34.43183959778397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 129.64,
+        "delay_min": 74.6,
+        "true_time": "2026-12-21T08:14:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.08836350982924,
+            34.38676283658873
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 221.9,
+        "delay_min": 121.3,
+        "true_time": "2026-12-21T14:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.2135123419965,
+            34.379093162687035
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 115.02,
+        "delay_min": 33.7,
+        "true_time": "2026-02-01T07:28:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.07651861945874,
+            34.40227004295947
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 242.24,
+        "delay_min": 52.5,
+        "true_time": "2026-02-01T16:34:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.23240553454993,
+            34.39918093778835
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.07159835187281,
+            34.4522860092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.2,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.23828878924361,
+            34.45473305365434
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.0728681905354,
+            34.45570193708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.23683629370021,
+            34.4581920381871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.77,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.0745585786729,
+            34.406023969227995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_community-hub",
+        "event": "samhain_sunset",
+        "azimuth_deg": 246.58,
+        "delay_min": 41.9,
+        "true_time": "2026-11-01T16:21:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155387,
+            34.432771
+          ],
+          [
+            -119.23525243908249,
+            34.40410661244384
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.06809749761453,
+            34.43053752875546
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 270.17,
+        "delay_min": 4.3,
+        "true_time": "2026-03-20T19:04:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.24210041878713,
+            34.43360797641421
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.71,
+        "delay_min": 30.2,
+        "true_time": "2026-06-21T06:15:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.07637095968224,
+            34.46420257161163
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.23209060869308,
+            34.46697292350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.06811879538951,
+            34.43012253778883
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.2420935428394,
+            34.43246259778397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 123.39,
+        "delay_min": 35.6,
+        "true_time": "2026-12-21T07:35:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.08239498572797,
+            34.393705251389484
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 236.35,
+        "delay_min": 37.3,
+        "true_time": "2026-12-21T16:13:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.22751690871704,
+            34.393432418446096
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.07610052030886,
+            34.40306423305115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 247.51,
+        "delay_min": 17.5,
+        "true_time": "2026-02-01T17:09:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.235481407937,
+            34.4058074827621
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.0712763518728,
+            34.4529090092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.1,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.2379667892436,
+            34.455356053654334
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.07254619053539,
+            34.45632493708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.2365142937002,
+            34.4588150381871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.77,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.0742365786729,
+            34.40664696922799
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_events-gatherings-hub",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.84,
+        "delay_min": 12.9,
+        "true_time": "2026-11-01T16:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155065,
+            34.433394
+          ],
+          [
+            -119.23727951738562,
+            34.40972453470332
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.06809449761454,
+            34.43007352875546
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 270.17,
+        "delay_min": 4.3,
+        "true_time": "2026-03-20T19:04:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.24209741878714,
+            34.43314397641421
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.71,
+        "delay_min": 30.2,
+        "true_time": "2026-06-21T06:15:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.07636795968224,
+            34.46373857161163
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.23208760869309,
+            34.46650892350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.06811579538952,
+            34.42965853778883
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.2420905428394,
+            34.431998597783966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 123.39,
+        "delay_min": 35.6,
+        "true_time": "2026-12-21T07:35:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.08239198572798,
+            34.39324125138948
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 236.35,
+        "delay_min": 37.3,
+        "true_time": "2026-12-21T16:13:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.22751390871704,
+            34.392968418446095
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.07609752030886,
+            34.402600233051146
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 247.51,
+        "delay_min": 17.5,
+        "true_time": "2026-02-01T17:09:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.23547840793701,
+            34.4053434827621
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.0712733518728,
+            34.4524450092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.1,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.23796378924361,
+            34.45489205365433
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.0725431905354,
+            34.45586093708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.2365112937002,
+            34.4583510381871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.77,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.0742335786729,
+            34.40618296922799
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_wellness-facilities",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.84,
+        "delay_min": 12.9,
+        "true_time": "2026-11-01T16:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155062,
+            34.43293
+          ],
+          [
+            -119.23727651738562,
+            34.40926053470332
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.06917549761454,
+            34.42994052875546
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 269.89,
+        "delay_min": 6.3,
+        "true_time": "2026-03-20T19:02:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.24317864149293,
+            34.43265854455507
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.57,
+        "delay_min": 29.2,
+        "true_time": "2026-06-21T06:14:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.07754004654575,
+            34.46376480655028
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.23316860869309,
+            34.46637592350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.06919679538952,
+            34.429525537788834
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.2431715428394,
+            34.43186559778397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 128.14,
+        "delay_min": 65.6,
+        "true_time": "2026-12-21T08:05:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.08768898862586,
+            34.38825834790412
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 232.73,
+        "delay_min": 60.3,
+        "true_time": "2026-12-21T15:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.22540527880601,
+            34.389124716302966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.07717852030886,
+            34.40246723305115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 246.34,
+        "delay_min": 25.5,
+        "true_time": "2026-02-01T17:01:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.23586283198524,
+            34.40385566690552
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.0723543518728,
+            34.4523120092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.2,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.23904478924361,
+            34.454759053654335
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.0736241905354,
+            34.45572793708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.2375922937002,
+            34.4582180381871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.77,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.0753145786729,
+            34.40604996922799
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_livestock-dairy",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.13,
+        "delay_min": 17.9,
+        "true_time": "2026-11-01T16:45:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156143,
+            34.432797
+          ],
+          [
+            -119.23799723164917,
+            34.408285210143774
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.06925049761453,
+            34.430617528755455
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 270.17,
+        "delay_min": 4.3,
+        "true_time": "2026-03-20T19:04:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.24325341878713,
+            34.433687976414205
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.7,
+        "delay_min": 30.2,
+        "true_time": "2026-06-21T06:15:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.07753045031168,
+            34.46429395164722
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.23324360869309,
+            34.46705292350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.06927179538951,
+            34.43020253778883
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.2432465428394,
+            34.432542597783964
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 123.39,
+        "delay_min": 35.6,
+        "true_time": "2026-12-21T07:35:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.08354798572798,
+            34.39378525138948
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 236.35,
+        "delay_min": 37.3,
+        "true_time": "2026-12-21T16:13:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.22866990871704,
+            34.39351241844609
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.07725352030886,
+            34.403144233051144
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 247.51,
+        "delay_min": 17.5,
+        "true_time": "2026-02-01T17:09:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.236634407937,
+            34.4058874827621
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.0724293518728,
+            34.452989009258495
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.2,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.2391197892436,
+            34.45543605365433
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.0736991905354,
+            34.45640493708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.2376672937002,
+            34.458895038187094
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.77,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.0753895786729,
+            34.40672696922799
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_mushroom-cultivation",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.84,
+        "delay_min": 12.9,
+        "true_time": "2026-11-01T16:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.156218,
+            34.433474
+          ],
+          [
+            -119.23843251738562,
+            34.40980453470332
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.06873249761453,
+            34.43066352875546
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 270.17,
+        "delay_min": 4.3,
+        "true_time": "2026-03-20T19:04:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.24273541878713,
+            34.43373397641421
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.71,
+        "delay_min": 30.2,
+        "true_time": "2026-06-21T06:15:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.07700595968224,
+            34.46432857161163
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.23272560869309,
+            34.46709892350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.06875379538951,
+            34.430248537788835
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.2427285428394,
+            34.43258859778397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 123.39,
+        "delay_min": 35.6,
+        "true_time": "2026-12-21T07:35:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.08302998572798,
+            34.393831251389486
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 236.35,
+        "delay_min": 37.3,
+        "true_time": "2026-12-21T16:13:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.22815190871704,
+            34.3935584184461
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.07673552030886,
+            34.40319023305115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 247.51,
+        "delay_min": 17.5,
+        "true_time": "2026-02-01T17:09:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.236116407937,
+            34.4059334827621
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.0719113518728,
+            34.4530350092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.2,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.2386017892436,
+            34.455482053654336
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.0731811905354,
+            34.45645093708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.2371492937002,
+            34.4589410381871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.77,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.0748715786729,
+            34.406772969227994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_beekeeping-program",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.84,
+        "delay_min": 12.9,
+        "true_time": "2026-11-01T16:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "oak_leaf"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.1557,
+            34.43352
+          ],
+          [
+            -119.23791451738562,
+            34.409850534703324
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.26,
+        "delay_min": 19.8,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.07028189726006,
+            34.42955610578799
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 269.89,
+        "delay_min": 6.3,
+        "true_time": "2026-03-20T19:02:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.24428564149294,
+            34.43226154455507
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.57,
+        "delay_min": 29.2,
+        "true_time": "2026-06-21T06:14:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.07864704654575,
+            34.46336780655028
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.2342756086931,
+            34.46597892350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.07030379538952,
+            34.429128537788834
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.24427854283941,
+            34.43146859778397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 128.14,
+        "delay_min": 65.6,
+        "true_time": "2026-12-21T08:05:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.08879598862586,
+            34.38786134790412
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 232.73,
+        "delay_min": 60.3,
+        "true_time": "2026-12-21T15:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.22651227880601,
+            34.38872771630297
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.07828552030887,
+            34.40207023305115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 246.34,
+        "delay_min": 25.5,
+        "true_time": "2026-02-01T17:01:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.23696983198525,
+            34.40345866690552
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.07346135187281,
+            34.4519150092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.2,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.24015178924361,
+            34.454362053654336
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.0747311905354,
+            34.45533093708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.23869929370021,
+            34.4578210381871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.76,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.07641594598466,
+            34.40566465880823
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_farmstead-produce-stand",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.12,
+        "delay_min": 17.9,
+        "true_time": "2026-11-01T16:45:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.15725,
+            34.4324
+          ],
+          [
+            -119.23909906730799,
+            34.40787637299454
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.06899849761454,
+            34.42952952875546
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 269.89,
+        "delay_min": 6.3,
+        "true_time": "2026-03-20T19:02:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.24300164149294,
+            34.43224754455507
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.57,
+        "delay_min": 29.2,
+        "true_time": "2026-06-21T06:14:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.07736304654576,
+            34.46335380655028
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.2329916086931,
+            34.46596492350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.6,
+        "delay_min": 20.3,
+        "true_time": "2026-09-23T07:06:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.06901979538952,
+            34.429114537788834
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.24299454283941,
+            34.43145459778397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 128.14,
+        "delay_min": 65.6,
+        "true_time": "2026-12-21T08:05:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.08751198862586,
+            34.38784734790412
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 232.73,
+        "delay_min": 60.3,
+        "true_time": "2026-12-21T15:50:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.22522827880601,
+            34.388713716302966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 114.87,
+        "delay_min": 32.7,
+        "true_time": "2026-02-01T07:27:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.07700152030887,
+            34.40205623305115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 246.35,
+        "delay_min": 25.5,
+        "true_time": "2026-02-01T17:01:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.23569192689204,
+            34.403456196198185
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.07217735187281,
+            34.4519010092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.2,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.23886778924361,
+            34.454348053654336
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.0734471905354,
+            34.45531693708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.23741529370021,
+            34.4578070381871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.77,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.07513757867291,
+            34.405638969227994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_infrastructure",
+        "event": "samhain_sunset",
+        "azimuth_deg": 250.13,
+        "delay_min": 17.9,
+        "true_time": "2026-11-01T16:45:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "parcel_centroid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155966,
+            34.432386
+          ],
+          [
+            -119.23782023164918,
+            34.407874210143774
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "march_equinox_sunrise",
+        "azimuth_deg": 92.27,
+        "delay_min": 19.9,
+        "true_time": "2026-03-20T07:20:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.06861449761453,
+            34.42964452875546
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "march_equinox_sunset",
+        "azimuth_deg": 270.03,
+        "delay_min": 5.3,
+        "true_time": "2026-03-20T19:03:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.24261778996356,
+            34.43253876059737
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "june_solstice_sunrise",
+        "azimuth_deg": 64.57,
+        "delay_min": 29.2,
+        "true_time": "2026-06-21T06:14:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.07697904654574,
+            34.46346880655028
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "june_solstice_sunset",
+        "azimuth_deg": 297.75,
+        "delay_min": 12.2,
+        "true_time": "2026-06-21T20:00:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.23260760869309,
+            34.46607992350202
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "september_equinox_sunrise",
+        "azimuth_deg": 92.46,
+        "delay_min": 19.3,
+        "true_time": "2026-09-23T07:05:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.06862640767278,
+            34.42940558210667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "september_equinox_sunset",
+        "azimuth_deg": 269.26,
+        "delay_min": 5.6,
+        "true_time": "2026-09-23T18:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.2426105428394,
+            34.43156959778397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "december_solstice_sunrise",
+        "azimuth_deg": 129.64,
+        "delay_min": 74.6,
+        "true_time": "2026-12-21T08:14:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.08855850982923,
+            34.38649283658873
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "december_solstice_sunset",
+        "azimuth_deg": 221.9,
+        "delay_min": 121.3,
+        "true_time": "2026-12-21T14:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.2137073419965,
+            34.378823162687034
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "imbolc_sunrise",
+        "azimuth_deg": 115.02,
+        "delay_min": 33.7,
+        "true_time": "2026-02-01T07:28:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.07671361945873,
+            34.40200004295947
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "imbolc_sunset",
+        "azimuth_deg": 242.24,
+        "delay_min": 52.5,
+        "true_time": "2026-02-01T16:34:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.23260053454992,
+            34.39891093778835
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "beltane_sunrise",
+        "azimuth_deg": 74.3,
+        "delay_min": 24.3,
+        "true_time": "2026-05-01T06:31:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.0717933518728,
+            34.4520160092585
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "beltane_sunset",
+        "azimuth_deg": 287.73,
+        "delay_min": 11.2,
+        "true_time": "2026-05-01T19:30:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.2384837892436,
+            34.45446305365434
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "lunasa_sunrise",
+        "azimuth_deg": 71.46,
+        "delay_min": 28.5,
+        "true_time": "2026-08-01T06:36:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.0730631905354,
+            34.45543193708976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "lunasa_sunset",
+        "azimuth_deg": 290.64,
+        "delay_min": 11.9,
+        "true_time": "2026-08-01T19:46:00-0700",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.2370312937002,
+            34.4579220381871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "samhain_sunrise",
+        "azimuth_deg": 111.77,
+        "delay_min": 31.9,
+        "true_time": "2026-11-01T06:49:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.0747535786729,
+            34.405753969227995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "observer_id": "structure_ceremonial-infrastructure",
+        "event": "samhain_sunset",
+        "azimuth_deg": 246.58,
+        "delay_min": 41.9,
+        "true_time": "2026-11-01T16:21:00-0800",
+        "draw_radius_m": 8000.0,
+        "horizon_profile": "ceremonial"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -119.155582,
+            34.432501
+          ],
+          [
+            -119.23544743908248,
+            34.40383661244384
+          ]
+        ]
+      }
+    }
+  ]
+}

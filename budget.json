@@ -153,6 +153,16 @@
       "data_bytes": 150281
     },
     {
+      "id": "alignments",
+      "kind": "geojson",
+      "path": "alignments.geojson",
+      "bytes": 169039,
+      "group": "sun",
+      "appear_band": "mid",
+      "disappear_band": "far",
+      "feature_count": 272
+    },
+    {
       "id": "stormwater_depth",
       "kind": "image",
       "path": "analysis/display/stormwater_depth.png",
@@ -761,8 +771,8 @@
       ],
       "triangles": 19071,
       "bytes_models": 1300212,
-      "bytes_layers": 13026143,
-      "bytes_total": 14326355
+      "bytes_layers": 13195182,
+      "bytes_total": 14495394
     },
     "mid": {
       "distance_m": [
@@ -771,8 +781,8 @@
       ],
       "triangles": 14801,
       "bytes_models": 463756,
-      "bytes_layers": 13026143,
-      "bytes_total": 13489899
+      "bytes_layers": 13195182,
+      "bytes_total": 13658938
     },
     "far": {
       "distance_m": [
@@ -781,9 +791,9 @@
       ],
       "triangles": 12024,
       "bytes_models": 380384,
-      "bytes_layers": 13026143,
-      "bytes_total": 13406527
+      "bytes_layers": 13195182,
+      "bytes_total": 13575566
     }
   },
-  "layer_bytes_sum": 13026143
+  "layer_bytes_sum": 13195182
 }
