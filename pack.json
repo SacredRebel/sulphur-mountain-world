@@ -1,5 +1,6 @@
 {
   "schema": 1,
+  "version": "1.0.0",
   "id": "sulphur-mountain",
   "name": "Sulphur Mountain",
   "apn": "037-0-012-125",
@@ -621,7 +622,7 @@
       "evidence": "modelled",
       "kind": "table",
       "generator": "scripts/build-guides.py",
-      "what": "pack-frame snap grid: origin, spacing, rotation, index↔lng/lat with worked example"
+      "what": "pack-frame snap grid: origin, spacing, rotation, index\u2194lng/lat with worked example"
     },
     "construction_grid": {
       "file": "construction-grid.geojson",
@@ -630,7 +631,15 @@
       "kind": "vector",
       "units": "geometry",
       "generator": "scripts/build-guides.py",
-      "what": "30 ft solar-aligned construction module — design geometry only, not measured ground"
+      "what": "30 ft solar-aligned construction module \u2014 design geometry only, not measured ground"
+    },
+    "contract": {
+      "file": "contract.json",
+      "authority": "derived",
+      "evidence": "modelled",
+      "kind": "table",
+      "generator": "scripts/check-contract.py",
+      "what": "Published consumer contract: required fields, decode, frame, compatibility baseline"
     }
   },
   "sources": [

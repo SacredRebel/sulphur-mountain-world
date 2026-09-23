@@ -1,0 +1,238 @@
+{
+  "schema": 1,
+  "pack_version": "1.0.0",
+  "generator": "scripts/check-contract.py",
+  "what": "Minimum a consumer can rely on without reading pack source.",
+  "semver": {
+    "patch": "data corrections that keep field names and meanings",
+    "minor": "new layers or new optional fields",
+    "major": "any published field or layer id removed or renamed"
+  },
+  "frame": {
+    "file": "pack.json",
+    "path": "frame",
+    "required_keys": [
+      "origin_lng",
+      "origin_lat",
+      "metres_per_deg_lng",
+      "metres_per_deg_lat",
+      "axes"
+    ],
+    "axes": "x east, y north, metres (equirectangular at origin_lat)",
+    "formulas": {
+      "lng": "origin_lng + east_m / metres_per_deg_lng",
+      "lat": "origin_lat + north_m / metres_per_deg_lat",
+      "east_m": "(lng - origin_lng) * metres_per_deg_lng",
+      "north_m": "(lat - origin_lat) * metres_per_deg_lat"
+    },
+    "worked_example": {
+      "east_m": 260.82,
+      "north_m": 267.76,
+      "lng": -119.15664291526875,
+      "lat": 34.43285107044863
+    }
+  },
+  "manifest": {
+    "file": "pack-layers.json",
+    "required_fields_all": [
+      "id",
+      "kind",
+      "path",
+      "bounds_lnglat",
+      "authority",
+      "evidence",
+      "units",
+      "legend",
+      "z"
+    ],
+    "required_fields_image": [
+      "id",
+      "kind",
+      "path",
+      "bounds_lnglat",
+      "authority",
+      "evidence",
+      "units",
+      "legend",
+      "z",
+      "data_raster"
+    ],
+    "required_fields_geojson": [
+      "id",
+      "kind",
+      "path",
+      "bounds_lnglat",
+      "authority",
+      "evidence",
+      "units",
+      "legend",
+      "z",
+      "style_by"
+    ],
+    "legend_min_stops_or_categories": 2,
+    "bounds_lnglat": "[west, south, east, north] in EPSG:4326; true to 0.1 m vs data"
+  },
+  "raster": {
+    "encoding": "uint16 greyscale PNG",
+    "nodata": 65535,
+    "row_order_png": "north_to_south (PNG row 0 = north edge)",
+    "col_order": "west_to_east",
+    "npz_axes": "row = north ascending (south at index 0), col = east ascending",
+    "png_to_npz_row": "i = nrows - 1 - png_row",
+    "decode": "if pixel == 65535: nodata; else value = value_min + (pixel / 65534) * (value_max - value_min)",
+    "sidecar_required": [
+      "ncols",
+      "nrows",
+      "value_min",
+      "value_max",
+      "nodata",
+      "bounds_lnglat",
+      "decode",
+      "raster"
+    ],
+    "worked_example": {
+      "layer": "twi",
+      "sidecar": "analysis/grids/twi.json",
+      "png": "analysis/grids/twi.png",
+      "png_row": 124,
+      "png_col": 164,
+      "pixel": 8497,
+      "decoded_value": 2.0204662302073575,
+      "npz_row": 133,
+      "npz_value": 2.020550012588501,
+      "max_abs_diff": 0.001
+    }
+  },
+  "instances": {
+    "file": "trees-instances.json",
+    "required_top": [
+      "archetypes",
+      "instances",
+      "instance_count",
+      "archetype_count"
+    ],
+    "worked_example": {
+      "tree_id": 0,
+      "archetype_id": "oak-arch-10",
+      "path": "models/trees/oak-arch-10.glb",
+      "lng": -119.160611,
+      "lat": 34.4346846,
+      "scale": 0.6541
+    }
+  },
+  "collision": {
+    "meta": "collision.json",
+    "mesh": "models/collision.glb",
+    "required_meta": [
+      "path",
+      "triangles",
+      "max_deviation_from_dem_m",
+      "frame"
+    ],
+    "worked_example": {
+      "triangles": 8404,
+      "max_deviation_from_dem_m": 0.75,
+      "frame": "pack spawn origin; x east, y up, z south"
+    }
+  },
+  "units_notes": {
+    "geometry": "EPSG:4326 unless layer states pack-frame metres",
+    "grid_values": "see each sidecar units field",
+    "delay_min": "minutes; sunrise positive when ridges delay light",
+    "symbolic": "authority=symbolic layers are design-intent only; not measured ground"
+  },
+  "compatibility": {
+    "baseline_version": "1.0.0",
+    "baseline_pack_layer_ids": [
+      "alignments",
+      "budget",
+      "buildable",
+      "capture_plan",
+      "cold_air",
+      "collision",
+      "construction_grid",
+      "contract",
+      "corridors",
+      "county",
+      "cultivated",
+      "cultivated_ground",
+      "defensible_space",
+      "drainage",
+      "edits",
+      "flow_accum",
+      "gathering",
+      "gathers",
+      "grid",
+      "guides",
+      "horizon",
+      "imagery",
+      "keylines",
+      "landforms",
+      "materials",
+      "models",
+      "oak_leaf_knoll",
+      "positions",
+      "roofs",
+      "scans",
+      "sky_events",
+      "stormwater_depth",
+      "sun_hours_annual",
+      "sun_hours_dec",
+      "sun_hours_jun",
+      "survey",
+      "terrain",
+      "terrain_hillshade",
+      "thermal_belt",
+      "trees",
+      "trees_crowns",
+      "trees_instances",
+      "trees_trunks",
+      "twi",
+      "vision",
+      "walk_graph",
+      "walkable",
+      "water_harvest",
+      "wind_santa_ana",
+      "wind_sea_breeze"
+    ],
+    "baseline_manifest_ids": [
+      "alignments",
+      "buildable",
+      "buildable_zones",
+      "capture_plan",
+      "cold_air",
+      "construction_grid",
+      "corridors",
+      "cultivated_ground",
+      "defensible_space",
+      "drainage",
+      "edits",
+      "flow_accum",
+      "gathering",
+      "gathering_zones",
+      "gathers",
+      "gathers_zones",
+      "guides",
+      "horizon",
+      "keylines",
+      "landforms",
+      "oak_leaf_knoll",
+      "roofs",
+      "stormwater_depth",
+      "sun_hours_annual",
+      "sun_hours_dec",
+      "sun_hours_jun",
+      "survey",
+      "terrain",
+      "thermal_belt",
+      "trees_crowns",
+      "trees_trunks",
+      "twi",
+      "vision",
+      "water_harvest",
+      "wind_santa_ana",
+      "wind_sea_breeze"
+    ],
+    "note": "Removing or renaming any baseline id requires a major version bump. Prefer git tags vMAJOR.MINOR.PATCH when cutting releases; until a prior tag exists the embedded baseline is the previous published set."
+  }
+}

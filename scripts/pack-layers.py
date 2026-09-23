@@ -487,6 +487,7 @@ def main():
         'trees_instances': 'instance table + archetype meshes; not an atlas overlay',
         'budget': 'cost table, not geometry',
         'grid': 'snap-grid definition table; drawn via guides / construction_grid',
+        'contract': 'consumer contract table, not geometry',
     }
     manifest = {
         'schema': 1,
